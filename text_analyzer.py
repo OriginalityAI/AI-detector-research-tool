@@ -10,38 +10,42 @@ output_csv = "output.csv"
 def process_files(directory, text_type, api_name, api_info):
     print(f"Processing {text_type} files using {api_name} API")
     api_post = api_info["post_parameters"]
-    api_response = api_info["response_parameters"]
+    api_response = api_info["response"]["200"]
+    text_key = api_post.get("text_key", "content")
 
     endpoint = api_post["endpoint"]
-    headers = api_post["headers"]
+    if "headers" in api_post:
+        headers = api_post["headers"]
+    else:
+        headers = {}
     body = api_post["body"]
 
     for filename in os.listdir(directory):
         if filename.endswith(".txt"):
             with open(os.path.join(directory, filename), "r") as f:
                 text = f.read()
-                # TODO: figure out how to dynamically change the body if some APIs require different parameters
-                body["content"] = text
+                body[text_key] = text
                 parameters = body.copy()
-                print(body)
                 response = requests.post(endpoint, headers=headers, json=parameters)
                 if response.status_code != 200:
                     print(f"Error: {response.text}")
                     continue
 
                 data = response.json()
+                row = [text_type, api_name, filename]
+
+                for key, value in api_response.items():
+                    if key in data:
+                        row.append(data[key])
+                    else:
+                        row.append("")
+
+                print(row)
                 with open(output_csv, "a", newline="") as file:
                     writer = csv.writer(file)
-                    # TODO: dynamically write the original and fake scores
-                    writer.writerow(
-                        [
-                            filename,
-                            text_type,
-                            api_name,
-                            data[api_response]["original"],
-                            data[api_response]["fake"],
-                        ]
-                    )
+                    writer.writerow(row)
+
+                print(f"File {filename} processed successfully")
 
 
 # Different endpoints and their corresponding API keys, versions and request parameters
@@ -56,24 +60,97 @@ API_ENDPOINTS = {
                 "value": "",
                 "key_name": "X-OAI-API-KEY",
             },
+            "text_key": "content",
         },
-        "response_parameters": {
-            "score": {
-                "original": "",
-                "fake": "",
+        "response": {
+            "200": {
+                "score": {
+                    "ai": "",
+                    "original": "",
+                }
             }
         },
     },
     "Sapling": {
         "post_parameters": {
             "endpoint": "https://api.sapling.ai/api/v1/aidetect",
-            "parameters": {"text": "Sample"},
+            "body": {"text": ""},
             "API_KEY_POINTER": {"location": "body", "value": "", "key_name": "key"},
+            "text_key": "text",
         },
-        "response_parameters": {"score": ""},
+        "response": {"200": {"score": "score"}},
     },
+    "Writer.com": {
+        "post_parameters": {
+            "endpoint": "https://enterprise-api.writer.com/content/organization/{organizationId}/detect",
+            "body": {"input": "Sample"},
+            "API_KEY_POINTER": {
+                "location": "headers",
+                "value": "",
+                "key_name": "Authorization",
+            },
+            "text_key": "input",
+        },
+        "response": {"200": [{"label": "real"}, {"score": "score"}]},
+    },
+    "GPTZero": {
+        "post_parameters": {
+            "endpoint": "https://api.gptzero.me/v2/predict/text",
+            "body": {"document": "Sample", "version": "2023-05-23"},
+            "API_KEY_POINTER": {
+                "location": "headers",
+                "value": "",
+                "key_name": "x-api-key",
+            },
+            "text_key": "document",
+        },
+        "response": {"200": {"documents": [{"completely_generated_prob": ""}]}},
+    },
+    "ZeroGPT": {
+        "post_parameters": {
+            "endpoint": "https://zerogpt.p.rapidapi.com/api/v1/detectText",
+            "body": {"input_text": "Sample"},
+            "API_KEY_POINTER": {
+                "location": "headers",
+                "value": "",
+                "key_name": "X-RapidAPI-Key",
+            },
+            "text_key": "input_text",
+        },
+        "response": {
+            "200": {
+                "is_human_written": "",
+                "is_gpt_generated": "",
+            }
+        },
+    },
+    "Copyleaks": {
+        "post_parameters": {
+            "endpoint": f"https://api.copyleaks.com/v2/writer-detector/{id}/check",
+            "body": {"text": "Sample"},
+            "API_KEY_POINTER": {
+                "location": "headers",
+                "value": "",
+                "key_name": "Authorization",
+            },
+            "text_key": "text",
+        },
+        "response": {"200": {"summary": [{"ai": "ai", "human": "human"}]}},
+    }
     # Add more endpoints as needed
 }
+
+
+def get_nested_value(dictionary, keys):
+    for key in keys:
+        if isinstance(dictionary, list):
+            dictionary = [
+                sub_dict.get(key, None) if isinstance(sub_dict, dict) else None
+                for sub_dict in dictionary
+            ]
+        else:
+            dictionary = dictionary.get(key, None)
+    return dictionary
 
 
 def api_constructor(selected_endpoints):
@@ -93,7 +170,7 @@ def api_constructor(selected_endpoints):
             ] = api_key
             api_info["post_parameters"]["API_KEY_POINTER"]["value"] = api_key
         elif key_location == "body":
-            api_info["post_parameters"]["parameters"][
+            api_info["post_parameters"]["body"][
                 api_info["post_parameters"]["API_KEY_POINTER"]["key_name"]
             ] = api_key
         del api_info["post_parameters"]["API_KEY_POINTER"]
