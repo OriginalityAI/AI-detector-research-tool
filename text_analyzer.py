@@ -5,6 +5,8 @@ import csv
 
 
 output_csv = "output.csv"
+global_organizationId = ""
+copyLeaks_scan_id = 0
 
 
 def process_files(directory, text_type, api_name, api_info):
@@ -12,6 +14,8 @@ def process_files(directory, text_type, api_name, api_info):
     api_post = api_info["post_parameters"]
     api_response = api_info["response"]["200"]
     text_key = api_post.get("text_key", "content")
+    global global_organizationId
+    global copyLeaks_scan_id
 
     endpoint = api_post["endpoint"]
     if "headers" in api_post:
@@ -26,6 +30,7 @@ def process_files(directory, text_type, api_name, api_info):
                 text = f.read()
                 body[text_key] = text
                 parameters = body.copy()
+                copyLeaks_scan_id += 1
                 response = requests.post(endpoint, headers=headers, json=parameters)
                 if response.status_code != 200:
                     print(f"Error: {response.text}")
@@ -34,13 +39,25 @@ def process_files(directory, text_type, api_name, api_info):
                 data = response.json()
                 row = [text_type, api_name, filename]
 
-                for key, value in api_response.items():
-                    if key in data:
-                        row.append(data[key])
-                    else:
-                        row.append("")
+                if isinstance(api_response, list):
+                    for item in data:
+                        for key, value in item.items():
+                            if key in api_response:
+                                row.append(value)
+                else:
+                    for key, value in api_response.items():
+                        if isinstance(data[key], dict):
+                            for sub_key, sub_value in data[key].items():
+                                row.append(sub_value)
+                        elif isinstance(data[key], list):
+                            for sub_dict in data[key]:
+                                for sub_key, sub_value in sub_dict.items():
+                                    if sub_key in value:
+                                        row.append(sub_value)
+                        else:
+                            row.append(data[key])
 
-                print(row)
+                print(f"Rows: {row}")
                 with open(output_csv, "a", newline="") as file:
                     writer = csv.writer(file)
                     writer.writerow(row)
@@ -82,7 +99,8 @@ API_ENDPOINTS = {
     },
     "Writer.com": {
         "post_parameters": {
-            "endpoint": "https://enterprise-api.writer.com/content/organization/{organizationId}/detect",
+            "endpoint": f"https://enterprise-api.writer.com/content/organization/{global_organizationId}/detect",
+            "headers": {"Authorization": "", "Content-Type": "application/json"},
             "body": {"input": "Sample"},
             "API_KEY_POINTER": {
                 "location": "headers",
@@ -91,12 +109,13 @@ API_ENDPOINTS = {
             },
             "text_key": "input",
         },
-        "response": {"200": [{"label": "real"}, {"score": "score"}]},
+        "response": {"200": ["score"]},
     },
     "GPTZero": {
         "post_parameters": {
             "endpoint": "https://api.gptzero.me/v2/predict/text",
             "body": {"document": "Sample", "version": "2023-05-23"},
+            "headers": {"x-api-key": "", "Content-Type": "application/json"},
             "API_KEY_POINTER": {
                 "location": "headers",
                 "value": "",
@@ -104,12 +123,13 @@ API_ENDPOINTS = {
             },
             "text_key": "document",
         },
-        "response": {"200": {"documents": [{"completely_generated_prob": ""}]}},
+        "response": {"200": {"documents": ["completely_generated_prob"]}},
     },
     "ZeroGPT": {
         "post_parameters": {
             "endpoint": "https://zerogpt.p.rapidapi.com/api/v1/detectText",
             "body": {"input_text": "Sample"},
+            "headers": {"X-RapidAPI-Key": "", "Content-Type": "application/json"},
             "API_KEY_POINTER": {
                 "location": "headers",
                 "value": "",
@@ -126,7 +146,8 @@ API_ENDPOINTS = {
     },
     "Copyleaks": {
         "post_parameters": {
-            "endpoint": f"https://api.copyleaks.com/v2/writer-detector/{id}/check",
+            "endpoint": f"https://api.copyleaks.com/v2/writer-detector/{copyLeaks_scan_id}/check",
+            "headers": {},
             "body": {"text": "Sample"},
             "API_KEY_POINTER": {
                 "location": "headers",
@@ -188,6 +209,12 @@ def main():
     for api_name in API_ENDPOINTS:
         is_selected = input(f"Type Y/N to select {api_name} API: ")
         if is_selected.upper() == "Y":
+            if api_name == "Writer.com":
+                global global_organizationId
+                global_organizationId = input("Please enter your Organization ID: ")
+                if global_organizationId is None:
+                    print("Invalid Organization ID")
+                    break
             api_info = input("Please enter your API key: ")
             if api_info is None:
                 print("Invalid API Key")
