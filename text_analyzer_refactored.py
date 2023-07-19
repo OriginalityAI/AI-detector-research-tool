@@ -3,34 +3,55 @@ import os
 import csv
 from typing import Dict, Any, Union, List
 
-copyLeaks_scan_id = 0
-global_organizationId = 0
+"""
+This program takes in a directory of text files and runs them through the selected APIs to determine if the text is human or AI generated.
+"""
 
 
 class TextAnalyzer:
     def __init__(
-        self, output_csv: str, api_info: Dict[str, Dict[str, Any]], api_name: str
+        self,
+        output_csv: str,
+        api_info: Dict[str, Dict[str, Any]],
+        api_name: str,
+        global_organizationId=None,
+        copyLeaks_scan_id=None,
     ) -> None:
         self.output_csv = output_csv
         self.api_info = api_info
         self.api_name = api_name
+        self.global_organizationId = global_organizationId
+        self.copyLeaks_scan_id = copyLeaks_scan_id
+
+    def _get_endpoint(self, endpoint):
+        # replace the global_organizationId and copyLeaks_scan_id in the endpoint with the actual values
+        if "{global_organizationId}" in endpoint:
+            return endpoint.format(global_organizationId=self.global_organizationId)
+        elif "{copyLeaks_scan_id}" in endpoint:
+            return endpoint.format(copyLeaks_scan_id=self.copyLeaks_scan_id)
+        else:
+            return endpoint
 
     def _handle_dict(self, data, keys):
         row = []
-        for key, value in keys.items():
-            if isinstance(data.get(key), dict):
-                row.extend(self._handle_dict(data[key], value))
-            elif isinstance(data.get(key), list):
-                row.extend(self._handle_list(data[key], value))
-            else:
-                row.append(data.get(key))
-        return row
-
-    def _handle_list(self, data, keys):
-        row = []
-        for item in data:
-            if isinstance(item, dict):
-                row.extend(self._handle_dict(item, keys))
+        # if the keys are a list, then loop through the data and extract the values that correspond to the keys
+        if isinstance(keys, list):
+            for item in data:
+                for key, value in item.items():
+                    if key in keys:
+                        row.append(value)
+        else:
+            # if the keys are a dictionary, then loop through the data and extract the values that correspond to the keys
+            for key, value in keys.items():
+                if isinstance(data.get(key), dict):
+                    row.extend(self._handle_dict(data[key], value))
+                elif isinstance(data.get(key), list):
+                    for sub_dict in data[key]:
+                        for sub_key, sub_value in sub_dict.items():
+                            if sub_key in value:
+                                row.append(sub_value)
+                else:
+                    row.append(data.get(key))
         return row
 
     def _extract_values(
@@ -41,51 +62,79 @@ class TextAnalyzer:
         return self._handle_dict(data, keys)
 
     def _process_files(self, directory, text_type):
-      api_post = self.api_info["post_parameters"]
-      api_response = self.api_info["response"]["200"]
-      api_name = self.api_name
-      text_key = api_post.get("text_key", "content")
-      output_csv = self.output_csv
-      endpoint = api_post["endpoint"]
-      if "headers" in api_post:
-        headers = api_post["headers"]
-      else:
-        headers = {}
-      body = api_post["body"]
-      for filename in os.listdir(directory):
-        if filename.endswith(".txt"):
-          with open(os.path.join(directory, filename), "r") as f:
-            text = f.read()
-            body[text_key] = text
-            parameters = body.copy()
-            response = requests.post(endpoint, headers=headers, json=parameters)
-            if response.status_code != 200:
-                print(f"Error: {response.text}")
-                continue
+        api_post = self.api_info["post_parameters"]
+        api_response = self.api_info["response"]["200"]
+        api_name = self.api_name
+        text_key = api_post.get("text_key", "content")
+        output_csv = self.output_csv
+        endpoint = self._get_endpoint(api_post["endpoint"])
 
-            data = response.json()
-            row = [text_type, api_name, filename] + self._extract_values(
-                data, api_response
-            )
+        if "headers" in api_post:
+            headers = api_post["headers"]
+        else:
+            headers = {}
 
-            print(f"Rows: {row}")
+        body = api_post["body"]
+        # set the headers for the CSV file
 
-            with open(output_csv, "a", newline="") as file:
-                writer = csv.writer(file)
-                writer.writerow(row)
+        # loop through the files in the directory
+        for filename in os.listdir(directory):
+            # if the file is a text file
+            if filename.endswith(".txt"):
+                # open the file and read the text
+                with open(os.path.join(directory, filename), "r") as f:
+                    text = f.read()
+                    body[text_key] = text
+                    parameters = body.copy()
+                    # scan the text using the API to check if it is human or AI generated
+                    response = requests.post(endpoint, headers=headers, json=parameters)
+                    if response.status_code != 200:
+                        print(f"Error: {response.text}")
+                        with open(output_csv, "a", newline="") as file:
+                            writer = csv.writer(file)
+                            writer.writerow(
+                                [
+                                    text_type,
+                                    api_name,
+                                    filename,
+                                    "Error",
+                                    "Error",
+                                    response.text,
+                                ]
+                            )
+                        continue
 
-            print(f"File {filename} processed successfully")
+                    data = response.json()
+
+                    # create the row to be written to the CSV file
+                    row = [text_type, api_name, filename] + self._extract_values(
+                        data, api_response
+                    )
+
+                    # write the row to the CSV file
+                    with open(output_csv, "a", newline="") as file:
+                        writer = csv.writer(file)
+                        writer.writerow(row)
+
+                    print(f"File {filename} processed successfully using {api_name}")
 
     def get_nested_value(self, dictionary, keys):
-      for key in keys:
-        if isinstance(dictionary, list):
-          dictionary = [
-              sub_dict.get(key, None) if isinstance(sub_dict, dict) else None
-              for sub_dict in dictionary
-          ]
-        else:
-          dictionary = dictionary.get(key, None)
-      return dictionary
+        for key in keys:
+            if isinstance(dictionary, list):
+                dictionary = [
+                    sub_dict.get(key, None) if isinstance(sub_dict, dict) else None
+                    for sub_dict in dictionary
+                ]
+            else:
+                dictionary = dictionary.get(key, None)
+        return dictionary
+
+
+def set_headers(output_csv: str) -> None:
+    init_row = ["Text Type", "API Name", "File Name", "ai_score", "human_score"]
+    with open(output_csv, "a", newline="") as file:
+        writer = csv.writer(file)
+        writer.writerow(init_row)
 
 
 def api_constructor(selected_endpoints):
@@ -116,19 +165,20 @@ def api_constructor(selected_endpoints):
 
 
 def main():
+    global_organizationId = None
+    copyLeaks_scan_id = None
     print(
         "Welcome to the API Interaction Program. Please check the following API endpoints you wish to use: "
     )
     selected_endpoints = {}
+
     for api_name in API_ENDPOINTS:
         is_selected = input(f"Type Y/N to select {api_name} API: ")
         if is_selected.upper() == "Y":
             if api_name == "Writer.com":
-                global global_organizationId
                 global_organizationId = input("Please enter your Organization ID: ")
-                if global_organizationId is None:
-                    print("Invalid Organization ID")
-                    break
+            elif api_name == "Copyleaks":
+                copyLeaks_scan_id = input("Please enter your Copyleaks scan ID: ")
             api_info = input("Please enter your API key: ")
             if api_info is None:
                 print("Invalid API Key")
@@ -141,8 +191,12 @@ def main():
     human_directory = input("Enter the directory path for human text files: ")
 
     output_csv = input("Enter the output CSV file path: ")
+    set_headers(output_csv)
+
     for api_name, api in api_settings.items():
-        text_analyzer = TextAnalyzer(output_csv, api, api_name)
+        text_analyzer = TextAnalyzer(
+            output_csv, api, api_name, global_organizationId, copyLeaks_scan_id
+        )
         text_analyzer._process_files(ai_directory, "AI")
         text_analyzer._process_files(human_directory, "Human")
 
@@ -181,7 +235,7 @@ API_ENDPOINTS = {
     },
     "Writer.com": {
         "post_parameters": {
-            "endpoint": f"https://enterprise-api.writer.com/content/organization/{global_organizationId}/detect",
+            "endpoint": "https://enterprise-api.writer.com/content/organization/{global_organizationId}/detect",
             "headers": {"Authorization": "", "Content-Type": "application/json"},
             "body": {"input": "Sample"},
             "API_KEY_POINTER": {
@@ -228,7 +282,7 @@ API_ENDPOINTS = {
     },
     "Copyleaks": {
         "post_parameters": {
-            "endpoint": f"https://api.copyleaks.com/v2/writer-detector/{copyLeaks_scan_id}/check",
+            "endpoint": "https://api.copyleaks.com/v2/writer-detector/{copyLeaks_scan_id}/check",
             "headers": {},
             "body": {"text": "Sample"},
             "API_KEY_POINTER": {
