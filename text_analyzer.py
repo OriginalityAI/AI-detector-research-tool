@@ -14,19 +14,19 @@ class TextAnalyzer:
         output_csv: str,
         api_info: Dict[str, Dict[str, Any]],
         api_name: str,
-        global_organizationId=None,
+        writer_organization_id=None,
         copyLeaks_scan_id=None,
     ) -> None:
         self.output_csv = output_csv
         self.api_info = api_info
         self.api_name = api_name
-        self.global_organizationId = global_organizationId
+        self.writer_organization_id = writer_organization_id
         self.copyLeaks_scan_id = copyLeaks_scan_id
 
     def _get_endpoint(self, endpoint):
-        # replace the global_organizationId and copyLeaks_scan_id in the endpoint with the actual values
-        if "{global_organizationId}" in endpoint:
-            return endpoint.format(global_organizationId=self.global_organizationId)
+        # replace the writer_organization_id and copyLeaks_scan_id in the endpoint with the actual values
+        if "{writer_organization_id}" in endpoint:
+            return endpoint.format(writer_organization_id=self.writer_organization_id)
         elif "{copyLeaks_scan_id}" in endpoint:
             return endpoint.format(copyLeaks_scan_id=self.copyLeaks_scan_id)
         else:
@@ -89,7 +89,7 @@ class TextAnalyzer:
                     # scan the text using the API to check if it is human or AI generated
                     response = requests.post(endpoint, headers=headers, json=parameters)
                     if response.status_code != 200:
-                        print(f"Error: {response.text}")
+                        print(f"❌ Error: {response.text}")
                         with open(output_csv, "a", newline="") as file:
                             writer = csv.writer(file)
                             writer.writerow(
@@ -116,7 +116,7 @@ class TextAnalyzer:
                         writer = csv.writer(file)
                         writer.writerow(row)
 
-                    print(f"File {filename} processed successfully using {api_name}")
+                    print(f"✅ File {filename} processed successfully using {api_name}")
 
     def get_nested_value(self, dictionary, keys):
         for key in keys:
@@ -131,7 +131,14 @@ class TextAnalyzer:
 
 
 def set_headers(output_csv: str) -> None:
-    init_row = ["Text Type", "API Name", "File Name", "ai_score", "human_score"]
+    init_row = [
+        "Text Type",
+        "API Name",
+        "File Name",
+        "ai_score",
+        "human_score",
+        "Error_message",
+    ]
     with open(output_csv, "a", newline="") as file:
         writer = csv.writer(file)
         writer.writerow(init_row)
@@ -164,19 +171,16 @@ def api_constructor(selected_endpoints):
     return api_settings
 
 
-def main():
-    global_organizationId = None
+def get_input():
+    writer_organization_id = None
     copyLeaks_scan_id = None
-    print(
-        "Welcome to the API Interaction Program. Please check the following API endpoints you wish to use: "
-    )
     selected_endpoints = {}
 
     for api_name in API_ENDPOINTS:
         is_selected = input(f"Type Y/N to select {api_name} API: ")
         if is_selected.upper() == "Y":
             if api_name == "Writer.com":
-                global_organizationId = input("Please enter your Organization ID: ")
+                writer_organization_id = input("Please enter your Organization ID: ")
             elif api_name == "Copyleaks":
                 copyLeaks_scan_id = input("Please enter your Copyleaks scan ID: ")
             api_info = input("Please enter your API key: ")
@@ -192,13 +196,36 @@ def main():
 
     output_csv = input("Enter the output CSV file path: ")
     set_headers(output_csv)
+    return [
+        api_settings,
+        ai_directory,
+        human_directory,
+        output_csv,
+        writer_organization_id,
+        copyLeaks_scan_id,
+    ]
+
+
+def text_analyzer_main():
+    print(
+        "Welcome to the API Interaction Program. Please check the following API endpoints you wish to use: "
+    )
+    (
+        api_settings,
+        ai_directory,
+        human_directory,
+        output_csv,
+        writer_organization_id,
+        copyLeaks_scan_id,
+    ) = get_input()
 
     for api_name, api in api_settings.items():
         text_analyzer = TextAnalyzer(
-            output_csv, api, api_name, global_organizationId, copyLeaks_scan_id
+            output_csv, api, api_name, writer_organization_id, copyLeaks_scan_id
         )
         text_analyzer._process_files(ai_directory, "AI")
         text_analyzer._process_files(human_directory, "Human")
+    return output_csv
 
 
 # Different endpoints and their corresponding API keys, versions and request parameters
@@ -235,7 +262,7 @@ API_ENDPOINTS = {
     },
     "Writer.com": {
         "post_parameters": {
-            "endpoint": "https://enterprise-api.writer.com/content/organization/{global_organizationId}/detect",
+            "endpoint": "https://enterprise-api.writer.com/content/organization/{writer_organization_id}/detect",
             "headers": {"Authorization": "", "Content-Type": "application/json"},
             "body": {"input": "Sample"},
             "API_KEY_POINTER": {
@@ -296,7 +323,3 @@ API_ENDPOINTS = {
     }
     # Add more endpoints as needed
 }
-
-
-if __name__ == "__main__":
-    main()
