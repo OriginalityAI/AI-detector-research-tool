@@ -1,3 +1,5 @@
+import os
+import shutil
 from typing import List
 import pandas as pd
 from sklearn.metrics import (
@@ -64,7 +66,7 @@ class AnalyzeOutput:
 
         cm = confusion_matrix(y_true, y_pred)
         print(API[0] + " Confusion Matrix")
-        print(self._visualize_confusion_matrix(cm))
+        print(self._visualize_confusion_matrix(cm, API[0]))
 
     def unique_apis(self):
         """
@@ -78,7 +80,7 @@ class AnalyzeOutput:
             group.to_csv(f"{name}.csv", index=False)
         return unique_apis
 
-    def _visualize_confusion_matrix(self, cm):
+    def _visualize_confusion_matrix(self, cm, api_name: str):
         """
         Visualize the confusion matrix
         """
@@ -119,10 +121,11 @@ class AnalyzeOutput:
 
         # Visualize the confusion matrix
         plt.figure(figsize=(10, 7))
-        sns.heatmap(df_cm, annot=df_labels, fmt="", cmap="coolwarm")
+        sns.heatmap(df_cm, annot=df_labels, fmt="")
         plt.xlabel("Predicted")
         plt.ylabel("Actual")
-        plt.show()
+        plt.savefig(f"{api_name}_confusion_matrix.png")
+        return df_cm
 
     def generate_stats(self, csv_file: str):
         """
@@ -132,17 +135,21 @@ class AnalyzeOutput:
         API = df["API Name"][0]
 
         y_true, y_pred = self._calculate_labels(df)
+        cm = confusion_matrix(y_true, y_pred)
 
         f1 = f1_score(y_true, y_pred)
         precision = precision_score(y_true, y_pred)
         recall = recall_score(y_true, y_pred)
         accuracy = accuracy_score(y_true, y_pred)
         classification = classification_report(y_true, y_pred)
+        tp, fp, fn, tn = confusion_matrix(y_true, y_pred).ravel()
+        tnr = tn / (tn + fp)
 
         with open(f"{API}_true_rates.txt", "a") as f:
             f.write(f"F1 score: {f1}\n")
             f.write(f"Precision: {precision}\n")
-            f.write(f"Recall: {recall}\n")
+            f.write(f"Recall (True Positive Rate): {tnr}\n")
+            f.write(f"Specificity (True Negative Rate): {recall}\n")
             f.write(f"Accuracy: {accuracy}\n")
             f.write(f"Classification Report:\n{classification}\n")
 
@@ -151,9 +158,27 @@ def csv_analyzer_main(csv_file: str):
     """
     Main function for the csv analyzer
     """
+    if not os.path.exists(csv_file):
+        raise FileNotFoundError(f"File {csv_file} not found")
+    if not csv_file.endswith(".csv"):
+        raise ValueError(f"File {csv_file} is not a csv file")
+    if os.stat(csv_file).st_size == 0:
+        raise ValueError(f"File {csv_file} is empty")
+
     output_analyzer = AnalyzeOutput(csv_file)
     unique_apis = output_analyzer.unique_apis()
     for API in unique_apis:
-        API += ".csv"
-        output_analyzer.confusion_matrix(API[0])
-        output_analyzer.generate_stats(API[0])
+        api_with_filetype = API[0] + ".csv"
+        output_analyzer.confusion_matrix(api_with_filetype)
+        output_analyzer.generate_stats(api_with_filetype)
+        file_cleanup(API[0])
+
+
+def file_cleanup(api_name: str):
+    """
+    Move the csv files into a folder called output, one for each API
+    """
+    for filename in os.listdir():
+        if api_name in filename:
+            os.makedirs(f"output/{api_name}", exist_ok=True)
+            shutil.move(filename, os.path.join(f"output/{api_name}", filename))
