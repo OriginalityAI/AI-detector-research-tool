@@ -51,8 +51,8 @@ class AnalyzeOutput:
         """
         calculate the labels for the confusion matrix
         """
-        y_true = [1 if float(score) > self.THRESHOLD else 0 for score in df["ai_score"]]
-        y_pred = [1 if tt == "AI" else 0 for tt in df["Text Type"]]
+        y_true = [1 if tt == "AI" else 0 for tt in df["Text Type"]]
+        y_pred = [1 if float(score) > self.THRESHOLD else 0 for score in df["ai_score"]]
         return y_true, y_pred
 
     def confusion_matrix(self, csv_file: str):
@@ -84,48 +84,47 @@ class AnalyzeOutput:
         """
         Visualize the confusion matrix
         """
-        # Calculate the percentage values
-        cm_sum_ai = np.sum(cm[0])
-        cm_sum_human = np.sum(cm[1])
+        # Calculate the row-wise sum
+        cm_sum = np.sum(cm, axis=1)
 
-        if cm_sum_ai == 0:
-            cm_sum_ai = 1
-        if cm_sum_human == 0:
-            cm_sum_human = 1
-
-        cm_perc_ai = cm / cm_sum_ai * 100
-        cm_perc_human = cm / cm_sum_human * 100
+        # Calculate the percentage of each element relative to the row sum
+        # Calculate the percentage of each element relative to the row sum
+        cm_perc = cm / (cm_sum[:, None] + 1e-10) * 100
 
         # Define the labels with percentage sign and rounded to 1 decimal place
         labels = [
-            f"{cm_perc_ai[0, 0]:.1f}%",
-            f"{cm_perc_ai[0, 1]:.1f}%",
-            f"{cm_perc_human[1, 0]:.1f}%",
-            f"{cm_perc_human[1, 1]:.1f}%",
+            f"{cm_perc[0, 0]:.1f}%",
+            f"{cm_perc[0, 1]:.1f}%",
+            f"{cm_perc[1, 0]:.1f}%",
+            f"{cm_perc[1, 1]:.1f}%",
         ]
         labels = np.asarray(labels).reshape(2, 2)
 
         # Create a DataFrame for the heatmap
         df_cm = pd.DataFrame(
             cm,
-            columns=["AI Generated", "Human Written"],
-            index=["AI Generated", "Human Written"],
+            columns=["Human Written", "AI Generated"],
+            index=["Human Written", "AI Generated"],
         )
 
         # Create a DataFrame for the labels
         df_labels = pd.DataFrame(
             labels,
-            columns=["AI Generated", "Human Written"],
-            index=["AI Generated", "Human Written"],
+            columns=["Human Written", "AI Generated"],
+            index=["Human Written", "AI Generated"],
         )
 
         # Visualize the confusion matrix
         plt.figure(figsize=(10, 7))
-        sns.heatmap(df_cm, annot=df_labels, fmt="")
+        sns.heatmap(
+            df_cm,
+            annot=df_labels,
+            fmt="",
+        )  # use df_cm as data for heatmap
         plt.xlabel("Predicted")
         plt.ylabel("Actual")
         plt.savefig(f"{api_name}_confusion_matrix.png")
-        return df_cm
+        return df_cm, df_labels
 
     def generate_stats(self, csv_file: str):
         """
@@ -137,19 +136,45 @@ class AnalyzeOutput:
         y_true, y_pred = self._calculate_labels(df)
         cm = confusion_matrix(y_true, y_pred)
 
-        f1 = f1_score(y_true, y_pred)
-        precision = precision_score(y_true, y_pred)
-        recall = recall_score(y_true, y_pred)
+        f1 = f1_score(y_true, y_pred, zero_division=0)
+        precision = precision_score(y_true, y_pred, zero_division=0)
+        recall = recall_score(y_true, y_pred, zero_division=0)
         accuracy = accuracy_score(y_true, y_pred)
-        classification = classification_report(y_true, y_pred)
-        tp, fp, fn, tn = confusion_matrix(y_true, y_pred).ravel()
-        tnr = tn / (tn + fp)
+        classification = classification_report(y_true, y_pred, zero_division=0)
+        cm = confusion_matrix(y_true, y_pred)
+
+        if cm.size == 1:
+            # If there's only one class, the confusion matrix will be 1x1
+            count = cm[0, 0]
+            if list(set(y_true))[0] == 1 and list(set(y_pred))[0] == 1:
+                # If the single class is positive, all counts are TP
+                tp = count
+                fp, fn, tn = 0, 0, 0
+            else:
+                # If the single class is negative, all counts are TN
+                tn = count
+                tp, fp, fn = 0, 0, 0
+        else:
+            # If there are two classes, the confusion matrix will be 2x2
+            tp, fp, fn, tn = cm.ravel()
+
+        if tn == 0:
+            # If there are no true negatives, set the true negative rate to 0
+            tnr = 0
+        else:
+            tnr = tn / (tn + fp)
+        if fp == 0:
+            # If there are no false positives, set the false positive rate to 0
+            fp_rate = 0
+        else:
+            fp_rate = fp / (fp + tn)
 
         with open(f"{API}_true_rates.txt", "a") as f:
             f.write(f"F1 score: {f1}\n")
             f.write(f"Precision: {precision}\n")
-            f.write(f"Recall (True Positive Rate): {tnr}\n")
-            f.write(f"Specificity (True Negative Rate): {recall}\n")
+            f.write(f"Recall (True Positive Rate): {recall}\n")
+            f.write(f"Specificity (True Negative Rate): {tnr}\n")
+            f.write(f"False Positive Rate: {fp_rate}\n")
             f.write(f"Accuracy: {accuracy}\n")
             f.write(f"Classification Report:\n{classification}\n")
 
