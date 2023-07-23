@@ -1,7 +1,7 @@
 import requests
 import os
 import csv
-from typing import Dict, Any, Union, List
+from typing import Dict, Any, List
 from api_endpoints import API_ENDPOINTS
 
 """
@@ -10,6 +10,10 @@ This program takes in a directory of text files and runs them through the select
 
 
 class TextAnalyzer:
+    """
+    class that handles the text analysis
+    """
+
     def __init__(
         self,
         output_csv: str,
@@ -25,7 +29,9 @@ class TextAnalyzer:
         self.copyLeaks_scan_id = copyLeaks_scan_id
 
     def _get_endpoint(self, endpoint):
-        # replace the writer_organization_id and copyLeaks_scan_id in the endpoint with the actual values
+        """
+        replace the writer_organization_id and copyLeaks_scan_id in the endpoint with the actual values
+        """
         if "{writer_organization_id}" in endpoint:
             return endpoint.format(writer_organization_id=self.writer_organization_id)
         elif "{copyLeaks_scan_id}" in endpoint:
@@ -33,7 +39,10 @@ class TextAnalyzer:
         else:
             return endpoint
 
-    def _handle_dict(self, data, keys):
+    def _handle_data(self, data, keys):
+        """
+        extract the values from the data that correspond to the keys provided
+        """
         row = []
         # if the keys are a list, then loop through the data and extract the values that correspond to the keys
         if isinstance(keys, list):
@@ -45,7 +54,7 @@ class TextAnalyzer:
             # if the keys are a dictionary, then loop through the data and extract the values that correspond to the keys
             for key, value in keys.items():
                 if isinstance(data.get(key), dict):
-                    row.extend(self._handle_dict(data[key], value))
+                    row.extend(self._handle_data(data[key], value))
                 elif isinstance(data.get(key), list):
                     for sub_dict in data[key]:
                         for sub_key, sub_value in sub_dict.items():
@@ -60,9 +69,16 @@ class TextAnalyzer:
         data: Dict[str, Dict[str, Any]],
         keys: Dict[str, List[str]],
     ) -> List[Any]:
-        return self._handle_dict(data, keys)
+        return self._handle_data(data, keys)
+
+    """
+    extract the values from the data that correspond to the keys provided
+    """
 
     def _process_files(self, directory, text_type):
+        """
+        main function that processes the files in the directory using the API and writes the results to the CSV file
+        """
         api_post = self.api_info["post_parameters"]
         api_response = self.api_info["response"]["200"]
         api_name = self.api_name
@@ -70,13 +86,13 @@ class TextAnalyzer:
         output_csv = self.output_csv
         endpoint = self._get_endpoint(api_post["endpoint"])
 
+        # set the headers for the CSV file
         if "headers" in api_post:
             headers = api_post["headers"]
         else:
             headers = {}
 
         body = api_post["body"]
-        # set the headers for the CSV file
 
         # loop through the files in the directory
         for filename in os.listdir(directory):
@@ -87,8 +103,14 @@ class TextAnalyzer:
                     text = f.read()
                     body[text_key] = text
                     parameters = body.copy()
-                    # scan the text using the API to check if it is human or AI generated
+                    try:
+                        del parameters["API_KEY_POINTER"]
+                    except KeyError:
+                        pass
+
                     response = requests.post(endpoint, headers=headers, json=parameters)
+
+                    # scan the text using the API to check if it is human or AI generated
                     if response.status_code != 200:
                         print(f"❌ Error: {response.text}")
                         with open(output_csv, "a", newline="") as file:
@@ -120,6 +142,9 @@ class TextAnalyzer:
                     print(f"✅ File {filename} processed successfully using {api_name}")
 
     def get_nested_value(self, dictionary, keys):
+        """
+        retrieve the value from a nested dictionary using the keys provided
+        """
         for key in keys:
             if isinstance(dictionary, list):
                 dictionary = [
@@ -132,6 +157,9 @@ class TextAnalyzer:
 
 
 def set_headers(output_csv: str) -> None:
+    """
+    set the initial headers for the CSV file
+    """
     init_row = [
         "Text Type",
         "API Name",
@@ -146,6 +174,9 @@ def set_headers(output_csv: str) -> None:
 
 
 def api_constructor(selected_endpoints):
+    """
+    construct the API settings dictionary
+    """
     # Initialize an empty dictionary to hold API settings
     api_settings = {}
 
@@ -173,6 +204,9 @@ def api_constructor(selected_endpoints):
 
 
 def get_input():
+    """
+    get the user input for the API endpoints, API keys, and directories
+    """
     writer_organization_id = None
     copyLeaks_scan_id = None
     selected_endpoints = {}
@@ -193,6 +227,7 @@ def get_input():
     api_settings = api_constructor(selected_endpoints)
 
     ai_directory = input("Enter the directory path for AI text files: ")
+
     human_directory = input("Enter the directory path for human text files: ")
 
     output_csv = input("Enter the output CSV file path: ")
@@ -216,6 +251,9 @@ def get_input():
 
 
 def text_analyzer_main():
+    """
+    main function that runs the text analyzer
+    """
     print(
         "Welcome to the API Interaction Program. Please check the following API endpoints you wish to use: "
     )
@@ -232,6 +270,10 @@ def text_analyzer_main():
         text_analyzer = TextAnalyzer(
             output_csv, api, api_name, writer_organization_id, copyLeaks_scan_id
         )
-        text_analyzer._process_files(ai_directory, "AI")
-        text_analyzer._process_files(human_directory, "Human")
+        if ai_directory != "":
+            print(f"🤖 Processing AI files using {api_name}...")
+            text_analyzer._process_files(ai_directory, "AI")
+        if human_directory != "":
+            print(f"👨‍💻 Processing human files using {api_name}...")
+            text_analyzer._process_files(human_directory, "Human")
     return output_csv
