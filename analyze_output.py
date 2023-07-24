@@ -53,6 +53,7 @@ class AnalyzeOutput:
         """
         y_true = [1 if tt == "AI" else 0 for tt in df["Text Type"]]
         y_pred = [1 if float(score) > self.THRESHOLD else 0 for score in df["ai_score"]]
+
         return y_true, y_pred
 
     def confusion_matrix(self, csv_file: str):
@@ -66,7 +67,8 @@ class AnalyzeOutput:
 
         cm = confusion_matrix(y_true, y_pred)
         print(API[0] + " Confusion Matrix")
-        print(self._visualize_confusion_matrix(cm, API[0]))
+        # print(cm)
+        print(self._visualize_confusion_matrix(cm, API[0], y_true))
 
     def unique_apis(self):
         """
@@ -80,39 +82,61 @@ class AnalyzeOutput:
             group.to_csv(f"{name}.csv", index=False)
         return unique_apis
 
-    def _visualize_confusion_matrix(self, cm, api_name: str):
-        """
-        Visualize the confusion matrix
-        """
+    def _get_visual_labels(self, cm, y_true):
         # Calculate the row-wise sum
         cm_sum = np.sum(cm, axis=1)
 
-        # Calculate the percentage of each element relative to the row sum
-        # Calculate the percentage of each element relative to the row sum
+        if len(cm) != 1:
+            if cm[1].sum() == 0:
+                cm = np.delete(cm, 1, 0)
+        if len(cm[0]) == 1:
+            cm = np.append(cm, [[0]], axis=1)
+
         cm_perc = cm / (cm_sum[:, None] + 1e-10) * 100
 
-        # Define the labels with percentage sign and rounded to 1 decimal place
-        labels = [
-            f"{cm_perc[0, 0]:.1f}%",
-            f"{cm_perc[0, 1]:.1f}%",
-            f"{cm_perc[1, 0]:.1f}%",
-            f"{cm_perc[1, 1]:.1f}%",
-        ]
-        labels = np.asarray(labels).reshape(2, 2)
+        if cm.shape == (1, 2):
+            # If there's only one class in the predictions, adjust labels and data accordingly
+            single_class = "AI Generated" if y_true[0] == 1 else "Human Written"
+            columns = (
+                ["AI Generated", "Human Written"]
+                if y_true[0] == 1
+                else ["Human Written", "AI Generated"]
+            )
+            labels = [f"{cm_perc[0, 0]:.1f}%", f"{cm_perc[0, 1]:.1f}%"]
+            labels = np.asarray(labels).reshape(1, 2)
+            df_cm = pd.DataFrame(cm, columns=columns, index=[single_class])
+            df_labels = pd.DataFrame(
+                labels,
+                columns=columns,
+                index=[single_class],
+            )
+        else:
+            # If there are two classes, the confusion matrix will be 2x2
+            labels = [
+                f"{cm_perc[0, 0]:.1f}%",
+                f"{cm_perc[0, 1]:.1f}%",
+                f"{cm_perc[1, 0]:.1f}%",
+                f"{cm_perc[1, 1]:.1f}%",
+            ]
+            labels = np.asarray(labels).reshape(2, 2)
+            df_cm = pd.DataFrame(
+                cm,
+                columns=["AI Generated", "Human Written"],
+                index=["AI Generated", "Human Written"],
+            )
+            df_labels = pd.DataFrame(
+                labels,
+                columns=["AI Generated", "Human Written"],
+                index=["AI Generated", "Human Written"],
+            )
+        return df_cm, df_labels
 
-        # Create a DataFrame for the heatmap
-        df_cm = pd.DataFrame(
-            cm,
-            columns=["Human Written", "AI Generated"],
-            index=["Human Written", "AI Generated"],
-        )
+    def _visualize_confusion_matrix(self, cm, api_name: str, y_true):
+        """
+        Visualize the confusion matrix
+        """
 
-        # Create a DataFrame for the labels
-        df_labels = pd.DataFrame(
-            labels,
-            columns=["Human Written", "AI Generated"],
-            index=["Human Written", "AI Generated"],
-        )
+        df_cm, df_labels = self._get_visual_labels(cm, y_true)
 
         # Visualize the confusion matrix
         plt.figure(figsize=(10, 7))
