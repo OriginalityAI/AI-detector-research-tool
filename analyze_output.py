@@ -16,6 +16,18 @@ import numpy as np
 
 
 class AnalyzeOutput:
+    """
+    A class to analyze the output csv file and generate a confusion matrix and stats
+
+    Parameters
+    ----------
+    output_csv: the output csv file to analyze
+
+    Returns
+    -------
+    None
+    """
+
     # Constants
     CSV_COLUMNS = [
         "Text Type",
@@ -33,6 +45,14 @@ class AnalyzeOutput:
     def _read_csv(self, csv_file: str):
         """
         Read the csv file
+
+        Parameters
+        ----------
+        csv_file: the csv file to analyze
+
+        Returns
+        -------
+        df: the dataframe to analyze
         """
         self.df = pd.read_csv(csv_file)
         return self.df
@@ -40,6 +60,14 @@ class AnalyzeOutput:
     def _read_and_sanitize(self, csv_file: str):
         """
         Read and sanitize the data
+
+        Parameters
+        ----------
+        csv_file: the csv file to analyze
+
+        Returns
+        -------
+        df: the dataframe to analyze
         """
         df = self._read_csv(csv_file)
         df.columns = self.CSV_COLUMNS
@@ -49,7 +77,16 @@ class AnalyzeOutput:
 
     def _calculate_labels(self, df: pd.DataFrame):
         """
-        calculate the labels for the confusion matrix
+        Calculate the labels for the confusion matrix
+
+        Parameters
+        ----------
+        df: the dataframe to analyze
+
+        Returns
+        -------
+        y_true: the true labels
+        y_pred: the predicted labels
         """
         y_true = [1 if tt == "AI" else 0 for tt in df["Text Type"]]
         y_pred = [1 if float(score) > self.THRESHOLD else 0 for score in df["ai_score"]]
@@ -59,6 +96,14 @@ class AnalyzeOutput:
     def confusion_matrix(self, csv_file: str):
         """
         Calculate the confusion matrix
+
+        Parameters
+        ----------
+        csv_file: the csv file to analyze
+
+        Returns
+        -------
+        None
         """
         df = self._read_and_sanitize(csv_file)
         API = df["API Name"]
@@ -70,9 +115,13 @@ class AnalyzeOutput:
         # print(cm)
         print(self._visualize_confusion_matrix(cm, API[0], y_true))
 
-    def unique_apis(self):
+    def _unique_apis(self):
         """
         Get the unique APIs from the output csv
+
+        Returns
+        -------
+        unique_apis: a list of unique API names
         """
         df = self._read_and_sanitize(self.output_csv)
 
@@ -83,15 +132,32 @@ class AnalyzeOutput:
         return unique_apis
 
     def _get_visual_labels(self, cm, y_true):
+        """
+        Get the labels for the confusion matrix based on the number of classes
+
+        Parameters
+        ----------
+        cm: the confusion matrix
+            y_true: the true labels
+
+        Returns
+        -------
+        df_cm: the confusion matrix as a dataframe
+        df_labels: the labels for the confusion matrix as a dataframe
+        """
         # Calculate the row-wise sum
         cm_sum = np.sum(cm, axis=1)
 
+        # check if there's only one class in the predictions
         if len(cm) != 1:
+            # if the sum of the first row is 0, delete the first row to make the matrix 1x2
             if cm[1].sum() == 0:
                 cm = np.delete(cm, 1, 0)
+        # if the matrix is 1x1, add a 0 to the second row to make it 1x2
         if len(cm[0]) == 1:
             cm = np.append(cm, [[0]], axis=1)
 
+        #  Calculate the percentage of each cell + add a small number to avoid division by 0
         cm_perc = cm / (cm_sum[:, None] + 1e-10) * 100
 
         if cm.shape == (1, 2):
@@ -134,6 +200,17 @@ class AnalyzeOutput:
     def _visualize_confusion_matrix(self, cm, api_name: str, y_true):
         """
         Visualize the confusion matrix
+
+        Parameters
+        ----------
+        cm: the confusion matrix
+        api_name: the name of the API
+        y_true: the true labels
+
+        Returns
+        -------
+        df_cm: the confusion matrix as a dataframe
+            df_labels: the labels for the confusion matrix as a dataframe
         """
 
         df_cm, df_labels = self._get_visual_labels(cm, y_true)
@@ -153,12 +230,19 @@ class AnalyzeOutput:
     def generate_stats(self, csv_file: str):
         """
         Write the true positive rate, true negative rate, and F1 score to a text file
+
+        Parameters
+        ----------
+        csv_file: the csv file to analyze
+
+        Returns
+        -------
+        None
         """
         df = self._read_and_sanitize(csv_file)
         API = df["API Name"][0]
 
         y_true, y_pred = self._calculate_labels(df)
-        cm = confusion_matrix(y_true, y_pred)
 
         f1 = f1_score(y_true, y_pred, zero_division=0)
         precision = precision_score(y_true, y_pred, zero_division=0)
@@ -167,31 +251,8 @@ class AnalyzeOutput:
         classification = classification_report(y_true, y_pred, zero_division=0)
         cm = confusion_matrix(y_true, y_pred)
 
-        if cm.size == 1:
-            # If there's only one class, the confusion matrix will be 1x1
-            count = cm[0, 0]
-            if list(set(y_true))[0] == 1 and list(set(y_pred))[0] == 1:
-                # If the single class is positive, all counts are TP
-                tp = count
-                fp, fn, tn = 0, 0, 0
-            else:
-                # If the single class is negative, all counts are TN
-                tn = count
-                tp, fp, fn = 0, 0, 0
-        else:
-            # If there are two classes, the confusion matrix will be 2x2
-            tp, fp, fn, tn = cm.ravel()
-
-        if tn == 0:
-            # If there are no true negatives, set the true negative rate to 0
-            tnr = 0
-        else:
-            tnr = tn / (tn + fp)
-        if fp == 0:
-            # If there are no false positives, set the false positive rate to 0
-            fp_rate = 0
-        else:
-            fp_rate = fp / (fp + tn)
+        tnr = cm[0, 0] / (cm[0, 0] + cm[0, 1])
+        fp_rate = cm[0, 1] / (cm[0, 0] + cm[0, 1])
 
         with open(f"{API}_true_rates.txt", "a") as f:
             f.write(f"F1 score: {f1}\n")
@@ -206,6 +267,19 @@ class AnalyzeOutput:
 def csv_analyzer_main(csv_file: str):
     """
     Main function for the csv analyzer
+
+    Parameters
+    ----------
+    csv_file: the csv file to analyze
+
+    Returns
+    -------
+    None
+    
+    Raises
+    ------
+    FileNotFoundError: if the file is not found
+    ValueError: if the file is empty or not a csv file
     """
     if not os.path.exists(csv_file):
         raise FileNotFoundError(f"File {csv_file} not found")
@@ -215,7 +289,7 @@ def csv_analyzer_main(csv_file: str):
         raise ValueError(f"File {csv_file} is empty")
 
     output_analyzer = AnalyzeOutput(csv_file)
-    unique_apis = output_analyzer.unique_apis()
+    unique_apis = output_analyzer._unique_apis()
     for API in unique_apis:
         api_with_filetype = API[0] + ".csv"
         output_analyzer.confusion_matrix(api_with_filetype)
@@ -226,6 +300,15 @@ def csv_analyzer_main(csv_file: str):
 def file_cleanup(api_name: str):
     """
     Move the csv files into a folder called output, one for each API
+
+    Parameters
+    ----------
+    api_name: the name of the API
+
+    Returns
+    -------
+    None
+
     """
     for filename in os.listdir():
         if api_name in filename:
