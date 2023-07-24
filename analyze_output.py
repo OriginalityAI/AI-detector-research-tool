@@ -17,7 +17,8 @@ import numpy as np
 
 class AnalyzeOutput:
     """
-    A class to analyze the output csv file and generate a confusion matrix and stats
+    A class to analyze the output CSV file from the text analysis tool.
+    Generates confusion matrix and classification metrics for each API.
 
     Parameters
     ----------
@@ -45,14 +46,6 @@ class AnalyzeOutput:
     def _read_csv(self, csv_file: str):
         """
         Read the csv file
-
-        Parameters
-        ----------
-        csv_file: the csv file to analyze
-
-        Returns
-        -------
-        df: the dataframe to analyze
         """
         self.df = pd.read_csv(csv_file)
         return self.df
@@ -60,14 +53,6 @@ class AnalyzeOutput:
     def _read_and_sanitize(self, csv_file: str):
         """
         Read and sanitize the data
-
-        Parameters
-        ----------
-        csv_file: the csv file to analyze
-
-        Returns
-        -------
-        df: the dataframe to analyze
         """
         df = self._read_csv(csv_file)
         df.columns = self.CSV_COLUMNS
@@ -238,6 +223,16 @@ class AnalyzeOutput:
         Returns
         -------
         None
+
+        Writes
+        ------
+        F1 score
+        Precision
+        Recall (True Positive Rate)
+        Specificity (True Negative Rate)
+        False Positive Rate
+        Accuracy
+        Classification Report
         """
         df = self._read_and_sanitize(csv_file)
         API = df["API Name"][0]
@@ -266,7 +261,7 @@ class AnalyzeOutput:
 
 def csv_analyzer_main(csv_file: str):
     """
-    Main function for the csv analyzer
+    Main function and entry point for the csv analyzer
 
     Parameters
     ----------
@@ -275,7 +270,7 @@ def csv_analyzer_main(csv_file: str):
     Returns
     -------
     None
-    
+
     Raises
     ------
     FileNotFoundError: if the file is not found
