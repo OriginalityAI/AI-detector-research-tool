@@ -97,6 +97,9 @@ class AnalyzeOutput:
         y_true, y_pred = self._calculate_labels(df)
 
         cm = confusion_matrix(y_true, y_pred)
+
+        # Confusion matrix reversed to adhere to the standard confusion matrix format this is for display purposes only and does not affect the calculations
+        # If you want to see the original layout for the confusion matrix, comment out the following 3 lines and reverse the labels in the heatmap
         cm = cm[::-1]
         cm[1] = cm[1][::-1]
         cm[0] = cm[0][::-1]
