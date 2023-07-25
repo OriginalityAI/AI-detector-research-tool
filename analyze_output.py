@@ -148,11 +148,7 @@ class AnalyzeOutput:
         if cm.shape == (1, 2):
             # If there's only one class in the predictions, adjust labels and data accordingly
             single_class = "AI Generated" if y_true[0] == 1 else "Human Written"
-            columns = (
-                ["AI Generated", "Human Written"]
-                if y_true[0] == 1
-                else ["Human Written", "AI Generated"]
-            )
+            columns = ["AI Generated", "Human Written"] if y_true[0] == 1 else ["Human Written", "AI Generated"]
             labels = [f"{cm_perc[0, 0]:.1f}%", f"{cm_perc[0, 1]:.1f}%"]
             labels = np.asarray(labels).reshape(1, 2)
             df_cm = pd.DataFrame(cm, columns=columns, index=[single_class])
@@ -206,7 +202,7 @@ class AnalyzeOutput:
             df_cm,
             annot=df_labels,
             fmt="",
-        )  
+        )
         plt.xlabel("Predicted")
         plt.ylabel("Actual")
         plt.savefig(f"{api_name}_confusion_matrix.png")
@@ -238,16 +234,15 @@ class AnalyzeOutput:
         API = df["API Name"][0]
 
         y_true, y_pred = self._calculate_labels(df)
-
-        f1 = f1_score(y_true, y_pred, zero_division=0)
-        precision = precision_score(y_true, y_pred, zero_division=0)
-        recall = recall_score(y_true, y_pred, zero_division=0)
-        accuracy = accuracy_score(y_true, y_pred)
-        classification = classification_report(y_true, y_pred, zero_division=0)
         cm = confusion_matrix(y_true, y_pred)
+        tp, fn, fp, tn = cm.ravel()
+        precision = tp / (tp + fp)
+        recall = tp / (tp + fn)
+        f1 = 2 * ((precision * recall) / (precision + recall))
+        accuracy = (tp + tn) / (tp + tn + fp + fn)
 
-        tnr = cm[0, 0] / (cm[0, 0] + cm[0, 1])
-        fp_rate = cm[0, 1] / (cm[0, 0] + cm[0, 1])
+        tnr = tn / (tn + fp)
+        fp_rate = fp / (fp + tn)
 
         with open(f"{API}_true_rates.txt", "a") as f:
             f.write(f"F1 score: {f1}\n")
@@ -256,7 +251,6 @@ class AnalyzeOutput:
             f.write(f"Specificity (True Negative Rate): {tnr}\n")
             f.write(f"False Positive Rate: {fp_rate}\n")
             f.write(f"Accuracy: {accuracy}\n")
-            f.write(f"Classification Report:\n{classification}\n")
 
 
 def csv_analyzer_main(csv_file: str):
