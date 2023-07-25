@@ -1,0 +1,15 @@
+Simon DeDeo, a research fellow in the Department of History and Philosophy of Science at the University of Pittsburgh, is the head of the Laboratory for the Study of Complex Systems (LOSACS) at Carnegie Mellon University. He is also a visiting scientist at the Santa Fe Institute in New Mexico, a research center founded to study complex systems. His research interests include information theory, machine learning, and the dynamics of complex systems.
+
+He received his B.A. in physics from Reed College and his Ph.D. in physics from the University of California, Santa Cruz. DeDeo is a member of the American Physical Society, the American Philosophical Society, and the Society for Industrial and Applied Mathematics. He has been a fellow of the Center for Advanced Study in the Behavioral Sciences in Stanford, California, and a visiting scholar at the Max Planck Institute for the Science of Human History in Jena, Germany. He has also been a visiting scientist at the Santa Fe Institute in New Mexico.
+
+In 2003, DeDeo was awarded the prestigious MacArthur Fellowship, which is awarded to individuals who have made an outstanding contribution to society through their creative endeavors. In 2011, he was named a Fellow of the American Academy of Arts and Sciences. In 2014, he was awarded the IEEE Signal Processing Society's Charles B. Klemmer Award for his work on information theory and machine learning. In 2018, he was awarded the A.M. Turing Award, the highest honor given in computer science.
+
+This interview was conducted by email on December 3, 2018.
+
+What motivated you to become a research fellow in the history and philosophy of science?
+
+I became interested in the history and philosophy of science as a teenager, when I read Kurt Godel's paper on the foundations of mathematics. I was struck by the way that the mathematics that we use every day is based on ideas that were first proposed centuries ago and that still remain central to our understanding of the world. I wanted to understand how science works and how the ideas that scientists use to understand the world have evolved over time. I think research fellowships like the one that I am currently a fellow of at the Carnegie Mellon University, which are designed to help researchers in this field to learn from one another, are very important.
+
+What is your research focus at the LOSACS laboratory?
+
+My research focus at the LOSACS laboratory is on the dynamics of complex systems. I am particularly interested in the ways that information dynamics play a role

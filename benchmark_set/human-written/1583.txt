@@ -1,0 +1,33 @@
+In the last few blogs, I have explored the future of health in a data-driven world, from smart-devices in our home improving our everyday health, to the important of big data in the current pandemic. In my final blog on big data and health, I look at the way that science and pharmaceutical companies are using AI to develop faster, safer and more effective treatments of our biggest diseases. This has resulted in fast-tracking what would otherwise of taken years and decades of research. With AI, the future of medicine is looking bright.
+
+Mapping diseases
+
+There are nearly 25,000 genes in the human genome, but the connection between genes and disease is still not largely understood; of all the human illnesses, only 2,418 of our genes have so far been attributed as the causes of these diseases. This has increased science and pharmaceutical companies to hedging their hopes to machine learning to detect patterns between the thousands of genes and diseases that would take human many many years to understand.
+
+OccamzRazer, have become the first to map everything science knows about Parkinson’s disease. This means that all information from doctors appointments, molecular processes in the brain, individual’s genetic profiles, and results from drug trials are all available in a database accessed by their cutting edge machine learning algorithm. They liken this to a human doctor who knows absolutely everything about Parkinson’s. The possibilities here are endless; AI will be able to piece together hidden connections between all of this data, advancing the timeframe for potential cures. Katrina Sophia Voltz, CEO and founder of OccamzRazer, admits that while their database is massive, there are still gaps in our knowledge. This is where scientists and AI can work together, designing experiments that fill the remaining gaps in the puzzle.
+
+With similar strategies to all human diseases, such as all cancers and Alzheimer’s, discoveries for a cure could be fast tracked by effective data management for AI and create a world where, one day, there is a cure for all.
+
+Drug discovery
+
+Pharmaceutical and technology companies are taking a number of approaches to use AI to assist their discovery of successful medical cures and advance our knowledge of the disease. Currently, around 90% of potential cancer treatments fail in the development stage.
+
+Thanks to CRISPR gene editing technology, technology companies like DepMap can use large databases of genes, applying artificial intelligence and CRISPR to turn off genes one by one to identify which genes have an affect on the growth of different cancers. With the results, they can create medicines that target those genes in order to treat the cancer. Over 3000 drug combinations can be tested on the dataset of cell models to identify possible treatments, increasing the future success rate and reducing time of developing new treatments.
+
+As we have learnt during the COVID-19 pandemic, the usual time for drug and vaccine development can take 10 years or more, with less than 12% of drugs making it to pharmacies.
+
+AtomWise recently received funding of $123 million for their drug acceleration programme using AI. Their deep learning algorithm AtomNet uses a database that autonomously learns how millions of different molecules and proteins will bind, able to test over 16 billion different combinations in just 2 days, something that would normally take years. This will help scientists to identify combinations that are both effective and safe, far quicker, and therefore fast-track the development process. The AtomNet has been used to narrow down potential combinations that are effective targets for COVID-19, narrowing thousands of combinations down to a few hundred candidates.
+
+With advances in technology in the coming years, as predicted by Moore’s law, it is conceivable that drug development processes like this, with far bigger databases and fast processors in the future, could find potential treatments within days of any new pandemic.
+
+AI and COVID-19
+
+AI is being used in a number of ways during this pandemic, one, as noted above, is by fast-tracking drug combinations that could be effective treatments for the virus.
+
+The UK’s Medicines and Healthcare Products Regulatory Agency (MHRA) has just granted a £1.5 million fund to GenPact to develop an algorithm to support the mass-vaccination scheme in the UK. Normally within a 12 month period it could be expected up to 100,000 reports of vaccine side affects per 100 million doses. The aim of the algorithm is to run safety checks on a large scale for any potential side affects that may pose a dangerous risk to the public, before mass-vaccination takes place. The MHRA have said they currently do not expect the vaccine to pose any more safety risks than any other vaccines in the past, but the algorithm will be as an extra safety measure.
+
+This is not the first algorithm of its kind. Earlier in the year, the U.S. Food and Drug Administration held a competition to source the best algorithms that could identify side-affect event reports to aid the processing of all US drugs. Winners were Enigma and two scientists from within the agency.
+
+In addition to using algorithms to make safer treatments for COVID-19, it can also prove effective for diagnosing it. MIT researchers have been training an algorithm on thousands of recordings of coughs, both regular coughs and positive Covid coughs. Their algorithm has shown success in identifying differences between regular and Covid coughs, proving a 98.5% accuracy. In the future, they hope their FDA-approved app will allow the public to record themselves cough and get feedback on whether their cough is likely to be the virus, even when they feel no other symptoms. They identified that there are many people currently unaware they have the virus, but through recording a forced cough were proved to be positive. With some further development, this could become a great way for us to test whether that niggling cough that we have started with is something we should be staying at home with and getting tested.
+
+I write on behalf of Digital Bucket Company, a consultancy specialising in Big Data, AI and Cyber Security,

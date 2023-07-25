@@ -1,0 +1,67 @@
+Task : Create a Setup so that we can ping google but not able to ping Facebook from the same system without using Firewall or other things.
+
+Let’s understand some concepts first.
+
+To Connect two or more systems or computers we need a lot’s of things like both systems should have IP address, A OS, Network Interface Card (NIC Card), A Wireless or Wired Connection etc.
+
+But the most important thing is that Your systems should be able to create packet to send it to other computer , if not , packet not created, not sent , no reply come from other side and finally NO CONNECTIVITY !! So who decides all these things??
+
+Let’s Understand -
+
+If we understand at very basic level , Switch is used to connect systems which our in same network and routers are used to connect systems from different network .
+
+is used to connect systems which our in and are used to connect systems from . Netmask : It is the one who decides the network range or how many systems can come in same network.
+
+for ex : If IP of a system is 192.168.9.9 and netmask is 255.255.255.0 then the network name of this system is 192.168.9 and in this network total 256 host or systems can come from range 192.168.9.0–192.168.9.255 .
+
+Netmask is of 32 bit in size. every octet is of 8 bit , total 4 octet = 8*4 = 32 bit .In simple terms number of 0’s decides the how many unique hosts can come in the same network.
+
+example :
+
+255.255.255.0(24 prefix length -> i.e. number of 1’s in netmask) : last octet having eight zeros means 2⁸ hosts can come i.e. equal to 256 .
+
+: last octet having means can come i.e. equal to . 255.255.0.0 (16 prefix length) : 16 zeros , 2¹ ⁶ unique hosts can come i.e. 65536 in the same network.
+
+: , ⁶ unique hosts can come i.e. in the same network. 255.255.255.240 (28 prefix length): 4 zeros , 2⁴ = 16 hosts can come in same hosts.
+
+Now, If we know the network name or range and if two computers are in same network then we use the switch to connect them but if these are from different network then we use router as a device.
+
+But It not ends here!! Here, The main role is of ROUTING TABLE.. Packets will be create or not it completely depends on the routing table of that system.
+
+For example: if A wants to send packet to system B, then if IP of B is exists in the routing table of system A , then only, system A is able to create packet to send it to B , router and switch other things come after in consideration ,first we should concert about the packet creation, if packet is created then only it is able to send it otherwise not.
+
+Let’s start with task:
+
+Task : The same system can able to ping google but not Facebook.
+
+we know that to check network connectivity we generally ping to google and we understand that we have network connectivity to internet or I can say that from entire world, but what if we have network connectivity to only google server and not from anyone?
+
+So, we can do easily via manipulating routing tables.
+
+Step 1 : First Check IP address of system —
+
+Using ifconfig command and via giving network interface card’s name
+
+(Note : Here I am using RHEL-8 OS, So I am using command accordingly.)
+
+Step 2: Check Routing tables —
+
+using route -n command in linux
+
+Here , It is showing me rules for my main interface card i.e. ens160 of system and to connect with internet the default rule is already set ,for destination 0.0.0.0 using main gateway of system.
+
+Because of this, we are able to ping both google and Facebook.
+
+Step 3 : Check IP of Google DNS —
+
+Check via yum command what software provides nslookup command. This command is used to get information from DNS Server, Here we use it to find the IP address of google DNS server.
+
+Install bind-utils software using yum command.
+
+now find the IP address of Google and Facebook DNS.
+
+Step 4 : Change The rules in Routing Table —
+
+Delete Previous rules so that we lost connectivity from entire internet.
+
+Using route del command

@@ -1,0 +1,33 @@
+Container packaging is very popular today: it allows a full customization of the execution environment and is language agnostic. More and more applications use it.
+
+So now, to validate the production environment behavior, the developers need to test the containers, not only the workload with unit tests.
+
+In some cases, the containerized app can required to access to Google Cloud API and thus, to be authenticated. When deployed on Google Cloud services, metadata server is reachable and provides the Application Default Credentials (ADC).
+
+How to get authenticated locally with ADC for testing?
+
+By definition, the container run in an isolated environment. That means that your local configuration isn’t known from inside the container, and thus your credentials aren’t loaded
+
+Service account key file solution
+
+If you go on Google search with this query google cloud container test authentication , the first link leads you to Cloud Run local test tutorial.
+
+It’s a great tutorial which explains how to load credentials in the container runtime environment for local tests.
+
+But the suggested JSON file to use is a service account key file. It must be generated and stored locally!
+
+This solution isn’t safe enough and, as described in my previous article, I would like to avoid service account key files. Furthermore, it’s a great question of Eran Chetzroni which has inspired this article.
+
+Local environment and user credentials
+
+When you code your app on your local environment, you use Google auth libraries according with your prefered languages. This library can be used directly in your code, or it can be used as dependency in service specific libraries, such as Cloud Storage client library.
+
+The Google auth library tries to get a valid credentials by performing checks in this order
+
+Look at the environment variable GOOGLE_APPLICATION_CREDENTIALS value. If exists, use it, else…
+
+value. If exists, use it, else… Look at the metadata server (only on Google Cloud Platform). If it returns correct HTTP codes, use it, else…
+
+(only on Google Cloud Platform). If it returns correct HTTP codes, use it, else… Look at “well-know” location if a user credential JSON file exists
+
+The “well-known” locations are

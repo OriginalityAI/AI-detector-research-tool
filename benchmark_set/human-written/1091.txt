@@ -1,0 +1,25 @@
+Toto, I Have a Feeling We’re Not In Kansas Anymore
+
+Intro
+
+I would like to share the important lessons I have learned writing smart contracts in solidity to protect the value locked in them. Paranoia, testing, giving yourself space to think and continuous feedback from auditors are mantras you must adopt if you want your contracts to survive the treacherous territory that is the dark forest. You might not sleep well when your smart contracts go live on mainnet and have a significant amount of money locked in them, but it’s better to be prepared and know the risks than walk into this blind.
+
+Paranoia
+
+The first lesson is to stay paranoid and think about how you would go about breaking this software if you were an adversary. In order to survive, think from first principles. You must spot not only the obvious attacks that allow someone to drain money through a simple function call, but also think about how someone could manipulate share prices using flash loans or other means to extract value in an unintended manner. If you have the resources, ensure one person’s role on your team is to think about how to break your code. Code reviews should be a regular part of development with engineers thinking through how they can break code and carefully examining the assumptions that went into the software that was created. If you have time, take a day to write out all of the external functions that can change state and think through all of the ways that someone could remove funds without authorization. Assume nothing when you are trying to break your code and try all paths.
+
+Testing
+
+You can never invest enough in testing, ever. It would be easy to just ignore this and say that the auditors will catch issues, but the reality is, auditors miss large vulnerabilities every day, so that isn’t really something you can put all your faith in. Instead, take personal responsibility for security and test the team’s code as much as you can. You should write tests that not only follow the happy path, but also ones that try the sad path and use restricted functions or features from an unauthorized account. Your testing strategy should have a multi-pronged approach. Integration testing is by far the most valuable type of test you can do as it simulates what will actually happen in production. Integration testing is even more powerful now that most blockchain test frameworks allow you to fork mainnet to simulate what would actually happen if your smart contracts ran on mainnet at a particular point in time. Unit tests are also helpful, but because they will need mocks to test complex functions, they might not be as useful as the integration tests. Other static and dynamic analysis tools should be run at regular intervals such as slither which can detect all sorts of different vulnerabilities.
+
+Time
+
+Most startups are trying to ship as fast as possible to avoid obsolescence and secure market share. However, developing secure software is a process and if you skip steps, it is unlikely that things end well. Taking a bit longer to do proper testing and auditing is a small price to pay compared to the financial and reputational damage that occurs when code gets hacked. If a piece of code looks fine but you aren’t ready to approve it for some reason that you can’t put a finger on, give it some time and come back to it. Trust your instincts, I have caught critical bugs by stepping away from a code review and then coming back later and questioning all assumptions from the ground up.
+
+Audit(or)s
+
+If you aren’t thinking about engaging auditors or at least other engineers external to your team to do code reviews, you probably shouldn’t be thinking about working with smart contracts in the first place. Auditors are the last line of defense between your code leaving your local or testnet environment and going into the real world. Auditors should be engaged throughout the software development life cycle so that they have a good understanding of the system and can give relevant and contextual feedback on updates and new code.
+
+We’re Not in Kansas Anymore
+
+Ultimately, even with all of this preparation and process, you will have to take a leap of faith and hit the deploy button. Once you’ve gone through all of the testing, auditing, code reviews, code re-reviews, you will need to release the code into the wild. At this point, you have done everything in your power to avoid hacks by testing, emphasizing code reviews, and getting your code reviewed by external parties. We’re not in Kansas anymore. Writing smart contracts carries lots of risk, so buckle up, enjoy the ride and hit the deploy button with confidence!

@@ -1,0 +1,7 @@
+Unity Editor Download Assistant is a software application designed to help users download the latest version of Unity. The new release, Unity 5.3.4p3, offers many improvements, changes, and bug fixes. You can download Unity 5.3.4p3 in two different components installers - one for Windows users and one for Mac users.
+
+Unity 5.3.4p3 offers several improvements to the platform. Windows Store users will benefit from a reduction in platform support module installation size, thanks to Unity players that are now shipped as DLLs instead of static libraries. This release also improves generated C++ code linking time. The installer now includes an updated EULA, improving the user experience.
+
+Unity 5.3.4p3 also includes several bug fixes. These include a fix for an error that Android users encountered on resume, which caused an EGL_BAD_NATIVE_WINDOW error. Another fix addresses the issue of syncing low framerate with vsync off. Unity 5.3.4p3 also includes a fix for a crash that affected exposed skeleton animations, as well as a fix for an issue in which unloaded scenes were removed from the hierarchy after exiting play mode.
+
+Other bug fixes in Unity 5.3.4p3 addressed documentation issues, an issue with invalid file names, and issues with texture glitches caused by sprite packer. Unity 5.3.4p3 also included fixes for issues affecting IL2CPP scripting backend, iOS and Windows Store. Overall, Unity 5.3.4p3 offers many improvements, changes, and fixes designed to enhance the user experience. Download the new release and start building those awesome projects.

@@ -1,0 +1,15 @@
+Cloud web hosting has been on the rise in recent years. Companies such as DigitalOcean and Vultr have emerged as popular options for hosting websites. However, they differ in what they offer, particularly when it comes to extra IP addresses.
+
+Two months ago, I started using DigitalOcean's cloud web hosting after signing up for $10 credits. Initially, I was happy with the service. But, I ran into issues when trying to secure SSL certificates for my other websites hosted on the same instance. DigitalOcean doesn't allow extra IP addresses for SSL purposes, unlike other web hosting companies.
+
+After realizing that DigitalOcean wasn't a good fit for me, I started looking for alternatives. I found Vultr, which not only allows additional IP addresses per instance but also offers better specs for the same cost ($5 per month).
+
+For $5 a month, Vultr offers 768 MB of memory and 15GB of SSD disk storage compared to DigitalOcean's 512 MB of memory and 20GB of SSD disk storage. This makes Vultr a better option for hosting multiple websites on one instance.
+
+Getting started with Vultr was easy, and my server was up and running quickly. I signed up for a free trial through a referral link, which gave me $50 for 60 days. Vultr requires a credit card to sign up but only charges $2.50 for verification, which is refunded to you. Alternatively, you can sign up through their homepage to get $5 to try out.
+
+Unlike DigitalOcean, Vultr allows you to add additional IP addresses to your instance for $2 a month or $0.003 per hour, with a maximum of two additional IPs per instance. This is more than enough for my needs since I don't anticipate running more than three SSL websites with separate IPs per instance.
+
+The lack of additional IPs on DigitalOcean has been a common issue for many users, as seen in an ongoing thread in their support forum. Other users have found ways to get around their issues without needing an extra IP, but for me, I needed one due to the lack of SNI support in Windows XP's IE.
+
+While I believe DigitalOcean should adapt Linode's policy to allow extra IPs for SSL purposes only, I am happy with my decision to switch to Vultr. Overall, I believe hosting providers should listen to their customers and adapt their policies to meet their needs.

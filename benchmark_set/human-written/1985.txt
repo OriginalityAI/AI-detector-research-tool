@@ -1,0 +1,66 @@
+Tweet Tweet Share
+Share
+Last Updated on June 7, 2016
+David Kofoed Wind posted an article to the Kaggle blog No Free Hunch titled “Learning from the best“. In the post, David summarized 6 key areas related to participating and doing well in competitive machine learning with quotes from top performing kagglers.
+In this post you will discover the key heuristics for doing well in competitive machine learning distilled from that post.
+Learning from the best
+Photo by Lida, some rights reserved
+Learning from Kaggle Masters
+David is a PhD student at The Technical University of Denmark in the Cognitive Systems department. Before that he was a masters student and the title of his thesis was “Concepts in Predictive Machine Learning“.
+You would know it from the title, but it is a great thesis. In it, David distills the advice from 3 Kaggle masters Tim Salimans, Steve Donoho and Anil Thomas and an analysis of the results from 10 competitions into an approach for performing well in Kaggle competitions and then tests these lessons by participating in 2 case study competitions.
+His framework has 5 components:
+Feature engineering is the most important part of predictive machine learning
+Overfitting to the leaderboard is a real issue
+Simple models can get you very far
+Ensembling is a winning strategy
+Predicting the right thing is important
+David summarizes these five areas in his blog post and adds a sixth which is general advice that does not fit into the categories.
+Predictive Modeling Competitive Framework
+In this section we look at key lessons from each of the five parts of the framework and additional heuristics to consider.
+Feature Engineering
+Feature engineering is the data preparation step that involves the transformation, aggregation and decomposition of attributes into those features that best characterize the structure in the data for the modeling problem.
+Data matters more than the algorithms you apply.
+Spend most of your time on feature engineering.
+Exploit automatic methods for generating, extracting, removing and altering attributes.
+Semi-supervised learning methods used in deep learning can automatically model features.
+Sometimes a careful denormalization of the dataset can outperform complex feature engineering.
+Overfitting
+Overfitting refers to creating models that perform well on the training data and not as well (or far from it) on unseen test data. This extends to the scores observed on the leaderboard, which is an evaluation of the models on sample of a validation dataset (typically around 20%) used to identify competition winners.
+Small and noisy training datasets can result in larger mismatch between leaderboard and final results.
+The leaderboard does contain information, it can be used for model selection and hyper-parameter tuning.
+Kaggle makes the dangers of overfitting painfully real.
+Spend a lot of time on your test harness for estimating model accuracy, and even ignore the leaderboard.
+Correlate test harness scores with leaderboard scores to evaluate the trust you can put in the leaderboard.
+Simple Models
+Using simple model refers to the use of classical or well understood algorithms on a dataset rather than state-of-the-art methods that are typically more complex. The simplicity or complexity of the model refers to the number of terms required and processes used to optimize those terms.
+Simpler methods are commonly used by the best competitors.
+Beginners move to complex models too soon, which can slow down the learning on the problem.
+Simpler models are faster to train, easier to understand and adapt, and in turn provide more insights.
+Simpler models force you to work on the data first, rather than tune parameters.
+Simple models may be the reproduction of the benchmark, such as an average response by segment.
+Ensembles
+Ensembles refer to the combination of the predictions from multiple models into a single set of predictions, typically a blend weighted by the skill of each contributing model (such as on the public leaderboard).
+Most prize winning models are ensembles of multiple models.
+Ensembles highly tuned models as well as mediocre models gives good results.
+Combining models constrained in diverse ways leads to better results.
+Get the most out of algorithms before considering ensembles.
+Investigate ensembles as a last step before the competition concludes.
+Predict the Right Thing
+Each competition has a specified model evaluation function that will be used to compare predictions made by a model against the actual values. This can define the loss function and the structure of the dataset, but it does not have to.
+Brainstorm many different ways that the data could be used to model the problem.
+Example of modeling flight landing time versus total flight time of a ratio of expected flight time.
+Explore the preparation of models using different loss functions (i.e. RMSE vs MAE).
+Additional Advice
+This section lists additional insights from David and his interviewees for doing well in competitive machine learning.
+Get something on the leaderboard as fast as possible
+Build a pipeline that loads data and reliably evaluates a model it’s is almost harder than you think.
+Have a toolbox with a lot of tools and know when and how to use them.
+Make good use of the forums, both give and take.
+Optimize model parameters late, after you know you are getting the most from the dataset.
+Competitions are not won by one insight, but several chained together.
+Summary
+In this post you discovered a framework of 5 concerns when participating in competitive machine learning: feature engineering, overfitting, use of simple models, ensembles and predicting the right thing.
+In this post we have reviewed David’s framework in key rules of thumb that can be used to get the most from data and algorithms when participating in Kaggle competitions.
+Tweet Tweet Share
+Share
+More On This Topic

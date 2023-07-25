@@ -1,0 +1,35 @@
+Pepsin: A Comprehensive Overview
+
+Pepsin is an essential digestive enzyme in the stomach that helps break down proteins into smaller peptides. It is produced by the chief cells of the gastric glands in the stomach and is one of the leading endopeptidases present in the digestive systems of humans and many other animals. In this article, we provide a comprehensive overview of pepsin, including its structure, digestion function, history, precursor, activity and stability, role in laryngopharyngeal reflux, storage, and inhibitors.
+
+Structure and Digestion Function of Pepsin
+
+Pepsin has a three-dimensional structure comprising one or more polypeptide chains that twist and fold to form an active site, which is the location on the enzyme where the substrate binds and the reaction takes place. As an aspartic protease, pepsin uses a catalytic aspartate in its active site. It is one of the three principal proteases present in the human digestive system, the other two being chymotrypsin and trypsin. These enzymes work together to break down dietary proteins into their components, such as peptides and amino acids, which can be easily absorbed by the small intestine. Pepsin is most active in cleaving peptide bonds between hydrophobic and preferably aromatic amino acids such as phenylalanine, tryptophan, and tyrosine.
+
+History of Pepsin
+
+Pepsin was discovered in 1836 by Theodor Schwann, making it one of the first enzymes to be discovered. The name "pepsin" was derived from the Greek word "pepsis," meaning digestion. Scientists around this time began discovering many biochemical compounds that play a significant role in biological processes, and pepsin was one of them. An acidic substance that could convert nitrogen-based foods into water-soluble material was identified as pepsin.
+
+ precursor of Pepsin
+
+Pepsin is synthesized as a zymogen called pepsinogen, which has an additional 44 amino acids. In the stomach, chief cells release pepsinogen, which is then activated by the hydrochloric acid (HCl) released from the parietal cells in the stomach lining. The hormone gastrin and the vagus nerve trigger the release of pepsinogen and HCl from the stomach lining when food is ingested. The hydrochloric acid creates an acidic environment that allows pepsinogen to unfold and cleave itself in an autocatalytic fashion, thereby generating pepsin, the active form.
+
+Activity and stability of Pepsin
+
+Pepsin is most active at a pH of 1.5 to 2 and can digest up to 20% of ingested amide bonds. Pepsin cleaves preferentially at the C-terminal side of aromatic amino acids such as phenylalanine, tryptophan, and tyrosine. It is inactive at a pH of 6.5 and above but is not fully denatured or irreversibly inactivated until pH 8.0. Pepsin is also unstable at high pH, which has significant implications for laryngopharyngeal reflux disease. Pepsin molecules remaining in the larynx following a gastric reflux event could be reactivated, resulting in damage to the local tissues.
+
+Role of Pepsin in Laryngopharyngeal Reflux
+
+Pepsin is one of the primary causes of mucosal damage during laryngopharyngeal reflux, which occurs when stomach acid and/or content flows back to the larynx and pharynx. Pepsin molecules that remain in the larynx following a gastric reflux event remain stable but could potentially be reactivated, as noted above. Reactive pepsin causes inflamed and irritated tissues in the larynx, leading to the impaired laryngeal immune response.
+
+Storage of Pepsin
+
+Pepsin should be stored at very low temperatures (between -80 °C and -20 °C) to prevent autolysis, which is self-digestion.
+
+Inhibitors of Pepsin
+
+Pepsin can be inhibited by high pH, which disrupts enzymatic activity, or by specific inhibitor compounds. Pepstatin is a low molecular weight and potent inhibitor that is specific to acid proteases with a Ki of about 10−10 M for pepsin. Pepstatin's analog for the transition state for catalysis by pepsin and other acid proteases is responsible for pepstatin's inhibition of pepsin.
+
+Conclusion
+
+Pepsin plays a crucial role in the digestive system of humans and many other animals and is one of the first enzymes discovered. The structure, digestion function, history, precursor, activity and stability, role in laryngopharyngeal reflux, storage, and inhibitors of pepsin provide a comprehensive understanding of the enzyme. Understanding pepsin's role in digestive processes and related disorders is essential in developing therapeutic interventions for related diseases like laryngopharyngeal reflux.

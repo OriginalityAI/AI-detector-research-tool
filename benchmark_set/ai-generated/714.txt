@@ -1,0 +1,13 @@
+Update 4/13/18 V7 of latch in conjunction with an prolonged nub for third birthday birthday celebration shells
+
+Update 7/18/17; Uploaded V6 of the latch
+
+Uploaded a model of the latch that ought to be capable of interact the lids of third birthday birthday celebration alternative shells.
+
+I need those mods to be to be had to the community. They are all nevertheless in development, however I would really like comments from the community.
+
+These are the elements which might be required to mount a Noctua NF-A4x10 5v inner of your Dreamcast.
+
+This mod most effective works in fashions VA1 and VA2 systems.
+
+Additionally you want a 10k resistor while connecting this fan to the system. You location the resistor throughout the Red and Yellow wires at the fan.

@@ -1,0 +1,9 @@
+Advanced Micro Devices is launching its 7th-generation AMD Pro desktop processors for business computers.
+
+The AMD Pro chips are accelerated processing units (APUs), which combine a central processing unit and graphics processing unit on the same piece of silicon. The chips, previously code-named Bristol Ridge, will be available through Hewlett-Packard and other computer manufacturers.
+
+Sunnyvale, Calif.-based AMD is launching four new APUs that will use its AM4 computer platform. Previously, AMD launched Bristol Ridge for laptops, and now it is bringing it to desktops as well.
+
+The APUS have up to four x86 Excavator cores, support for HSA compute acceleration, and the latest DDR4 memory standard. AMD said that the Virtual Super Resolution 2 allows for better visuals on a 1080p display and that it will seem like you’re viewing 4K content. The processor is 17 percent faster than the equivalent Intel Core i5 chip, and the graphics is 88 percent faster, AMD said.
+
+The processor runs at 4.2 gigahertz at 65 watts for the high-end version, and it runs at up to 3.8 gigahertz for the 35-watt version. Power consumption is 32 percent less than the previous generation, while CPU performance is 14 percent better and graphics is 22 percent better.

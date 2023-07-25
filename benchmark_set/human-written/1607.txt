@@ -1,0 +1,35 @@
+Lots of interesting writeups on Java 9 this week.
+
+Here we go…
+
+1. Spring and Java
+
+JUnit 5 brings many new exciting features – one of which will definitely be the native support for parameterized tests.
+
+A quick but comprehensive guide to mapping the @DiscriminatorColumn.
+
+Also worth reading:
+
+Webinars and presentations:
+
+Time to upgrade:
+
+2. Technical
+
+A very interesting analysis of how some of the central points in “Effective Java” have shaped the design of Kotlin.
+
+An interesting idea of “placing” an electronic signature using the WebCrypto API.
+
+Also worth reading:
+
+3. Musings
+
+Having a slow site can be more costly than you might think, so investing in performance is always a good idea.
+
+Also worth reading:
+
+4. Comics
+
+And my favorite Dilberts of the week:
+
+5. Pick of the Week

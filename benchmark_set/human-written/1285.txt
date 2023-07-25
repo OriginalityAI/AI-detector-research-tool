@@ -1,0 +1,29 @@
+Sometimes it is better to avoid the zero line in your Slopegraph
+
+A few days ago PEW Research Center published an article on fertility in the U.S. before the pandemic. One of its takeaways was the decrease in the education gap in fertility over the past two decades. This was supported by the slopegraph showing the share of women who have ever given birth across different levels of education.
+
+I think that the chart selection and limiting the data points was an excellent choice. So what’s wrong with this data visualization?
+
+Original dataviz by Pew Research Center
+
+Good data visualization solutions✔️
+
+Elements that work in this chart
+
+Chart selection — chart aims at showing the change between two points in time, so the slopegraph is a perfect choice. In addition to the absolute values (the points), slopegraph uses the lines which show the degree of change.
+
+chart aims at showing the change between two points in time, so the slopegraph is a perfect choice. In addition to the absolute values (the points), slopegraph uses the lines which show the degree of change. A limited number of time points — as you can see in the footer, the chart is based on data from 6 different years but the data was aggregated into two data points. This computation simplified the data and made the story easier to follow.
+
+Bad data visualization choices❌
+
+Elements that don’t work in this chart
+
+Including zero baseline — unlike the bar or column chart, the line chart doesn’t have to start with zero. This is because we encode the data not by the distance from the x-axis but by its position. For the line chart, we might include the zero baseline, but there are some cases when we should not. One of them is when the range of measurements is small and the distance from the minimum value to zero is large. This is exactly what we have in our chart. Including zero doesn't bring additional value, just squeezes all data points at the top of the scale.
+
+unlike the bar or column chart, the line chart doesn’t have to start with zero. This is because we encode the data not by the distance from the x-axis but by its position. For the line chart, we might include the zero baseline, but there are some cases when we should not. One of them is when the range of measurements is small and the distance from the minimum value to zero is large. This is exactly what we have in our chart. Including zero doesn't bring additional value, just squeezes all data points at the top of the scale. Using separate legend —first of all, there are almost always better ways of describing your data than using a legend. In this particular case, the legend only takes up precious space and squeezes the data even further. Moreover, it’s hard to read because you have to jump back and forth between the legend and the chart.
+
+—first of all, there are almost always better ways of describing your data than using a legend. In this particular case, the legend only takes up precious space and squeezes the data even further. Moreover, it’s hard to read because you have to jump back and forth between the legend and the chart. Palette choice — education is an example of the ordinal scale, which means that the categories have some natural order. The original chart is based on a categorical palette which doesn’t reflect that order.
+
+How to make this data visualization better❔
+
+Step-by-step improvements

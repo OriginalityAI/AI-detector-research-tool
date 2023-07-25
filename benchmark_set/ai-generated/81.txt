@@ -1,0 +1,23 @@
+Watch 268 Watch 268 Star 2,518 Fork 4,838 reactjs / react-router Code Issues 573 Pull requests 109 Projects
+
+I have a question, as far as I understand, in the example above, when you click on the Link component, Link will trigger the router to change the url, then the Route component will re-render, and Route component will trigger the component that it renders to re-render too.
+
+This is why if you click on the Link component, it will also trigger the component to re-render.
+
+But, what if Route component is not the parent component of Link component?
+
+I have the following code example:
+
+class Link extends React.Component { render() { return ( <a href={this.props.to}> {this.props.children} </a> ) } } class Router extends React.Component { render() { return ( <div> <Link to={`/user/${this.props.user.id}`}>{this.props.user.name}</Link> {this.props.children} </div> ) } } class UserPage extends React.Component { render() { return ( <div> <h3>Hello, user!</h3> <Link to="/user/:userId">Back to user page</Link> </div> ) } }
+
+In this example, when I click on the Link component, the Router will change the url to /user/${this.props.user.id} , then the Route component will re-render, and the Link component will trigger the component to re-render.
+
+But, what if the Link component is not the parent component of the Router?
+
+In this example, if I click on the Link component, the Router will not change the url, then the Route component will not re-render, and the Link component will not trigger the component to re-render.
+
+Is there a way to make the Link component trigger the component to re-render even if the Link component is not the parent component of the Router?
+
+Thank you.
+
+There is a way to make the Link component trigger the component to re-render even if the Link component is not the parent component of the Router. You can use the context property of the Link component to pass the context of the Router to the Link component. The context of the Router will include

@@ -1,0 +1,73 @@
+Improving your image matching results by 14% with one line of code
+
+One of the most exciting features in OpenCV 4.5.1 is BEBLID (Boosted Efficient Binary Local Image Descriptor), a new descriptor able to increase the image matching accuracy while reducing the execution time! This post is going to show you an example of how this magic can be done. All the source code is stored in this GitHub repository:
+
+In this example we are going to match these two images related by a viewpoint change:
+
+First of all, it is important to ensure that the correct version of OpenCV is installed. In your favorite environment you can install and check the OpenCV Contrib version with:
+
+pip install "opencv-contrib-python>=4.5.1"
+
+python
+
+>>> import cv2 as cv
+
+>>> print(f"OpenCV Version: {cv.__version__}")
+
+OpenCV Version: 4.5.1
+
+The code needed to load these two images in Python is:
+
+In order to evaluate our image matching program, we are going to need the correct (i.e. ground truth) geometric transformation between both images. It is a 3x3 matrix called homography that when we multiply a point (in homogeneous coordinates) from the first image it returns the coordinates of the point in the second image. Lets load it:
+
+The next step is to detect some parts of the image that can be easily found in the other image: Local image features. In this example we are going to detect corners with ORB a fast and reliable detector. ORB detects strong corners comparing them at different scales and using its FAST or Harris response to pick the best ones. It also finds each corner orientation using the local patch first-order moments. Lets detect a maximum of 10000 corners in each image:
+
+In the following image you can see the 500 corner features with strongest detection response marked with green points:
+
+Well done! Now it is time to represent each of these keypoints in such a way that we can find them in the other image. This step is called description because the texture in a local patch around each corner is represented (i.e. described) by a vector of numbers coming from different operations over the image. There are many descriptors, but if we want something accurate that runs real-time even in mobile phones or low power devices OpenCV has two important methods at hand:
+
+ORB (Oriented FAST and Rotated BRIEF) : A classic alternative that has 10 years old and works reasonably well.
+
+: A classic alternative that has 10 years old and works reasonably well. BEBLID (Boosted Efficient Binary Local Image Descriptor): A new descriptor introduced in 2020 that has been shown to improve ORB in several tasks. Since BEBLID works for several detection methods, you have to set the scale for the ORB keypoints which is 0.75~1.
+
+It is time to match the descriptors of both images to establish correspondences. Lets use the Brute Force algorithm, that basically compares each descriptor in first image with all those in the second image. When we deal with binary descriptors the comparison is done using the Hamming Distance, i.e., counting the number of bits that are different between each pair of descriptors.
+
+A small trick called the ratio-test is also used here. It ensures that not only are the descriptors 1 and 2 similar to each other, but also that there is no other descriptor as close to 1 as 2 is.
+
+Since we know the correct geometric transformation lets check how many of the matches are correct (inliners). We will consider a mach as valid if its point in image 2 and its point from image 1 projected to image 2 are less than 2.5 pixels away.
+
+Now that we have the correct matches inside inliers1 and inliers2 variables, we can evaluate the results qualitative using cv.drawMatches. Each of the corresponding points can help us in higher level tasks such as homography estimation, Perspective-n-Point, plane tracking, real-time pose estimation or images stitching.
+
+Since it is hard to compare qualitative this kind of results, lets plot some quantitative evaluation metrics. The metric that best reflects how reliable is our descriptor is the percentage of inliers:
+
+Matching Results (BEBLID)
+
+*******************************
+
+# Keypoints 1: 9105
+
+# Keypoints 2: 9927
+
+# Matches: 660
+
+# Inliers: 512
+
+# Percentage of Inliers: 77.57%
+
+Using the BEBLID descriptor obtains a 77.57% of inliers. If we comment BEBLID and uncomment ORB descriptor in the description cell, the results drop to 63.20%:
+
+Matching Results (ORB)
+
+*******************************
+
+# Keypoints 1: 9105
+
+# Keypoints 2: 9927
+
+# Matches: 780
+
+# Inliers: 493
+
+# Percentage of Inliers: 63.20%
+
+In conclusion, changing only one line of code to replace ORB descriptor with BEBLID we can improve the matching result of these two images a 14%. This can have a big impact in higher level tasks that need local feature matching to work so do not hesitate, give BEBLID a try!

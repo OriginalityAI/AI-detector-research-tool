@@ -1,0 +1,33 @@
+Factor Analysis in Machine Learning :
+
+Reduce a large numbers of variables into fewer numbers of factors.
+
+2. Puts maximum common variance into a common score.
+
+3. Associates multiple observed variables with a latent variable.
+
+4. Has the same numbers of factors and variables,where each factor contains a certain amount of overall variance .
+
+Eigenvalue : A measure of the variance that a factor explains for observed variables. A factor with eigenvalue < 1 explains less variance than a single observed value.
+
+Factor Analysis Process :
+
+Principal Component Analysis (PCA)
+
+Extract the hidden factor from the dataset. Defines data using less numbers of components,explaining the variance in your data Reduce the computation complexity . Determine that the new data is the part of the group of data points from the training set.
+
+Linear Discriminant Analysis(LDA)
+
+Reduces dimensions. Search the linear combination of variables that best separates two class. Reduce degree of overfitting. Determine how to classify the new observation out of group of classes.
+
+Direction of Maximum Variance:
+
+PCA seeks the linear combination of variables in order to extract the maximum variance. 2. Compute Eigenvector that are principal components of the dataset and collect them in projection matrix. 3. Each of the Eigenvector is associate with Eigenvalue,which is magnitudes. 4. Reduce the dataset into smaller dimensional subspace by dropping the less informative Eigenpairs.
+
+PCA finds line depending on two criteria :
+
+The variation of values should be maximal along this line.
+
+2. The error should be minimum if you don’t reconstruct original two positions of a blue dot from the new position of the red dot.
+
+First Principle Component :

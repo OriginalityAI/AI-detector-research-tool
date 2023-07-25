@@ -1,0 +1,81 @@
+This spurred from some events happening in Gentoo, since with the move to git we eventually have more reviews and obviously comments over patches can be acceptable (and accepted) depending on a number of factors.
+
+This short post is about communicating effectively.
+
+When reviewing patches
+
+No point in pepper coating
+
+Do not disparage code or, even worse, people. There is no point in being insulting, you add noise to the signal:
+
+You are a moron! This is shit has no place here, do not do again something this stupid.
+
+This is not OK: most people will focus on the insult and the technical argument will be totally lost.
+
+Keep in mind that you want people doing stuff for the project not run away crying.
+
+No point in sugar coating
+
+Do not downplay stupid mistakes that would crash your application (or wipe an operating system) because you think it would hurt the feelings of the contributor.
+
+rm -fR /usr /local/foo
+
+Is as silly as you like but the impact is HUGE.
+
+This is a tiny mistake, you should not do that again.
+
+No, it isn’t tiny it is quite a problem.
+
+Mistakes happen, the review is there to avoid them hitting people, but a modicum of care is needed:
+
+wasting other people’s time is still bad.
+
+Point the mistake directly by quoting the line
+
+And use at most 2-3 lines to explain why it is a problem.
+
+If you can’t better if you fix that part yourself or move the discussion on a more direct media e.g. IRC.
+
+Be specific
+
+This kind of change is not portable, obscures the code and does not fix the overflow issue at hand:
+
+The expression as whole could still overflow.
+
+Hopefully even the most busy person juggling over 5 different tasks will get it.
+
+Be direct
+
+Do not suggest the use of those non-portable functions again anyway.
+
+No room for interpretation, do not do that.
+
+Avoid clashes
+
+If you and another reviewer disagree, move the discussion on another media, there is NO point in spamming
+
+the review system with countless comments.
+
+When receiving reviews (or waiting for them)
+
+Everybody makes mistakes
+
+YOU included, if the reviewer (or more than one) tells you that your changes are not right, there are good odds you are wrong.
+
+Conversely, the reviewer can make mistakes. Usually is better to move away from the review system and discuss over emails or IRC.
+
+Be nice
+
+There is no point in being confrontational. If you think the reviewer is making a mistake, politely point it out.
+
+If the reviewer is not nice, do not use the same tone to fit in. Even more if you do not like that kind of tone to begin with.
+
+Wait before answering
+
+Do not update your patch or write a reply as soon as you get a notification of a review, more changes might be needed and maybe other reviewers have additional opinions.
+
+Be patient
+
+If a patch is unanswered, ping it maybe once a week, possibly rebasing it if the world changed meanwhile.
+
+Keep in mind that most of your interaction is with other people volunteering their free time and not getting anything out of it as well, sometimes the real-life takes priority =)

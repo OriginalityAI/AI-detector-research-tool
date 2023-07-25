@@ -1,0 +1,15 @@
+Four anticipated variants of the LG G3 smartphone model have recently been identified, all heading to the United States market. The identified variants are LG D850 for AT&T, LG-D851 for T-Mobile, LG-LS990 for Sprint, and LG VS985 for Verizon Wireless.
+
+[Update]
+
+LG has made revisions to the User Agent (UA) Profile for the LG D855 model, with the updated profile showcasing a 1440x2560 display resolution for the device.
+
+Another potential variant of the upcoming LG G3, carrying the model number LG-D855, has received approval from Postel, a telecommunications certification agency. Alongside this development, the LG-D855 has been referenced in an updated UA Profile on LG's official website. Key specifications from the profile include a 1440x2560 pixel resolution display, Android KitKat 4.4.2 operating system, and compatibility with both LTE and 3G networks.
+
+Based on these findings, it is speculated that LG could plan to release the G3 (D855) sometime in June. With the LG D855 having received Postel approval on April 22, a potential launch date might fall in early June, possibly around June 6. This estimation is derived from the average timeframe of approximately 45 days between a device receiving Postel approval and its actual release to the market.
+
+[Update]
+
+In the company's most recent earnings report, LG has officially confirmed that they plan to introduce the LG G3 within the second quarter of this year.
+
+Source: Postel, D855 UA Profile

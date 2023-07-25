@@ -1,0 +1,5 @@
+If you don't know your printer type, use the wizard to find out. 
+ 
+ All 3D printers are different and produce slightly different 3D printed objects. Therefore, the printer needs to be calibrated to ensure a perfect fit between the 3D printed parts and the LEGO bricks. 
+ 
+ Download and print a test strip for calibration.

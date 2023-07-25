@@ -1,0 +1,17 @@
+2. A decentralized solution based on Blockchain and smart contracts
+
+DataBroker DAO platform is based on four type of population : the owner of sensors who have sensor data to sell, the buyer of data who buy data for its own purposes, the data processor who buy data in order to enrich them and resell them to their customers and the gateway operator which expose the gateway they operate to allow sensor owners to sell their data on the platform.
+
+Currently, data emitted by IoT sensors flow only to the sensor owner’s private silo via a wireless sensor network (WSN) and gateway operators that are typically operated by telecommunication companies or sensor manufacturers directly.
+
+In order to the owner of the sensors can sell their data to potential buyers, it will be necessary to add an interconnection between the gateway operator and the DataBroker marketplace. For this, the gateway operator will have to set up his own Ethereum blockchain node in order to run the DataBroker DAO APi over it.
+
+To sell their data on the marketplace and give them visibility, sensor owners must pay a certain number of DXT tokens. These DXT tokens will be staked by the marketplace to guarantee the good behavior of the seller. If the seller wants to have a better visibility on the marketplace, he can fulfill a larger number of DXT tokens.
+
+Once the data is present on the marketplace, buyers can discover and buy an access to these data by paying with DXT tokens.
+
+In the case where the buyer is not satisfied by the data received, he can launch a “challenge” on these data (equivalent to a negative opinion) by paying a certain amount of DXT tokens. In the case of a single negative opinion, there will be no impact for the data and the seller. On the other hand, if several challenges are launched, a verification by a DataBroker DAO administrator will be carried out. If the administrator agrees with the buyers, they will share with the platform the vendor’s DXT tokens staked during the uploading of the data. In the opposite case, buyers’ tokens blocked during the launch of the challenge will be shared between the seller and the platform.
+
+Once the data has been purchased, data must be sent to the buyer’s storage. The gateway operator is already configured to flow the data from the sensors to the owner’s private silo. Thus, adding additional routing of purchased data to an Internet location is simply an extension of its current process. To perform this operation, the gateway operator will receive 10% of each transaction as a DTX token. For its part, the DataBroker platform also receives 10%. The most important part of the transaction is for the owner of the sensor who receives the remaining 80%.
+
+This entire process is based on the use of smart contracts put in place by Databroker DAO on the Ethereum network. The image below describes all the processes that are going on around this smart contracts.

@@ -1,0 +1,15 @@
+How Pact works?
+
+Pact consists of a central server which is called as broker to store and keep track of contract files between consumers and providers.
+
+A consumer, as its name, is a service which consumes a provider which is another service which provides the expected functionality. In order to verify the compatibility of integration between consumers and providers, pact expects us to create contract files.
+
+Each consumer should create a contract file -which is basically a json file- specifying, given a request sent to specified provider, expected response fields, types, headers etc.
+
+Pact provides tools for several languages to generate this contract files over unit tests of your client functions. We call this step as consumer test.
+
+After creating contract files, we are versioning them and publishing it to pact broker to test it against provider later on. When contract is published to broker, we are ready to test if our provider is really compatible with this contract or not. We call this step as provider test. In this step, all contracts belongs to the provider is fetched from broker and validated against provider service in isolation.
+
+What do you mean by “in isolation”? We are mocking all dependencies of provider service in this step, because we only want to validate the contract not the functionality. And this is one of the very points where Pact shines. To validate the compatibility between services, we don’t need to spin up all services together, we don’t need to depend on test data, basically avoiding time consuming and brittle end-to-end tests.
+
+Provider test publishes the verification result back to broker to save it. By this way, we have all the compatibility matr between consumers and providers for each version of them. We can utilize this information to decide whether deploy the specific version consumer or not.

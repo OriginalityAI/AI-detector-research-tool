@@ -1,0 +1,19 @@
+’s talked about the subject – back in 1959, he’d proposed the idea that computers could be built using individual atoms or molecules, and thus would be able to store and process information at the atomic level.
+
+Feynman was convinced, in fact, that these “nanocomputers” would become a reality in the relatively near future, and that they would be orders of magnitude smaller and faster than the silicon-based computers of the day.
+
+Twenty-seven years later, a team of scientists led by IBM has finally developed the world’s first “nanophotonic avalanche photodetector” – a device that can detect the presence of electromagnetic radiation at the nanoscale.
+
+The device uses a combination of silicon and germanium, and it operates at room temperature, which is a significant achievement. It could open up a range of new applications for nanotechnology, including single-molecule identification in medical and biological research.
+
+It’s worth noting, however, that this latest breakthrough is still a long way from Feynman’s vision of nanocomputers – it’s merely a sensor, rather than a processor. But it nonetheless represents a significant step forward in the ongoing quest to push back the limits of what’s possible in the world of computing.
+
+What’s intriguing about Feynman’s work is that it’s still as relevant today as it was back in the 1950s and 60s. The quest to build ever-smaller, ever-faster computers has been a consistent theme of the past 60 years, and it’s showing no signs of slowing down.
+
+The pace of technological change has been breathtaking over the past half-century, and it’s set to go on accelerating for the foreseeable future. But despite all the advances we’ve made, the ultimate goal – building a computer that can match the power and flexibility of the human brain – remains tantalisingly out of reach.
+
+Perhaps it always will be, but that’s no reason to stop trying. As Feynman himself put it, “Nature uses the laws of physics to compute what the next state of the world will be. What we’re trying to do is to create something like that for ourselves.”
+
+And who knows? Maybe someday we’ll get there. Maybe we’ll find a way to build computers that are capable of true artificial intelligence, of creating and experiencing art, of imagining and feeling emotion.
+
+Or maybe not. But the journey is worth taking nonetheless, because it’s through that journey that we learn about ourselves and our place in the universe. And that, ultimately, is what true science is all about.

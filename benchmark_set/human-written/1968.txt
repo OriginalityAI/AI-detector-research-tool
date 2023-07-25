@@ -1,0 +1,83 @@
+WeakRefs
+
+WeakRef stands for Weak References. The main use of weak references is to implement caches.
+
+Since JavaScript is a garbage collected language, if a variable is no longer reachable, the GC automatically removes it. As a good practice, we would not want to keep a lot in memory for a long time. We can allow the memory to be garbage collected and later if we need it again, we can generate a fresh cache.
+
+Example:
+
+// callback function
+
+const callback = () => {
+
+const obj = {
+
+name: "Harsha"
+
+};
+
+console.log(obj);
+
+} // IIFE function to print the object after 3 secs
+
+(async function(){
+
+await new Promise((resolve) => {
+
+setTimeout(() => {
+
+callback(); // {name: "Harsha"}
+
+resolve();
+
+}, 3000);
+
+});
+
+})();
+
+The above example might seem complicated. But, it is actually simple. The code basically calls a callback function after 3 seconds, where the function prints an object. Whenever we call the callback function, the obj is still present in the memory. To manage cache efficiently we can use WeakRef .
+
+// callback function
+
+const callback = () => {
+
+const obj = new WeakRef({
+
+name: "Harsha"
+
+});
+
+console.log(obj.deref().name);
+
+} // IIFE function to print the object after 2 and 5 secs
+
+(async function(){
+
+await new Promise((resolve) => {
+
+setTimeout(() => {
+
+callback(); // Guaranteed to print "Harsha"
+
+resolve();
+
+}, 2000);
+
+});
+
+
+
+await new Promise((resolve) => {
+
+setTimeout(() => {
+
+callback(); // No Gaurantee that "Harsha" is printed
+
+resolve();
+
+}, 5000);
+
+});
+
+})();

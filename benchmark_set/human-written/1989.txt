@@ -1,0 +1,43 @@
+Johnlewis.com is quietly one of the biggest e-commerce sites in the UK, we take over £2bn in sales which continues to grow each year and are the 3rd biggest site in terms of traffic share in the UK.
+
+We currently have 23 product teams working to iterate our digital experiences for both customers and internal partner facing applications. This is continuously growing and we are always looking to expand the capacity of the platform to enable more innovation to reach the market to delight our customers.
+
+Decision making — Assumption and gut over data
+
+We are lucky at JL&P to have some very experienced and capable people leading us, and they use their experience and judgement to focus and make the right decisions.
+
+However, this is a complex continuously evolving system of delivery. With constantly shifting and churn of people, proposition and priority it is hard to see what is really happening. It makes it difficult to answer questions like :
+
+Where are our constraints?
+
+Where do we need to prioritise our focus to improve our capacity or flow?
+
+What issues are hidden that we don’t yet know about that could impact us?
+
+So we have decided to embark on an initiative to gather, analyse and most importantly act on the new insight data can give us.
+
+The Vision for JL&P Digital Health
+
+We have then turned the above into a vision of what we want to achieve:
+
+We want to make decisions to put John Lewis & Partners in a stronger position We need more information to make better decisions by validating our assumptions We want to build a health engine that helps us understand the health of John Lewis & Partners Digital The data we collect will pinpoint the most valuable conversations we need to have The conversations we have will generate further information and help us make better decisions
+
+The Four Quadrants of Digital Health
+
+We started by asking the question given our vision, what are the areas of focus for measurement.
+
+We initially started in the areas we are closest to in delivery -
+
+Flow : how quickly are the teams getting to customer value release, and how much customer value releasing things can our system of work release?
+
+how quickly are the teams getting to customer value release, and how much customer value releasing things can our system of work release? Quality — how good is our releasable product?
+
+Many others pioneers in the dev/ops movement have defined good metrics to track this, eg lead time to first deploy, deployment interval, Mean time to recover and change failure rate. We are looking to implement these as our core flow metrics.
+
+The conversation then rapidly moved on to what else? If our flow and quality are tracking in the right direction so what? We need other vectors to measure our overall health to ensure we have a rounded view of how we are doing. We settled on the following additional focus areas -
+
+Morale — What is our culture like? How are people who work in our organisation feeling?
+
+— What is our culture like? How are people who work in our organisation feeling? Customer Impact — What are is the quantitative and qualitative impact we are having on our customers?
+
+We created a mind map of the four focus areas:

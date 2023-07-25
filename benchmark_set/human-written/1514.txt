@@ -1,0 +1,23 @@
+Secure Data Links is proud to be one of the reviewed oracles live on Chainlink Mainnet. Our node infrastructure employs Kubernetes to maintain node uptime guarantees with reliably fast response times.
+
+The Chainlink ecosystem is growing with many high-quality oracles joining the network and plenty of useful smart contracts being serviced. We are confident that Chainlink will be the industry standard for oracles and we intend on leveraging the network to work with other teams to build exciting smart contract applications.
+
+The State of the Network and Market
+
+Innovations such as Linkpool’s Listing Service, Fiews Ethereum as a Service, Honeycomb’s API Marketplace and others are ensuring that existing oracles and data requesters have a useful set of tools to start deploying quality oracles and data-driven smart contracts. There are currently many Chainlink oracles that are on standby to supply data for smart contracts. This is a positive sign that when demand for decentralised inputs increases it will be met by quality oracles that are competing for work. Chainlink’s measured and controlled approach to building out their decentralised network will transition into a more fast-paced autonomous job-matching economy with the integration of SLAs (service level agreements) and a coordinator contract.
+
+The important development of Mixicles has opened the door to privacy-oriented smart contracts. For enterprise applications where confidentiality is key, Mixicles enables smart contracts to be executed on public chains with transaction details kept private, rather than having to set-up more purpose specific private chains. Coupling Mixicles with new protocols such as DECO will unlock highly secure Defi smart contracts that are optimised for confidentiality.
+
+Currently, the demand for secure data in Defi smart contracts is increasing. Several attacks on oracles have reinforced to the market that security by decentralisation is a requirement for running a reliable finance application. It’s only a matter of time before security through obscurity approaches to oracles and providing data for high-value contracts will fail, and more than likely result in devastating financial implications.
+
+Defi applications have extreme value propositions as they continue to open up the consumer market for financial instruments such as margin trading, options and synthetic assets. One only has to spend 5 minutes researching to realize that the barrier to entry for trading financial instruments is far too high. We expect this increasing demand for data to sustain as the potential for these financial applications are further developed out. It is exciting to see innovative applications like Synthetix integrate with the Chainlink and demonstrate the use-case of oracles being used to update contracts if and when the price changes by a specified basis point (e.g. 1% deviation in price, trigger oracle to update contract).
+
+Our Direction
+
+For Secure Data Links, network integration is number one. Our Brisbane based team are solution oriented and specialise in providing secure inputs and outputs for any smart contract needs. We are focused on being a trusted, long-term service provider for the Chainlink network whilst building relationships with other oracles, data providers and smart contract creators.
+
+Behind the scenes SDL has been developing solutions that will help to build layers of trust and reliability for the entire Chainlink ecosystem. We intend to release more on our staking platform when the penalty deposit functionality is further built out by the Chainlink development team. In the meantime, try out our simple Ropsten test app here.
+
+After recently competing in the Chainlink Virtual Hackathon and submitting our prototype for a LINK Total Return Swap we intend to continue to illustrate exciting use-cases for smart contracts powered by Chainlink, in the finance space and elsewhere. A massive congratulations goes to the Chainlink team and all other competitors for such a great hackathon.
+
+To find out more about Secure Data Links and integrate with our decentralised oracle click here. Follow us on Twitter for future updates.

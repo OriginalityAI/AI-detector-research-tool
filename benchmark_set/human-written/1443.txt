@@ -1,0 +1,43 @@
+In Android, we are making changes to enhance user privacy and platform security to provide our users with a safer experience. Apps targeting Android 11 (API level 30) or higher will only see a filtered list of apps that are installed on a device. In order to access apps beyond that filtered list, an app will need to declare the apps they need to interact with directly using a <queries> element in the Android manifest. This blog post will go through best practices of how to adapt to this feature.
+
+Querying and interacting with apps:
+
+There are different ways to query and interact with apps:
+
+If you know the specific set of apps that you want to query or interact with, include their package names in a set of <package> elements inside the <queries> element.
+
+If your app needs to query or interact with a set of apps that serve a particular purpose, but you might not know the specific package names to include, you can list intent filter signatures in your <queries> element. Your app can then discover apps that have matching <intent-filter> elements.
+
+If you need to query a content provider but don’t know the specific package names, you can declare that provider authority in a <provider> element.
+
+We encourage data minimization by querying only for the packages you need to interact with. QUERY_ALL_PACKAGES or equivalently broad <intent> elements should only be used by apps that need this level of information. Our new Package Visibility policy introduces an approval process for the new QUERY_ALL_PACKAGES permission which controls access to the complete inventory of installed apps on a device.
+
+Activity flags:
+
+Most common use cases don’t require your app to have package visibility at all. For many scenarios, you can use startActivity() and catch an exception if there is no app that can open this intent.
+
+While you can start any activity without visibility of the target, you can’t query for the availability of that activity before starting it or learn which specific app will be launched because it is an implicit intent. Instead, you will be notified when you start if it doesn’t resolve. If you want to be more selective about what opens, you can use flags.
+
+A common example that uses flags is Custom Tabs, which allow a developer to customize how a browser looks and feels and have more control over the web content experience. Links will correctly open in non-browser apps if available, but flags help in advanced cases when developers want to be selective about handling the content in a native application before using custom tabs. In short, this flag helps a developer determine if there’s a native app to navigate to and from there they can handle it how they want.
+
+FLAG_ACTIVITY_REQUIRE_NON_BROWSER
+
+This flag only launches the intent if it resolves to a result that is not a browser. If no such result exists, an ActivityNotFoundException will be thrown and your app can then open the URL in a custom tab.
+
+If an intent includes this flag, a call to startActivity() causes an ActivityNotFoundException to be thrown when the call would have launched a browser app directly or the call would have shown a disambiguation dialog to the user, where the only options are browser apps. To read more about flags, see Configuring package visibility based on use cases.
+
+Customizing a share sheet
+
+We recommend using the system share sheet instead of a custom one. You can customize the system share sheet without needing app visibility. Refer to this documentation for more information.
+
+Debugging Package Visibility
+
+You can easily check your manifest to see all queries included. In order to do this, go to your manifest file and choose Merged Manifest.
+
+You can also enable log messages for package filtering to see how default visibility affects your app:
+
+Next steps:
+
+For more information on Package Visibility, check out these resources:
+
+Happy coding!

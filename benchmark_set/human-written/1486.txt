@@ -1,0 +1,73 @@
+On the surface, the differences might not seem like a big deal, but in fact each legal entity is unique. More importantly, each has varying rights and benefits. Perhaps an example can illustrate. Take a look at Apple, for instance:
+
+“Apple Inc.” is the business entity name. This is what denotes the legal entity, which in this case is a publicly traded U.S. corporation.
+
+“Apple.com” is a domain name, but this denotes only one of the domain names owned by Apple Inc. Others include me.com, icloud.com, itunes.com, iPhone.com, iPad.com — the list goes on.
+
+“Apple” is a registered federal trademark with the U.S. Patent and Trademark Office. The trademark denotes that the source of the goods or services sold in conjunction with the word “Apple” is Apple Inc. — and its subsidiaries. Apple owns many other federal trademarks too, including iPhone, iPad, Mac, etc.
+
+At first glance, a business’ entity name, domain name and trademark seem incredibly similar. All include the name “Apple,” right? But, from a legal standpoint, it’s important to point out that each is different, because the legal rights associated with each are quite different.
+
+Let me explain. . .
+
+Business entity name
+
+A business entity name is generally registered in conjunction with the formation of a separate legal entity at the state level through state governmental authorities, such as the secretary of state, the state’s corporation commission, etc. Common types of business entities include, but are not limited to:
+
+Corporations
+
+Limited Liability Companies (LLCs)
+
+Limited Partnerships
+
+A business entity is a fictional separate legal person and generally enables limited liability protection from the debts of an entity for the owners of a separate legal entity.
+
+For example, if the corporation owes $1 million and doesn’t have the assets to pay that debt, the owners of the corporation — called shareholders — are not personally responsible to pay that debt. This is true only as long as they haven’t personally guaranteed the debt and haven’t engaged in “bad behavior” to otherwise jeopardize that protection.
+
+Although limited liability protection can be very significant, in most states, there aren’t a whole of rights associated with business entity names that enable you to prohibit someone else from using a confusingly similar name to your business entity.
+
+Domain name
+
+A domain name is a series of numbers and/or letters that:
+
+may point to a website;
+
+may point to services such as FTP; or
+
+may be associated with email addresses.
+
+Domain names are typically registered by ICANN-accredited registrars. Because of this centralized registration process, domain names are different from both business names and trademarks because the rightful owner of the domain name can generally prohibit someone else from using it without involving the courts.
+
+Perhaps more surprising, however, is that almost anyone can buy your same domain name with a different top level domain, in many cases. For example, if you own the domain name your-company.com, other people can generally buy your-company.net or your-company.org.
+
+With all of that in mind, consider that the use of a domain name can create common law trademark rights in the domain name. That’s where things get confusing.
+
+Trademarks
+
+In the United States, there are two types of trademarks: state trademarks and federal trademarks.
+
+State Trademarks. State trademarks are valid only in the state or states in which they are used or registered. These are acquired when a business uses a trademark in conjunction with the sale of goods or the provision of services. But here is the surprising part: State trademarks generally don’t need to be registered at the state level before you can use them. Actually, your use of a trademark generally gives you rights in that trademark automatically.
+
+Many states call state trademark registrations “DBAs” or “doing business as.”
+
+Even though state registration is not generally required, there are benefits to state trademark registration. Many times, state trademarks get benefits that are not otherwise granted to trademarks that aren’t registered with the state. Still, these rights vary from state to state.
+
+Unlike a business entity name, the standard used to determine trademark infringement is much more rigorous and involved than the standard used to determine whether a business-entity name infringes upon another business’ entity name. Specifically, courts often look at whether one state trademark is confusingly similar to another and is likely to cause confusion among the buying public.
+
+Federal trademarks. Federal trademarks are generally considered the “holy grail” when it comes to protecting a brand. Valid federal trademarks are automatically valid throughout the entire United States, with some limited exceptions, and don’t require state registration. In addition, the rights afforded to federal trademarks are more significant than the rights associated with state trademarks.
+
+In particular, the owners of federally-registered trademarks are granted the following rights:
+
+The right to use the trademark nationwide
+
+The right to file for an injunction
+
+The right to file for monetary damages
+
+The right to prohibit importation
+
+At first glance, these rights may not seem that significant; however, a further examination shows that they can effectively enable one brand to prohibit any other brands from using a particular trademark throughout the United States and worldwide, according to the Madrid Protocole.
+
+Are you protected?
+
+Although a business’ entity name, domain name and trademark all appear similar on the surface, they’re not. If you’re going to spend a lot of time and money developing your business and brand, it’s critical to understand the distinctions between and among these concepts and the rights associated with them.

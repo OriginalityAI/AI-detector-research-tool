@@ -1,0 +1,93 @@
+Blogging with org-mode: How to Create a Simple and Minimalist Blogging Site
+
+Are you looking for a way to create a simple and minimalist blog without needing to mess around with complex site generators or plugins? Have you tried using Org-mode and its publishing feature?
+
+Org-mode is a powerful and flexible mode for Emacs that can be used to organize and write notes, documents, and even blogs. Its publishing feature allows you to easily convert Org files into HTML files that can be served as a static website. In this article, we’ll walk through how you can use Org-mode to create a simple and minimalist blogging site without needing anything else.
+
+Before we dive into the details, let us first understand what drove the author of the original post to look for an alternative site generator. Initially, the post was hosted on a free Purdue University webspace and generated using Pelican, a Python-based static site generator. While this worked well for a while, the author faced issues with the slow host, the occasional breakage of Pelican, and the website's unencrypted HTTP connection.
+
+To overcome these problems, the author turned towards Org-mode and its publishing feature. By using some custom CSS, HTML, and Elisp, the author created a set of Org source files that are published as a static website. Here's an overview of the author's configuration:
+
+1. The website files are held in the ~/repos/blog directory and version controlled using Git.
+
+2. Org-mode files are divided into three categories: /blog/ - each blog post is contained in an individual Org file; /pages/ - static pages sit in their directory as Org files, and /res/ - contains custom CSS and the MathJax JavaScript.
+
+3. Org's publishing function org-publish is used to generate simple and easy-to-read HTML files from source files.
+
+4. After the HTML files are generated, they are pushed onto a server that runs nginx on Ubuntu 14.04 using rsync to push content.
+
+By using Org's publishing function and Elisp, the author created a simple and elegant website that is easy to maintain and customize. With that said, let us look at how we can set up a simple and minimalist blog using Org.
+
+First, you need to enable the Org HTML export backend that is used extensively when publishing via org-publish. You also need to enable RSS publishing backend, which enables you to generate an XML-based RSS feed that can be used by readers to stay updated on new posts.
+
+```
+(require 'ox-html)
+(require 'ox-rss)
+(setq org-export-html-coding-system 'utf-8-unix)
+(setq org-html-viewport nil)
+```
+
+Next, you'll need to define website headers, footers, and stylesheets. Here's an example:
+
+```
+(setq my-blog-extra-head (concat "<link rel='stylesheet' href='/../res/code.css' />
+" "<link rel='stylesheet' href='/../res/main.css' />" ))
+
+(setq my-blog-header-file "~/repos/blog/header.html")
+(defun my-blog-header (arg)
+  (with-temp-buffer
+    (insert-file-contents my-blog-header-file)
+    (buffer-string)))
+(setq my-blog-footer "<hr />
+<p><span style=\"float: left;\"><a href= \"/blog.xml\">RSS</a></span> License: <a href= \"https://creativecommons.org/licenses/by-sa/4.0/\">CC BY-SA 4.0</a></p>
+<p><a href= \"/contact.html\"> Contact</a></p>
+")
+```
+
+Org-mode encloses any additional content in drawers, which we can export to HTML using the following function:
+
+```
+(defun my-blog-org-export-format-drawer (name content)
+  (concat "<div class=\"drawer " (downcase name) "\">\n"
+          "<h6>" (capitalize name) "</h6>\n"
+          content "\n"
+          "</div>\n" ))
+```
+
+You can also use MathJax with your blog posts. Here's how:
+
+```
+(setq my-blog-local-mathjax
+      '((path "/res/mj/MathJax.js?config=TeX-AMS-MML_HTMLorMML")
+        (scale "100")
+        (align "center")
+        (indent "2em")
+        (tagside "right")
+        (mathml nil)))
+```
+
+Finally, we can generate a simple and elegant sitemap that shows preview content of each post. Note that the preview content is enclosed in `#+BEGIN_PREVIEW...#+END_PREVIEW` tags in each post Org file:
+
+```
+(defun my-blog-get-preview (file)
+  "The comments in FILE have to be on their own lines, preferably before and after paragraphs."
+  (with-temp-buffer
+    (insert-file-contents file)
+    (goto-char (point-min))
+    (let ((beg (+ 1 (re-search-forward "^#\\+BEGIN_PREVIEW$")))
+          (end (progn (re-search-forward "^#\\+END_PREVIEW$")
+                      (match-beginning 0))))
+      (buffer-substring beg end))))
+
+(defun my-blog-sitemap (project &optional sitemap-filename)
+  "Generate the sitemap for my blog."
+  (let* ((project-plist (cdr project))
+         (dir (file-name-as-directory (plist-get project-plist :base-directory)))
+         (localdir (file-name-directory dir)))
+    ...
+  ))
+```
+
+And that's it! With these configurations and customizations in place, you can use org-publish to generate your blogging site, which you can then deploy anywhere you want.
+
+In conclusion, Org-mode, with its publishing feature, offers a simple and minimalist way to create a blogging site. With some customizations and additional Elisp, you can create an elegant website that is easy to maintain, customize, and deploy. Give it a try!

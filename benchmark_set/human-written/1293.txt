@@ -1,0 +1,37 @@
+Incredibles, Banks and Black Swans
+
+Perhaps you’ve seen the new Incredibles 2. We prepared to watch the movie by first viewing the original film and one scene struck me. Mr. Incredible asks Edna, his prickly fashionista, for a stylish new cape. Edna excoriates him with tales of victorious heroes felled in tragic cape accidents. NO CAPES, says Edna!
+
+Edna to Mr. Incredible: “no capes!”
+
+Even Mr. Incredible himself requires the wisdom of an experienced designer to mix safety with aesthetics. And so it goes with tethered coins, many have superb looking systems that make the mistake of including a cape, or in this analogy, a bank.
+
+Why no banks? Just ask the founders of Long Term Capital and check this list of bank failures. In 1998, Long Term Capital’s two Nobel Prize winning founders lost $4.6bn in four months and nearly crashed the financial system. Ten years later, we had another (unrelated) financial crisis. Financial institutions keep re-learning the need for anti-fragile design that assumes black swans are the rule not the exception. Chemical plants explode from time to time, and so do financial institutions. So, first no capes, and then no banks!
+
+But what if banks are impossible to avoid? For now at least, an audit of a bank account may be “as good as it gets.”
+
+Jack Nicholson addressing patients in a therapist’s waiting room in his 1997 Oscar winning role.
+
+Even a tethered crypto with a wholly owned, transparent, custody mechanism based in a mountain vault in Switzerland would carry some black swan risk. For the moment, however, the only James Bond villain style custody mechanisms I’ve found relate solely to cold storage of crypto (bitgo, coinbase vault etc.).
+
+Piz Gloria, alpine spa and lair from James Bond novel On Her Majesty’s Secret Service (1963)
+
+Give real-time transparency to what is happening inside the mountain vault and perhaps that would define the highest level of transparency, though such transparency would likely come at the cost of reduced security. As an aside, an ETF exists for physical gold stored in a vault in Zurich, Switzerland (SGOL).
+
+One reason “centralization,” and bank centralization in particular, is a knock down argument in most crypto debates is that centralization sometimes leads to trusting others who misuse your stuff. When you own crypto in your own wallet, no one is taking your money and lending it to someone else. That means when you ask for it you’ll get it, all else equal. What you see is what you have unless the blockchain collapses in its own black swan. If all money were held on chain in this manner there would be nothing to lend, and the economy would grind to a halt. So, unless and until crypto-banking evolves to create trillions of loanable funds, crypto remains linked to the fiat ecosystem and not the other way around (yet). It’s that linkage between the worlds that tethered coins (and tethered stable coins in particular) must more carefully negotiate.
+
+The solutions? First, support projects that speed up crypto/fiat transactions (and vice versa). Faster clearing between fiat and crypto ecosystems is coming and may moot the need for stable tethers by reducing transaction demand. For example, foreign exchange fiat and casino chips generally exchange directly to USD at will. Why? Each has a specialized system to support the exchange. Second, as a community, insist on transparency between physical custody and crypto.
+
+Consider the following important but uncomfortable questions:
+
+1. How would Bitcoin fail? (remain calm, it’s a conjecture)
+
+2. How would Tether fail? (also remain calm, it’s a conjecture)
+
+It is a chore to cook up an explanation for a Bitcoin failure because Bitcoin can fork its way out of most surprises. One really has to work: meteor strikes, global power failures, regulatory bans, quantum cryptography? For a stable coin tether, however, the explanation takes three seconds to conjure. The coin would not have the money professed and stakeholders would learn this and sell (and short sell too). Simple enough — a ‘tether run.’ Is there anyone left in the crypto community who has not heard the rumor that Tether had no fiat at all for months when it first started, and today maintains an opaque custody environment?
+
+Launching something new is nerve racking and it’s easy to criticize from the sidelines. Tether coins (and stable tether coins) are very important for the time being and their creators are out there are learning and taking risk with the rest of the community. Like many other inheritors of cypherpunk philosophy, they are trying to achieve something positive and generally with the best of intentions.
+
+But always and in the end the black swan rears its head, and when it does we as a community may calmly grip onto our block chain wallets, unless those wallets contain tethered stable coins with back-doors to fiat banks. Let’s limit the amount of re-learning we have to do and support independent custody and transparency for all tethered stable coins and let’s further support projects that speed/crypto to fiat payment clearing. It doesn’t take a super hero to order an annual audit, and if that is as good as it gets, so be it. In the meantime…no capes!
+
+About the author: Mike Winston, CFA is an institutional investor and co-founder of http://www.monetarycoin.org, the first cryptocurrency to implement an econometric oracle, proof-of-stake mining and elective AML-KYC.

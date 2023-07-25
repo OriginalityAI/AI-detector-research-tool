@@ -1,0 +1,15 @@
+I did it, well almost. I finished the Dungeon Escape game for mobile devices. It is a very basic version of it but enough to publish to the Google Play Store. The Character is able to jump and attack, has an option to buy a flaming sword, and can also purchase boots that make him jump higher. I eventually want to add more features in such as using the chest to be able to open and get loot, have the key to the castle open up some kind of special door on another level with the ultimate prize, and possibly different kinds of enemies. I would like to expand this to multiple levels and add a boss possibly.
+
+It was an interesting game to develop as I gained a few new skills in programming C#. I became very comfortable in using Abstract Classes with the enemy script. I also learned a bit about using singletons. The singletons I am still trying to wrap my head around them because they seem to work similar to the GetComponent() method.
+
+I can use the Instance to call on anything in the script that it is in pretty similar to GetComponent():
+
+UIManager.Instance.GetGems();
+
+Im sure it has something to do with performance or working with abstract classes. I read in one article that the question of GetComponent() or Simpleton is like asking which goes faster? A Submarine or a car? Obviously two different mediums of transportation but they will both go pretty fast. this is something though I will have to go more in depth with in the coming days.
+
+My game so far has come along pretty well I think:
+
+I got the controls on there in a decent spot, all functioning well. I have a menu button on the top right to bring you back to the main menu so you can start over or quit the app. You can watch a video about Unity in the Shop down below to get 100G to purchase the boots, flaming sword, or key.
+
+The only reason why I did not release it yet is that Im having issues with the build and google play store. It looks like I need to do some work in the Android Studio to build it there for production. Im not really sure what the solution is yet exactly but Im sure I will figure it out with google eventually.

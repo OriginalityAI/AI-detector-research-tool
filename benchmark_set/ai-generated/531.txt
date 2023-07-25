@@ -1,0 +1,11 @@
+In most jurisdictions, downloading YouTube videos is not considered a crime. In fact, downloading music or video content from the internet is generally not seen as a criminal act, which means the police have no authority to penalize individuals for downloading, nor do they have the power to close down such "downloader" websites.
+
+However, YouTube's Terms of Service appear to prohibit downloading content, and as such, YouTube reserves the right to terminate its agreement with a downloader. They may, for example, prevent users from viewing any more videos, but it seems Google has not implemented any technical measures to enforce this.
+
+Google is not inclined to prevent users from accessing YouTube, and this is essentially the only punishment it can impose. Nonetheless, Google could use its Terms of Services to hold downloader websites accountable for breaking them, resulting in those websites losing access to YouTube. Google can also block these websites from accessing YouTube through technical measures, as it has done at least once. 
+
+It is unlikely for Google to pursue legal action against users or websites for advertisement revenue loss. Although Google loses advertisement revenue from video playbacks that occur offline due to downloading, it would be challenging for them to prove they are owed compensation.
+
+The reason Google doesn't pursue legal action against downloader websites more frequently is the substantial cost involved. It is much cheaper for Google to apply a technical measure, such as an IP block, to shut down a website.
+
+However, the legality of downloading YouTube videos may change in the near future. There has been some discussion about European court rulings and directives that could potentially alter the legal landscape. It is conceivable that even viewing illegally uploaded music on YouTube may become criminalized, although proving knowledge remains a significant challenge. As for criminalizing downloading videos to a file, as opposed to the browser cache, this seems highly unlikely.

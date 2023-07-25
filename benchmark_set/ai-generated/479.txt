@@ -1,0 +1,17 @@
+The Unexpected Closure of Ostatic and Archphile: What We Know
+
+In an unforeseen turn of events, two prominent platforms within the open-source community have vanished without explanation. Ostatic, a once-renowned website for Linux and open-source news, abruptly ceased publication in February, leaving both its writers and audience in the dark. Similarly, the Archphile project, an Arch Linux-based distro for ARM devices, announced its end on Twitter in March. Here's what we know about the sudden disappearance of both platforms.
+
+Ostatic's Unexplained Departure
+
+Founded as a leading source for news and commentary on Linux and open source, Ostatic has left a distinct void in the community. The website, registered under Ostatic Inc, terminated its online presence without prior notice or subsequent explanation. As a result, writers lost access to their published content, and efforts to contact anyone associated with the site have yielded no response.
+
+In recent years, Ostatic had experienced a decline in its prominence within the open-source world, though it still retained a dedicated readership. Susan Linton, the original publisher of Tux Machines, continued to post her informative and entertaining news roundup columns on the site until early February, shortly before its closure.
+
+Archphile's Abrupt Termination
+
+The Archphile project, an Arch Linux-based distro focused on optimizing audio playback quality for ARM devices, experienced a similarly sudden demise. In March, the project announced via Twitter that it was "officially dead," providing no further details regarding the decision. The project's website was subsequently wiped clean, save for a farewell graphic and an email address, presumably for contacting the developer.
+
+While little is known about the project's user base, its unexpected termination caught the attention of the open-source community, particularly given the lack of prior warning or explanation.
+
+The sudden closure of both Ostatic and Archphile demonstrates the unpredictable nature of the open-source landscape. As the community searches for answers, the void left by these two platforms serves as a reminder of the importance of adaptability and resilience within the world of open-source platforms.

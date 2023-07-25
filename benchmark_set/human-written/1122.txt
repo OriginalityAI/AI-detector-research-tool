@@ -1,0 +1,13 @@
+The ICE Score
+
+Hacking Growth by Sean Ellis & Morgan Brown
+
+Solve challenge here: https://www.bookcademy.com/home/show_daily_challenges/the-ice-score
+
+When submitting ideas, the submitter should rate each idea on a ten-point scale, across each of the following three criteria: the idea’s potential impact, the submitter’s level of confidence in how effective it will be, and how easy it will be to implement.
+
+Then those ratings are averaged to provide an aggregate score for each idea. The entire bank of ideas are then ranked by their scores, and the team begins experimentation with the highest-scored ideas in the area of focus chosen by the growth team.
+
+For example, a highly rated customer acquisition idea will be passed on in favor of a lower-scored idea around retaining users if the growth team is currently focused on improving customer retention
+
+Here’s an example of the style of ranking the team of Sean created, listing the results for the grocery app team’s ideas. This ranking can be done in a spreadsheet or in your project management software. You can see how the scoring has led to clarity about which two are the best ones to try first. Though the aggregate score of an idea may not always be the ultimate arbiter of which are select in what order, because the team may decide after discussion in the team meeting that there are reasons to go with a lower-scoring option, you’ve got a great starting point

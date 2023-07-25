@@ -1,0 +1,36 @@
+We recently discovered the file size limit for uploading files through the WordPress Media uploader is now 100MB.
+
+This is a great news for WordPress users who often need to upload large files and videos. Previously, the limit was only 10MB, which was insufficient for many users.
+
+The new limit is still not as high as some other content management systems, such as Drupal, which allows for file sizes up to 2GB. However, it is a significant increase and should be sufficient for most users.
+
+If you are trying to upload a file that is larger than 100MB, and you are not sure whether it will be accepted, you can try uploading it in multiple parts. If the file is still too large, you can try using a third-party file uploader, such as Uploadify.
+
+If you have any questions or feedback about the new file size limit, please feel free to leave a comment below or contact us. We would love to hear from you.
+
+Thank you for your continued support of WordPress. We hope this new limit will help make uploading files through the WordPress Media uploader more manageable for you.
+
+Sincerely,
+
+The WordPress Team. 
+About the file size limit for uploading files through the WordPress Media uploader:
+
+The new limit for uploading files through the WordPress Media uploader is now 100MB. Previously, the limit was only 10MB, which was insufficient for many users. This new limit is still not as high as some other content management systems, such as Drupal, which allows for file sizes up to 2GB. However, it is a significant increase and should be sufficient for most users. If you are trying to upload a file that is larger than 100MB, and you are not sure whether it will be accepted, you can try uploading it in multiple parts. If the file is still too large, you can try using a third-party file uploader, such as Uploadify. If you have any questions or feedback about the new file size limit, please feel free to leave a comment below or contact us. We would love to hear from you. Thank you for your continued support of WordPress. We hope this new limit will help make uploading files through the WordPress Media uploader more manageable for you. Sincerely, The WordPress Team.
+
+Comments
+
+comments
+
+Powered by Facebook Comments
+
+comments
+
+Powered by Facebook Comments
+
+comments
+
+Powered by Facebook Comments
+
+comments
+
+Powered

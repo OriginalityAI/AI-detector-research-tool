@@ -1,0 +1,23 @@
+Dear users,
+
+Good news again! We are glad to announce that SafePal has now officially supported Ethereum Classic(ETC)!
+
+ETC is one of the oldest and more classic blockchain projects in the ecosystem. SafePal is happy to participate in the ETC ecosystem and deepen the connection and interaction with all ETC members!
+
+Welcome to upgrade your SafePal S1 hardware wallets and on-board your ETC assets. (Firmware upgrade guidelines for Mac user, Firmware upgrade guidelines for Windows user)
+
+Along with the new firmware, we have also launched the Passphrase feature, enabling users to create hidden wallets on S1 and enjoy advanced safe-guardian from SafePal. Learn more about the Passphrase feature from here.
+
+Till this point, SafePal S1 has supported 15 blockchains, 15 coins, and 1500+ tokens! There are more top currencies to come!
+
+Welcome to learn more about us and our milestones in 2018–2019!
+
+【About ETC】
+
+Ethereum Classic(ETC) a decentralized platform that runs smart contracts: applications that can be run exactly as programmed without any possibility of downtime, censorship, or third-party interference.
+
+Ethereum Classic consists of a cryptocurrency (ETC), a blockchain ledger, and an ecosystem of applications and services that run on top of it.
+
+【About SafePal】
+
+SafePal is a cryptocurrency hardware wallet that aims to provide a secure, simple, and enjoyable crypto management solution for the masses. SafePal is operated by a group of experts with 15+ years of experience in hardware, software, and cyber security, and is the first hardware wallet invested by Binance.

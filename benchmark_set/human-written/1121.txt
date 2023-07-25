@@ -1,0 +1,29 @@
+First attempt: Deep Spell
+
+I want to thank the author of the Deep Spell [2] blog for inspiring the idea and giving us a great starting point. I was really blown away by the quoted 95.5% accuracy that Deep Spell had achieved after only a few days of training. Surely this was the answer to all my problems! And he published his code [3], what a great guy!
+
+So, like a good student, I downloaded the code, read through it to understand the pieces and how it worked, downloaded the test data mentioned in the blog post [2] and ran it. After about a day, I started to get nervous… why wasn’t I getting into the 90% accuracy range? So I reached out to my internet-mentor and asked for clarification [4]. I showed my training / validation curves for loss and accuracy and asked for some clarification.
+
+Given that I’m very new to deep learning, I assumed I was doing something incorrect, however it turned out that the quoted accuracy achieved on the blog post was done with a private dataset. Bummer, but that’s fine, I decided to press on and manufacture my own dataset and steal the meat of the code found in [3] (this model has been posted below in a snippet). The model architecture was exactly the same, only this time I used my own dataset pulled from Scribd’s data warehouse which contained a list of author names and titles of books. I then randomly injected noise (or misspellings) into words, by either omitting, adding, or changing letters. Examples of each edit would be:
+
+Character omission — “po er systems”
+
+Character removal — “poer systems”
+
+Inserting whitespace — “pow er systems”
+
+Duplicating a character — “poweer systems”
+
+Incorrect character — “powar systems”
+
+The maximum number of allowed edits was 3, and I used a random number generator to decide how many to incorporate for each phrase. Input into the model was tokenized, for example, “margaret atwood” would be inserted into a fixed length vector like `[20,1,5,2,1,5,8,10,27,1,10,13,15,15,17,0,…,0]`, where the whitespace between the words also is included as a token. This vectorization was done for both the source (misspellings) and the targets (correct spelling). It was then reshaped into a M x N matrix where M is the length of the vector and N is the number of tokens. In this case, each row will have either a 0 or 1, indicating whether or not that character is present.
+
+This was used to train the model for nearly a day, where I ran a total of 92 epochs (before killing it) with a batch size of 200 and 1000 steps per epoch. Much to my surprise, I hit close to the 90s for accuracy and loss looked good as well!
+
+Had I constructed an awesome dataset? Was there some unseen bug in the previous dataset or preparation scheme? I honestly don’t know, but after I started to look at some of the predictions, I realized something wasn’t right. What I found was that the model either wasn’t adding any correction at all, or it was adding in mistakes to words that were already fine. This led to the second discovery during this process: what does accuracy actually mean?
+
+In Keras, when the loss is categorical cross-entropy and your target metric is accuracy, it’s actually looking at the average accuracy per input, then averaged over the entire dataset to give a final number. So if you misspelled the title of “Power Systems” as “Pover Sistems” your accuracy would be 84%, since you got 11 / 13 characters correct:
+
+But who cares about that accuracy?! I want to know how often I get back to the right word. If I look at that, it’s terrible:
+
+It tops out around 13%, but at least it is not at a plateau yet, so it could continue to get better. I stopped exploring this method because while this was running I found another seq2seq implementation that had some more fancy pieces included, so I pressed onward from there.

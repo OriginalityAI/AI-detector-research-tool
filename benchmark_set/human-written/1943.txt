@@ -1,0 +1,29 @@
+1. The current Blockchain are limited
+
+The blockchain is a technology that allows to store and transmit information transparently, securely and without a central control body. It could be compared to a huge database that contains the history of all the exchanges made between its users since its creation. The great particularity of the blockchain is that it relies on a decentralized architecture, that is to say that it is not hosted by a single server but by some users. There is no intermediary so that everyone can check for themselves the validity of the chain. The information contained in each block (transactions, property titles, contracts, etc.) is protected by cryptographic methods that prevent users from modifying them afterwards.
+
+Many Blockchains have emerged and their use has grown steadily through crypto-currencies and other uses. However, its use in the industrial sector, and particularly for the establishment of a programmable economy, is hampered by two major problems:
+
+The impossibility of scaler for large-scale needs; current blockchains allow only a small number of transactions per second
+
+Lack of security and vulnerability to hacker attacks
+
+Bitcoin (BTC) is a so-called first-generation blockchain which, although very secure, lacks efficiency, scalability and allows for very few transactions per second (TPS).
+
+Ethereum (ETH) is considered the second generation blockchain. Ethereum has made many improvements over Bitcoin (mainly smart contracts) but is only able to reach about 20 GST, which is still too low for large scale adoption. For example, the popular CryptoKitties game has been able to clutter the Ethereum blockchain, slowing the transaction speed considerably.
+
+Third generation blockchains such as EOS, Cosmos, Quarkchain or Dfinity are trying to improve this low GST number. However, this improvement in the number of TPS may affect the security and efficiency of these blockchains.
+
+Below is a graph showing the number of transactions per second possible on Bitcoin and Ethereum Blockchains compared to major players in the financial and social media market.
+
+Therefore, a proper balance between scalability, security and efficiency does not exist yet despite all existing attempts.
+
+In addition to these scalability and security issues intrinsic to the current Blockchain, the programmable economy is confronted with three other problems:
+
+Most transactions involving tangible assets are sold and managed by intermediaries, which increases transaction costs.
+
+There are no intermediary platforms for companies and individuals to capitalize on their intangible assets.
+
+There is a lack of developers with blockchain knowledge to help companies adopt blockchain technology, which slows the adoption of technology.
+
+On the basis of this, Edenchain decided to build a highly secure, interoperable blockchain with reduced processing costs that can be used in a wide range of applications and industries.

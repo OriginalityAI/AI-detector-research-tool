@@ -1,0 +1,35 @@
+UPDATE TRY IT OUT: LIVE SAMPLE SHEET
+
+CRYPTOBALANCE Function
+
+If you want to get in real time anyone’s wallet balance, you’ll need:
+
+a Google Account for Google Sheets
+
+to Copy Paste code from Github
+
+This is what your Google Sheet will look like once you finish the setup:
+
+Google Sheets CRYPTOBALANCE Formula
+
+The CRYPTOBALANCE function returns wallet balances for over 150 cryptocurrencies. You will be able to access the balance through the following formula:
+
+=CRYPTOBALANCE(“CRYPTOCURRENCY TICKER”,“PUBLIC WALLET ADDRESS”, EMPTY CELL REFERENCE)
+
+NB : in some countries like Italy and Russia, Google sheet’s formula syntax is done with semicolon ‘ ; ’ instead of the comma ‘ , ’
+
+If you get an error message from the formula, it might be the reason. In this case, the formula then becomes :
+
+=CRYPTOBALANCE(“CRYPTOCURRENCY TICKER” ; “PUBLIC WALLET ADDRESS” ; EMPTY CELL REFERENCE)
+
+2 Required Parameters + 1 Optional
+
+{“CRYPTOCURRENCY TICKER”} The cryptocurrency TICKER/SYMBOL data to fetch, for example the symbol of Bitcoin is BTC. {“PUBLIC WALLET ADDRESS”} The wallet address associated with the cryptocurrency you want the balance from. Please pay attention, DO NOT ENTER your private wallet address. Optional {EMPTY CELL REFERENCE} ONLY on 3rd argument. Reference an empty cell and change its content to force refresh of the balances.
+
+EXAMPLE
+
+BINANCE BTC Cold Wallet Balance
+
+=CRYPTOBALANCE(“BTC”,“34xp4vRoCGJym3xR7yCVPFHoCNxv4Twseo”, $A$1)
+
+Open-Source Setup (5min)

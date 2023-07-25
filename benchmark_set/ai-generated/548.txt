@@ -1,0 +1,33 @@
+Title: Size Criteria for Ships Traveling Through the Panama Canal: Panamax and Neopanamax
+
+Introduction: This article discusses the size limitations for ships navigating the Panama Canal, focusing on the specifications of Panamax and Neopanamax vessels. The Panama Canal Authority (ACP) publishes the requirements for ship dimensions and other factors in a document titled "Vessel Requirements", covering various topics like seasonal draft limits, propulsion systems, communications, and ship design details.
+
+Panamax Specifications:
+- Tonnage: 52,500 DWT
+- Length: 289.56 m (950 ft)
+- Beam: 32.31 m (106 ft)
+- Height: 57.91 m (190 ft)
+- Draft: 12.04 m (39.5 ft)
+- Capacity: 5,000 TEU
+- Established: 1914
+
+Neopanamax Specifications:
+- Tonnage: 120,000 DWT
+- Length: 366 m (1,201 ft)
+- Beam: 49 m (161 ft)
+- Height: 57.91 m (190 ft)
+- Draft: 15.2 m (50 ft)
+- Capacity: 13,000 TEU
+- Established: 2016
+
+The size limitations for ships traversing the canal are determined by the lock chamber dimensions, water depth, and the clearance height of the Bridge of the Americas. These restrictions have directly influenced the design of cargo ships, naval vessels, and passenger ships intending to navigate the Panama Canal.
+
+Panamax specifications have been in place since the canal's opening in 1914. In 2009, the ACP released the Neopanamax standards in anticipation of the canal's larger third set of locks, which opened on June 26, 2016.
+
+Ships that exceed Panamax or Neopanamax dimensions are referred to as post-Panamax or super-Panamax. The canal faces challenges with the increasing number of larger vessels, as these ships require precise control and longer lock times due to their size. Furthermore, given that these larger vessels cannot safely pass each other within the Culebra Cut, the canal enforces an alternating one-way system during their transit.
+
+Subsequent sections of the article will elaborate on the following topics:
+- Detailed ship dimensions
+- Expansion considerations
+- Size comparisons among various ship classes
+- Discussion on post-Panamax and post-Neopanamax vessels

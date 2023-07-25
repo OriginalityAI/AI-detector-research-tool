@@ -1,0 +1,69 @@
+Over the years, there have many articles written about marketing mistakes made by companies and creators. From launching too late to not checking the market exists, these articles have covered all manner of issues made when launching a product or service in today’s world.
+
+But there’s one mistake they tend to miss out. One very large mistake which afflicts forums, games and bands alike.
+
+That being, marketing to their industry rather than the general public.
+
+So what does that mean? How do you ‘market to your industry’?
+
+Well, to put a fine point on it, you market to your industry by advertising your product or service to people in the same field as you rather than those who actually part of your audience.
+
+Such as by promoting it on a forum or subreddit dedicated to that industry. For instance, a lot of forum owners will market their sites in places like The Admin Zone and Forum Promotion. They’ll make a bunch of showcase threads for it, add it to the directory, include links in their signatures, maybe pay for a few ads…
+
+Seriously, why would you advertise your site on a community with the sole purpose of advertising websites?
+
+And then wonder why their community doesn’t take off. But it’s obvious why. It’s because the userbase for these sites isn’t normal people, it’s other forum admins. It’s their own competition.
+
+So by marketing there, they’re just selling their site to the same few people over and over again. The same few people who won’t join said site/be a long term contributor since they’ve already got their own sites to work on and promote.
+
+But this isn’t just limited to forum admins. Loads of groups do the same thing.
+
+Programmers often market their projects to r/programming, r/webdev or Hacker News, while forgetting that their audience isn’t likely to be other programmers.
+
+Game designers and developers market to other game designers and developers, forgetting that the typical gamer doesn’t use any of the same sites or services as them.
+
+It just goes on and on. Designers use Designer News, Startup founders use Hacker News and Indie Hackers, writers use writing forums like Absolute Write, musicians and bands use music forums, etc. Marketing agencies use link directories too, which at this point only ever appeal to marketing agencies.
+
+There’s also Product Hunt, which is an even worse gauge for a product’s popularity.
+
+Hell, even I’ve made the same mistake a few times. Not only have I previously marketed my sites on admin forums more often than not, but my current projects seem to have more of a following among online influencers and celebrities than the actual gamer audience they’d ideally appeal to.
+
+It’s a common trap to fall into. What’s more, it’s also a dangerous one.
+
+Why?
+
+Well, for a few reasons really. Firstly, what your industry looks for when judging a site, service or product is very different from what your audience looks for. I mean, look at Hollywood and the Oscars. The types of films the Academy likes and the type the general public like are often not one and the same.
+
+Instead, the Academy likes more technically competent, artistic works with a focus on novelty, whereas the general public often likes flashier works with a feel good vibe and more of a mainstream appeal. As a result, many critically acclaimed works adored by the former end up failing with the latter, and become box office bombs in the process.
+
+And the same general setup is true of these other industries too. Game developers are more impressed by tech than the general public, as are programmers and startup founders.
+
+So the types of projects they’ll back are the fancy ones, the ones which use ten different frameworks in a creative way, perhaps with a novel build process and all these various neat gimmicks that seem like they took a lot of work to code out.
+
+Yet these aren’t necessarily the ones the public will relate to or like. And focusing on the aspects the industry likes too much will often mean shifting focus from what actually matters.
+
+Which in turn can be seen quite well with many of the Reddit alternatives posted on r/redditalternatives. They focus a lot on the tech to impress the community (which is often developer heavy), and forget that said sites do well because of the content.
+
+Hence you get all these fancy projects with all this work puts towards the shiny tech stack of the moment (or worse, crytocurrency integrations), all of which have no one using them because there’s no bloody reason to.
+
+Finally, it’s worth pointing out that in quite a few cases, people in your industry seem don’t see the appeal of your project, because they don’t have any need for it themselves.
+
+So trying to appeal to them won’t work, because they flat out don’t understand your audience’s use case.
+
+And this can be seen really well with Hacker News and Dropbox. Many Hacker News users hated Dropbox, and didn’t understand the point of the product at all. Like this guy, who pointed out you could ‘build something similar on Linux’:
+
+I have a few qualms with this app: 1. For a Linux user, you can already build such a system yourself quite trivially by getting an FTP account, mounting it locally with curlftpfs, and then using SVN or CVS on the mounted filesystem. From Windows or Mac, this FTP account could be accessed through built-in software. 2. It doesn’t actually replace a USB drive. Most people I know e-mail files to themselves or host them somewhere online to be able to perform presentations, but they still carry a USB drive in case there are connectivity problems. This does not solve the connectivity issue. 3. It does not seem very “viral” or income-generating. I know this is premature at this point, but without charging users for the service, is it reasonable to expect to make money off of this?
+
+Fair play to him, he was right. For his own use case, Dropbox was indeed pointless, since he had the ability to set up a similar system himself.
+
+Thing is, most people aren’t in that bucket. For most people, the instructions in step 1 seem like complete gibberish, since their understanding of how things like FTP, curl, SVN etc are non existent.
+
+They need a plug and play system, and Dropbox provides exactly that.
+
+So it’s worth considering that a programmer/developer audience is usually more technically capable than the public is, and will often be unable to see the usefulness of a product or service they can ‘build themselves’.
+
+But it’s not just a developer thing, it’s an expert thing. Experts by definition know enough about their area of expertise to not need a way to simplify it. Hence by trying to market to them, you’ll often get a skewed picture of how useful your product or service may actually be.
+
+Finally, don’t forget about the numbers game either. The number of experts in a field is always less than the number of everyday users interested it, often by many orders of magnitude. As a result of this, any product or service aimed at said expert audience will end up with only 1–10% of the userbase that it would have gotten if marketed to the average Joes instead.
+
+So if you’re working on something, take a step back, and think carefully about who your audience is and where you need to market your work. Otherwise, it’s very easy to get sidetracked by a community that has no interest in or need for your product, and fail to gain greater levels of traction as a result.

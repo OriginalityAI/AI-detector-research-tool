@@ -1,0 +1,141 @@
+Github Actions make a compelling option if one of your main challenges are to build binaries over wide array of platforms such as Linux, Windows, and macOS.
+
+While the difference between a Linux and a given macOS in terms of build aren’t significant (we’ll see how they can become significant actually), Windows and especially how to get to a nice Rust build on Windows using MSVC require an investment on your part.
+
+For the most part the Rust cross-compilation toolchain holds its weight well when you’re looking to build for various architectures, but we’ll see a few cases where you’re on your own with Github Actions.
+
+Rust and Windows
+
+The seamless option when building Rust programs for Windows is the GNU toolchain for Windows, you might be familiar with Cygwin as well.
+
+The Rust binary that results from a GNU toolchain build is bulky and slow but there should be very little compatibility issues or surprises. If being bulky and slow is a deal breaker for you (I believe it usually is), then you would have to build for Windows “for real”, with the MSVC toolchain — which is what many native Windows programs build against.
+
+While the official docs are slim on preparing a MSVC C/C++ toolchain, Rust really does work seamlessly with the MSVC toolchain. If you’re out of using Windows for a long while, it’ll be awkward to prepare a fully working Windows developer machine from scratch.
+
+To avoid going through that, I recommend using Github Actions, which has great Windows support and you won’t even have to remember how to prepare all of the Windows tooling that you need.
+
+You can read more about this in “Why I need Microsoft C++ Build Tools” and “What Build Tools for Windows are Required”.
+
+To build on Windows locally (some times it makes sense to get faster dev cycles or while prototyping), I personally prefer not to touch a Windows UI or installing Windows at all, and I use Vagrant on my macOS, or more specifically vagrant-vs2017-devbox.
+
+There’s also the slightly more cooked vagrant-windows-rust.
+
+With Vagrant, you just vagrant up and do everything you need over SSH, including building, transferring assets and fetching a built binary from the Windows guest. It really works.
+
+All in all, if you can afford it, always opt to use a CI service that has Windows support that can take all this pain away from you.
+
+Rust and Linux With musl
+
+If you want to build a binary on Linux and have it use standard C libraries (which it eventually needs), you have two popular options: GNU and musl.
+
+You can dive deeper by reading this ELI5 (explain like I’m five) about the difference between the GNU and musl C lib variants. But to make a long story short, if you would be considering musl over the much more popular and “default” GNU, it would be:
+
+Compatibility — not all Linux distros has GNU
+
+Performance — while this is still arguable about which is faster, musl is definitely more lightweight
+
+Static linking — this is probably the most important aspect of producing a fully portable and static Rust binary. Right now you can only do that with musl
+
+Building with musl, as of this writing, from my experience — is going off the beaten path. To go the extra mile for having a statically compiled and independent binary you’ll have to find or build your own development workflow that works for you.
+
+While it’s no longer such a big deal (you can use rust-musl-builder), you will have to do the ceremonies in this Dockerfile with every new environment you would need to customize.
+
+Github Actions and musl
+
+One such environment would be Github Actions. To have a musl based build environment that can support nightly, OpenSSL and a few more real-world use cases, you’d have to skip the standard Rust Toolchain Github Action and build one yourself, depending on your requirements.
+
+While you can still use these standard actions like so:
+
+- name: Install Rust
+
+uses: actions-rs/toolchain@v1
+
+with:
+
+toolchain: nightly
+
+target: x86_64-unknown-linux-musl
+
+default: true
+
+You risk chasing after errors like:
+
+Internal error occurred: Failed to find tool. Is `musl-gcc` installed?
+
+Which might be solvable easily, or even indicate a wrong way to use these actions, but all-in-all there is currently little documentation or ways to iterate quickly on top of the Github Actions environment sandbox.
+
+Huh?
+
+There is an invisible line that you cross when you decide to go with more power and brewing your own to hedge the risk of losing time by adapting existing tools, and in this case I recommend crossing it.
+
+I’ve used rust-musl-action as a basis for my custom action, and working around how Github modeled Actions, it took a while to get all of the edge cases and use cases of my large (and funky, when it comes to using FFI) codebase to smooth out.
+
+To use your own custom action you can copy the rust-musl-action one into your .github/actions folder and do this in your workflow :
+
+- name: Rust w/musl
+
+uses: ./.github/actions/rust-musl-builder
+
+env:
+
+BUILD_TARGET: x86_64-unknown-linux-musl
+
+with:
+
+args: ./build-default.sh
+
+From here on, you can package anything you want in the rust-musl-builder docker, and iterate around it until you can get a healthy binary building.
+
+Github Actions Matrix Strategy
+
+This is the killer feature that Github Actions has. When it works, and when you’re not into customizing things heavily like we’re doing here — it’s magic.
+
+If you’re building for:
+
+OS: Windows, Linux (GNU), macOS
+
+Node: various ABIs (12.x, 13.x, electron) via neon
+
+As long as you’re staying within reasonable configuration — it will be a minimal amount of fussing around and you’re going to get the matrix equivalent of OS x Node binaries baked and ready to serve.
+
+But if you want musl you'll have to have that one annoying exception. So here's how I model my own workflow to support using musl :
+
+build_musl:
+
+steps:
+
+.. your musl-specific job ..
+
+
+
+build_rest:
+
+strategy:
+
+matrix:
+
+os: [windows-latest, macos-latest]
+
+runs-on: ${{ matrix.os }}
+
+steps:
+
+.. use the regular Rust Github Action here ..
+
+This allows your to capitalize on everything that the magic that Github Actions give you by staying on the regular ways of doing things for macOS and Windows, but have a specialization for Linux/musl.
+
+Keep Your CI Code Cross Platform
+
+You might be tempted to think Windows and Unix are compatible these days, and if you lower your head by not handling, for example, the issues of slashes and newlines it’ll go away. Well, if you’re doing anything a little bit involved it’ll blow up.
+
+Here’s a few indicators for where to look:
+
+Composing paths to find and package your binaries
+
+Scripts that extract the current version with a regex and a newline-handling regex (hint: it might not match)
+
+You’re not in a real shell in Windows. When in doubt be minimal and use either a well behaving (in terms of cross platform) language such as Node.js or Python to do what you’d otherwise do in a shell. Make one of those your main CI driver
+
+Summary
+
+For your reference, here’s all of the extra reading in one place:

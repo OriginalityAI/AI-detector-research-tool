@@ -1,0 +1,24 @@
+Might need a mulligan on this one"),
+    );
+    _react2.default.createElement(_reactRouterDom.Link, { to: "https://notion.so/coding-garage/2e7b35d6f85d4f1e892b168c3e9e1b45" },
+        _react2.default.createElement(
+            "h2",
+            { className: "project-title" },
+            "Habit Tracker",
+        ),
+    );
+    _react2.default.createElement(_reactRouterDom.Link, { to: "https://notion.so/coding-garage/2e7b35d6f85d4f1e892b168c3e9e1b45" },
+        _react2.default.createElement(
+            "h4",
+            { className: "project-description" },
+            "Partner project, simple CRUD app",
+        ),
+    );
+    _react2.default.createElement(_reactRouterDom.Link, { to: "https://notion.so/coding-garage/2e7b35d6f85d4f1e892b168c3e9e1b45" },
+         _react2.default.createElement(
+           "h5",
+            { className: "project-tags" },
+            "HTML, CSS, JS, React",
+          ),
+    );
+    _react2.default.createElement(_reactRouterDom.Link, { to: "https://notion.so/coding

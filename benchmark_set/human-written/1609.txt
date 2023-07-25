@@ -1,0 +1,29 @@
+At the core of every blockchain system is the creation of blocks and therefore new coins. This is fundamental for any blockchain to exist because by minting new coins and giving them to miners or stakers, the network is incentivizing people to secure it via hash rate or stake. Given the billions of dollars in value secured by both the Ethereum and Bitcoin chains, it is essential that proper rewards are paid out in order to not open up the network to attacks.
+
+Currently in Ethereum, this is done via block rewards (and transaction fees) which are paid out to miners who find the next block in Proof of Work. In the coming years, Ethereum will be transitioning this system over to paying validators who create the next block in Proof of Stake. This transition brings with it a lot of changes but one of the biggest is around the base economics of the protocol. I want to describe these changes at a high level but first we must understand how the current system functions.
+
+In Proof of Work, miners receive block rewards which in turn help pay for their operational costs and ideally help them turn a profit. Much of this profit depends on the price of the underlying asset and that’s why we see total network hash rate generally track price over time. As Ethereum went through its rapid price rise in 2016–2018, the users of the network decided to cut the block reward down from 5 ETH to 2 ETH in order to better align strong economic principles with proper security payment. This is similar to Bitcoin which goes through a halving of their block reward every 4 years. The principal behind this is that to be money and a strong Store of Value, the network must keep issuance in check and work it down to near 0 over time. Less supply means less sell pressure which in turn gives those holding ETH more confidence that it will accrue value. Again, the most important thing here is having the lowest possible issuance while still properly securing the network.
+
+A look at Ethereum’s past, present and future issuance rates
+
+This explains everything up until the Serenity Phase 0 event on the graph which is coming at the beginning of 2020, when Ethereum 2.0 begins to go live. I don’t want to hop into very much detail about the phases themselves but instead focus on how this impacts what we’ve discussed so far.
+
+On the new chain, the concept of miners will be replaced with stakers. This means that instead of using graphics cards in the hope of finding new blocks, users will need to bring 32 Ether forward and stake it. Each staker will go through a series of tasks from proposing to attesting blocks and will be rewarded for doing so. One very important factor of Proof of Stake is that it makes our attempt for the lowest possible issuance while still securing the network a lot easier which in turn makes Ether a stronger SoV. This is because issuance is only spread across those staking at any given moment and we do not need the entire network to stake to be secure (we’ll save that for a later article). In fact, something like 5–10% of total Ether being staked will do just fine. This means that the total issuance rate for the network can be a lot lower.
+
+Expected staking return and network issuance rates according to latest Phase 0 spec
+
+First, I want to note that these numbers are still up for debate as the spec is still in live development and I expect them to go up a little bit (~25%) before Phase 0 is launched. As we can see on the chart, the market will determine how much stake there is based on the economic incentive to the staker. I expect this to settle somewhere around the 10,000,000 total stake which would put Ethereum’s network issuance at 0.24% a year, 95% lower than today.
+
+Like mining, staking will have a cost attributed to it which is an important factor for where these numbers are set. We want to make sure that validators are not operating at a loss or very little will be staked on the network. Each validator will want to run 1 beacon node and then as many validating clients as they want depending on the Ether they have. In digging through the specs and talking to those researching for Ethereum 2.0, my latest estimates for annual validator operating costs are around $120 for a beacon node and $60 for every incremental validator. If we assume the above costs, Ether price of $165 and 500 ETH in network fees a day, this would result in the following payouts for validators:
+
+Obviously if Ether price appreciates, these returns would go up but it’s nice to know that even during a bear market, validators would still be incentivized to run a node at 10,000,000 total Ether staked.
+
+This has been a quick overview of the Ethereum 2.0 economic incentive structure. I hope that it encourages people to dive deeper and help research the proper incentives, estimated costs and more.
+
+Update 1: I’ve gotten some questions around the inactivity leak due to being offline as a validator so here are the scenarios and how it impacts returns.
+
+Blocks are finalizing and you’re offline. Could lose x% of your deposit over a year where x=current_interest Blocks aren’t finalizing (>33% validators offline, unlikely) and you’re offline. Could lose 60% in 18 days
+
+So for a simple example using scenario 1 and a 32 ETH deposit with interest rate of 2.5%, every day online you gain 0.00219 ETH. Every day offline you lose 0.00219 ETH. Now net it over 365 days to find your return.
+
+Update 2: Since posting this, the expected staking returns have been revised up slightly. The latest numbers can be found here.

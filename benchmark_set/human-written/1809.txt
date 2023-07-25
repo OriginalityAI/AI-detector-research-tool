@@ -1,0 +1,37 @@
+Please follow the steps>>
+
+Step1: Start the Android Studio and open the project where you want to generate the AAR file.
+
+Step2: Click the Gradle option in right most corner of android studio.
+
+Step3: You will see the App name in the window, please unfold the options in the sequence shown below.
+
+It might take a few minutes, If the Build task is successfully completed It will show the message.
+
+Step4: The generated AAR files will be located here(According to your Library name)
+
+Step5: Now we can add the archive file into another Android Project so create a new Android Project.
+
+Step6: After creating a new project >> Click on File>> Project Structure >> Modules >> “+” icon >>
+
+Next>> The below window will have an option to select “Import AAR/JAR”
+
+Next>> Click on next after selecting the “Import AAR/JAR” and in the next window select the AAR file path and click Finish.
+
+Note: Take the AAR file generated in the previous project or use the AAR file you want to add.
+
+Step7: Verify in settings.gradle file, the library module will be included.
+
+Step8: Add the library module into the module Gradle file where this AAR file implementation is needed.
+
+app module gradle
+
+Step9: “Sync the project” and wait for the build successful.
+
+Step10: Verify the classes available in the Library module is accessible in the module you have added the AAR file.
+
+Classes available from AAR Library module
+
+Step11: Now you can write the code for using the AAR library module in your Android Project.
+
+Thanks!! Please add comments If you face any issues while implementing.

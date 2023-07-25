@@ -1,0 +1,7 @@
+Regression analysis is a powerful statistical method that enables examination between variables of interest. It can be utilised to assess the strength of the relationship between variables, and modelling the future relationship between them.
+
+Economists are obsessed with Regressions. This is likely why they were such an integral and formative chunk of my university years. This kind of quantitive estimation is one of the most important and frequently used tools to understand economic theories.
+
+In economics, correlations are common, but identifying whether the correlation between two or more variables is causal is rarely as easy. Regression analysis enables us to predict the direction and distance of change, and significance of this relationship between variables.
+
+It is also one of the most well known and understood algorithms in statistics, Data Science and Machine Learning. Its simplicity means it’s a good place to start for those looking in to the space.

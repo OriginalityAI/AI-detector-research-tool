@@ -1,0 +1,17 @@
+If you are taking your first steps into the world of audio recording and upgrading from GarageBand or another audio recording suite to Logic Pro X, then this article is perfect for you. Logic Pros 101 is a series of articles that will break down the features of Logic Pro X, starting with an introduction to the app’s user interface.
+
+Connecting your physical studio to Logic Pro X is an important first step. You can use USB accessories like speakers and instruments already connected to your Mac, but for studio speakers, microphones, and other professional audio gear, you need an audio interface that expands your connectivity options. Audio interfaces vary in price point and range, from Thunderbolt to USB connectivity, and some require a separate power supply.
+
+Logic Pro X automatically configures itself based on the physical elements of your audio interface, which includes the speakers/headphones, audio inputs and outputs, and MIDI I/O. This means that if you have, say, an Apogee Duet with two mic/line/instrument inputs, every time you create an audio track in Logic, it will make those physical inputs available to you. 
+
+MIDI controllers, including keyboards/drum pads that play virtual instruments inside Logic, work seamlessly with your Mac and Logic Pro X, as long as you connect the device to your system via USB or MIDI cables.
+
+Once you are set up with your studio, it’s time to dive into the Logic Pro X user interface, which may seem complex at first glance but is easy to navigate with a little guidance. Logic’s interface consists of the main arrange window or workspace, helper side-panel menus, and editors for your tracks.
+
+The workspace is where you will create tracks to record on, edit the regions you record, and arrange the way your tracks play out across the timeline. The Control Bar, containing your main transport and various buttons that show or hide side-panel menus, is surrounding the workspace. Track headers are arranged vertically along the left-hand side of the workspace, and they represent each track created in your project. 
+
+The Control Bar is where you will find all the basics for a given project, such as the master tempo, record mode types, and the time signature of your song. This area is customizable and can be set to show various quick functions and data streams, so that you can build your own personalized recording workstation.
+
+The Inspector is a powerful contextual side-panel menu that offers various track/region settings, MIDI parameters, and a quick view of the selected track on the Mixer. It allows you to access the controls for the selected track’s volume, pan, mute, solo, and more. The parameters found in the Inspector are MIDI melody/rhythm manipulation tools that make it easy to create and adjust your beats and melodies.
+
+In conclusion, Logic Pro X’s user interface may seem intimidating at first, but with this brief tour, you can navigate it with ease. From connecting your studio to the Logic Pro X interface, Logic Pros 101 will help you break down basic recording and editing features, using virtual instruments and effects, and much more.

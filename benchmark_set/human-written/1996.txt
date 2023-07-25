@@ -1,0 +1,69 @@
+
+The battle for the title of the world's fastest production car just went another round, bringing the belt home to Bugatti once again. The car that did it, the Veyron 16.4 Super Sport, will be sold in extremely limited production, but it will be capped at 415 km/h, or 257.8 mph, just over 10 mph short of the actual record speed it reached.
+At 268 mph, the Bugatti Veyron 16.4 Super Sport's tires turn at roughly 53 revolutions per second, or about 3,180 rpm. The forces on the tread at that speed are immense, and the effect a blowout would have on the car is simply catastrophic. Limiting the top speed to 258 mph gives the tires a little more headroom for safety. The speed limitation is revealed in the car's full specs, released today.
+Other key stats of the new Super Sport read nearly identical to the standard Veyron's figures, though lateral grip is improved by 0.1g to 1.4g max. Acceleration is also a bit peppier in the 1,200-horsepower Super Sport, with 62 mph arriving in 2.5 seconds, 124 mph in 7.3 seconds, and 187 mph in 16.7 seconds.
+Fuel consumption is equally brisk, drinking down 6.3 mpg around town and 16.2 mpg on the highway for a Euro combined cycle of 10.2 mpg. But between the $38,000 tires and $21,000 service appointments, the cost of fuel will be the least of the owner's worries.
+Check out page two for the full list of stats on the new Super Sport, but bring your metric-to-American conversion chart.
+[Bugatti]
+
+Bugatti Veyron 16.4 Super Sport Technical Specifications
+GENERAL
+PERFORMANCE
+Length 4 462 mm
+Top speed 415 km/h
+Width 1 998 mm
+Acceleration 2.5 sec 0-100 km/h
+7.3 sec 0-200 km/h
+16.7 sec 0-300 km/h
+Lateral acceleration 1.4 g
+Braking distance 31.4 m 100-0 km/h
+Gearbox 7 Gear DSG
+Height (normal position) 1 190 mm
+Wheelbase 2 710 mm
+Curb weight 1 838 kg
+Max. permitted laden weight 2 200 kg
+Tank capacity 100 l
+DRIVE TRAIN
+Motor Type/Number of Cylinders
+W16
+FUEL CONSUMPTION*
+Urban
+37.2 l
+Extra-Urban 14.5 l
+23.1 l
+Cylinder capacity 7 993 cm
+Compression ratio 9:1
+CO 2 EMISSION In town 867 g/km
+Stroke 86 mm Extra-Urban 348 g/km
+Combined 539 g/km
+Fuel type Super lead free 98 RON/ROZ
+Drive Allwheels Power distribution Front axle differential with Haldex clutch
+Rear axle with transverse differential lock
+SUSPENSION
+Wheel suspension Double wishbone front/rear
+Max. weight per axle 990/1210 front/rear (kg)
+Tyres, front 265-280 ZR 500A (99Y)
+Tyres, rear 365-710 ZR 540A (108Y)
+AERODYNAMICS
+Cw-VALUE Standard 0.39
+Handling 0.42
+Topspeed 0.36
+THREE SUSPENSION HEIGHTS
+STANDARD For town traffic and speeds of up to 180 km/h. From
+180 km/h, automatic configuration switches from Standard
+to Handling (Flaps in front diffusers open)
+HANDLING For open roads and highways or manually selectable for race tracks
+(Flaps in front diffusers open)
+TOPSPEED For very high-speed driving (over 375 km/h), manually
+selectable with separate key. (Flaps in front diffusers
+closed)
+BRAKES
+Brake disc diameter
+400 mm front
+380 mm rear
+Brake disc material front/rear Carbon/Ceramics front/rear
+Number of wheel brake cylinders 8 front
+6 rear
+Number of brake pads
+4 front
+2 rear

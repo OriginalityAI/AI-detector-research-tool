@@ -1,0 +1,51 @@
+Today frontend applications are becoming more complex. When the apps get bigger, they get slower. One of the main reasons behind a slower app is the large amount of rendering takes place in the browser. But how to find out where the problem is and how to fix it?
+
+Chrome dev tools have this tab called Rendering, which is used to debug rendering related issues in JavaScript applications. To demonstrate its features, I’ve created a small application with Angular 7. It maintains a list of animal names. A new random name can be added by clicking a button. Names are generated using this awesome node package called, Unique Names Generator (https://www.npmjs.com/package/unique-names-generator) 💌
+
+How the demo app works
+
+Although this is a small application, There’re lots of renderings going behind the scene. How can we see what’s going on?
+
+First, we have to open Chrome Dev Tools ( You know how to 😛 ). Then click on the three dots button on the upper right corner. Then in the menu, More Tools -> Rendering.
+
+Navigate to Rendering tab
+
+The initial view of the Rendering tab looks like bellow,
+
+The initial view of the Rendering tab
+
+As you can see this has lots of features. But in this article, I’m focusing only on the Paint Flashing and Scrolling Performance Issue only.
+
+Let’s first tick the paint flashing checkbox and see what's gonna happen.
+
+Rendering issue
+
+What’s this 😮
+
+Basically what paint flash does is, it highlights the areas on the web page which are repainting. In our case. When I click on Add New button. The whole names list is getting repainted. Which affects the performance of the web applications terribly. And in the scrolling also, It renders The whole set of names again. Although this is a small application. This addresses the most common cause of the underperformance of web applications, unnecessary rendering, and bad scrolling.
+
+What can we do to overcome this issue 😐
+
+The real solution depends on your own code. But in this case, I can solve this by adding trackBy to Angular ngFor. You can find more details about trackBy in my previous article. After fixing that issue. The app looks like follows,
+
+After fixing the rendering issue
+
+Cools, it no longer re-renders the whole list when adding a new element.
+
+But the scrolling issue is still there 😫
+
+In the rendering tab, there is a checkbox named Scrolling performance issues. By clicking it, Chrome gives more details on the scrolling performance issues.
+
+More insights on Scrolling performances
+
+It shows a label ‘Repaints on scroll’ and highlights the scrolling area. Then we have to fix the ‘Repaints on scroll’ issue. When I got that I didn’t know how to fix that. So, I googled 👊. And found this article which describes it very precisely (https://dev.opera.com/articles/css-will-change-property/). Fortunately, it had a simple fix of adding the CSS property will-change: transform to the scrolling container. And then, my final version looks like follows,
+
+Final optimized version
+
+Now it just repaints the newly added item and that’s it. It doesn’t repaint on scrolling also. 🆒
+
+Since this is a small application we can’t see any noticeable improvement in performance after applying these fixes. But when your application gets bigger and bigger these kinds of issues affects significantly to the application performance. In that case, using the Chrome Dev Tools Rendering tab, you could easily find and fix your rendering performance issue.
+
+I hope this trick would save you some time in developing large scale JavaScript applications. Happy Coding ⌨
+
+If you want to try this out in your browser, find the code in the following repo,

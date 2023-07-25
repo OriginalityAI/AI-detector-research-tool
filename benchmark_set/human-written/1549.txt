@@ -1,0 +1,29 @@
+YOLO v4 or YOLO v5 or PP-YOLO?
+
+What are these new YOLO releases in 2020? How do they differ? Which one should I use?
+
+Object detection is a computer vision task that involves predicting the presence of one or more objects, along with their classes and bounding boxes. YOLO (You Only Look Once) is a state of art Object Detector which can perform object detection in real-time with a good accuracy.
+
+YOLO object detection (Image by author)
+
+The first three YOLO versions have been released in 2016, 2017 and 2018 respectively. However, in 2020, within only a few months of period, three major versions of YOLO have been released named YOLO v4, YOLO v5 and PP-YOLO. The release of YOLO v5 has even made a controversy among the people in machine learning community.
+
+Additionally, this has caused a dilemma in the minds of people who are going to start their machine learning projects. In this article, we will discuss the reason for these many new YOLO releases, while emphasizing their originality, authorship, performance and the major improvements, helping people to choose the most appropriate version for their project.
+
+How YOLO evolved
+
+YOLO has been first introduced in 2016 and it was a milestone in object detection research due to its capability of detecting objects in real-time with a better accuracy.
+
+It was proposed by Joseph Redmon, a graduate from the University of Washington. The paper describing YOLO won the the OpenCV People’s Choice Award at the Conference on Computer Vision and Pattern Recognition (CVPR) in 2016.
+
+YOLO versions by Joseph Redmon
+
+The YOLO v2 can process images at 40–90 FPS while YOLO v3 allows us to easily tradeoff between speed and accuracy, just by changing the model size without any retraining.
+
+Performance of YOLO on VOC 2007 and COCO datasets (source: pjreddie.com)
+
+Major YOLO implementations
+
+The main implementation of Redmon’s YOLO is based on Darknet, which is an open source neural network framework written in C and CUDA. Darknet sets the underlying architecture of the network and used as the framework for training YOLO. This implementation is introduced by Redmon himself and it is fast, easy to install and supports CPU and GPU computation.
+
+Later, a PyTorch translation for YOLO v3 has been introduced by Glenn Jocher of Ultralytics LLC.

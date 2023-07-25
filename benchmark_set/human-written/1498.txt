@@ -1,0 +1,9 @@
+This is my fourth article in the series of learning basic maths behind neural networks. You can check out my previous articles here:
+
+Coming to LSTM, this is the most daunting of all. Don’t believe me! Just have a look at it..
+
+My heart just skipped a beat when I first saw it for the first time (in a bad way of course :P ). But, turns out it’s not that difficult to understand. As usual, I’ll try to explain it in simple words and will just focus on the intuition behind it.
+
+Longer Sequence!
+
+So, from the previous article, we developed the intuition that whenever we have a sequence, we go for RNNs. LSTM’s working is a bit different in the sense that it has a global state which is maintained among all the inputs. All the previous input’s context is basically transferred to future inputs by a global state. And because of this nature, it doesn’t suffer from vanishing and exploding gradient problems.

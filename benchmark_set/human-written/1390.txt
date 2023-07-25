@@ -1,0 +1,77 @@
+Every year towards the end of December I evaluate the apps that I’ve been using and what I will use for the next year. I find that writing this out helps me better evaluate the apps that best fit my workflows. Once I complete my evaluation, I summarize it in a post on this blog.
+
+Another reason for this post is that visitors are always asking me which apps I use for specific tasks. To keep from repeating myself over and over, here’s the list of apps that I use.
+
+My setup:
+
+MacBook Pro early–2015 13” (soon to be replaced with a MacBook Air M1/8gb)
+
+iPhone 11
+
+iPad 5th Generation (which I rarely use these days)
+
+Apple Watch 44 mm Series 4
+
+Web
+
+Safari — Safari is my browser of choice. I use Wipr with Safari to block ads, trackers, cryptocurrency miners, and other annoyances.
+
+As we all know some websites don’t play nice with Safari. In those situations I use Firefox.
+
+Communication
+
+Fastmail — I’ve been using Fastmail for email ever since I left Gmail over 6 years ago. I also use it for calendar, and contacts.
+
+Fastmail has an iOS app, that I use, but none for the Mac so I use the Fastmate app which is a native Fastmail-wrapper.
+
+Messages — Messages is how I communicate with family and friends.
+
+Calendar and Tasks
+
+Fantastical 3 — Fantastical is my calendar and task app. It integrates perfectly with my Fastmail calendar appointments and events and Apple Reminders tasks.
+
+Reading
+
+Reeder — Reeder is what I use for my Feedly RSS feeds. Anything that I want to read I save to Instapaper for reading later.
+
+Twitter — Twitter is for news and the feeds for apps that I use.
+
+Writing
+
+Drafts 5 — I’ve been using Drafts for several years. It’s the launching-off point for text for me. I use the actions to copy it, share it, or deep link into other apps and services.
+
+iA Writer — iA Writer is my current writing app of choice. For preview I use Marked 2 side by side with iA Writer. Everything that I write goes through Grammarly for proofreading grammar and spelling.
+
+Apple Notes — Notes that I want to keep long-term go in the Notes app.
+
+Utilities / Productivity
+
+Bitwarden — Gotta have a password manager.
+
+Alfred — Alfred is Spotlight on steroids. I’d be lost without it.
+
+Keyboard Maestro — Keyboard Maestro is another app that I can’t live without it. I use it for keyboard shortcuts, launching apps, opening files and folders and automating actions. It has a learning curve but once you start to get the hang of it you can do amazing things. I’ve written about Keyboard Maestro here.
+
+PopClip — I use PopClip to manage what I do with selected text. I’ve written about PopClip here.
+
+Hazel — Hazel watches whatever folders I tell it to, automatically organizing my files according to the rules that I’ve created.
+
+Yoink — Yoink speeds and up my workflow by simplifying drag and drop. I’ve written about Yoink here.
+
+Dropzone — Dropzone makes it easy to copy or move files to my favorite folders, open applications and uploading files to the Internet right from your menu bar.
+
+App Cleaner — AppCleaner is my app uninstaller. I use it because it deletes all the junk that gets left behind when you drag the app icon to the trash.
+
+Moom — I use Moom for window management.
+
+Witch — Witch is my app switcher.
+
+Bartender 4 — Bartender is the app I use to organize my menu bar. I’ve written about it here.
+
+ScreenFloat — ScreenFloat is my app for taking screenshots and storing them.
+
+TunnelBear VPN — TunnelBear is my VPN for security on public WiFi and for web browsing privacy.
+
+PCalc — PCalc is my stock calculator replacement. I use it for its additional features and customization.
+
+My 2021 Essential iOS Apps

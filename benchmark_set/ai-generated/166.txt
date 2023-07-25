@@ -1,0 +1,23 @@
+2015-10-26 04:33 , edited 2015-10-26 04:47 by jedijim_24
+
+It's probably not a good thing to have that many players on the server if it's crashing all the time. 
+The best way to try and fix any crash is to send a crash dump to DICE.
+
+Name the file with the date the crash happened, and your account name, so they can easily find it. 
+Example: "Battlefield4_20160101_jedijim_24.dmp" 
+If you don't know where the crash dumps are, here is a good guide: http://www.howtogeek.com/196672/windows-memory-dumps-what-exactly-are-they-for/ 
+Now, you can either send the crash dump to DICE yourself, or you can wait and they will probably look at it eventually.
+
+To send the crash dump to DICE, you need to find their support site: https://help.ea.com/en/contact-us/
+
+Once there, choose "Battlefield" as your product, then "Battlefield 4" as your game.
+
+Click on the "Submit a Problem" button next to the "Crash Reports" tab.
+
+Provide as much information as you can, including the date and time of the crash, your account name, and the file you were using when the crash happened.
+
+Click on the "Submit Report" button at the bottom of the page. 
+Hopefully this will help them fix the problem and stop the crashes from happening. If not, then they might need to look at the code to see where the problem is. 
+Good luck!
+
+Hi,It's probably not a good thing to have that many players on the server if it's crashing all the time.The best way to try and fix any crash is to send a crash dump to DICE.Name the file with the date the crash happened, and your account name, so they can easily find it.Example: "Battlefield4_20160101_jedijim_24.dmp"If you don't know where the crash dumps are, here is a good guide: http://www.howtogeek.com/196672/windows-memory-dumps-what-exactly-are-they-for/

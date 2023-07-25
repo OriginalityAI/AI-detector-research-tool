@@ -1,0 +1,97 @@
+I’ve tried and tested various systems against my goal of writing 4 Medium articles every week.
+
+Being a lover of stationery, I started with a good old pen and paper but found it too confusing to track what I’d submitted to which publication.
+
+I moved onto an excel spreadsheet and this worked for a while until I came across Notion.
+
+If you follow any productivity YouTubers, you will have noticed that many of them were being sponsored by Notion towards the end of 2019 and throughout 2020. A neat marketing tactic to get others to create Notion advertising content.
+
+Top productivity YouTubers, Ali Abdaal, Thomas Frank and MuchelleB are all Notion fans.
+
+The beauty of Notion is its flexibility. While it’s not a productivity panacea, for me it comes pretty close. For example, it doesn’t yet have recurring task functionality, which is a big downside.
+
+It’s flexible templates and functionality makes it a decent one size fits all to avoid the need for switching between Trello, Todoist, Google Calendar and Evernote.
+
+I value the seamlessness between the desktop version and the mobile app version of Notion. This means that I can capture ideas when on the go — I get all my best writing inspiration while running.
+
+Only skimming the surface of Notion’s versatility and uses, I’ll focus here on how you can use Notion to set up a system for tracking your Medium writing goals.
+
+This system will enable you to;
+
+Keep a note of article ideas you have wherever and whenever they come to you.
+
+Have a convenient way of keeping rough notes on the story behind the title, including links to websites and other source information.
+
+Have an immediate visual record of the status of each of your articles
+
+Have a simple way of keeping track of which publications you have been rejected from prior to acceptance. This is important to ensure you don’t inadvertently resubmit to a publication that has previously rejected your story. It’s happened to all of us once and not a good way to make editors happy.
+
+A handy record of publication guidelines to maximise your chances of getting accepted by top publications.
+
+A Notion System for Medium Writers
+
+I will demonstrate setting up the desktop version.
+
+After you’ve set up your account, I recommend you install the app on your phone. The app is automatically updated when you enter information into the desktop version and vice versa.
+
+An account for a single user is free.
+
+Sign up at notion.soy
+
+Start with the following steps;
+
+Create your Medium tracker using Add a Page found at the bottom of the menu bar on the left.
+
+found at the bottom of the menu bar on the left. Give your page a descriptive title such as ‘Medium Tracker’.
+
+Turn this page into a database by selecting ‘table’ as shown below.
+
+Your blank table will look like this;
+
+Click on the + in the third column header cell three times to add 3 more columns — 5 columns in total.
+
+Rename your column headings by clicking on the heading cells and change to the headings ‘Story Title’, ‘Status’, ‘Publication’, ‘Publication Date’ and ‘Comments’
+
+Like this —
+
+As well as changing the titles, you need to change the format of the data in each column — date format for publication date and so on.
+
+To do this, simply click on the column header cell to change the data format. See an example below for how to change the second column to ‘Status’ by typing this word in the blue box and choosing the ‘Select’ data format.
+
+I use the status options of ‘idea’, ‘draft’, ‘submitted’ and ‘published’.
+
+The table below is a snapshot of my current tracker.
+
+I use the ‘Story Title’ column to make note of draft ideas that come to mind wherever I am — the app version on the phone is great for this. I often stop mid-run and quickly type the idea that’s popped into my head as a new title.
+
+The ideas with a page symbol immediately before the title are those that I’ve added an embedded page to make further notes to shape the article. And also to include links to information sources that I want to cite.
+
+The ‘Status’ column is a nice visual reminder of which articles are in draft format — I typically have at least 2 drafts in parallel at any time. This column also tells me which I’ve submitted and am waiting to hear back from a publication.
+
+The ‘Publication’ column is either showing my target publication if in idea, draft or submitted stage. Or the publication that accepted the article if the status is ‘published’.
+
+I enter the publication date when published — a pleasing sense of achievement. And this is the main column that helps me ensure I’m keeping on top of my target number of articles each week.
+
+And finally, the handy ‘Comments’ column for keeping a note of which publications I’ve submitted to before eventual acceptance. This helps you notice patterns such as which publications will always let you know about rejections and which you should assume have rejected after a set number of days.
+
+Making Sure you Respect the Publication Guidelines
+
+Essential for maximising your chances of getting accepted by the top publications is to regularly refer to their guidelines. And to respect the types of articles they are looking for.
+
+Notion is good for this too.
+
+At the top of my Medium Tracker table, I’ve embedded a sub-table to summarise publication guidelines. I include a link to the original articles for further details and to ensure I keep track of any updates to the guidelines.
+
+This is a long table that I’m adding to all the time. I currently have easy access to the summary guidelines for over 20 publications — a snapshot below.
+
+Summary
+
+I’ve shown you here a simple system for using Notion to keep track of your Medium writing.
+
+This system is adaptable to your own personal writing goals.
+
+Having a system that you follow is the surest way of working towards your writing goals.
+
+Notion is free to use for single-user accounts and can be accessed through a desktop or mobile phone app, making it convenient to update whenever and wherever inspiration strikes.
+
+Having a record of your progress in a format that isn’t all about the number of followers you have, the money you’ve made or the number of readers will encourage you to stay motivated and keep doing the writing that you love.

@@ -1,0 +1,73 @@
+In this case we see that _a is 0 and _b is 7 (y² = x³+7), and that we have a _Gx and a _Gy value. We also have _p which is a prime number in which all the operations are conducted with a (mod _p) function. In Python we could create two key pairs (one for Alice and one for Bob) with:
+
+And where we generate a random 256-bit value for a, and then find the public key (A) by multiply it with G. This will give us a point on the elliptic curve. Note that all of the operations are undertaken with (mod _p), and where the mod operator is the remainder of an integer division.
+
+Analysing the keys
+
+When we generate our key pair with Openssl, we see a 256-bit private key (and made from 32 bytes), along with a 65 bytes of a public key. The 04 at the start of the public key is an identifier. There are two 256-bit points which define the public key (and each are 32 bytes long):
+
+In this case the private key is:
+
+and the public key:
+
+The elliptic curve parameters that are shared can be viewed with:
+
+Notice that the values here for the Prime, A, B and Generator and the same as the values for _p, _a, _b, _Gx and _Gx from the Python snippet above, and will are likely to be the same for any applications of this curve standard. If you are interested, some standards for curve parameters are defined here.
+
+ECC Applications — Digital Signatures and Key Exchange
+
+The two main applications of ECC are in digital signing and in key exchange. Within key exchange we can take a similar method to the commonly found Diffie-Hellman method: ECDH. With this Bob and Alice both generate their key pairs and then exchange their public key values. Next the multiply these by their own private keys, and the should end up with the same point. The x value of the point is often used as the shared value, and this can be used to generate an encryption key [Link][Real-life example]:
+
+A simple example is [Link]:
+
+Basepoint: (920 (mod 3851), 303 (mod 3851))
+
+Alice’s secret key: 25720
+
+Bob’s secret key: 15297
+
+==========================
+
+Alice’s public key: (1996 (mod 3851), 3624 (mod 3851))
+
+Bob’s public key: (94 (mod 3851), 884 (mod 3851))
+
+==========================
+
+Alice’s shared key: (2636 (mod 3851), 3251 (mod 3851))
+
+Bob’s shared key: (2636 (mod 3851), 3251 (mod 3851))
+
+==========================
+
+The shared value is the x-value: 2636
+
+Another application of ECC is in signing, such as for Elliptic Curve Digital Signature Algorithm [here]. With this Alice will generate a key pair, and then encrypt the hash of a message with her private key. She then sends the message and the signed hash to Bob, who takes his own hash of the message, and decrypts Alice’s hashed version with her public key. If the hashes match, he has proven that Alice sent the message and that the message has not changed:
+
+Bitcoin addresses and signing
+
+Elliptic Curve is seen all over the Internet, smarts cards and in IoT applications. You can also see it with blockchain, where it is used as a standard method to sign transactions. With this Bob has a wallet, and which contains his public and private key. The private key is used to sign his transactions, and the public key will provide that he was the one that signed it. We also generate Bob’s ID from the key pair.
+
+With this, Bob initially create a number 256-bit value, and this will be his private key. The key is converted into a Base-58 form (and which gets rid of difficult characters such as ‘O’, and ‘l’ [here]). This is his WiF (Wallet Interchange Format) private key. He should not reveal this to anyone, and, if possible should not store it on-line. Next he will produce his 512-bit public key (as seen above). After this it is then hashed with SHA-256 and RIPEM-160 to produce a public key hash value. This is then converted, using Base-58, into Bob’s Bitcoin ID:
+
+And example of this is:
+
+And so, it we want to send bitcoins to Bob, all we need to do is to get his address, and then sign a transaction with our public key.
+
+Adding points
+
+We have how we can multiply our points on the elliptic curve by a scalar value (our private key), but can we add our points? We if we take two points as:
+
+P1 = n G
+
+P2 = m G
+
+If we add these points we get:
+
+P1 + P2 = n G + m G = (n + m) G
+
+Thus if we add the public keys (P1 + P2 (mod p)), the equivalent private key will be (n + m (mod p)). If Bob has a private key (a) and a public key (A), and then Trent has a private key (b) and a public key of (B). Then the public key will be A+B and the private key will be a+b. The following is an example [here]:
+
+And application of this is where Trent produces a key which Bob can use to produce an equivalent key for the public keys produced:
+
+Using fast_add() and fast_multiply() — taken from the Bitcoin library — we can implement this as:

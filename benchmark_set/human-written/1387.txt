@@ -1,0 +1,53 @@
+ERP stands for “Enterprise Resource Planning” and refers to a type of software or system used by a company to plan and manage daily activities such as HR, supply chain, manufacturing, services, financials, and other processes. In simple words, ERP is the bunch of Modules or departments which are linked with a proper process.
+
+Using good ERP software properly, a company can improve & optimize the majority of their business process, which are implemented in various aspects of the company’s work. The company can set it up according to their requirements & personal preferences. Mostly below given modules are covered in ERP.
+
+Finance
+
+Procurement
+
+Manufacturing
+
+Inventory
+
+Purchase
+
+Warehouse / Store
+
+CRM (Customer Relationship Management)
+
+Service
+
+Sales
+
+HR
+
+Others
+
+From ERP 1.0 to 2.0
+
+Journey of ERP is improvising day by day. From starting, From the beginning, companies were doing manual process for all their routine activities. Later on they Improvised with technology. Nowadays, in the era of stiff competition all companies have to stay updated with on hand analytical data.
+
+Key benefits of ERP implementation
+
+There are certain benefits of ERP implementation.
+
+Reduction in Operating Cost: By using good ERP Software, companies can reduce the operating costs for their daily activities.
+
+Facilitation of day-to-day management: Getting data easily to manage all processes with ERP.
+
+Strategic Planning Support: Company can do their strategic plan for their day-to-day processes.
+
+Now Is the Right Time to Modernize Your ERP
+
+In the digital era, now every human or every company have to move on so fast, faster & constant to retain their position. Every technological change have to apply in day to day process to make things easier & faster.
+
+Characteristics of Today’s Modern ERP
+
+Types of ERP by Implementation
+
+Three ways to implement any ERP.
+
+On-Premise ERP: On-Premise ERP means software installed within the working area. One big drawback of this kind of ERP is its limited accessibility. Cloud Base ERP: Any ERP Software-as-a-Service (SaaS) which is available over a Cloud-hosting service rather than on-premise deployment. This option lets you access real-time data as long as you have Internet access and is suitable for large enterprises. Hybrid ERP: Enterprise resource planning systems that blend on-premise and Cloud-based deployment.
+
+Advantages of ERP: Is it worth developing new software?

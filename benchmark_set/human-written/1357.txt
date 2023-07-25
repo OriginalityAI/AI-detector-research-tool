@@ -1,0 +1,19 @@
+About the Company
+
+Filoturk provides the systems for almost all sectors and companies which can be beneficial for companies regardless of their of the fleet size. Besides its multiple utilities, with its very short Return on Investment and relatively low investment value which almost any size company can afford, it is the technology deployed by most enterprises.
+
+Filoturk system helps you monitor your vehicles, drivers, assets, and anything that you care about to be under your control that eases your mind.
+
+Problem?
+
+FiloTurk already had a system which was established 25 years ago and a well-known name in Turkey. It had an almost perfect system and was used by more than 15,000 companies.
+
+But one problem was that it didn’t have any mobile based application on any one of the platforms.
+
+Challenges
+
+The big issue was that of integrating the legacy system with new generation application and that too on two different platforms.
+
+Both apps had a different way of executing the activities and how they perform their operations. So we had to design a uniform system that can help the users with the same experience which they were experiencing with the legacy system but with the new generation applications.
+
+Solution

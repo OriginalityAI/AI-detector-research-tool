@@ -1,0 +1,21 @@
+How do I enter Spookality?
+
+Before you get started on your project, please take some time to review our Contest Terms and Conditions to make sure that your ideas meet our contest requirements as well as our Terms of Services & Community Guidelines.
+
+Violating any of the rules will result in disqualification — so read carefully!
+
+Additionally, all content submitted must make use of VRChat SDK3 to be qualified for entry. World submissions must use VRCSDK3 for Worlds and Avatar submissions must use VRCSDK3 for Avatars. While the use of more advanced features within the SDK (such as Udon and Avatars 3.0) is recommended, it is not required.
+
+There isn’t a requirement for your content to be cross-platform compatible, but it will play a very strong role in the judgment criteria.
+
+If you’re unfamiliar with those more advanced systems, here are some useful links to check out:
+
+- What is Udon?
+
+- What is Avatars 3.0?
+
+All submissions must consist entirely of original assets and the submitter must own or otherwise have the right to use the content submitted (including all component parts). By making a submission in this contest, you are warranting that you own or have a right to use the content in your submission and that your usage of such content does not violate or infringe upon the intellectual property rights of any third party. For further information, please carefully read our Contest Terms and Conditions.
+
+Submissions for the jam will be accepted starting on October 1st, 2021 at 12pm PT. We’ll post the itch.io submission link in our Discord as well as on our Twitter.
+
+Submissions will close on October 22nd, 2021 at 12pm PT. You can update your submissions all the way until this close date. Please don’t update your submission after the closing time. Mark those calendars!

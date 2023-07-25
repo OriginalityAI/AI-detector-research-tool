@@ -1,0 +1,85 @@
+What is DelegateCall?
+
+DelegateCall is a Q&A site for Blockchain and Ethereum-related questions that runs fully on a Loom DAppChain.
+
+Users earn karma points when their questions and answers get upvoted. But unlike traditional Web 2.0 sites, on DelegateCall these karma points can be redeemed for a tradable ERC-20 “DelegateCall token” on Ethereum mainnet, allowing users to earn rewards proportional to their contributions to the site.
+
+You can think of DelegateCall as a mix between Steemit and StackOverflow, backed by Ethereum.
+
+Motivations
+
+Since we started CryptoZombies a few months back, we’ve built up a solid community of Ethereum developers and enthusiasts in our main Telegram community and also in our advanced developer community chat.
+
+But Telegram isn’t ideal for developer discussion. Questions get lost in the chatter, and great answers get washed away with time.
+
+So we decided to build a blockchain community site that:
+
+Our community could gather on to share their knowledge on blockchain & Ethereum development related questions in a more permanent form Would run fully on a Loom DAppChain, so it could serve the dual purpose of being a demo of our core platform, and Would incentivize contribution to the site by rewarding users with an ERC-20 token, showcasing one of the benefits of DAppChain-based DApps over traditional web apps. (In addition to all the other coolness, like the blockchain serving as a fully open API for developers, being fully auditable and forkable, etc.).
+
+DelegateCall is the first (of many) demonstrations we’re building in-house to show developers the types of DApps that can be built on Loom Network.
+
+Sneak peak: Next, we’re turning our focus toward blockchain-based games. Expect some major updates from us over the next 2 months on that front!
+
+Architecture / Technical Details
+
+At its core, DelegateCall runs entirely on a Loom Network DAppChain, which consists of a standalone blockchain that is bonded to an Ethereum smart contract via a Relay.
+
+DelegateCall’s standalone blockchain uses a prototype of Loom DPoS as its consensus layer. In the future, we also plan to support the PoS algorithms being worked on by Tendermint and Casper, as soon these implementations become available from their respective teams.
+
+Loom DAppChains are different from normal blockchains in that they’re able to define a number of complex transaction types natively. In the case of DelegateCall, its DAppChain has native transaction types for creating accounts, creating/updating posts, accepting answers, and upvoting/downvoting.
+
+In this sense, DAppChains behave similarly to traditional web APIs in that they support a fixed number of methods that can be called by users.
+
+We built a block explorer for the DelegateCall DAppChain at blockchain.delegatecall.com, so you can watch these transactions happening in real-time:
+
+The Block Explorer allows you to see the transactions as they get included in the DAppChain
+
+You can inspect an individual transaction to see its contents
+
+Bonded to Ethereum via a Relay
+
+DPoS tends to have a bad rap in the blockchain community, because it’s less decentralized than PoW and PoS.
+
+This is a valid concern, but DPoS is also capable of handling a much higher transaction throughput per second than more decentralized consensus algorithms.
+
+So we have a bit of a conundrum. DApps need high throughput to rival traditional web apps (Twitter, for example, experiences 7,000 tweets per second). However, standalone DPoS blockchains will never be as trustworthy as a PoW blockchain like Ethereum.
+
+DappChains work around this issue by having the DPoS blockchain bonded symbiotically to a corresponding Ethereum Smart Contract via a Relay. Functioning as a single unit, users can transfer/trade their assets on Ethereum as simple ERC-20 Tokens while the application layer remains decentralized, fast, and cheap to use.
+
+The final result, as seen on DelegateCall, is a decentralized application on a scale that’s simply isn’t possible on Ethereum alone. Secure, standard-conforming, decentralized asset handling while retaining cheap and speedy transactions.
+
+We’ll be releasing more details on both the Relay implementation and Loom’s DPoS algorithm in the future. (As well as details on the Loom Vault, an optional 3rd-party service that manages users’ private keys for them).
+
+How does the DelegateCall.com website fit in?
+
+You can think of DelegateCall.com as a convenience layer for interacting with the underlying DAppChain. While you don’t have to use the website to interact with the DelegateCall blockchain, it provides a convenient UI for doing so. (Similar to Steemit.com for Steem, or MyEtherWallet / EtherScan for Ethereum).
+
+The website is a Ruby on Rails app that reads from a cache of the underlying DAppChain data. The read-only cache (made up of a MySQL database and Elasticsearch) is simply a mirror of the data in the blockchain, and is updated every time a new block is published. The cache exists so the website can serve pages just as quickly as a standard web 2.0 app.
+
+When you go to DelegateCall.com, the data you’re seeing is pulled from this MySQL cache. The site also serves you a copy of the DelegateCall client built on Loom.js.
+
+Loom.js is a common interface layer for Loom DAppChains that’s responsible for signing transactions on the client side and formatting these transactions in the format the DAppChain is expecting them. You can think of it as the equivalent of Ethereum’s web3.js for Loom Network DApps.
+
+When you perform an action on the site (upvote an answer, post a comment, etc.), rather than sending the data to the DelegateCall.com web-server like a traditional web app would, instead Loom.js broadcasts your transaction directly to the DelegateCall DAppChain.
+
+Then there’s a worker process on DelegateCall.com that’s constantly listening for changes in the blockchain, and posting these new transactions simultaneously to the MySQL cache as well as Elasticsearch, so the changes on the underlying blockchain are reflected on DelegateCall.com.
+
+The DAppChain is still the ultimate source of truth, and the data in the Rails app is simply a mirror of the data in the underlying DAppChain.
+
+They say a picture speaks a thousand words, so here’s a diagram showing the architecture and data flow:
+
+Users sign their transactions and write them directly to the DAppChain, which is then copied to a read-only cache in the Rails app for speedy reads. The Block Explorer is a totally separate app reading from the same underlying DAppChain data.
+
+I want to emphasize that using the DelegateCall.com website is optional — users can read and write to the underlying DAppChain directly, instead of using DelegateCall.com. In the future, developers could even write their own front-ends that display the data in different ways, such as how our block explorer is completely independent of the Rails app.
+
+This is one of the many advantages to social sites being built on an underlying DAppChain — it’s like having a fully open API to the underlying data, so 3rd party developers can build their own interfaces and users can have more optionality in how they interact with the service.
+
+We’ll be releasing more information in the coming weeks on how developers can interact with DelegateCall and other Loom DAppChains.
+
+What’s next?
+
+Tomorrow, we’ll be releasing a follow-up announcement with more details, and also talking about what’s coming next for Loom Network.
+
+You’re not going to want to miss it!
+
+In the meantime:

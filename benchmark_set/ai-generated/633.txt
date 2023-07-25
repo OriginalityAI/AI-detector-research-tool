@@ -1,0 +1,17 @@
+Title: Simplifying Virtual Environments with autovenv
+
+" I don't want to be a product of my environment. I want my environment to be a product of me." -Frank Costello in The Departed
+
+While virtual environments provide numerous benefits, they can be challenging to create, manage, and switch between, especially when dealing with various Python versions. This is where autovenv comes in to ease the process.
+
+Note from the author: This package was initially created for personal use and is now at its alpha stage of public release. Please consider trying it out and provide any feedback, issues, or pull requests.
+
+With autovenv, as long as there's a requirements.txt file in your Python project, it will automatically create a virtual environment for that project and activate/deactivate it when you move in or out of the project folder. Additionally, autovenv can also manage different Python versions to be used with your virtual environments.
+
+How autovenv Works: When navigating to a Python project using the command line, autovenv will create and activate a virtual environment for you. If you move to a different project or leave the project folder, it will automatically switch or deactivate the virtual environment, keeping your workspace organized under the ~/.virtualenvs directory.
+
+Using Different Python Versions: By default, autovenv creates a virtual environment using your system Python version. However, you may want to use the latest Python 3 or alternative Python implementations such as PyPy. Thankfully, autovenv has you covered, and it comes with python-build installed, which allows you to build different Python versions into a ~/.python-versions folder.
+
+To build a specific Python version, such as 3.5.1, simply run the command `autovenv-build 3.5.1`. After building the desired version, you can choose to use it across virtual environments by executing `autovenv choose 3.5.1`. To see the Python versions available for installation, utilize the command `autovenv-pythons-available`, which will display a list of available versions.
+
+In conclusion, autovenv is a handy tool to simplify and enhance the virtual environment experience for Python developers, making project management and Python version control smoother and more efficient.

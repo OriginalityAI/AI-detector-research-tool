@@ -1,0 +1,90 @@
+© So you Start. All rights reserved.
+ * @license   This project is released under the GNU LESSER GENERAL PUBLIC LICENSE
+ * @link      https://www.soyouser.com/
+ */
+
+namespace SoYouStart\RancherAPI\Project;
+
+use SoYouStart\RancherAPI\Client;
+use SoYouStart\RancherAPI\Exception\ObjectNotFoundException;
+use SoYouStart\RancherAPI\Project\Service\Service;
+
+class Project
+{
+    /** @var Client */
+    protected $client;
+
+    /** @var string */
+    protected $id;
+
+    /** @var string */
+    protected $name;
+
+    /** @var string */
+    protected $state;
+
+    /** @var string */
+    protected $accountId;
+
+    /** @var string */
+    protected $accountType;
+
+    /** @var string */
+    protected $requestedAccountId;
+
+    /** @var string */
+    protected $requestedAccountType;
+
+    /** @var string */
+    protected $description;
+
+    /** @var string */
+    protected $transitioning;
+
+    /** @var string */
+    protected $version;
+
+    /** @var Service */
+    protected $service;
+
+    /** @var Exception\ObjectNotFoundException */
+    protected $exception;
+
+    /** @var string */
+    protected $schemaVersion; /**
+
+* Creates a new project
+
+*
+
+* @param string $name
+
+* @param string $state
+
+* @param string $accountType
+
+* @param string $requestedAccountId
+
+* @param string $requestedAccountType
+
+* @param string $description
+
+* @param string $transitioning
+
+* @param string $version
+
+*/
+
+public function __construct(
+
+$name,
+
+$state,
+
+$accountType,
+
+$requestedAccountId,
+
+$requestedAccountType,
+
+$description,

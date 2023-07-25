@@ -1,0 +1,13 @@
+For over five decades, the neuroscience community has been deeply engaged in an ongoing debate concerning the coding and reliable transmission of information within the brain. Various coding systems have been proposed, each gaining passionate support.
+
+Researchers from Freiburg University have recently demonstrated in an upcoming issue of Nature Reviews Neuroscience that prior studies may have been based on more extreme propositions. They suggest that under specific circumstances, both proposed coding systems can be employed simultaneously within the brain.
+
+One unresolved question in neuroscience is determining which code is utilized when nerve cells communicate with each other. It is well-established that for over a century, the basic unit of communication in the nervous system is the pulse-like fluctuation in voltage at the membrane of neurons. Nevertheless, a continuing debate persists regarding how these action potentials are combined to create a code for processing and transmitting information. Two primary forms of coding have been proposed: rate coding, based on the rate of action potentials, and temporal coding, founded on the timing of action potential occurrences.
+
+To date, the neural code's nature has remained mostly uncertain in experimental brain research. Even insect brains prove too intricate for existing scientific knowledge to discern their coding methods. Consequently, theoretical approaches involving computer models that simulate brain processes have become essential in modern neuroscience in addressing these and other questions.
+
+Previous studies' models indicated that only one of the two proposed codes could be utilized in neuronal networks at any given time. The transmission of either pulse rate or timings relied on the manner in which neurons interacted with each other.
+
+Arvind Kumar, Stefan Rotter, and Ad Aertsen from the Bernstein Center Freiburg now suggest that both forms of coding may be employed simultaneously under specific conditions. They argue that earlier studies failed to recognize the potential coexistence of both codes, as they represent two extremes within a spectrum of biologically plausible circumstances.
+
+In their article now available online, the researchers demonstrate that earlier findings can be incorporated into a more expansive conceptual framework of neural coding and transmission. Moreover, their examination of required conditions reveals that utilizing both codes simultaneously in a single neuronal network is indeed possible. This discovery marks the first time conditions facilitating the coexistence of different neural codes have been identified, offering valuable insights for future experimentation in determining the codes used by actual brains.

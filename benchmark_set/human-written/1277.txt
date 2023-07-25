@@ -1,0 +1,37 @@
+The perfect setup to learn coding
+
+All you need is a computer
+
+To learn coding, you don’t need fancy tools. You just need:
+
+A MacBook Air or an equivalent computer
+
+An environment where you can focus
+
+A happy mood
+
+Alright, if you want to hear the detailed analysis, read on.
+
+Mac, Windows or Linux?
+
+Mac, Windows or Linux will do. You should use a system that you’re familiar with.
+
+But which is truly better?
+
+Alright, let’s dive into it.
+
+Mac? Many programmers use Mac because the interface is user friendly, and it’s easy to install software for software development. If you have a Mac, you can develop most types of web and mobile applications. Mac also has a great built-in command-line interface with a lot of community support.
+
+Windows? Its command-line interface is generally inferior to Mac, but it’s been improving with more tools built by the community. Software installations for software development have a larger variance compared to the Mac. Sometimes, you can install things you need in one-click. At other times, you have to Google a lot to install something.
+
+Linux? Linux has the most flexibility out of the three. You can install anything you want in any way you prefer (if you know how). But, it’s the least user- friendly out of the three. For beginners, Mac and Windows are easier to start with.
+
+What screen size do I need? How many monitors do I need?
+
+I learnt everything about coding in a 13-inch laptop. I am currently using a 13-inch laptop. I code with a 13-inch laptop. 13-inch is fine (See #1 in the image below). 15-inch is good too.
+
+I recommend a setup where you can focus on one thing at a time. So, you only need 1 monitor to be productive.
+
+I also find a widescreen monitor (25-inch) to be productive (See #2 in the image below). Keep in mind that, if the screen size is too big, you will also be unproductive since your eyes have to travel back and forth across a big screen.
+
+The common problem with multiple monitors is that your eyes have to constantly travel back and forth, and left to right. The only two-monitor setup I’ve found productive is the top-down approach (See #3 in the image below). This way, you can focus on one screen at a time and use the other for referencing.

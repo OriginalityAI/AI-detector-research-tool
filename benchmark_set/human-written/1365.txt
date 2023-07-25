@@ -1,0 +1,53 @@
+Embeddings
+
+An embedding is a mapping of a discrete — categorical — variable to a vector of continuous numbers. In the context of neural networks, embeddings are low-dimensional, learned continuous vector representations of discrete variables. Neural network embeddings are useful because they can reduce the dimensionality of categorical variables and meaningfully represent categories in the transformed space.
+
+Neural network embeddings have 3 primary purposes:
+
+Finding nearest neighbors in the embedding space. These can be used to make recommendations based on user interests or cluster categories. As input to a machine learning model for a supervised task. For visualization of concepts and relations between categories.
+
+This means in terms of the book project, using neural network embeddings, we can take all 37,000 book articles on Wikipedia and represent each one using only 50 numbers in a vector. Moreover, because embeddings are learned, books that are more similar in the context of our learning problem are closer to one another in the embedding space.
+
+Neural network embeddings overcome the two limitations of a common method for representing categorical variables: one-hot encoding.
+
+Limitations of One Hot Encoding
+
+The operation of one-hot encoding categorical variables is actually a simple embedding where each category is mapped to a different vector. This process takes discrete entities and maps each observation to a vector of 0s and a single 1 signaling the specific category.
+
+The one-hot encoding technique has two main drawbacks:
+
+For high-cardinality variables — those with many unique categories — the dimensionality of the transformed vector becomes unmanageable. The mapping is completely uninformed: “similar” categories are not placed closer to each other in embedding space.
+
+The first problem is well-understood: for each additional category — referred to as an entity — we have to add another number to the one-hot encoded vector. If we have 37,000 books on Wikipedia, then representing these requires a 37,000-dimensional vector for each book, which makes training any machine learning model on this representation infeasible.
+
+The second problem is equally limiting: one-hot encoding does not place similar entities closer to one another in vector space. If we measure similarity between vectors using the cosine distance, then after one-hot encoding, the similarity is 0 for every comparison between entities.
+
+This means that entities such as War and Peace and Anna Karenina (both classic books by Leo Tolstoy) are no closer to one another than War and Peace is to The Hitchhiker’s Guide to the Galaxy if we use one-hot encoding.
+
+# One Hot Encoding Categoricals books = ["War and Peace", "Anna Karenina",
+
+"The Hitchhiker's Guide to the Galaxy"] books_encoded = [[1, 0, 0],
+
+[0, 1, 0],
+
+[0, 0, 1]] Similarity (dot product) between First and Second = 0
+
+Similarity (dot product) between Second and Third = 0
+
+Similarity (dot product) between First and Third = 0
+
+Considering these two problems, the ideal solution for representing categorical variables would require fewer numbers than the number of unique categories and would place similar categories closer to one another.
+
+# Idealized Representation of Embedding books = ["War and Peace", "Anna Karenina",
+
+"The Hitchhiker's Guide to the Galaxy"] books_encoded_ideal = [[0.53, 0.85],
+
+[0.60, 0.80],
+
+[-0.78, -0.62]] Similarity (dot product) between First and Second = 0.99
+
+Similarity (dot product) between Second and Third = -0.94
+
+Similarity (dot product) between First and Third = -0.97
+
+To construct a better representation of categorical entities, we can use an embedding neural network and a supervised task to learn embeddings.

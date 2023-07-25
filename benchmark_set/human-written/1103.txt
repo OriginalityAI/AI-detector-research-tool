@@ -1,0 +1,15 @@
+Windows Zero-Day Attack Lets Hackers Hide Malicious Code in Fonts ExtremeTech Follow Mar 24 · 2 min read
+
+by Ryan Whitwam
+
+There’s a new Windows exploit popping up around the internet, but that’s just another day for a nearly ubiquitous desktop operating system. However, this particular vulnerability is serious for several reasons, not least of which it is a “zero-day” bug that Microsoft didn’t know about until attackers began using it to infiltrate systems. Even now, there is no patch for the vulnerability, but Microsoft has issued some tips to help you stay safe while it works on that.
+
+The vulnerability exists in the Adobe Type Manager Library, a Windows DLL file that numerous programs use to render fonts. This file is present in all modern versions of Windows including Windows 7, 8.1, 10, and several server editions. There are two remote code execution flaws in this file, allowing an attacker to create malicious fonts in the Adobe Type 1 Postscript format. Opening a document boobytrapped with such a font will run the malware payload.
+
+Traditionally, remote code execution flaws are seen as the most severe type of attack. You can do almost anything to a system if you can run arbitrary code from installing ransomware to secretly monitoring the user’s activities. Microsoft admits it has detected several malicious documents attempting to use this vulnerability, but it doesn’t say if they have successfully deployed dangerous payloads. The built-in Windows security features can sometimes block exploits from working as intended. Microsoft is probably choosing to keep its statements vague until it can develop a patch.
+
+Until there’s a patch, the age-old wisdom of being careful what you download still holds. You shouldn’t download any documents from an untrusted source, and Microsoft says there are some other measures to take as well. For example, you should consider turning off the preview pane in Windows Explorer. That feature triggers the malicious font code in a file. You can also disable the WebClient service or simply rename the flawed file (ATMFD.DLL). Disabling that file will cause files to render with embedded system fonts, which can break formatting in some documents.
+
+Microsoft says the vulnerability has only appeared in “limited targeted attacks,” a term that usually means government-sponsored campaigns against a few individuals. You probably won’t encounter any of these attacks, but it’s only a matter of time until more hackers get the goods. Keep an eye out for a Windows patch in the near future.
+
+Now read:

@@ -1,0 +1,53 @@
+The first case was in December of 2019. The US went into lockdown in March. Millions of jobs were lost soon after. Thousands fell victim to it, and some ultimately lost their life to it. This pandemic has been a test of not only the world’s but our own resilience, but there’s finally hope!
+
+As of writing this, Pfizer and Moderna have developed vaccines for COVID-19, both of which were approved for emergency use. However, how do they work? How were they developed so quickly? And are is they safe?
+
+How does the vaccine works?
+
+First off, how do vaccines work in general? The goal of a vaccine is to train your body’s immune system to fight off a specific virus. To do that, a vaccine normally contains a dead or weakened virus (which lets your body practice identifying and fighting off the virus). However, the COVID-19 vaccine is a little different.
+
+You may have heard that it contains mRNA, or a fancy molecule that tells the body how to make a specific protein. What protein you may ask? In this case it’s the spike protein of SARS-CoV-2 (the virus’ technical name). This protein is responsible for attaching to and infecting your cells. Your cells take in this mRNA, makes the spike protein, and learns to recognize it, which ultimately leads to you being immune to SARS-CoV-2!
+
+How was the vaccine created so quickly?
+
+The CDC gives strict guidelines on how vaccines are created. Specifically, there are six stages: Exploratory Stage, Pre-Clinical Stage, Clinical Development, Regulatory Review and Approval, Manufactory, and Quality Control. The Exploratory and Pre-Clinical Stages determine the basic science of the vaccine and identifies potential vaccines that work in human cells and animals. The Clinical Development is when, once passing through the Pre-Clinical Stage, is when human testing occurs. Lastly, the last three stages are all about production and administering the vaccine.
+
+The Clinical Development stage is a key step. There are three steps, or phases, in this stage. Phase I administers the potential vaccine to a small number of people to see how it affects them. Phase II is similar, but a wider variety of people are used: people from different demographics, people with health issues, etc. Phase III is when thousands of people are given the potential vaccine to test its safety and effectiveness.
+
+So how did the COVID-19 vaccine go through all these stages? There are three reasons for this.
+
+First off, remember that SARS-CoV-19 is part of the coronavirus family. This family of viruses includes the MERS virus back in 2012, SARS virus back in 2002, and even some types of the common cold. Thus, scientist already knew a whole lot about these viruses. (Remember the spike protein mentioned earlier? Scientist already knew this protein was incredibly important in the coronavirus family and was a potential key protein in the production of the COVID-19 vaccine.)
+
+Secondly, the stages of vaccine production were modified without sacrificing safety (more on that later). The phases of the Clinical Development were overlapped slightly. Phase II was overlapped with Phase I and III. This allowed for faster progression of vaccine production while maintaining safety requirements. In addition, the manufacturing stage was started during Clinical Development to prepare for distribution immediately after Phase III.
+
+Finally, Operation Warp Speed (OWS) provided crucial logistical and financial support during the whole process. The goal of OWS is to deliver millions of vaccines by the end of this month and to have 300 million US citizens vaccinated by mid-2021. To do this, OWS has aided the companies working on the vaccine get over an hurdles they had, including financial hurdles. OWS was behind the manufacturing of the vaccine in preparation for Phase III completion, allowing the vaccine to be delivered to hospitals almost immediately.
+
+Is the vaccine even safe?
+
+Doctors and scientist from around the country have weighed in on this, but we will cover some of the bigger points.
+
+Although the vaccine was fast tracked, it still had to go through different rounds of review, including the Center for Disease Control (CDC) Data and Safety Monitoring Panel, the FDA and their independent vaccine-advisory committee, the CDC’s Advisory Committee on Immunization Practices, along with some state committees. So yes, the vaccine has gone through multiple rounds of scrutiny, which does suggest that is safe for the public. But what about those shortened phases? Do we need to worry about that?
+
+Normally, vaccines go through lengthy stages, as described earlier, but the COVID-19 vaccine did not. The Clinical Development phases were overlapped to reduce the time to make the vaccine. In addition, Phase III was shortened to only two months. This does lead to some questions on the effectiveness of the vaccine. Since this stage would normally take two or three times that (maybe even longer), some people are more weary of the vaccine.
+
+As Dr. Joel Ernst described it in the UCSF Magazine (link below), people who are at high risk of getting in contact with the virus and low risk of adverse reaction from the vaccine should get it. However, if you are at a low risk of getting in contact from the virus (if you work on home and limit contact with others) and high risk of adverse reactions from the vaccine, you may want to contact your primary care doctor to talk about the vaccine.
+
+In Conclusion
+
+The COVID-19 vaccine was developed in record time, from the first case of COVID-19 in December 2019 to the vaccine production and distribution in December 2020. Using the wealth of knowledge scientist knew about coronaviruses (along with aid from OWS), the vaccine was developed, tested, and manufactured in a year. For comparison, the fastest vaccine developed before this one was mumps, which took a whapping four years!
+
+However, is the vaccine safe? Yes! The vaccine went through the proper stages, yes quickly, but still safely, according to the CDC. If you still have questions about whether you should get the vaccine or not, talk to your primary doctor about it. As for now, lets all rejoice in seeing the light at the end of this long, grueling, emotional tunnel.
+
+References:
+
+https://www.youtube.com/watch?v=-92HQA0GcI8
+
+https://www.cdc.gov/vaccines/basics/test-approve.html
+
+https://www.naco.org/articles/look-funding-covid-19-vaccine-planning-and-distribution-counties#:~:text=116%2D136)%2C%20allocated%20billions,19%20vaccine%20manufacturing%20and%20therapeutics.
+
+https://www.nejm.org/doi/full/10.1056/NEJMp2027405
+
+https://time.com/5922752/moderna-covid-19-vaccine-fda-recommendation/
+
+https://www.ucsf.edu/magazine/covid-vaccine-safety

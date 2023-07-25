@@ -1,0 +1,45 @@
+In two previous articles (part 1, part 2) we gave you further explanation on how DomRaider is currently building a new ecosystem to make auctions safer, faster and more reliable through Blockchain technology.
+
+In this following story, we’ll explain the different ways of the DomRaider Token (DRT) usages.
+
+DRTs may only be used to participate and access auctions set up using DomRaider technology. Once this auction network has been created, DRTs may be used on the network as outlined below. However, DomRaider Tokens cannot be used prior to DomRaider having developed the blockchain technology for auction sales (and this is what our team is currently working for). They may, however, be freely exchanged once they have become available.
+
+To sum up, the bidding system set up by DomRaider will make it possible to:
+
+Acquire DRTs
+
+Use DRTs
+
+ACQUIRING TOKENS
+
+By selling goods or products at auction
+
+Rather than settling with fiat currency, the auction organizer may choose to directly provide the seller with the profits of the sale in DRTs. A skilled seller may also act both as seller and organizer. In this way they will have complete control over their auction.
+
+By receiving sales commissions:
+
+As an auction organizer:
+
+An organizer is free to set the level of the commission they wishe to deduct from the winning bid of any auctions they launch. This commission, paid in DRTs, will be added or deducted from the nal sales price, in line with the initial settings.
+
+As an intermediary:
+
+When an organizer has allowed for this in their initial configuration, business providers, platforms or even mobile application providers may receive a commission in DRTs on sales where the winning bidder has gone through this intermediary.
+
+By selling associated network services:
+
+Any service provider wishing to provide a complementary auction service may take part in the planned transactions and receive payment from clients in DRTs. For example, a financial services provider who guarantees a security deposit against volatility during an auction may bill for its services in DRTs.
+
+SPENDING TOKENS
+
+By organizing auctions:
+
+Publishing a new auction on the network does not involve a direct transaction cost for the organizer, however they must first provide a deposit guarantee in DRTs. This will be fully reimbursed at the end of the completed sale as all sale transaction costs are added to the sales price. The security deposit may at any time be partially retained to cover transaction costs in the event that the sale does not complete, or if the organizer cancels it, or if the winner is exempt from direct payment (organizer client or sales parameters).
+
+As a security deposit for certified auctions:
+
+For auctions where the organizer requires a security deposit, bidders must systematically “cover” their bids with an associated security deposit in DRTs. This deposit will be held in escrow only during the time that the auction is valid and will be released as soon as the client loses their hand. It works in a similar way to a debit pre-authorization on a bankcard.
+
+By winning bids:
+
+For auctions where the organizer requires a security deposit, winning a bid leads to the transfer of the corresponding sum placed by the bidder in their security deposit. The sum is then distributed between the buyer, organizer and intermediary. It is possible to envisage that the security deposit might be a little higher in order to cover exchange rate risk between an auction’s at currency and the DRT, which might arise during the sale period. Where applicable, the buyer will be reimbursed the remaining differential at the end of the sale.

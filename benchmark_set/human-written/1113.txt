@@ -1,0 +1,29 @@
+In a move that aligns with Latvian pro-investment and digital innovation sentiments, lawmakers have amended the country’s securities law (FITL), which could potentially benefit the STO industry at large. The adjustments made through the Latvian prospectus exception make it much easier for small and medium companies (SMEs) to raise capital via a prospectus exempt public offering. Such prospectus exemption fits well within the tokenization framework, where issued equity can benefit from increased liquidity in the form of tokenized assets.
+
+The Latvian prospectus exception showcases a forward-looking stance in regards to innovative financial tools, allowing for direct access of investors in primary and secondary markets for small capital investments. It also demonstrates a strengthening of the country’s capital market positioning within the EU.
+
+Previously, companies were able to raise capital from 100,000 EUR to 5,000,000 EUR subject to a simplified prospectus. While this prospectus exception did spur some business, the task was cumbersome. In all instances, companies needed to hire a broker or a bank and a host of other third-party organizations just to accomplish their crowdfunding ventures. As a consequence, with all the costs incurred, a fundraise of, say, 1,000,000 EUR left the company with more expenses than benefits.
+
+Latvian Prospectus Exception
+
+Latvia’s latest prospectus exception is likely to up the amount of tokenized securities a firm can issue before filing a prospectus with regulators for larger issuances. The new rules allow prospectus-free issuance up to 1,000,000 EUR, and between 1,000,000 EUR and 8,000,000, a simplified offering document must be prepared according to the rules of the regulator. Whereas securities offering below 3,000,000 EUR can be done without the involvement of a broker or a bank. Importantly, this last exception is only available to small or medium businesses. Amazingly, these firms would have the ability to host one or several offerings under the total amount of 3,000,000 EUR every 36 months.
+
+Notably, the prospectus exception lists that the issuance offers either equity or debt-based securities. Tokenized equity and debt provide new liquidity in the market. As such, new markets continue to form around these unique financial instruments. Discussing the prospectus exception, Liza Aizupiete, Managing Director of Fintelum stated
+
+In a bid to help startup and real-estate sectors access better funding options, the present changes to the securities law are making Latvia a more attractive EU member state for capital raising. The present regulatory environment allows Fintelum to serve small and medium-sized enterprises raising up to EUR 3 million, within 36 months, with lower capital markets entry barriers. Investors will be able to invest in fiat or cryptocurrencies and access fractionalized ownership of dividend-yielding projects, open to retail investors. With Fintelum tokenization and compliance tools, fractional owners of securities, or utility tokens, will be able to swap interest in projects using our peer-to-peer secondary market and thus increase liquidity in typically illiquid assets. For example, if you own a part of a company that owns either a real estate or represents a commercial company, you can digitally buy or sell these fractions among existing shareholders, or you can seek new investors interested in the project.
+
+Santa Purgaile — Head of the Latvian Financial Regulator (FKTK)
+
+Latvian Crypto Sector
+
+Latvia continues to be one of the top pro-crypto countries in the EU. Latvia has always had an active Bitcoin mining sector. As such, the country has seen incredible adoption. For example, in 2014 airBaltic became the first airline in the world to sell tickets for Bitcoin. Notably, Latvia is home to one of the world’s leading full-service blockchain technology companies — Bitfury.
+
+Blockchain Integration
+
+Realizing how powerful blockchain technology really was, the Latvian State Revenue Service announced that it would employ blockchain tech to combat tax evasion back in February 2019. Additionally, these regulators stated publicly that blockchain technology creates new business opportunities.
+
+Latvia Prospectus Exception
+
+The Latvian prospectus exception is sure to spur significant growth within the country’s STO sector. The country has a lot of momentum in the industry and this latest legislation should make Latvia an even more attractive country for any blockchain startups seeking friendly shores. For now, many of the regulators of the world could learn a thing or two from Latvia.
+
+Source: https://www.securities.io/the-latvian-prospectus-exception-amendment/

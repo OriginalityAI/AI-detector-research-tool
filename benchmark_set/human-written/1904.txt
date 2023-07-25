@@ -1,0 +1,99 @@
+Once upon a time, the typewriter was the only piece of technology a writer had to make his work easier. Now we not only have computers, but we can also access an endless array of useful writing tools on the Internet. Best of all, many of these web applications are absolutely free!
+
+But it takes time to hunt down these apps (time you could be spending on writing), so I’ve done the work for you and put together a list of my favorites.
+
+Writing Tools
+
+1. Google Docs
+
+Google Docs is my go-to word processor when I’m not typing in Microsoft Word. I highly recommend it if you’re collaborating with another person on a writing project. You can access the document on separate computers and see each other’s changes in real time as you type in the document. Additionally, all of your changes are automatically saved as you type.
+
+I have also found Google Docs one of the easiest programs to use to create PDF eBooks. There are a wide variety of templates to choose from. Check out Google Docs here.
+
+2. Draft
+
+This web-based word processor is an excellent alternative to Google Docs or Microsoft Word if you’re looking for a distraction free interface. Draft has many cool features (view them all here) including the ability to share your documents with other users and accept or decline their changes. And like Google Docs, your work is all backed up online.
+
+I also love that Draft tracks how many words you write per day and will even send out a helpful email reminding you to meet your daily word count goal. Check out Draft here.
+
+3. Reedsy Book Editor
+
+The Reedsy Book Editor is a free, online alternative to software programs like Scrivener. Reedsy does not have as many features as Scrivener, but it lets you write (or import) your manuscript, format it, and then instantly typeset to EPUB and print-ready PDF files. Check out the Reedsy Book Editor here.
+
+Editing Tools
+
+4. Grammarly
+
+Grammarly is a proofreading tool that helps you spot grammatical errors, typos, and awkward sentences. Download the web extension and Grammarly will correct anything written in a web browser (yes, even your Tweets and Facebook updates). Though I don’t rely on Grammarly alone for my proofreading needs, it is a fast and efficient tool that I highly recommend. Check out Grammarly here.
+
+5. Hemingway Editor
+
+The Hemingway Editor evaluates a piece of writing for clarity and simplicity. It calculates readability and highlights adverbs, passive voice, and dull, complicated words. This is an excellent web application for learning how to write effectively. Check out Hemingway Editor here.
+
+6. Readability Score
+
+This web application helps you improve your writing by measuring the readability of your text. A readability score tells you roughly what level of education someone would need in order to read your piece of text easily. Find out how easy your writing is to read. Check out Readability Score here.
+
+7. Cliche Finder
+
+In his six rules for writing, George Orwell advised, “Never use a metaphor, simile, or other figure of speech which you are used to seeing in print.” The Cliche Finder highlights cliches in your text so you can avoid overused expressions in your writing. Check out Cliche Finder here.
+
+Productivity Tools
+
+8. Todoist
+
+Todoist is a task management web application that lets you create to-do lists with recurring dates and times. With Todoist, you can create a custom schedule for every single day. This is fantastic for reminding you of your daily writing goals. For example, you can schedule “writing every day at 8am” or you can create tasks that only recur on specific days, e.g., “research every Friday”. Check out Todoist here.
+
+9. Trello
+
+Trello is a fantastic web application for organizing and planning writing projects and working collaboratively. It works like an online bulletin board, allowing you to arrange all of your cards into columns. Those cards can be anything from tasks on a to-do list to scenes from your latest novel. Check out Trello here.
+
+10. Marinara Timer
+
+This productivity timer is one of the best apps out there if you’re a fan of the Pomodoro technique like I am. I wrote about the Pomodoro technique in the post below:
+
+Marinara lets you use a traditional 25-minute timer followed by pre-programmed breaks or you can customize the time. The web application also has a handy timer history that records the exact times when you start and finish working, when you pause the timer, and when you take breaks. This is a helpful way to keep track of your hours and see how long projects take you. Check out Marinara Timer here.
+
+11. Evernote
+
+Evernote is my go-to app for creating quick to-do lists, jotting down notes, and writing up blog post ideas. It even lets you take audio notes! With the Evernote Web Clipper extension, you can clip articles from across the web and save them into Evernote for quick reference while working on projects. Best of all, Evernote instantly syncs across any computer or smartphone you use. Check out Evernote here.
+
+12. Writing Calculator
+
+Answer several questions and this online tool will help you estimate how many words per day you need to write to complete your writing project by a specific deadline. This is super helpful for when you’re planning out your writing project. If you know how many words per minute you write, it will even tell you how many hours until you reach your goal. Check out the writing calculator here.
+
+13. Hipster Sound
+
+If you like to have ambient noise in the background during your writing sessions, you’re going to love this website. Hipster Sound is an ambient noise generator that recreates the sounds of cafes. It helps you stay focused and improve your productivity, even on those days when you can’t make it to your local coffee shop. Check out Hipster Sound here.
+
+14. Noisli
+
+If you prefer nature sounds to cafe sounds while you write, then Noisli is for you. Noisli lets you mix and match a selection of different nature sounds to create your perfect writing environment. Check out Noisli here.
+
+Graphic Design & Social Media Tools
+
+15. Canva
+
+Canva is a user-friendly graphic design software with a wide range of drag and drop templates. You can use Canva to create stunning graphics for Facebook and Pinterest or design a beautiful eBook and book covers. Check out Canva here.
+
+16. Adazing Ebook 3D Cover Creator
+
+The Adazing eBook Cover Creator lets you bring your book to life with realistic 3D mockups. You can choose from ten different templates. Check out the Adazing Ebook Cover Creator here. (Book Brush is a similar service and also has a free plan.)
+
+17. Piktochart
+
+Infographics are an effective way to repurpose your blog content and present your writing in a visually captivating format. Piktochart is an easy-to-use infographic maker with a library of professionally designed templates. Check out Piktochart here.
+
+18. Lumen5
+
+Lumen5 is an easy to use tool that will turn your blog posts into high quality videos you can share on social media. First, you enter the link to your blog post. Then, using Natural Language Processing algorithms, Lumen5 automatically creates a storyboard for you and suggests free stock photos and audio you can use. Check out Lumen5 here.
+
+Blogging Tools
+
+19. Answer the Public
+
+Sometimes we just run out of ideas for what to blog about. Answer the Public is a free keyword research tool that shows the questions people are typing into search engines about your topic. It’s perfect for when you’re facing writer’s block. Check out AnswerthePublic here.
+
+20. CoSchedule Headline Analyzer
+
+The CoSchedule headline analyzer app evaluates how well your blog post’s headline will rank in search engines. It also scores how effectively your headline will result in social shares and click-throughs. The headline analyzer is a fantastic way to hone your copywriting skills and make sure your headlines are irresistible. Check out the Headline Analyzer here.

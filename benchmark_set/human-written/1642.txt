@@ -1,0 +1,17 @@
+Dear Coindelta Users,
+
+Recently we faced some problems with our HDFC bank account. Please DO NOT make any deposit to our old HDFC account. This was the core reason for why the deposits and withdrawals were halted on Coindelta. For the last two weeks, our team has been working limitless to find the solution to the challenge we faced. We apologize for the inconveniences faced during this period.
+
+Today, we are glad to announce the integration of a new payment gateway for the withdrawals and we assure you deposits are also coming very soon (the deposit integration has been delayed due to some issues faced by our payment and banking partners. We will update you as soon as we hear on it.)
+
+PLEASE NOTE THAT THESE CHARGES AND LIMITS ARE SET BY THE PAYMENT PARTNER AND THE ASSOCIATED BANKS.
+
+Withdrawals will be processed through NEFT on the same day. Withdrawal Fee: Rs. 30 There will be a maximum limit of Rs. 25,000 per withdrawal. Note that there is no upper limit on withdrawal per user per day. It means you can place any number of withdrawal request in a day provided each withdrawal amount is less than Rs. 25,000.
+
+For example, Mr. Nakamoto wants to withdraw Rs. 2,00,000. To withdraw the same, Mr. Nakamoto can create eight withdrawal requests of Rs. 25,000 each, totalling Rs. 2,00,000. These eight withdrawal requests will cost Rs. 30 each, so totalling a fee of Rs. 240. Mr. Nakamoto will receive Rs. 24,970 into his account eight times.
+
+Having said that, we do understand the need of the crypto-community for a seamless trading environment. We are hopeful for more positive environment towards cryptocurrencies in India. In few days, we will introduce more convenient deposit methods such as UPI, IMPS and NEFT.
+
+We would love to have you onboard in our Telegram community at https://t.me/coindelta. You may also connect with us on Twitter at https://twitter.com/coindelta_.
+
+P.S.: The limits on withdrawals are subjected to change and will be increased in the coming weeks.

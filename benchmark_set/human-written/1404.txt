@@ -1,0 +1,79 @@
+Chapter 1 — Introduction
+
+A reinforcement learning system has four main subelements:
+
+
+
+- a policy
+
+- a reward signal
+
+- a value function
+
+- and optionally, a model of the environment
+
+Policy
+
+The policy defines how the agent will behave in any given time. More formally, it’s a mapping from the states of the environment to actions to be taken when in those states.
+
+Different states and the possible actions from them [ref]
+
+For example, imagine that you’re in state S2. Notice that you can go to either state S3 (taking action a6), or stay in the same state S2 (take action a3). The policy tells that you should take action a6 and go to state S3.
+
+So again, a policy π is a function that takes as an input a state “S” (S2 in our example) and returns an action “a” (a6 in our example).
+
+That is: π(s) → a
+
+Or in our example, π(S2) → a6
+
+It’s also important to understand that the learner and decision-maker is called the agent. The thing it interacts with, comprising everything outside the agent, is called the environment.
+
+The policy may look like a lookup table, a simple function, or it may involve extensive computation such as a search process.
+
+Also, the policy alone is sufficient to determine the agent’s behavior.
+
+Policies are usually stochastic, meaning that we select an action from a probability distribution.
+
+As an example, imagine that we are state S2 again. The policy will not just tell the agent “take action a6”. Instead, it will say “take action a6 with probability 88%, and take action a3 with probability 12%”.
+
+Reward signal
+
+After every action that the agent takes, the environment sends it a single number, a reward. The reward that the agent receives depends on the agent’s action and the state. The agent’s only goal is to maximize the total reward it receives over the long run.
+
+The reward signal thus tells the agent what are the good and what are the bad decisions (e.g. low reward = bad, high reward = good).
+
+The reward signal is the primary basis for altering the policy. Meaning, if the policy tells the agent to select an action when it’s in specific state (e.g. choose action “a6” when you’re in state “S2”), and that action is followed by a low reward, then the policy may be changed to select some other action in that situation (i.e. state) in the future.
+
+Value function
+
+Whereas the reward signal indicates what’s good for the agent at the moment (e.g. taking action “a6” right now when the agent is on “S2), a value function specifies what is good in the long run.
+
+The value function takes into account the states that are likely to follow, and the rewards available in those states.
+
+The value of a state is the total amount of reward an agent can expect to accumulate over the future, starting from that state.
+
+So going back to our example, the value of state S3 takes into account the fact that after going into S3, you could also go to states S1 and S4.
+
+The value of state S2 takes into account the fact that after going into S2, you could also go to states S3 and S2.
+
+It’s important because a state might always gives an agent a low immediate reward, but if that state have a high value, it means that it’s often followed by other states that yield high rewards (hence, the agent should still go to that state).
+
+So for example, imagine again that the agent is at state S2, and that taking action “a3” yields a reward with a value of 5. And that taking the action “a6” yields a reward with a value of 3. Maybe the reason the policy told the agent to go to state S3 from state S2 (taking action “a6”) is that once the agent is on state S3, it can take action “a2” that yields a 100 reward value.
+
+Rewards are given directly by the environment, but values must be estimated and re-estimated from the observations an agent makes over its lifetime. That is, because the value of a state will change depending on what the agent knows about futures possibilities from that state. And since the agent continuously explore, it will discover more possibilities.
+
+Without rewards there will be no values, and the only reason to estimate values is to achieve more rewards in the long run. Hence, you can think about rewards as primary, and values as secondary (they are just used as predictions of future rewards).
+
+Nevertheless, it’s values that we care about when making and evaluating decisions. We seek actions that bring us to states of highest value, not the highest reward, because these actions will provide us with the greatest amount of reward in the long run.
+
+Model of the environment
+
+The model of the environment is a model that mimics how the environment will behave.
+
+For example, given a state and an action, the model might predict the next state and next reward.
+
+Models are used for deciding on a course of actions, by taking into account possible future situations before they are actually experienced.
+
+RL problems that use models are called model-based methods.
+
+RL problems that don’t use models are called model-free methods. The agents here are explicitly trial-and-error learners.

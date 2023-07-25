@@ -1,0 +1,9 @@
+Canonical's founder, Mark Shuttleworth, has proudly announced the codename for the next major release of Ubuntu Linux, version 16.10. Traditionally, the founder of Ubuntu releases the name of the upcoming version a few days before the launch of the current version in development. However, in a somewhat surprising move, Shuttleworth chose to post the announcement of Ubuntu 16.10's name, Yakkety Yak, on the same day as Ubuntu 16.04 LTS (Xenial Xerus) was released.
+
+Ubuntu 16.10, also known as Yakkety Yak, is set to launch in late October of this year. The operating system's specific targets and goals are yet to be determined by the Ubuntu team, but it will follow a familiar development cycle that has been established with previous releases.
+
+Similar to previous releases, Ubuntu 16.10 will only have a Final Beta build available for the public beta testers. Opt-in flavors of Ubuntu will participate in the Alpha 1, Alpha 2, and Beta 1 releases that are characteristic of Ubuntu's developmental cycle. An internal Release Candidate build will also be made available in October.
+
+Shuttleworth's playful announcement regarding Yakkety Yak's name has left some speculating about the potential goals of the Ubuntu 16.10 release. Nevertheless, as with previous releases, the Ubuntu team's planning and development has yet to be seen, and its goals remain undisclosed.
+
+As always, we will be covering the development of Ubuntu 16.10, from the first developer release to the final release to the public. Stay tuned for more updates on the development and eventual release of Yakkety Yak.

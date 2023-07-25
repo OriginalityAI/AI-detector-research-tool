@@ -1,0 +1,27 @@
+Preferring composition isn't just about polymorphism. Although that is part of it, and you are right that (at least in nominally typed languages) what people really mean is "prefer a combination of composition and interface implementation." But, the reasons to prefer composition (in many circumstances) are profound.
+
+Polymorphism is about one thing behaving multiple ways. So, generics/templates are a "polymorphic" feature in so far as they allow a single piece of code to vary its behavior with types. In-fact, this type of polymorphism is really the best behaved and is generally referred to as parametric polymorphism because the variation is defined by a parameter.
+
+Many languages provide a form of polymorphism called "overloading" or ad hoc polymorphism where multiple procedures with the same name are defined in an ad hoc manner, and where one is chosen by the language (perhaps the most specific). This is the least well behaved kind of polymorphism, since nothing connects the behavior of the two procedures except developed convention.
+
+A third kind of polymorphism is subtype polymorphism. Here a procedure defined on a given type, can also work on a whole family of "subtypes" of that type. When you implement an interface or extend a class you are generally declaring your intention to create a subtype. True subtypes are governed by Liskov's Substitution Principle, which says that if you can prove something about all objects in a supertype you can prove it about all instances in a subtype. Life gets dangerous though, since in languages like C++ and Java, people generally have unenforced, and often undocumented assumptions about classes which may or may not be true about their subclasses. That is, code is written as if more is provable than it really is, which produces a whole host of issues when you subtype carelessly.
+
+Inheritance is actually independent of polymorphism. Given some thing "T" which has a reference to itself, inheritance happens when you create a new thing "S" from "T" replacing "T"s reference to itself with a reference to "S". That definition is intentionally vague, since inheritance can happen in many situations, but the most common is subclassing an object which has the effect of replacing the this pointer called by virtual functions with the this pointer to the subtype.
+
+Inheritance is a dangerous like all very powerful things inheritance has the power to cause havoc. For example, suppose you override a method when inheriting from some class: all is well and good until some other method of that class assumes the method you inherit to behave a certain way, after all that is how the author of the original class designed it. You can partially protect against this by declaring all methods called by another of your methods private or non-virtual (final), unless they are designed to be overridden. Even this though isn't always good enough. Sometimes you might see something like this (in pseudo Java, hopefully readable to C++ and C# users)
+
+interface UsefulThingsInterface { void doThings(); void doMoreThings(); } ... class WayOfDoingUsefulThings implements UsefulThingsInterface{ private foo stuff; public final int getStuff(); void doThings(){ //modifies stuff, such that ... ... } ... void doMoreThings(){ //ignores stuff ... } }
+
+you think this is lovely, and have your own way of doing "things", but you use inheritance to acquire the ability to do "moreThings",
+
+class MyUsefulThings extends WayOfDoingUsefulThings{ void doThings { //my way } }
+
+And all is well and good. WayOfDoingUsefulThings was designed in such a way that replacing one method doesn't change the semantics of any other... except wait, no it wasn't. It just looks like it was, but doThings changed mutable state that mattered. So, even though it didn't call any override-able functions,
+
+void dealWithStuff(WayOfDoingUsefulThings bar){ bar.doThings() use(bar.getStuff()); }
+
+now does something different than expected when you pass it a MyUsefulThings . Whats worse, you might not even know that WayOfDoingUsefulThings made those promises. Maybe dealWithStuff comes from the same library as WayOfDoingUsefulThings and getStuff() isn't even exported by the library (think of friend classes in C++). Worse still, you have defeated the static checks of the language without realizing it: dealWithStuff took a WayOfDoingUsefulThings just to make sure that it would have a getStuff() function that behaved a certain way.
+
+Using composition
+
+class MyUsefulThings implements UsefulThingsInterface{ private way = new WayOfDoingUsefulThings() void doThings() { //my way } void doMoreThings() { this

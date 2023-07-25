@@ -1,0 +1,61 @@
+The gospel we preach is clear and unchanging: “Deliver the right message to the right people at the right time.” As a product marketer, you possess a deep understanding of strategic positioning, the nuances of messaging, and the wants and needs of your customer.
+
+You strategize your approach to pricing, ad copy, website content, tone of voice, and your product’s unique value proposition. You also leverage that holistic grasp on your customer’s profile to inform the product roadmap, and your approach to solving customer problems. Your daily conversations shift from “how do we run the show” to “what stage do we perform on, and who will sit in the audience?”
+
+The best product marketers not only wear the hat of marketing wizard and all things internal team enablement, they can also slip effortlessly into the role of full-fledged product owner. And while product marketing and product management have tons of overlap in their day-to-day, there are a few key areas of PM expertise that we can benefit from.
+
+1. Always be listening
+
+Traditionally, product marketers communicate value to the market. They have a hyper-detailed knowledge of the competitive landscape, and can strategize about how it fits into the bigger picture. They define competitive messaging and strategic positioning based on the problems a product manager commits to solving.
+
+It’s all about alignment for product marketers. Gluing together sales, product, support, engineering, and leadership with market/price fit, channel partnerships, and happy customers.
+
+Product managers often manage the strategy behind the roadmap — marrying together raw customer feedback, stakeholder needs, and developer resources to ship the right product. The core skill here is a simple one: they are always listening.
+
+Product managers are exceptional at gathering information. And while product marketers and product managers both involve collecting customer feedback, the two roles work to solve different problems. Product marketers and managers both communicate with the market to balance necessity and desire; what they do with the findings distinguishes the two roles.
+
+The best product managers are constantly sourcing and learning from their target customers to ensure that the product they’re building addresses the most painful, and real, customer problems.
+
+There’s a ton of information out there from product managers on how to get the right information out of customers, how to influence stakeholders and reach consensus across teams. But this TEDxVienna talk by Michael Stevens offers an excellent starting point for learning how we, as product marketers, can listen more and ask our customers better questions.
+
+Further, if little to no relationship exists between PMs and PMMs within an organization, there exists an opportunity for those two functions to team up, share customer development techniques, and collaborate in research to power up their collective impact.
+
+2. Always be testing, especially your own assumptions
+
+A large part of what product managers do is decide what to build by testing assumptions and validating hypotheses.
+
+In short, all marketers must adapt to taking this approach to planning. It’s too easy and too common for marketers to, say, hire a PR agency and promise stakeholders lofty placements in Business Insider or Huffington Post. We mean well, but failure to meet those expectations yields disappointment across the board, and perpetuates stereotypes of marketers being filled with hot air.
+
+When marketers overpromise and underdeliver, it’s not always directly tied to positive or negative end results. It’s the failure to meet expectations. And there are things we can do to set better, clearer, and more realistic expectations for ourselves.
+
+For example, at Kayako, I knew talk had swirled within the organization for years around introducing PR as a way for us to gain targeted awareness for our top of funnel initiatives such as our live chat statistics report. I wanted to try it once and for all, but I had zero information telling me that this would be a surefire way for us to achieve our goal of increased mindshare for key audiences.
+
+So, I treated it like an experiment…
+
+I explicitly defined three tiers of goals (indicating ideal, acceptable, poor results) for the outcome of a finite, 4-month contract with an agency I hired via personal recommendation under the condition that if we gained even a low level of early traction, we would continue working together.
+
+Instead of getting the leadership team excited about finally introducing PR to the mix, I candidly and repeatedly positioned our venture into PR as an experiment with a defined hypothesis, goals articulated, and a course of action in place for every possible outcome — with failure as no exception.
+
+When our 4-month trial campaign yielded very low quantifiable results, we were able to walk away still feeling proud of the experiment because it still yielded interesting results. We learned that PR actually plays a longer game, and a 4-month trial was insufficient for determining whether or not PR can actually work for us (a few bites actually trickled in months after the contract ended). Despite all this, the stakeholders were impressed with our scientific and proactive approach to solving this problem, and the experiment was considered a net success.
+
+Photo cred: Furthermore UX Experts
+
+This is the approach that all product managers take when trying to fix the problems they’re working to solve. Framing every statement, whether it be personal belief or widely accepted truths, must be poked, prodded, questioned, and proven to be true if it is intended to drive action.
+
+3. Lean into deeper, more technical product conversations
+
+It may not always feel second nature for us, but product marketers can, and should, take on the task of participating in more technical product development conversations, and back up input with findings from Voice of the Customer interviews. If you have the chance to own a customer development program, you create an opportunity to build and manage feedback loops at scale, as well as structuring process around crafting user stories and development direction.
+
+Deepening your contribution to product-shaping conversations means you can better champion your customers both within your organization and across your communities.
+
+As an added tip from my personal experience (or rather, something I’m actively working on in my own role as a PMM at Kayako), product marketers will benefit from developing a deep, detailed, and comprehensive understanding of competitive products as well as related technologies.
+
+In the same way that an account executive with a strong technical understanding of their product might blow you away on a sales demo, the same goes for marketers with encyclopedic knowledge of the competition’s product offering. If you can bring this kind of deep competitor knowledge to the table, you could have a great impact on product decisions, and a chance to thicken the glue that binds your business.
+
+While product managers still own the product development process and the roadmap in its entirety, there is an opportunity for product marketers to contribute to and influence the direction of business at a core level.
+
+4. Put the customer at the heart of your role, at the core of every decision
+
+Both product marketers and product managers work best by putting customers at the heart of their decisions. And it is worth our time, as product marketers, to collaborate with existing product managers across the business with a common goal of leveraging real, tangible customer insight to drive product direction. If no product manager exists at your business yet, it’s even better if you can bring this to the table yourself.
+
+Focus on anything that puts your customer at the heart of your decisions, and you, and the business, will feel the benefit from customer happiness ratings to the bottom line.

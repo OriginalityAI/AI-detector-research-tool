@@ -1,0 +1,79 @@
+Photo by Scott Graham on Unsplash
+
+Introduction
+
+If you’re reading this, we likely have something in common. Like you, I too am trying to break into the field of data science.
+
+I have an idea of what skills are required, but I wanted to find out how my assumptions lined up with what is actually going on in the real world.
+
+To find out what tools, skills and credentials are most helpful in breaking into the field of data science, I turned to Kaggle’s 2020 Machine Learning & Data Science Survey, the most comprehensive dataset available on the state of machine learning and data science.
+
+The survey results include answers from a little over 20,000 individuals from 55 countries. The survey respondents work in a variety of roles, such as data scientist, software engineer, and machine learning engineer. Since we are interested in breaking into data science, I chose to only investigate the responses given from the 2,676 data scientists who answered the survey.
+
+Below you can see the roles of the survey respondents.
+
+Question 1: Do you need a PhD to get into data science?
+
+You may have heard that you need a masters or a PhD to be a data scientist. But is this what the data suggests?
+
+To answer this question, I looked at the responses that data scientists gave to the question:
+
+What is the highest level of formal education that you have attained or plan to attain within the next 2 years?
+
+Below you can see the highest level of education attained by the data scientists who responded to the survey.
+
+24% of the data scientists have not completed anything more than a bachelor’s degree. I’d say that gives us a pretty fair shot at building a career in data science with only a bachelor’s, so long as we are willing to work hard to master the necessary skills!
+
+92% of the data scientists who responded to the survey have a bachelor’s, master’s, or a PhD. Based on this, I’m really happy that I’m finishing up my undergrad program next semester, because without a bachelor’s, it seems like the odds of breaking into the field are seriously stacked against us.
+
+If you don’t have at least a bachelor’s, and don’t want to go back to school, well, 8% is better than 0%, and I think that if you master the right skills you can still have a successful career in data science.
+
+Up next, let’s look at what programming languages are used by data scientists.
+
+Question 2: What programming languages are essential for data scientists?
+
+Are you practicing and mastering the programming languages that are being used by data scientists today?
+
+How many programming languages do you need to learn?
+
+Should you focus all your efforts on learning one language, or should you learn a variety of languages?
+
+To know what the right answers to the above questions are, let’s investigate what programming languages are being used by data scientists on a regular basis.
+
+To investigate this, we will look at how data scientists responded to the following question:
+
+What programming languages do you use on a regular basis? (Select all that apply)
+
+Below you can see the programming languages used by data scientists on a regular basis.
+
+What I take away from this plot, is that if your goal is to break into data science as soon as possible, focus all of your attention on learning Python (and maybe SQL). The other languages are used by a significant amount of data scientists, but you’re going to get more bang for your buck when you focus your attention on Python and/or SQL, and you can always learn those other languages later.
+
+Another thing to note is, the average number of programming languages used on a regular basis per data scientist is 2.6, so in addition to mastering Python, you should consider learning SQL and/or R.
+
+Now that we know what languages we should learn, practice, and master, how do we go about learning these programming languages? To answer that question, let’s investigate which learning platforms data scientists use.
+
+Question 3: What platforms should we be using to learn the concepts and programming languages used in data science?
+
+I think we should be using the platforms that are frequently used by people already in the field.
+
+To find what platforms are used by data scientists to learn data science concepts and programming languages, let’s investigate the responses given to the following question:
+
+On which platforms have you begun or completed data science courses? (Select all that apply)
+
+Below you can see the online learning platforms used by data scientists.
+
+As you can see, Coursera is the obvious favorite among data scientists, but there are plenty of other popular learning platforms as well.
+
+Something I found interesting was the total number of learning platforms used. The average number of learning platforms used per data scientist is 2.3, and only 6% of data scientist respondents have never used any learning platform to learn data science.
+
+Conclusion
+
+By observing the responses given by data scientists to Kaggle’s 2020 Machine Learning & Data Science Survey, we found that:
+
+Having at least a bachelor’s degree can really help you get into the field. The average number of programming languages used on a regular basis per data scientist is 2.6, with the top three being Python (92%), SQL (55%), and R (36%). Data Scientists are learning machines! The average data scientist has used at least 2 learning platforms to learn data science.
+
+Remember, the analysis above comes from a small subset of the data science population, and there are plenty of other factors that go into breaking into data science, so the question remains:
+
+What will you do to break into data science?
+
+To see the code I wrote to analyze the survey, click here.

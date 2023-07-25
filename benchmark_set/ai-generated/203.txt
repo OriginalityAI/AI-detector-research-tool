@@ -1,0 +1,15 @@
+Affirmative Action and Human Capital Investment: Evidence from a Randomized Field Experiment.
+
+Affirmative action (AA) has been a contentious policy in the United States for decades. AA policies have been implemented in various fields, from universities to workplaces, to promote diversity and facilitate opportunities for marginalized individuals. One area that has received significant attention is college and university admissions. AA policies aim to increase access to education for underrepresented groups by setting aside a certain number of seats in universities for these groups. 
+
+A new report from NBER Working Paper No. 20397 highlights how policies like AA change the allocation of seats in universities and the competition between different demographic groups. The report presents a theory of AA in university admissions, showing how the effects of AA on human capital investment differ by student ability and demographic group. 
+
+The study also conducted a field experiment designed to mimic competitive investment prior to the college market. The researchers paid students based on relative performance on a mathematics exam to test the incentive effects of AA, and tracked study efforts on an online mathematics website. The results suggest that AA increases average human capital investment for the majority of disadvantaged students targeted by the policy. 
+
+The report highlights that pre-college human capital investment occurs within a competitive environment and depends on market incentives created by AA in college admissions. These policies affect mechanisms for rank-order allocation of college seats and alter the relative competition between blacks and whites. The study finds that AA mitigates so-called "discouragement effects" and promotes greater equality of market outcomes while simultaneously narrowings achievement gaps. 
+
+The findings of the study have significant implications for policymakers. The report demonstrates that AA is an effective tool to increase equality in higher education. The policy provides important evidence for policymakers to combat inequality and create a more diverse and inclusive society. 
+
+However, the study also acknowledges that there are varying views on the effectiveness of AA policies. The report highlights the importance of assessing the efficacy of AA policies in the wider context of society. Nonetheless, the findings show that AA can have positive impacts on higher education and reduce achievement gaps. 
+
+In conclusion, the report provides critical evidence on the efficacy of AA policies in higher education. The study provides evidence for policymakers to combat inequality and create a more diverse and inclusive society. Nonetheless, the findings highlight the importance of ongoing research and evaluation to determine the effectiveness of AA policies in the wider context of society.

@@ -1,0 +1,99 @@
+When building a complicated C++ application, the process can involve multiple tasks including pre-processing, compilation, linking, library generation, etc. Most of the time, for time-saving purposes, we only want to re-run certain steps but not all to rebuild the application reflecting an incremental change. It’s hard to bookkeep what’s changed and what’s not manually. Build automation tools can help organize such complicated processes.
+
+In this tutorial, we will use one popular tool for C++ — Make to demonstrate how to automate the building process.
+
+1. What is Make — an Important Legacy Tool
+
+Surprisingly, make (1976) has a longer history than C++ language (1978). It was designed to be a software building tool not tied to any specific language. Despite its age, it is still been widely used today as it introduced effective technologies affecting other modern build automation tools. The author Stuart Feldman received the 2003 ACM Software System Award for creating it.
+
+Even if you are not using Make at the moment, it is important to understand how it works as long as you are building software.
+
+2. Make’s Main Concepts
+
+Target
+
+Usually, we have more than one thing to build in a project. In Make, we describe the things to build as “targets”. A target can be a final delivery like a C++ executable or an intermediate result that will be used later like an object file or static/dynamic library.
+
+Dependency
+
+If file A changes, file B needs to be rebuilt, we say B depends on A. A target can depend on source files, external libraries and other targets. When we run “make” command, make will automatically figure out dependencies based on the rules (demonstrated in the following part) and only rebuild what’s changed since the last build to save time. This is the most fundamental feature of make.
+
+Rule
+
+A rule in Makefile (the text script to direct Make’s building process) is presented as:
+
+target : dependency
+
+<tab> command(s)
+
+Target is usually the output file name of the command. Dependency specifies the input files or other targets. In the following example, a rule is defined to compile “hello.cpp” file:
+
+hello : hello.cpp
+
+<tab> g++ hello.cpp -o hello
+
+We use the executable name “hello” as the target and put the source file (hello.cpp) in the dependency part. The command part contains the g++ compiler call to translate the input to output.
+
+3. Writing a Makefile
+
+Makefile defines the rules Make requires to execute. How to write a Makefile is a broad topic that worths a complete book to discuss. This part contains a simple example that’s good enough to help you understand the basic syntax.
+
+Say I have an example consisting of two source files and a header file:
+
+To build this program step by step, I need the following 3 commands:
+
+Let’s automate the process by first writing down all rules in the format required by makefile as our first version:
+
+Please don’t forget to include header files in the dependency list as they affect the generation of object files!
+
+We can build “a.out” by typing commands “make” or equivalently “make a.out”. Notice by default, Make will pick the first target (a.out) as the default target if the user doesn’t provide it in the command line explicitly.
+
+This version works fine but has several inefficiencies with the consideration of maintenance and future extension.
+
+1. Repeated compiler name “g++” and file name “greeting.h” appeared in multiple commands, we can replace them with macro definitions:
+
+2. Same source file/object names (“main.cpp/o”, “greeting.cpp/o”) appearing in target/dependency also show up in the command. We can get rid of the redundancy utilizing the following built-in macros:
+
+$@ is a macro that refers to the target
+
+$< is a macro that refers to the first dependency
+
+$^ is a macro that refers to all dependencies
+
+The makefile becomes:
+
+3. Similar rule definitions for main.o and greeting.o. They are the same rule applying to different source files. We can unify them using % to match file names:
+
+This version looks way simpler! We can include a few more makefile conventions to make it more expandable:
+
+Inserting macro CXXFLAGS/CFLAGS and LD_FLAGS to help specify compile-time and link-time options. For demonstrating purpose, I am adding a compile-time flag “-Wall” (enabling all warning) and link flag “-lpthread” (link to pthread library). The user can later modify them at the top of the file. Group objects files with a macro OBJ. Adding a “clean” target to help us delete all output/temporary files.
+
+We now have a much more generic and easy-to-extend version of Makefile. This can be a starting point for your project. For more details about makefile, you can find them in Makefile Tutorial by Example.
+
+4. Beyond Compiling a Program
+
+We have just scratched the surface of Make. In real applications, build automation tools performings more tasks and we have more choices than Make.
+
+More tasks
+
+A building process can be way more complicated than just compilation and linking including:
+
+Downloading dependencies. Running tests. Deploy built target to production systems. Generating documents.
+
+Other Tools
+
+Like all other technologies, build automation tool is evolving over time. C++ developers today have many choices:
+
+MSBuild (Microsoft Build Engine) is the building tool Visual Studio uses (Visual Studio depends on it, not vice versa). It integrates very well with Visual Studio IDE.
+
+Ninja is a small build system with a focus on speed. It is used in building many famous projects including Google Chrome and LLVM.
+
+CMake is technically not a build tool (that’s supposed to be used like make) but rather a build-system generator (a.k.a meta-build tool). It is used in conjunction with native build environments such as Make, Ninja, MSBuild, etc and designed to be cross-platform (Linux, Windows, macOS, etc.) and compiler-independent(GCC, Clang, MSVC, etc.). Here is a good introduction article: Introduction to modern CMake for beginners.
+
+5. Summary
+
+In this tutorial, we learned the basics of Make:
+
+What is a build automation tool and how it helps — by only rebuild what’s needed. How to define a rule with target, dependency and command in Makefile. Writing a simple generic Makefile using user-defined and built-in macros.
+
+Reference

@@ -1,0 +1,71 @@
+BOX PLOT:
+
+import seaborn as sns
+
+sns.boxplot(x=”drive-wheels”,y=”price”,data=df)
+
+Box plot gives us information like the five lines in each box from the x-axis represents the min value, 25%, 50%, 75% and the max value respectively. The lowest line is the minimum price and the top line represents the max price. In the first box, 17000 is the median price, 25% cars have price below 13000 and 75% cars have price below 22000. Max price is 36000 and min price is 7000.
+
+SCATTER PLOT:
+
+Scatter plot basically represents relation between 2 features in a 2D plane.
+
+import matplotlib.pyplot as plt
+
+x=df["engine-size"]
+
+y=df["price"]
+
+plt.scatter(x,y)
+
+plt.xlabel("engine-size")
+
+plt.ylabel("price")
+
+plt.title("Scatter plot")
+
+CORELATION:
+
+pearson coefficient — to check corelation between 2 features on the basis of corelation-coefficient and p-value.
+
+corelation coefficient has +ve relation if it’s value is nearly equal to 1, has -ve relation if it’s value is nearly equal to -1 and no relation if it’s value is nearly equal to 0.
+
+p-value shows strong certainty if the value is less than 0.001, moderate certainty if the value is less than 0.05, weak certainty if the value is less than 0.1 and no certainty if the value is greater than 0.1.
+
+corelation coefficient close to 1 or -1 and p-value less than 0.001 is considered strong corelation.
+
+import seaborn as sns
+
+ax = sns.heatmap(df.corr(), vmin=-1, vmax=1, center=0, cmap=sns.diverging_palette(20, 220, n=200), square=True)
+
+Corelation coefficient values of each feature with each feature is given above. The boxes that are more coloured are more co-related and hence must be used as a feature.
+
+DISTRIBUTION PLOT:
+
+This is basically used to check our results and visualize training output and test output together for better understanding.
+
+x axis has y/yhat output values and y axis has frequency
+
+import seaborn as sns
+
+from sklearn.linear_model import LinearRegression
+
+lm = LinearRegression()
+
+X = df[[“horsepower”, “curb-weight”, “engine-size”, “highway-mpg”]]
+
+Y = df[“price”]
+
+lm.fit(X, Y)
+
+Yhat = lm.predict(X)
+
+axl = sns.distplot(Y, hist=False, color=”r”, label=”Actual Value”)
+
+sns.distplot(Yhat, hist=False, color=”b”, label=”Fitted Values”, ax=axl)
+
+We used linear regression to fit our training set. From the figure below, we can clearly get how the price gets changed. Also, we get to know at what price the frequency is higher or lower both before and after training.
+
+Thanks.
+
+You can reach me via mail, linkedIn, github.

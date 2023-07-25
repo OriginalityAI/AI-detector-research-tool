@@ -1,0 +1,59 @@
+Sending Emails via Form Submit in React
+
+EmailJS is a very cool and simple tool that allows you to send emails from your web applications. This is a guide for how to do it in React!
+
+Step 1: The EmailJS Portion
+
+Head over to emailjs.com and click “Sign Up Free” in the top right corner. Go to your dashboard, click “Email Services”, then add the email service you would like to use.
+
+I deleted this service to nobody steals my Service ID :D
+
+3. Click “Connect Account” to connect your Gmail to EmailJS, then click “Create Service”. You should get a test email to confirm everything is working properly.
+
+4. Click on “Email Templates”, then “Create New Template”
+
+5. Create your email template! You can interpolate any field from your form by putting its “name” attribute in double curly braces.
+
+Step 2: The Code Portion
+
+Run npm install emailjs-com --save in your project directory. Import EmailJS to your form file by typing import emailjs from “emailjs-com” at the top. Create this onSubmit function for your form.
+
+sendEmail = (e) => {
+
+e.preventDefault();
+
+
+
+emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+
+.then((result) => {
+
+console.log(result.text);
+
+}, (error) => {
+
+console.log(error.text);
+
+});
+
+} ... <form onSubmit={this.sendEmail}>
+
+...
+
+...
+
+...
+
+</form>
+
+4. Change YOUR_SERVICE_ID , YOUR_TEMPLATE_ID , and YOUR_USER_ID to your specific information. Do not change e.target as this argument is selecting the form you are submitting.
+
+YOUR_SERVICE_ID can be found by clicking “Email Services” on your EmailJS dashboard.
+
+YOUR_TEMPLATE_ID can be found by clicking “Email Templates” on your EmailJS dashboard.
+
+YOUR_USER_ID can be found by click “Integration” on your EmailJS dashboard.
+
+Step 3: Test It Out!
+
+Everything should be working now! EmailJS has more options that you can use if you upgrade your service. The free service is great for small apps!

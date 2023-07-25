@@ -1,0 +1,101 @@
+As a beginner in Data Science, I was really intrigued by Computer Vision, this was because, the work done in Computer Vision was easily visible (through applications by Facebook and Google, ex., Google Lens) and we, as humans always have the tendency to go after what glitters. Even though, a lot of work has been done in the field of traditional Machine Learning and even NLP, we still find Computer Vision, more interesting. After going through the initial concepts of Neural Networks, I started exploring CNN and I immediately knew that , understanding all of this theoretically is very important but the practical implementation is equally important as well. Some of the most common datasets that we have worked on, are, MNIST, CIFAR-10, CAT-DOG breed classification etc.
+
+But these datasets were well curated for theoretical purposes. I knew that I had to come up with a dataset with which, I could do everything from scratch, which means, getting the data, reshaping it, splitting the data, implementing the different CNN architectures from scratch and then finally building my own custom model and testing it for efficiency. Now, in order to get a multi-class image dataset, I went to Kaggle and there, I got the plant seedlings dataset.
+
+This dataset was a playground prediction competition where, I could create a model, use that to get some predictions and then test them by uploading the results on the Kaggle platform. I thought this was a good way to test all the different CNN architectures including my own custom model.
+
+This was a good iterative way of studying the architecture and implementing it from scratch.
+
+The exercise that I used to follow was to read the CNN architecture research papers and then implement them from scratch on the plant seedlings dataset. I have a MSI GF-65 laptop with 16 GB of memory and my GPU is 6 GB Nvidia 1660ti (which was still not enough…:-)).
+
+The various architectures that I implemented were as follows:
+
+LeNet Alexnet VGG Inception Custom Model
+
+Let’s start with implementing the different architectures:
+
+I first downloaded the data, which was a zip file and then extracted the content. I saw that there were three folders: ‘train’, ‘test’ and ‘sample submission.csv’.
+
+Plant Seedling Data
+
+I then checked the ‘train’ data folder and saw that there were 12 different classes.
+
+Different Classes inside Plant Seedlings Data
+
+I manually checked to see the different items in every folder and saw that some classes had more images as compared to the other.
+
+This was alarming since I knew that the model would get biased to the images which are more in number.
+
+In order to fix that, I created a new train folder where, I copied 200 images from every class.
+
+I then created a validation set which had 20 images from every class. This way, I was preventing the unnecessary bias that would creep inside the model.
+
+Now since the train and validation data was prepared, I started with implementing the different models.
+
+LeNet: I started with the LeNet architecture, I read the research paper and implemented the code in Keras.
+
+I first imported all the packages. I am using Tensorflow-gpu 1.15 and Keras 2.3.1
+
+Importing all the packages
+
+I then use the Image Data Generator to create my train and validation set. This will take care of all the pre-processing steps required for the data to be trained and the labels. This includes normalization, adding some shear and zoom range to create certain level of data augmentation.
+
+Using the Image data generator to create the train and validation set.
+
+Keras ImageDataGenerator accepts a batch of input images, applies a series of random transformations to each image and then replaces the original batch with the recently transformed batch.
+
+accepts a batch of input images, applies a series of random transformations to each image and then replaces the original batch with the recently transformed batch. After the data has been setup, I then create the LeNet Model:
+
+It consists of two convolution layers with max pooling layers in between, followed by two fully connected layers.
+
+I then use ‘Adam’ as my optimizer and since, there are 12 classes, I use, ‘Categorical_Crossentropy’, as my loss.
+
+LeNet Model
+
+I then train the model for 10 epochs with the training steps as 500 and validation as 300. I pass the train and validation sets to the model.
+
+Model training with loss and accuracy
+
+Based on the above image, we can confirm that our accuracy never goes beyond 73%.
+
+After saving the model, I use it on my test set and I generate a sample_submission.csv file which contains the ID and the appropriate class.
+
+Saving the Model to Disk and loading the model for predictions
+
+Loading the model and using it for prediction
+
+Based on the above image, I use the model to start making predictions on the test set.
+
+I use the glob library to get a list of all the files and then iterate over them, I append the name of the images to an empty list called ‘IDs’.
+
+I then load the image, convert it to an array and then use ‘expand_dims’ to flatten the array.
+
+I then use my model to do the predictions, which comes in the form of an array. For ex: [[0,0,0,1,0,0,0,0,0,0,0,0]]
+
+I use the ‘If-Else’ conditions to get the various classes and append them to an empty list called ‘Preds’.
+
+I now use the ‘Ids’ and ‘Preds’ to create my ‘sample_submission.csv’ file.
+
+Saving the Predictions to a CSV file
+
+You should always open the ‘sample_submission.csv’ file, which you get with the Kaggle data to get the names of the columns.
+
+Columns of Sample_Submission file
+
+Since, I know the columns now, I prepare the CSV using the same name and then upload it to Kaggle.
+
+In order to do this, go to the Plant Seedlings Classification and click on ‘Late Submission’.
+
+Late Submission tab
+
+When you click on ‘Late Submission’, you will get an option to upload your file.
+
+Uploading the file to get a score
+
+Once the file is uploaded, click on ‘Make Submission’, to get the score.
+
+Uploading the file and making the submissions
+
+So, I got a score of around 29%, which means, I was only able to predict 29 images correctly out of a 100.
+
+Classification Score for the predictions

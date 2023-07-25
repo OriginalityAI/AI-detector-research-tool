@@ -1,0 +1,10 @@
+
+All-wheel-drive systems work in many different ways. They differ from four-wheel-drive systems in that they don't have a transfer case that typically provides low-range gearing. They all can work full time (though many have an axle disconnect feature to preserve fuel), while 4WD systems may or may not be able to work full time.
+Today, Jason Fenske of Engineering Explained is here to delve into how the AWD system of his Subaru Crosstrek works in the snow.
+CHECK OUT: How the Nissan GT-R's all-wheel-drive system works
+Jason's car has a manual transmission, so that means it has a particular type of system within Subaru's portfolio that differs from what the automaker uses on automatic transmission versions. The AWD system with the stick uses a 50/50 torque split front to rear through a viscous coupling. If one of the axles starts to spin, the viscous coupling will send more power to the other axle. Jason gives examples of 70/30 or even 80/20 torque splits to the axle with more grip.
+Both the front and rear axles have open differentials. There could be a scenario in which one tire on each axle slips. An unsophisticated traction control system would cut the power and use the brakes on both axles and the car wouldn't be able to move. To remedy that, Subaru has a limited slip device (not differential) that uses the anti-lock brake system on individual wheels so if a tire on one side slips, the power can go to the other tire on the same axle. This allows that tire or those tires to keep the car moving.
+ALSO SEE: How Does A Differential Work?
+Another factor that helps the Crosstrek get through the snow is its 8.7 inches of ground clearance, something shared with the brand's Outback and Forester models.
+The upshot for Jason? He says the Crosstrek does a great job of handling snow (even on all-season tires), and he proves it often by driving it up to the mountains to go skiing.
+Jason talks about the AWD system for the first half of the video, then gets into his impressions of the ownership experience for the last few minutes. We'll let you click on the video for those thoughts.

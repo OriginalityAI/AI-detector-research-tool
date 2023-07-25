@@ -1,0 +1,35 @@
+At the inaugural Tribeca Games Festival, Ben Lindbergh and Jason Concepcion hosted a live discussion about storytelling in video games. They were joined by Michael Chu, the lead writer of Overwatch, and Kiki Wolfkill, executive producer and head of transmedia at 343 Industries, the makers of Halo, to talk about how each tackles the various challenges of storytelling in their respective games.
+
+Head Overwatch Writer Michael Chu
+
+Unlike the Halo series, Overwatch has no single-player campaign — but Blizzard was committed to providing backstories for its many unique characters. Chu elaborated on how the studio tackled that challenge.
+
+"We knew early on that obviously we weren’t going to have a campaign," Chu began. "There wasn’t going to be a traditional story. But for us, we felt that it was equally important to develop [not just] Overwatch the game, but also this universe. Because [at] Blizzard, that’s what we do. We’ve got Warcraft, Starcraft, and Diablo, all are these amazing in-depth universes that have a lot of history. We wanted Overwatch someday to be able to stand up to that. What we’ve learned about development over the years is that when you’re making these heroes and you’re making the levels and the art, it really helps to have the story background to figure out what kind of content you want to make, context for heroes and levels. We knew we wanted to do that and we basically made this decision that stuff would exist outside of the game and you’d just see it reflected inside the game."
+
+The team had to carefully pick its shots with regard to dialogue, since there were so few opportunities to have the characters speak.
+
+"We had to be really efficient," he said. "There weren’t that many places to get story out in Overwatch. One of the ways that is actually most effective is the pregame dialogue. It’s one line, one response. We also have lines that play when you eliminate someone. You really only know [the characters] through two things. How they feel about capping objectives — you know all about their relationship with the payload. I think the only other thing you know is how they feel when they eliminate someone. That’s your window [as writers]."
+
+343 Industries Executive Producer Kiki Wolfkill
+
+Halo is an entirely different beast from Overwatch. When 343 Industries works on those game the studio has to wrestle with the backstory of the five main games, plus a host of spinoff titles. There’s no starting from scratch with Halo.
+
+"There’s a lot of canon," Wolfkill began. "I will admit that it’s easy for us to drink a little bit of our own Kool-Aid, we get so deep into the lore that we forget how unapproachable it can feel sometimes for someone who is new. So it’s tough because on the one hand we have an obligation to carry the stories forward. On the other hand, we do want to bring new people into the universe. We want it to feel approachable and accessible. I think that we are working to do a better job of carrying stories forward without carrying a lot of extraneous detail with it. I think that we can carry [Master] Chief’s story forward or [Fireteam] Osiris team’s story and do it maybe a little more cleanly than we have in the past. So it doesn’t feel like there is just this giant wall of personal pronouns to get over to get to the great story."
+
+Bringing newcomers along is both a challenge and an opportunity for the team.
+
+"Then on the other side of it, we do look at ways of expressing a story in the universe in other places around the games, as a way of on-boarding people into the universe," she said. "We look for opportunities. That’s something I’ve spent a lot of time doing, which is [saying], ‘Where are places where we can get back to some very clean, pure, Halo storytelling for people to come on board for the first time and really get pulled into the universe?’"
+
+She elaborated on the four elements that make "clean, pure, Halo storytelling."
+
+"From a universe perspective, we do have what we call our Halo beliefs, which is how we think about the universe. So as we look at storytelling in different places, we try and [stay] grounded in these four things:
+
+"The first is curiosity, which is really the idea that this is an epic sci-fi universe, but it’s more than that, it’s a mysterious world that you enter into. It’s scary and it’s dark and there are aliens and yet there’s also this sense of curiosity driving you forward to adventure through that unknown. I think that’s core to how we want people to feel, whether they’re playing or watching.
+
+"Heroism is really at the heart of our universe. What does it mean to be a hero? And the idea that any of us can be heroes. That nature of heroism is very core to what we do. You see that across campaign and multiplayer and in the storytelling.
+
+"Humanity. That’s really the idea that this universe has very high stakes, humanity is at stake. But also, you are a part of that, and the idea that humanity is something worth saving, so how do you find an intimate story in this background of epic sci-fi and huge stakes?
+
+"And finally, creativity, which speaks to our community and our [user-generated content]. Allowing people into our universe to both tell stories alongside us and also create gameplay alongside us and contribute to the universe. Those are things that carry across all of the things that we do. To me that’s the heart of what the universe and the IP is."
+
+Listen to the full podcast here. This transcript has been edited and condensed.

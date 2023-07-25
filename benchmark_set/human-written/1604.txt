@@ -1,0 +1,9 @@
+Let’s combine the power of Prescriptive and Predictive Analytics
+
+Source: analyticsvidhya.com
+
+All Machine Learning models use a large volume of data to train to predict the patterns in the future. It implies that the machine learning models are susceptible to the quality of data. Even with minute errors, the models may train to yield infeasible or inferior results. Thus, the quality of data used for training is the utmost concern of an organization.
+
+In this direction, feature selection plays a crucial role. Different techniques are present such as forwards selection, backward elimination, stepwise selection, etc. to select a feature set. However, most of these approaches are performed manually and are computationally expensive and time-consuming. Therefore, in this article, the Genetic Algorithm is used to obtain an optimal feature within a reasonable amount of time.
+
+The structure of this article is as follows.

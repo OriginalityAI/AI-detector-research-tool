@@ -1,0 +1,21 @@
+Today marks an exciting milestone at Elastic as we proudly unveil our "release bonanza" day. The majority of our significant products have been freshly released and aligned to ensure an enhanced user experience when utilized together.
+
+The multiple releases announced today include:
+
+1. Elasticsearch 2.0: This major milestone features new pipeline aggregations, a simplified query DSL via merging queries and filter concepts, better compression options, enhanced security with security manager support, improved filesystem behavior, performance upgrades, and consistent mapping behavior. Elasticsearch 2.0 also includes the Lucene 5 release, which brings several noteworthy enhancements.
+
+2. Kibana 4.2: This release supports Elasticsearch 2.0 and introduces a dark theme, customizable maps, and numerous additional improvements. Kibana's internal workings have also been optimized as we continue working towards supporting external plugins.
+
+3. Marvel 2.0: Compatible with Elasticsearch 2.0, this release presents streamlined metrics, an upgraded user interface, and a complete rewrite as a Kibana plugin. With the added bonus of making Marvel functionality free for everyone, we now offer multi-cluster support as a commercial feature.
+
+4. Sense 2.0: This release has also been rebuilt as a Kibana plugin and supports Elasticsearch 2.0. It features expanded functionality, such as executing multiple requests and copying into cURL. Additionally, Sense 2.0 has been open-sourced!
+
+5. Shield + Watcher 2.0: Significant work has been invested in developing Shield, our Elasticsearch security product, and Watcher, our alerting and management product. Enhancements include field and document-level security, integration with Lucene, user-customizable pluggable security handling, and Slack and HipChat integrations.
+
+6. Logstash 2.0: This release offers official support for Elasticsearch 2.0, clean shutdown semantics, vast performance improvements, and Beats support.
+
+The concerted efforts of our product teams and Found developers have enabled us to provide all of these updates on Found - our official hosted Elasticsearch / Kibana offering.
+
+The Elastic team has worked diligently to offer these enhancements, showcasing the successful collaboration between our company, users, and contributors. Our primary mission remains steadfast - to deliver products that our users love, enjoy, and utilize to drive innovation. Thank you for your support!
+
+Finally, keep an eye out for something big coming (really, really) soon.

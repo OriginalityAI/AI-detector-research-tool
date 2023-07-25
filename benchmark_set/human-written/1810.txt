@@ -1,0 +1,119 @@
+Photo by Erda Estremera on Unsplash
+
+In a previous post, I discussed how cycle time plays a key role in optimising the delivery health of engineering teams at SafetyCulture. In this post, I will dive a little deeper into how we measure specific delivery metrics in minutes using JIRA and the ActionableAgile JIRA plugin.
+
+Three metrics we have been tracking this way are:
+
+Cycle time
+
+Deployment frequency (customer-facing changes per week)
+
+Deployment frequency (non-customer facing changes per week)
+
+Although the process described above is rather manual, once the initial setup is done it usually takes no more than a couple of minutes to get the metrics needed. Combined with JIRA’s and ActionableAgile’s flexibility around filtering, trend visualisation, and deep-dive insights, we have found this approach preferable compared to more automated but less flexible methods we have tried or the option of building and maintaining such tooling ourselves.
+
+it usually takes no more than a couple of minutes to get the metrics needed
+
+The process consists of a one-time setup step, followed by a simple metric visualisation step.
+
+Part 1 — Setup
+
+Installing ActionableAgile
+
+We have purchased and installed the ActionableAgile JIRA plugin on our JIRA cloud subscription from here. Once installed, it automatically updates to the latest version.
+
+Setting up a cross-team JIRA board
+
+Our teams each use a different JIRA project and board. To be able to see metrics across different teams we have created a JIRA board with a special JQL filter that combines all relevant team projects. The filter looks like this:
+
+project in (TEAMA, TEAMB, TEAMC) AND labels not in (outlier) AND updated >= -24w AND status was not in (“Won’t Do”) ORDER BY updated DESC, Rank ASC
+
+Setting up the team’s project
+
+We want to exclude tickets closed as “Won’t Do”. “Next gen” JIRA projects do not support a “Won’t Do” resolution so we use JIRA Classic projects.
+
+To be able to quickly see metrics from different teams on the same ActionableAgile dashboard we label every ticket with the team name. We do that so that we can then filter by this label later on. We give these labels consistent names like inspections-team, actions-team etc. so that it is visually easier to select them later on.
+
+We automate adding the team label to all new tickets created by going to Project Automation in our JIRA project and adding a rule as shown in the image below:
+
+For projects with an existing backlog, we also run a bulk issue update once to apply the team label to all existing tickets.
+
+Excluding particular types of work
+
+Sometimes we need to exclude certain types of work from the metrics calculation. For instance, tickets that capture a long-running background monitoring process or other non-delivery-related tickets for which the metrics described here are not suitable. We do that by manually labeling such tickets in JIRA with a label of our choice (we use “outlier”). This allows us to filter them out from the board later (as shown in the JIRA filter earlier).
+
+Dealing with “blocked time”
+
+When work in progress gets blocked for a non-trivial amount of time (say half a day) we add a flag and a comment to the JIRA ticket to indicate. Similarly, we remove the flag when the work can be resumed. This not only raises visibility of blockages on the JIRA board, it also allows us to control whether to include or exclude blockage time from the collected metrics. There are useful insights in either case. Note that even though we do not work on weekends we do not treat weekends as “blocked time” so that cycle time reported more closely resembles the customer experience.
+
+Classifying work
+
+By convention, we raise Story and Bug tickets for changes with direct customer-facing impact such as a UI change. Otherwise, we use Task. This helps collect metrics for customer-facing changes only as required.
+
+Part 2— Tutorial
+
+In the following section, I will walk you through how we answer some key delivery questions at SafetyCulture.
+
+To get started:
+
+On your JIRA project page, on the left-hand side menu panel click “ActionableAgile” to open the plugin. The ActionableAgile main page loads.
+
+On the top right-hand corner, click the folder icon and “Load a board”.
+
+Select the board you created earlier to combine all projects of interest. If there are too many tickets you can opt to only load tickets after a particular date to save on loading time.
+
+Continue.
+
+Select all ticket fields when prompted. You can trim fields if you would like to optimise the time it takes to load the dashboard in the future.
+
+Continue.
+
+On the right-hand side open the filter settings and:
+
+select the ticket types you want to track. We track Bug, Story, and Task tickets
+
+select your team’s label from the list of labels
+
+select the “Done” item from the “Resolution” column to exclude “Won’t do”
+
+Close the filter settings window to go back to the ActionableAgile main page.
+
+On the right-hand menu panel:
+
+untick “todo” and/or “backlog” stage from the “Workflow stages” (unless you explicitly want to measure lead time instead of cycle time)
+
+choose whether to “include blocked time”
+
+tick “Average (Beta)” to track average cycle time
+
+NB. ActionableAgile does not refresh automatically each time the page is reloaded. To get the latest project data: Go to the “folder icon” at the top right and “Check for updates to <your board’s name>”
+
+Refreshing to get latest data
+
+Now we are ready to collect our metrics.
+
+What was the average cycle time last week?
+
+From the bottom panel, drag to select the time period e.g. the last 7 days as required. The average cycle time will be shown as a dotted line on the scatterplot above. If not enough tickets were completed in the selected period, extend the time period to include earlier tickets until a reliable average can be computed.
+
+Cycle time for a selected date range
+
+How many customer-facing and non-customer-facing releases were made in the last 7 days?
+
+Here we assume that each ticket that is not labeled as an “outlier” (as described above) results in one deployment/release.
+
+To find the number of customer-facing releases, on the right-hand side open the filter settings and:
+
+select the customer-facing ticket types: Bug and Story only
+
+Customer-facing changes only filter
+
+open “Summary Statistics”
+
+see how many customer-facing releases were made in the chosen date range
+
+To see all releases, including non-customer-facing ones, repeat the same process above after you have also ticked the “Task” ticket type at the first step above.
+
+If you want to review the releases individually in more detail, you can hover over the dots on the cycle time scatterplot and deep dive into each JIRA ticket.
+
+I hope you found this guide useful. Let us know if you have any related tips or a better approach! Even better, come join us, we are hiring!

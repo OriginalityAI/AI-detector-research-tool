@@ -1,0 +1,31 @@
+Transport Layer Security (TLS) is a widely-deployed protocol used for securing TCP connections on the Internet. Kernel TLS is one of the Linux kernel features trying to improve TLS record layer functionality by offloading the symmetric encryption step to the Linux Kernel after successful handshaking between the client and server.
+
+This feature is currently available in some encryption libraries (built-in or as a patch) like OpenSSL. In this text, I am trying to categorize some motivation behind this idea and analyze the pros and cons of this mechanism.
+
+Reduce memory copy
+
+Standard web server using OpenSSL (From the Facebook original article)
+
+Kernel level TLS or KTLS is not a new idea, and many companies developed their own kernel-level solutions to address the TLS performance problem. For example, companies like Facebook and Netflix (for BSD) used this method for reducing the overhead of the kernel to user and user to kernel memory copy. For the Facebook version, there was about 7% improvement in the famous “SendFile” function. For Netflix, the story is entirely different, and they claim they can handle approximately 100G of TLS traffic that seems mainly related to efficient usage of hardware accelerators.
+
+KTLS Functionality ( From the Facebook original article)
+
+Regarding the KTLS, when TLS functionality is activated using the SetSocketOption, we can use some high performance and low-level functions like SendFile to copy data directly from the storage and reduce the overhead of memory copy. Some patches for famous networking software (Ngnix, Haproxy) enable this functionality, but it shows a little performance improvement and, in some cases (Haproxy), even performance degradation. So, although too much memory copying (especially between user and kernel) can reduce performance, it is not the main bottleneck of TLS.
+
+Use of hardware accelerators
+
+Modern network interface cards (NIC) support many offloading features, from simple checksum calculation to advance flow management. Nowadays, most of them support some level of encryption and even compression offloading. For example, Intel 82599 series chipset supports AES-128-GMAC offloading. Using these offloading features is the main reason behind the Netflix performance gain. But there are some problems with this approach. Not all the NIC support this feature, and most of them support the limited modes of the AES encryption algorithm. For example, Intel NIC supports AES128 in GMAC and GCM mode. It means, If the client or server chooses any other algorithm, the offloading functionality is useless, so we need to limit the encryption algorithms in the handshake phase.
+
+According to Linux documentation currently, only three symmetric algorithms are supported by the Linux kernel (AES_GCM_128,AES_GCM_256,AES_CCM_128).
+
+KTLS data and context flow
+
+security considerations
+
+As I mentioned in the previous section, we need to limit the available algorithms to utilize maximum performance. Currently, only the AES family of algorithms supported by the kernel, and we need to reduce our symmetric algorithms to this family of encryption algorithms. AES 256 is virtually impenetrable using brute-force methods, and other modes are safe enough to be recommended by NIST, so I don’t think this limitation has a negative security impact.
+
+But there is a significant security concern regarding KTLS architecture. After the handshake, we need to transfer the required information (TLS context) to the kernel. This functionality traditionally implemented using “setsocketopt” API. This function transfers all the information clearly, and it is possible to sniff them using classic kernel-based rootkits or even using Linux’s relatively new EBPF mechanism. In the following link, I developed a POC code and script that demonstrate this technique.
+
+KTLS Stack and the EBPF sniffer
+
+Another security concern is related to the hardware’s actual implementation of encryption algorithms and the storing mechanism of the encryption keys and other sensitive materials. It is also possible to use a fake NIC instead of the original one or replace the NIC standard driver with a fake one.

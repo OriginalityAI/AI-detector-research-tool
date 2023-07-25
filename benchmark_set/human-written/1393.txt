@@ -1,0 +1,53 @@
+Built-in Data Types
+
+List []
+
+indexed
+
+ordered (insertion order)
+
+changeable
+
+allows duplicate values.
+
+myList = [1,'two', [3.0, "four"]]
+
+List Methods
+
+Dictionary {}
+
+Dictionaries are used to store data values in key:value pairs.
+
+unordered
+
+changeable
+
+does not allow duplicates.
+
+myDict = {1: 'Java', 2: 'C++', 'three':'Python', 'four':4 }
+
+Tuple ()
+
+Tuples are the same as lists with the exception that the data once entered cannot be changed. Immutable!
+
+ordered (insertion order)
+
+Unchangeable
+
+allow duplicates
+
+thistuple = ("apple", "banana", "cherry", "apple", "cherry")
+
+print(thistuple)
+
+// ('apple', 'banana', 'cherry', 'apple', 'cherry')
+
+Sets
+
+Does not allow duplicate values
+
+Unordered
+
+Unindexed
+
+Unchangeable

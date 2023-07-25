@@ -1,0 +1,69 @@
+Intro
+
+Well, here is the sensor!
+
+Laser distance measurement sensor Hokuyo UTM-30LX-EW (Image by: Author)
+
+We can see basic parts on the front side:
+
+Power LED — an indication of the power (on/off).
+
+Operation status led — different behavior depending on status (ex. always on if operates without errors).
+
+Light transmission and reception plane — the sensor is inside this plastic cover. It has two planes, transmission, and reception planes.
+
+And the backside:
+
+Ethernet cable — used for communication wit the computer.
+
+Power cable — for providing power to the sensor. It has three wires: brown (DC 12V), blue (0V-GND), and green (OUT). The sensor requires around 1A for normal operations.
+
+IP reset switch — used for resetting the IP configuration.
+
+Here are some important characteristics related to distance measurement and sensor’s limitations:
+
+Field of view: 270°
+
+Angular resolution: 0.25°
+
+Measurement steps: 1080 (270/0.25=1080)
+
+Max. distance: 30 m
+
+Before setting up the sensor, please consult the official user manual.
+
+Setup
+
+1. Power supply
+
+The sensor is powered through a power cable which includes three wires: brown (DC 12V), blue (0V-GND), and green (OUT). The sensor can draw a maximal current of 1A. I have used an old PC power supply for sensor testing purposes.
+
+2. Communication
+
+In this article, we will show how to connect the sensor with an ethernet cable. The sensor has an initial IP setup of 192.168.0.10. To be able to communicate with the sensor, the PC must be in the same network. On Windows PC, you can do it by following this tutorial. For example, you can use the IP address 192.168.0.100 with subnet mask 255.255.255.0
+
+Measurements
+
+After powering the device and connecting it to the PC, we can start with measuring the distance!
+
+For that, we will use Urg Viewer application. It is a simple application used for visualization of the measurements and exporting the results. There are two options for connecting with the sensor using Ethernet or Serial connection (button in the upper right corner).
+
+After connecting to the sensor, distance measurements are shown as a table (left plane) and the blue dots (right plane). In the image below, you can see the result of the distance measurement in my apartment.
+
+Example of the distance measurements (Image by: Author)
+
+Conclusion
+
+In this article, the usage and basic setup for measuring the distance using a laser sensor are shown. You can use this kind of sensors for many projects like alarm systems, parking sensors, or creating the map for mobile robots.
+
+Stay tuned for the next article in this series, where you will learn how to integrate this sensor into your custom applications.
+
+If you have any questions or suggestions, feel free to comment or contact me!
+
+Linkedin: https://www.linkedin.com/in/leo-tisljaric-28a56b123/
+
+Acknowledgement
+
+The sensor is provided by the Laboratory for Intelligent Transport Systems at Faculty of Transport and traffic sciences, University of Zagreb, Croatia.
+
+References

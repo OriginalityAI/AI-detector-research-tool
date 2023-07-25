@@ -1,0 +1,11 @@
+Product Requirement Documents (PRDs) are necessary for every product/feature that needs to be developed. This one document forms the single source of truth about the product/features built. Also, this document will be referred by multiple teams and stakeholders at various stages of the product development process, and other important documents (tech document, test document, product manual, etc) will be churned out based on this document
+
+That’s how important PRDs are for the entire team and company, and the ownership of this document lies with the Product Manager. So in this blog, we will talk about how the first proven practice to write & manage PRDs efficiently. This practice is the first step to creating professional PRDs that can be utilized by your team & stakeholders effortlessly
+
+Proven Practice №1 — Use a standard PRD template
+
+Using a standard PRD template every time you write a PRD will ensure that you have covered all the important things you need to write in the PRD, plus it is also easy for your team to navigate through your PRDs once they know the format
+
+Ideally, your company should follow a standardized PRD template. But if that is not the case, especially with startups where the processes are not so defined, you can always propose PRD templates from your side and convince your Product Head/Founders to implement a standardized PRD template for the company
+
+Here is a good PRD template that is simple and covers all the important sections that a PRD should have:

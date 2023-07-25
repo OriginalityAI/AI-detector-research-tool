@@ -1,0 +1,95 @@
+A discussion comparing too much, poor quality data to the effects of poor diet on the body.
+
+I’ve always been fascinated by measurements and numbers, even early in my career. I wanted feedback, and I CRAVED to have it backed up with numbers.
+
+“How do I measure success?” is a question that admittedly, has kept me up at night more times than I can count.
+
+Measurements are almost like PM fuel, which in turn, results on us, our organizations, and our teams gorging on data to measure.
+
+What I mean is this. Food, for any human being, is fuel. It fundamentally keeps us running. But in life, there are choices. You can eat the balanced grain bowl full of healthy fats, slow release carbs, and enough natural sweetness to create true satiety, OR you can have pizza. Pizza is great, do NOT mistake me. However too many New York Style slices in all their greasy, cheese-filled glory can cause all sorts of shenanigans.
+
+Potential weight gain, an unhappy metabolism, insatiable cravings, and the classic “crash and burn” are all possible outcomes.
+
+Now put this into the context of data, and what happens when we have — and track — too much of it?
+
+What happens when we are focused on the pizza (useless, unclean, incomplete data, and vanity metrics) versus the balanced grain bowl (measurable, well-defined outcomes, and contextualized insights)?
+
+Weight gain.
+
+“Hey! Collect ALL the data you can on our customers. It’s gotta tell us something right?!”
+
+Have you ever been requested to track something “just so we have it”? Though there seems to be no real purpose?
+
+Capture and store the data, that way we’ll have it.
+
+Consider all of this stored data unhealthy data weight gain. We have it in the database, configure our solutions to track it, and yet, it just sits. Collecting steadily, convoluting our reports, appearing where we don’t want it, and possibly slowing down our servers.
+
+While sometimes building for the future is key to success (like eating extra calories because you’re training for a marathon), sometimes, there isn’t a purpose, other than perceived comfort.
+
+Ask yourself “Can this give business user insights that can drive decisions? Could it be a useful foundation for future features? Does this data provide a competitive advantage? Does collecting it improve the user experience? OR is this just causing a bunch of data weight gain?
+
+If you can’t figure out how asking for your user’s blood type when you’re building a fintech app is going to benefit the user, the business, or help you measure success — say no the data pizza.
+
+2. Unhappy metabolism.
+
+One of the things I love the most about data is that it can help teams make quick decisions. Examining user data can solve disputes about how we perceive user behaviour, help us select product marketing language that is SEO friendly, and make educated bets on which features will be the most successful. However, much like poor dietary choices slow the metabolism over time(1) too much data can paralyze progress.
+
+It’s called analysis paralysis and it can be the downfall of us all.
+
+When there’s too much noise in the data-sphere, it’s often too much input. If you have the chance to build a product from the ground up, plan your data strategy effectively.
+
+If you don’t? Work with your data professionals to create a dashboard that filters out the noise, keeps you focused on the metrics that matter, and keeps your decision making process in tip-top shape.
+
+Note: There is something to be said again, about data storage. Storing too much is super wasteful, and is like plaque on an artery when it comes to slowing down information flow. There are many nuances to do with data storage, which we will address in another article, to keep things moving.
+
+3. Insatiable cravings.
+
+It might start slowly, one extra slice, it can’t hurt right?
+
+One extra survey… just to collect a bit of information.
+
+One small ad hoc report… just to paint a picture.
+
+All of a sudden it’s a craving that’s too big to satisfy and stakeholders want that pizza yesterday. They want it with ALL the toppings, every hour, and it better have stuffed crust.
+
+They want you to measure literally everything, and measure success with baseless metrics. But what happens when we get so anxious about hitting success metrics, we can’t make heads or tails of our data? How can you influence KPI’s OKRs, and NDAs (ok not the last one) to no longer be the ties that bind you to success, but the keys that set you free?
+
+Prioritize… ruthlessly.
+
+As a product manager, sometimes you have to be the “CEO of NO”… and that means ruthless prioritization, and setting expectations. Consider how much data you’ll ingest and why, and how it converts into useful information and metrics. Without this mentality, we can fall into the trap of designing solutions to hit our metrics, instead of adding user value. Essentially, we start eating just to eat, instead of fuelling our bodies.
+
+How can you influence success metrics? Suggest tying your results to contextualized measurements such as repeat power-up purchases (repeat purchases suggest users are enjoying the feature) or average time from download to first in-app purchase.
+
+Walk stakeholders through your thought process, to help demonstrate the value of what you’re offering (a delicious grain bowl).
+
+These contextualized metrics can be the KPIs you actually tie success to. Real measurement can generate real motivation to delight users, that doesn’t fade over time. Thus avoiding…
+
+4. The classic crash and burn.
+
+“That’s it, we give up, we cannot take this any longer. The energy is spent, we’re done!” — A classic narrative in the minds of a demotivated team. This team likely doesn’t understand why they bother shipping the products they do, as they have no attachment to the user. They don’t understand the impact they have.
+
+Additionally, anyone who is lost in a sea of data is bound to crash and burn. First, there’s the high of getting into the analysis, then slowly and surely we lose our way. We can’t take it anymore, there’s too much data, too many ways to splice it, and none of it makes sense.
+
+Both of these scenarios arise because of an abundance of numbers that make no sense. HOW and WHY add complexity and depth, allowing us to slowly digest information, and distill it into something we can rally behind.
+
+Quell exhaustion by limiting queries to specific times or segments, and use good ingredients (clean data) to craft a narrative that satisfies (the grain bowl). Provide context to keep purpose top of mind, so solutions actually solve real pain points.
+
+In conclusion…
+
+Remember, a calorie is not a calorie(2), and a data point is not a data point. High quality, well thought out data choices have a huge impact on our products, our future opportunities, and ultimately, our user’s happiness.
+
+TL;DR:
+
+Too much bad data has the same effect on your decision-making as too much pizza does on your health. Use restraint, and those ruthless prioritization skills to leverage the BEST data to influence what you need to do…. create value for your users!
+
+Citations
+
+Palsdottir,H. “ Does Junk Food Slow Down Your Metabolism?” 2017 Mar 24. https://www.healthline.com/nutrition/junk-food-and-metabolism#TOC_TITLE_HDR_4
+
+2. Feinman, R.D., Fine E.J. “ A Calorie is a Calorie Violates the Second Law of Thermodynamics” 2004 Jul 28 https://pubmed.ncbi.nlm.nih.gov/15282028/
+
+— -
+
+Emily is a self-proclaimed data nerd, passionate about using the insights we gain from data to produce incredible products and experiences. Follow her journey into the world of data, tech, product, and user/customer experience here at The MindBrain.
+
+— -

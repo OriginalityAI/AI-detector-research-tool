@@ -1,0 +1,25 @@
+9 out of 10 people worldwide breathe polluted air 7 million people die every year due to air pollution WHO (World Health Organisation)
+
+Air pollution is a massive global problem. Global warming caused by human-made air pollution causes problems for the long term health of the globe and human health for 90% of people breathing right now. Air quality data from measuring local pollution levels is an essential part of solving the problem. Any solution that doesn’t address the root cause will just be a short term stop-gap arrangement. Thanks to technology and digitalization, we now have the means to understand the root cause of bad air quality create the right solutions.
+
+If you can’t measure it, you can’t manage it, and if you can’t manage it, you can’t fix it. Michael Bloomberg (Former Mayor, New York)
+
+Here are 3 ways you and policymakers can benefit from reliable air quality data
+
+Metrics for New Policies
+
+With almost all human action having some sort of an impact on air pollution (transport, production, energy consumption etc.), it is clear that policymakers need some means to measure and analyze the air pollution emissions from these different sources. This would enable them to make concrete policies and regulations to curb the level of pollutants. Deployment of air quality monitors on busy crossroads, intersections and signals can help determining pollution trends and also evaluate the highest level of pollutions during the course of a day.
+
+Data Networks
+
+One air quality monitor will give data from one specific location. A network of air quality monitors can provide a much deeper understanding of the larger picture of air pollution. With this centralized data, it is possible to understand the effects of air quality on a local and global level and to better understand how air quality in one place affects another.
+
+Since even two neighboring locations can have varied pollution data based on the wind direction, source of pollution and geographical factors, it is very essential that there is a means of determining and analyzing air quality data from a closer perspective. Where traditional methods fail to give accurate and reliable pollution-related data, API based air quality monitors are more agile and can give access to real-time data that is unbiased, complete and accurate data. Such a data network can help societies and individuals make informed decisions.
+
+Accountability
+
+Emissions from factories and industries account for more than 50% of the entire air pollution in India. Such factories and industries house a huge number of employees and the labor force, this is also a big contributor to respiratory and other health ailments. While it is a major contributor to bad air quality, it is not addressed enough. Tracking the air quality of such regions would help in understanding the emission levels and also the safety measures taken by the factory owners in curbing pollution. A small step of installing an air quality monitor can increase the accountability of the factory owners and help in taking stringent measures in controlling pollution.
+
+Having the right kind of air quality data and insight can go a long way in minimizing air pollution levels.
+
+If you want to use our air quality data and join us in the fight against air pollution, feel free to send us an email at Contact@getambee.com. Or visit our website for more information: Getambee.com

@@ -1,0 +1,85 @@
+It is my great pleasure to welcome all of you who are either considering participation or wish to participate in the Algory Project ICO. The following series of articles will introduce you to what we do, what our product looks like, and how you can use it for your benefit on the cryptocurrency market.
+
+Firstly, I would like to encourage you to read our previous articles: First and Most Powerful Cryptocurrency Scanner and Cryptonews — Never Be Late Again or Social Media and Cryptotrading in which we describe our multipurpose cryptocurrency scanner and news system. You really have to read them!
+
+Today, I will talk about another of our tools — Backtesting Strategy — associated with autotrading.
+
+Do you buy tops and sell bottoms?
+
+If you usually find yourself trying to catch up with the price of a given cryptocurrency because it shifted long before and you’ve been left behind — this may be just the tool for you.
+
+Remember, it doesn’t matter whether you had a good idea in your head or not. What matters is how you are going to carry it out in the end. Great assumptions very often lack good execution. This in turn prevents traders on the cryptocurrency market from making stable and regular profits.
+
+If you lack faith and confidence, or if your trading strategy is not very effective, Backtester is for you. If you wish to maximize the profits from the trading strategy you already have or are preparing a new trading strategy, Backtester is for you.
+
+Backtesting is a key component in the creation of the most efficient trading strategy possible on the cryptocurrency market.
+
+Increase the potential of your strategy
+
+Based upon the alerts and filters available via the Cryptoscanner (described in “First and Most Powerful Cryptocurrency Scanner”), you will be able to set up scanners that will search the market. Then, via the Backtesting simulator, you will be able to see how profitable that strategy has been based on the filters and alerts set up previously.
+
+However, if you have no trading strategy of your own, you may find yourself groping around in the dark. At that point, Backtesting will come to your aid, showing you whether the signals you have defined via the filters and alerts are capable of generating proper profits in the future or not.
+
+Based upon historical data, a simulation will be conducted which will tell you how particular signals have fared in the past. It won’t give you 100% certainty that an identical situation will occur in the future, however, it will definitely assess whether specific strategies would even give you the grounds to think about any profit. It is a very good point of departure for building a profitable trading strategy.
+
+How Backtester works
+
+After setting the proper filters in the scanner, you will be able to move on to the Backtester functions. You will need to fill in some information, based upon which an appropriate simulation will be prepared.
+
+In the following example, the filters/alerts defined had the following assumptions:
+
+Symbol searched: BTCUSD Filters: Volume ratio increase: 2. Alerts: Consolidation breakout/breakdown on 1-hour interval.
+
+Setting the proper parameters in the window:
+
+Algory Project — Backtester
+
+As you can see, you will even be able to determine settings related to your own imperfection and slippages:
+
+slippage
+
+the value of stop loss % and $
+
+take profit value
+
+the size of position/capital
+
+exit time
+
+In addition, you will be asked to set the time-frame in which you wish to conduct backtesting, even if you want to limit it to specific times of the day, you will also be able to do just that.
+
+Conducting cryptocurrency backtesting
+
+Based on the previously set filters/alerts and variables introduced into the orders, you can conduct a simulation.
+
+We want you to be able to assess the efficiency and potential associated with the tested strategy, while you’re as close to the real position as possible.
+
+Algory Project — Backtester
+
+The Backtest will also be presented in a chart of a single pair of cryptocurrencies:
+
+The graphic illustration of all entries and exits in the chart for a given cryptocurrency enables a trader to easily analyze every single transaction performed on the basis of the parameters defined earlier, and to estimate the conditions for its occurrence. This will enable more precise and much easier modification of the assumed conditions in order to improve the efficiency of the trading strategy. The graphic analysis is also aided by the Equity Curve chart, which enables longterm tracking of appreciations, depreciations or sudden deviations of portfolio values based upon the defined parameters.
+
+Backtesting is undoubtedly an extremely important tool in the arsenal of every trader, not just cryptocurrency traders. It enables testing of hundreds of strategies which will allow you to find an efficient trading strategy that produces regular profits. The tests do not require the involvement of real capital or time-consuming construction of one’s own spreadsheets, which would be unable to analyze the literally thousands of price records of any given cryptocurrency in detail, and certainly not in the blink of an eye, as one of the Algory Project flagship products — Backtester — does. Test strategies, modify the settings, compare profitability charts, and select the one that will give you the greatest potential for generating a profit!
+
+An Equity Curve is also presented:
+
+About Algory Project
+
+Algory Project was founded by two traders who come from the US Stock Markets: Tomasz Przybycień and Dominik Gordel. In cooperation with developers and technology specialists focused on trading tools, they started to develop a multifunctional tool to support cryptocurrency trading — Algory.
+
+Sign-ups for the Whitelist ICO — Algory.io started on November 15. Join the Whitelist to be sure to take part in the PreSale, during which you will be able to purchase the Utility Token ALG with a 20% bonus.
+
+Algory Project in practice
+
+In the weeks to come, we are going to describe the functions provided by Algory Project. We want you to fully realize what a comprehensive and professional crypto-trading tool we are preparing for the crypto-trading community.
+
+In the following days, you will learn about:
+
+Cryptoscanner Cryptonews Blockchain analyzer Cryptocurrency backtester Auto-trading Arbitrage scanner ICO viewer Exchange comparison Social learning Trading room Cryptoviewer Cryptocoin Chart signals and analytics
+
+It is our pleasure to welcome all of you who are either considering or planning to participate in our ICO.
+
+The following series of articles will show you what we do, what our product looks like, and how you can use it in the cryptocurrency market.
+
+Check our website: https://algory.io

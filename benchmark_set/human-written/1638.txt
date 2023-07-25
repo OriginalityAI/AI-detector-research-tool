@@ -1,0 +1,51 @@
+There are multiple claims about the potential of artificial intelligence (AI)-enabled systems to boost or even transform defence capabilities.
+
+Picture Credit: pexels-pixabay-280002
+
+Artificial Intelligence (AI) is becoming a critical part of modern warfare. Compared with conventional systems, military systems equipped with AI are capable of handling larger volumes of data more efficiently. Additionally, AI improves self-control, self-regulation, and self-actuation of combat systems due to its inherent computing and decision-making capabilities.
+
+However, the most important aspect where AI will play a new role in the coming decade is Mental Health’ as currently 50% of military personnel are likely to suffer from mental illness once in their lifetime. The major reason for this large number is because there are very fewer measures taken in the diagnosis due to a large number of redeployed veterans. It is compounded by the fact that active-duty personnel and veterans are too often reluctant, indeed overtly deterred from seeking mental health care because of shame, stigma, and adverse career impact.
+
+Unfortunately, while models of early intervention have been tested in non-military populations, they have rarely been implemented in military personnel.
+
+Picture Credit: pexels-Yogendra-singh-2450439
+
+While a system exists to take care of those who have been through trauma; there is a need to address this more scientifically and help those who are affected; especially in the Indian Defence Services.
+
+Communication Designers Shalini Chandak & Shrushti Gala -ISDI Parsons (AIML |A Whole New World) With the help of voice and image analysis integrated into an app, aim to help with the early diagnosis of mental illness in military personnel. Early diagnosis could help in providing early and better treatment to the military personnel which in turn could lead to less number of people suffering from mental illness. This could be helpful in the defence sector to keep a track of mental illness of large number deployed military personnel. This aid will help in determining the military force if a soldier is suffering from any kind of mental illness after they come back from a posting and will be able to provide them with better care.
+
+VOICE ANALYSIS:
+
+Using language for diagnosis is as old as the field of psychiatry itself. Sigmund Freud was famously inspired by slips of the tongue, which he believed could reveal unconscious urges. A growing body of evidence suggests that an array of mental conditions can make you slur your words, elongate sounds, or speak in a more nasal tone.
+
+They may even make your voice creak or jitter so briefly that it’s not detectable to the human ear. An interactive voice application using artificial intelligence can determine if a person is suffering from any kind of mental illness based on their tone and words they use.
+
+In work supported by the Department of Defense, for instance, a team of researchers from New York University’s Langone Medical Center published results showing that their program had identified imperceptible features of the voice that can be used to diagnose PTSD with 89% accuracy.
+
+IMAGE ANALYSIS
+
+The present study examined the validity of a novel physiological measurement technology called Transdermal Optical Imaging (TOI) technology at assessing basal stress. So when we experience different emotions our facial blood flow changes subtly. By looking at these facial blood changes we can reveal people’s hidden emotions which cannot be detected by the human eye. This technology conveniently, contactless, inexpensively and remotely measures facial blood flow changes using a conventional digital video camera. Using this technology we can monitor a person’s heart rate, stress level, mood and whether or not they experience any kind of pain with an accuracy of about 90 %.
+
+The problem of stigma is, of course, worldwide, but it may have a particularly strong valence in the military, where having a psychiatric diagnosis is believed to doom one’s military career. It is believed that veterans with a delayed diagnosis become more severely ill than those recognised soon after the initial experience. Early diagnosis can increase functional capacity, rapid symptom recovery, prevention of maladaptive coping behaviours, and prevention of chronic PTSD and other psychopathology, including complicated grief.
+
+The Indian Armed Forces, have lost 900 soldiers to suicide in the last seven years.To put it in context, that is almost twice the number of soldiers lost in the Kargil War (527).
+
+Shalini Chandak &Shrushti Gala — Campaign for INDIA
+
+Communication Designers Shalini Chandak & Shrushti Gala -ISDI Parsons (AIML |A Whole New World) also devised a Communication campaign which can make space for this conversation to take place for individual healing as well as a collective intention for well-being keeping various cultural context in mind and make meaningful changes in many lives.
+
+Practising self-care towards a new perspective which allows us to rise above our impulses.
+
+To consider and contemplate situations that allows us to choose how to respond, engage and interact and not lose ourselves in them.
+
+According to the report, minister of state for defence Subhash. Bhamre, in a written reply to the Rajya Sabha, said 84 soldiers had committed suicide in 2014, 78 in 2015 and 104 in 2016. There were at least 83 cases of fratricide in the army, navy and air force between 2000 and 2012, according to figures submitted by the defence ministry in Parliament.
+
+Shalini Chandak & Shrushti Gala —Designed a campaign keeping in mind the global context. It is inspired by the campaign done by ‘Samaritan UK wherein they encourage people to share their stories about mental illness. A series of posters depicting stories of different soldiers who have fought mental illness will hopefully break the stigma around mental illness and encourage other soldiers to seek medical help.
+
+Shalini Chandak & Shrushti Gala -ISDI Parsons (AIML |A Whole New World)
+
+AI is an enabling technology that can be used in diverse domains of military activity — everything from weapons systems, intelligence, logistics, and training to the learning tools employed in professional military education, Mental health’ is the next obvious step.
+
+pexels-pixabay-280002
+
+As war clouds gather over the Indian border, it is time to honour Mental Health’ needs, as true peace can only be attained when Man’ is at peace with himself!

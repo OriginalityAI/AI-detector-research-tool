@@ -1,0 +1,11 @@
+Title: The Tezos Approach: Enhancing Value in Decentralized Networks
+
+In recent years, the market for App Coins – specially marked tokens built to power applications on existing networks – has exploded, with approximately $250 million raised for various projects. While Tezos, a decentralized crypto-ledger with native on-chain governance, permits the creation of App Coins, its strategy focuses on the integration of technical features at the protocol level, as opposed to the App Coin model.
+
+We have identified two scenarios related to the implementation of a hypothetical prediction market as an example. In one case, Tezos implements the prediction market natively, while in the other, it's implemented on top of Tezos in a smart contract. While both solutions will demand tokens to cover transaction costs, the first scenario, with native implementation, will create more demand and value for the network.
+
+There are several reasons why we choose to prioritize the protocol level over the App Coin model. First, the latter can dilute value by creating an opportunity cost when limiting the token's varied uses. Second, scalability can be problematic, as smart contracts put unnecessary strain on network validation. Finally, poorly designed App Coins have the potential to create systemic risk and threaten critical market value.
+
+The value of the Tezos network is maximized through focusing on two key elements: the integration of valuable features and rules at the protocol level, and the consistent execution of reliable software. This approach ensures that the network maintains a coherent and efficient program execution. Furthermore, integrating popular features at the protocol level can encourage competitive market-based discovery and subsequently boost overall network value.
+
+It's important not to blindly apply the methodologies that have been successful in the growth of the internet to decentralized networks like Tezos. While the "move fast and break things" approach may work for the internet, ledger-based systems risk significant losses from small errors. By integrating tried and tested features at the protocol level and fostering innovation elsewhere, the Tezos approach ensures a valuable, consistent, and secure network that benefits all stakeholders.

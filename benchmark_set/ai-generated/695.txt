@@ -1,0 +1,13 @@
+Valve contacted me yesterday to inquire whether it was acceptable to showcase Papers Please in their demo video. While I appreciate them reaching out, it was not a necessary question. Currently, I am working on adding localization support to the game, a task that has proven more challenging than anticipated, mainly due to the extensive use of tiny pixel fonts and precise document layouts. Nonetheless, progress is being made.
+
+My objective is to provide professional translations in French, Italian, German, Spanish, Japanese, Korean, and potentially Russian. Although I have received numerous offers for assistance, I believe there is a general underestimation of how time-consuming the translation process actually is. With over 10,000 words in the game, many of which are gameplay-critical and require cross-referencing, I have instead decided to begin with the localization tool's public release. This will enable fans to create translations more easily, package them, and distribute them for others to use.
+
+Once localization is complete, I plan to write a full post-mortem on the game, documenting the various challenges and successes encountered during development. A more in-depth look at sales figures will also be included.
+
+Papers Please has resonated with many players who appreciate the game's aesthetics and gameplay. To address some constructive feedback, I will look into adding more scripted events, moral choices, and a possible port of the game for multiple platforms such as iOS or Nintendo 3DS. In addition, I am considering the implementation of a postmortem event editor to expand the game further and create an even more immersive experience.
+
+In developing the game's narrative and progression, I struggled with arranging the numerous encounters and mechanics into a cohesive and logical order. To overcome these challenges, I utilized a story layout tool to visualize how various events and mechanics would play out throughout the game.
+
+Considering the game's initial release, improvements in the in-game economy were necessary to maintain continuous pressure on the player. Using custom tools, I was able to simulate different scenarios and adjust events and monetization accordingly. This enabled me to optimize the gameplay experience and add more engaging events to the game.
+
+In conclusion, the ongoing development and improvement of Papers Please are a testament to the passion and dedication towards providing a continually engaging and immersive experience for players. Stay tuned for more updates about the game's future developments.

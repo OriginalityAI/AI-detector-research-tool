@@ -1,0 +1,7 @@
+Google's own video service has updated its Android app to make it easy to  send YouTube videos to Google TV. 
+ An update to his YouTube app on Android and Google TV announced today will automatically connect devices to the same Wi-Fi connection, allowing his mobile users to instantly play content on Google TV. After pairing your device and clicking the TV icon that appears, your video will be displayed on Google TV. 
+ Product his manager Timbo Drayson wrote in his blog post: “This is an idea he has been working on since 2010 and today he is taking the next step.” 
+ 
+ This update basically turns your phone or tablet into a remote control. Pause, scroll, or skip to the next video while playing on your TV. A video can play continuously on your TV while you search for another video or browse the web on your gadget. 
+ Adding multiple devices to the TV will allow users to add friends and family to their playlists, Drayson said. 
+ Two years ago, YouTube released his remote app for Android that creates a virtual connection between your phone and his YouTube Leanback, a web-based fullscreen option. However, connecting my phone to Google TV was a bit of a hassle. I had to sign in to YouTube Remote on my phone and YouTube Leanback on my Google TV. Just sign up for YouTube and you're good to go.  Google announced last month

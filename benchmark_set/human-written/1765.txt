@@ -1,0 +1,11 @@
+The Chinese have crushed the myth of Google’s quantum superiority. It took only 60 NVIDIA graphics cards to do this. Vitali Brel May 20·2 min read
+
+Google’s Sycamore quantum system. Image Source: Google
+
+A group of researchers from the Beijing Institute of Theoretical Physics of the Chinese Academy of Sciences repeated Google’s experiment to demonstrate quantum superiority. The Google Sycamore quantum system took 3 minutes and 20 seconds to solve a specific problem. The new algorithm of Chinese scientists solved the same problem without any fuss in 5 days on only 60 NVIDIA video cards. Google’s quantum superiority didn’t happen. We are waiting for a new attempt.
+
+Google announced the achievement of quantum superiority — the ability to quickly solve tasks that take classical computers literally forever — in October 2019. According to the company, its Sycamore quantum system solved in 200 seconds a task that the fastest IBM Summit supercomputer at that time would have taken 10 thousand years to solve. IBM disputed this claim. The company said the improved algorithm could solve Google’s quantum task in 2.5 days. However, the company did not confirm these words with a practical experiment.
+
+Instead of IBM, Google’s claim of quantum superiority was refuted by scientists from China. They developed an algorithm that, on 60 NVIDIA graphics cards running on V100 and A100 GPUs, solved Google’s problem in about five days. Thus, by the way, Chinese researchers have shown that supercomputers are also not always the best tools, and it is not the computing power itself that is important, but the ability to use it.
+
+At the same time, it should be noted that the search for evidence of the quantum superiority of a particular quantum platform is more of a sporting nature than an applied one (the Chinese also play this game). But this allows us to feel the boundary between classical and quantum computing, because there is still no complete clarity in the application capabilities of the latter. The Chinese, by the way, in the new five-year plan plan to transfer the search for quantum algorithms from the theoretical level to the practical one. Let’s see what happens.

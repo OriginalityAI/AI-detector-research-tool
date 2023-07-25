@@ -1,0 +1,23 @@
+The most basic and original idea behind bitcoin and other cryptocurrencies is that we can use these cryptographically-protected account balances protected by hash-making machines as digital cash. That is, as cash that you can’t touch. But otherwise, you can use it just like cash. This implies:
+
+free use (as in speech, not necessarily beer)
+
+meaningful privacy, or at least difficult-traceability of transactions related to people
+
+ability to hold without anybody knowing your balance (mattress-style)
+
+These correspond, respectively, to merchant adoption, censorship-resistance, pseudonymity if not anonymity, and privacy.
+
+We collectively blew right through our first 10 years of crypto, a not-to-be-repeated window of near-complete freedom where bureaucrats everywhere asked each other, what the hell is that? and opted to ignore us.
+
+We are in now in the age where governments and large institutions are wising up.
+
+This means we need to wise up and get to work if we want to realize the digital cash vision. If you count yourself among this increasingly dying breed, in the midst of blockchain-mania, “private blockchains”, fedcoins and endless griping about energy usage, then we need to work together before, like gunpowder in 2nd century China, this technology and this dream become forgotten.
+
+That’s what this blog is about.
+
+This blog is going to tell things as they are because we can not wise up and get to work if we do not have correct information or if we are tip-toeing around everyone’s delicate feelings all the time. This blog is an abattoir for sacred cows, a killing field for unspoken agreements to keep secret our own failings, a chopping block for stupid ideas, bad practices and other acts of incompetence and negligence.
+
+Let’s do without ad hominem, but it has to be done, no matter the cost, because the future of human liberty and prosperity depends on our ability to realize the digital cash vision, which is, after all, a first and critical step towards global market anarchism.
+
+Originally published at http://dash.ist/2019/03/09/what-is-the-digital-cash-vision/

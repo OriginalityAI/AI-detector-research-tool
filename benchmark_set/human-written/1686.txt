@@ -1,0 +1,1 @@
+AMOLED displays make a lot of sense on smartwatches that use always-on displays, as no pixels need to fire for the black parts of the screen (which many watch faces and wearable UIs lean heavily on) – perhaps resulting in better battery life. It's a little surprising, then, that Motorola has opted for an IPS panel for the second year in a row.

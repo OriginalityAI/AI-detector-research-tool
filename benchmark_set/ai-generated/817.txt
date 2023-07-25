@@ -1,0 +1,8 @@
+From the DayZ wiki 
+ 
+ 
+ V3S Civilian Seat 14 Item Slots 200 Weapon Slots 50 Backpack Slots 8 On-road Top Speed ​​75 km/h Off-road Top Speed ​​45 km/h Fuel Tank Capacity 160L Range N/A Weapons None Location Solnicy Quarry, Solnicy Factory  Rarity Rare 
+ 
+ A green truck with lots of inventory slots. Like  Mod:Ural Civilian,  V3S can knock down small trees without damaging them. It is slightly smaller than the Ural, has less fuel capacity, but has better maneuverability. Due to its color and size, it is easier to hide than the Urals. 
+ 
+ Unlike the Ural Civilian, the V3S doesn't have a tarp around the passenger seat, making it much easier to spot and shoot passengers.

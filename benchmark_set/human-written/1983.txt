@@ -1,0 +1,63 @@
+Write Dumb First.
+
+You might know the famous Donald Knuth quote:
+
+“The root of all evil is premature optimization”
+
+I want to be very clear about this: write something that works first.
+
+Never forget that your job is to code solutions. If there isn’t any to be found, you are fired. Writing good solutions is the way to getting promoted and respected. To land that job offer in a better company. If you lose yourself improving it piece-by-piece, you will likely end up with no solution at all.
+
+Also, very importantly, you always have to have a baseline.
+
+How can you tell your code trick was any good if there is no other solution to compare it with?
+
+Write the simples deep learning model possible, use a pre-made ResNet, stick with default libraries, no fancy GUIs, focus on the happy day scenarios, etc.
+
+Hey! That doesn’t help!
+
+It actually does.
+
+Think about how a skyscraper is built. There is way more to it than bricklaying and concrete. There are the logistics of getting the materials and people there every day, the food, the water. You need to advertise, sell and rent its rooms, etc. There is a whole world around building a skyscraper beyond its construction.
+
+Photo by Sean Pollock on Unsplash
+
+And so it is for code. There is way more to software development than writing code. There are all the Ops: devOps, liveOps, mlOps, aiOps, etc. Why should good code be all about the code? What use is there to an empty skyscraper? What is the use of a flawless algorithm that is never run? A super-accurate model that is only run on static datasets?
+
+The point of writing it dumb first is to force yourself to go about all else there is to software development early on.
+
+If you are doing an app, having it dumb first will take you to the app stores sooner. The sooner your app is out there, the faster it will have feedback. The sooner you will have analytics data to look upon.
+
+If you are doing a service, having it dumb first will introduce you to the world of hosting and cloud providers. Will make you aware of what there is to be used, what is cheap and what is not. This might completely change how you see things and move your idea in a completely new direction.
+
+The same goes for machine learning models. Deploying it will expose you to the world of model hosting and cloud inference. You will see your model in action: when it works and when doesn’t. Models fail all the time, but they work all the time too. You will get live data that can be feedback to training.
+
+Writing it dumb first will expose you to the magical world of deployment and production. It will teach you what users want, what providers can offer, and how you can make the best use of these resources.
+
+Going back to the skyscraper analogy, building your first house might give you way more insight about construction and making money than reading books about advanced construction techniques.
+
+And if you think you will be releasing crap software, remind yourself that the crappiest products are the ones never finished.
+
+The MVP
+
+The startup jargon for this is MVP: minimal value product.
+
+The MVP of any functionality should be the dumbest implementation possible. The minimal code that makes it work. It might be slow and hardly extensible, but has to work.
+
+And here is the most important takeaway from this article:
+
+Optimization is not just making code fast. We optimize how it looks, how safe it is, how extensible, how flexible, how accurate… Recall that premature optimization is the root of all evil? Trying to be too flexible too early is also the root of all evil. Trying to be too extensible too soon is also the root of all evil…
+
+Write, Deploy, Improve
+
+At one point, you will finally be able to optimize things up. To try that shiny new model architecture or API.
+
+That moment comes when you ship something. When code is in the production stage, users will complain about all sorts of things. Pay close attention to these complaints. They reveal what is worth optimizing.
+
+If something is slow, make it faster. If some module is failing, make it correct. User A said he would love feature B. Write feature B. etc.
+
+Stop worrying about the code and start worrying about your users.
+
+The users that pay your company bills and your company is the one that pays your bills. If the user is happy, the company is happy, and you are happy.
+
+Users are the ultimate profilers.

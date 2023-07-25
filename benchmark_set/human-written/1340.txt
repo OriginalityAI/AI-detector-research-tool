@@ -1,0 +1,19 @@
+The new WordPress Twenty Fifteen theme is pretty nice. But if you’ve just activated this theme and you’re using Disqus as a comment system, you might have noticed the comments don’t look right:
+
+Here’s how I fixed the problem..
+
+Update as of 12/23/2014 11:51:16 AM: I’ve done more more work to better integrate Disqus into the Twenty Fifteen theme since I originally created this post..
+
+Basically, Disqus isn’t inheriting the same background color, margin, and padding properties as the rest of the post.
+
+The easiest way to fix it is to install Jetpack. This will give you the ability to have custom CSS in your WordPress theme.
+
+Go to Appearance > Edit CSS:
+
+Then copy/paste the following CSS into the window:
+
+div#disqus_thread { padding: 3% 10%; background-color: white; margin: 3% 0; box-shadow: 0 0 1px rgba(0,0,0,0.15); } @media screen and (min-width: 38.75em) { div#disqus_thread { margin: 3% 7.6923%; } } @media screen and (min-width: 59.6875em) { div#disqus_thread { margin: 3% 8.3333%; } } 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 div#disqus_thread { padding : 3% 10% ; background-color : white ; margin : 3% 0 ; box-shadow : 0 0 1px rgba ( 0,0,0,0.15 ) ; } @media screen and (min-width: 38.75em) { div#disqus_thread { margin : 3% 7.6923% ; } } @media screen and (min-width: 59.6875em) { div#disqus_thread { margin : 3% 8.3333% ; } }
+
+Save it, and take a look at your post again:
+
+MUCH better!

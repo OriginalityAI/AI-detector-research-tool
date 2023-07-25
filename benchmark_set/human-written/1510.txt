@@ -1,0 +1,57 @@
+This article demonstrates a simple Python script for automating a daily stock portfolio report. It will be generating a report about your portfolio and emailing it to you. The report will contain information like todays return and top movers.
+
+Automating your Stocks Portfolio Report
+
+We are going to be using Python 3.8 for this guide. For anyone who has little to no experience I recommend reading this article for a quick step by step tutorial on installing it.
+
+Importing Useful Python Libraries
+
+We are also going to be using the following libraries which you could install using Pip (check the article above for more information):
+
+Yahoo Finance: For getting stock related data. Pandas: Makes working with big data a lot easier with Python DateTime: For getting and calculating current dates and time. OS and Shutil: Accessing local folders and files on your computer. Smtplib and SSL: For sending emails using Python.
+
+All Imports Necessary for this Script
+
+Specifying Each Ticker and its Weight in your Portfolio
+
+The first step is to store each ticker in your portfolio, its relative weight, and its purchase date all in an Excel file. From there we could read the file and use that data for our calculations. You need to make a file that looks something like this representing your portfolio:
+
+Example of My Portfolio Excel File (the screenshot was cut to save space)
+
+Storing Historical Data for your Stocks
+
+In order to get the historical data for each stock, we will be using the Yahoo Finance library to request all that data for free. First, we will need to read the Excel file to get the stock tickers and their weight. After that, it will store them in a Pandas DataFrame to use them for the calculations later. In order to do that, we need to use a while loop to iterate through each ticker and request its historical data. We will then store that data locally in a .csv file. The script will automatically make you the folder to store them in. You might also realize that I added a sleep timer which slows down the loop. I did that in order to not get banned from Yahoo Finance for performing requests too fast.
+
+Downloading the Historical Data of Each Stock in Our Portfolio
+
+Automating the Stock Analysis
+
+Now we will be performing the analysis calculations that will be used in the report. It will include the top movers on that day, the return on that day, and the total return since purchase. However you could always add more if you wanted to.
+
+The first step is to add all the data files to an array so that we could iterate through them. I also added a ticker that is called ‘Nothing’. That is the rest of the portfolio that is in cash so we also assumed its value will stay the same overtime. Next, we want to perform the calculations needed while we iterate through each of the stock’s data. This process is as easy as dividing the current price of the stock by the price you want to compare it to. We will do that for each stock and store everything to one Pandas DataFrame.
+
+Most Calculations Needed for Our Portfolio’s Analysis
+
+Up to now we only have the return rates of each stock without regard to its weight. Instead, we need to calculate how much effect each stock has had in the portfolio. This can be done by multiplying its return rate by its weight in the portfolio. After that we just add them to the original data frame.
+
+You may also want to know the stocks that made you the most on that day. As I called it ‘top_movers’ in the script. To calculate that, we order the data frame from the smallest to the greatest of today’s return. Next, we just get the last five rows and it should be your ‘top movers’ for the day.
+
+Calculate the Weighted Returns
+
+Emailing your Portfolio’s Daily Report
+
+The last step in all of this is to send the report to yourself or the recipient through email. Since we have all the numbers from the calculations done all that is left is to input them into the body and send it. We can use the SMTP and SSL Python libraries to send our email. You will have to specify the sender and receiver emails as well as the password to login.
+
+If you are not using a Gmail account you also have to change the value of ‘port’ in your script to your email hosts SMTP port number. Gmail’s port number is 465 as an example.
+
+Emailing the Portfolio Report
+
+If everything is done right, you will receive an email that will look something like this:
+
+Example of the Email I Received (the screenshot was cut to save space in this article)
+
+Finally…
+
+You could always add more calculations to this program to give you what you want. You could also use PythonAnywhere (there are different services as well) to host your script and have it email you your report everyday.
+
+Anyways I hope you enjoyed this article! Please consider giving it a like as well as commenting any feedback you have about it. Also, I’m always happy to make some new connections on my LinkedIn as well as my GitHub. So make sure you follow me on there. Thank you for reading!

@@ -1,0 +1,35 @@
+Ok, maybe that’s a little harsh, but it’s ok, I’m here to help. The technique I am going to discuss was influenced by Test Driven Development (TDD), but it can help you no matter what ideology you follow (even if that ideology happens to be “code fast, fix later”).
+
+I will be using Python for my examples, due to its readability and widespread use, so feel free to click away now if this choice of language offends you.
+
+Ok, so imagine you want to write a simple encryptor and decryptor. If you were following TDD, you would start by writing a whole suite of tests. They would initially fail, but would increasingly pass as you continued to add functionality. Although there are many benefits to this approach, including clear acceptance criteria, let’s assume for now that we aren’t going to go down the TDD road. In fact, it’s the step after the creation of tests that I’m more interested in.
+
+So what comes next? Where do you start? Well, like with any coding project, the first step is to think about the problem. For the sake of simplicity, let’s assume you aren’t too concerned with perfect security, and doing a couple simple manipulations of the input will suffice. Soon you might form a plan for a simple encryption function that looks something like this:
+
+Read the input String Reverse the order of the input String Insert random alphabetical characters in between every other letter in the reversed String Return the encrypted String (I told you it wouldn’t be that advanced)
+
+Many programmers will have already started typing away at this point (perhaps even before reading the full list). When they finish, they may have code that looks something like this:
+
+If they were to build a matching decryptor using this method, it might look something like this:
+
+For a small, simple problem like this one, this code might even be fine. Since the variable and function names are descriptive, the code is still readable. However, the real problem is that these samples reflect the wrong way of THINKING about the code. Let’s try it again.
+
+This time, we’ll start writing our code as if we already have a function written to perform every non-trivial task that comes up, even if the function doesn’t exist yet. It helps to use descriptive function names during this step in order to maximize readability. Next, we’ll simply create the functions to match the names we called in the parent function. Finally, we’ll fill out each new function we created by following the previous steps. If we follow this method, we end up with code that looks more like this:
+
+The descriptive names make it clear that we are taking in the input, reversing it, interspersing extra characters into the reversed input, and then returning the result. Plus, it’s easier to stay on track without getting bogged down in the details of implementation, and now we have an action plan for what functions we need to add next. Let’s start with the reverseWord() function:
+
+Notice, we call upon Python’s existing reversed() function, but we could just as easily have written our own function to fill this need. Next, let’s implement the intersperse() function:
+
+As you can see, we named another function that doesn’t exist yet. Finally, let’s write the getRandomLetter() function:
+
+Perhaps the logic here was too short to justify its own function, but it still illustrates my point. That is, if you keep following this method, chasing each branch of nested functions out to their leaves, you will eventually end up with a function for everything you need, whether you wrote the function yourself, or used existing library functions. Using this method results in very clean, modular, and readable code. In addition, it keeps your code DRY (Don’t Repeat Yourself), since you can always reuse the functions you already wrote whenever you need them again! For example, if you were to write a decryptor function, it might use some similar functions:
+
+Rather than writing a new reverseWord() function, we could simply migrate any common functions to somewhere else in the code, where they can be imported and used as needed. For the sake of this example, I created a CommonFunctions class, but in practice you may want to use another solution that better fits your situation.
+
+Here is the final code I came up with when using this technique:
+
+I hope this technique helps you write better code, and please let me know what you think!
+
+If you are interested in more computer science content, check out my YouTube channel! https://youtube.com/channel/UC3QAtE9qAys9385wFzs8hNA
+
+I also offer private lessons over Zoom and Skype! Feel free to contact me at devonhubertcoding@gmail.com or visit my website at http://devonhubertcoding.weebly.com

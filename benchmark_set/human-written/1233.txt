@@ -1,0 +1,37 @@
+Companies love data. Aggregating data from multiple sources makes decision-making easier and brings a new depth of the conversation to business meetings. But all of this is at the management level. IT managers and administrators also search for data from multiple sources to ensure that the ecosystem works. Companies demand the continued maintenance and availability of mission-critical applications. Without a framework or incident workflow, revenue can suffer, and customers churn if the company does not proactively address problems that arise in its infrastructure. According to Forrester 2020 survey data 2020, 70% of companies have prioritized expanding their ability to source external data. Every year there has been an increase in industry demand for valuable data that can provide benchmarks, crowdsource analytics, regional trends, and the ability to manage risk in the future.
+
+Exoprise CloudReady exchanges data and incident workflow to streamline IT management and offers a fresh perspective beyond the traditional incident management capabilities. The solution provides deep insight into the performance of the SaaS application and business service health and pinpointing where the bottlenecks are in the service chain. By deploying synthetic and real user monitoring sensors in the cloud and at the end-user device location, CloudReady immediately starts capturing thousands of advanced metric data in real-time. When a failure or problem is detected, either due to bandwidth constraints or change management, a full detail alert is generated in the CloudReady dashboard.
+
+If you already have an ITSM or Service Desk tool such as ServiceNow, SolarWinds, Remedy, Zendesk, PagerDuty, Freshdesk, etc., Exoprise automatically sends notifications directly to the tool of your choice. A simple API configuration in CloudReady via Web Hook allows third-party tools to access a wide range of notifications and expand their incident management and customer success strategy. IT benefits from this better incident workflow that increases employee productivity, reduces MTTR, and minimizes risks.
+
+1) Deliver Great End-User Experiences
+
+ServiceNow helps organizations with IT service management, ticketing, and helpdesk functionality as well as creating digital workflows. Likewise, CloudReady can use the web or email hooks to send a message that ServiceNow can interpret, respond, and act on. The action could be to create a ticket or forward a message to a ServiceNow service based on the conditions that are met in the incoming email. By integrating with CloudReady, ServiceNow can receive real-time notifications so that IT can respond immediately to critical tickets that affect the end-user experience and the overall business.
+
+ServiceNow supports both inbound (provider) and outbound (consumer) web services. Inbound web services such as the REST API enable access, modification, and interaction with ServiceNow instance data via a client application such as CloudReady. REST APIs enable the rapid creation and execution of requests and ultimately display of all incidents in the ServiceNow browser. Configuration on the ServiceNow end would justify the role of rest_api_explorer and the web_service_admin admin roles. A new ticket is opened in the Service Desk when alarms are detected. If CloudReady detects that a problem has been resolved, the corresponding ticket is automatically closed in the Service Desk. This is closed-loop incident management. The link below provides more information on the steps involved.
+
+https://docs.servicenow.com/bundle/geneva-servicenow-platform/page/integrate/inbound_rest/concept/c_GettingStartedWithREST.html
+
+2) Improve Visibility and Agility
+
+PagerDuty is an operations performance and incident management platform that enables email integration with CloudReady through custom services. CloudReady sends events and notifications to an email address specified in the email hook. PagerDuty triggers an incident when an email is sent to the integration address. Direct integration with a PagerDuty service is beneficial when notifications do not need to be forwarded from one built-in tool to another. Before configuring an email configuration, make sure that PagerDuty admin access is available. Under Add a Service, add a new name for the service and select “Integrate via email”. Enter different settings for the incident, including behavior, urgency, and escalation policy. Configure the generated integration email address in the CloudReady email hook. The link below provides more information on the steps involved.
+
+https://www.pagerduty.com/docs/guides/email-integration-guide/
+
+3) Facilitate Business Communication
+
+Slack is a popular tool for IT teams to communicate and share critical information. By sending email or Web Hook callbacks to Slack, you can selectively send status information to different teams that need to diagnose a problem or notify others of impending problems. Slack is extremely easy to configure to receive emails. Simply select the appropriate channel to which you want to send the email messages and you will receive an email that will be forwarded directly to that channel. For example, route incidents and service requests from a website to the appropriate support engineers. After creating the Slack application, enable incoming Web Hooks. Selecting a specific channel to which the app will send and authorizing the app will generate a new Web Hook URL. This URL is specific to a single user and a single channel. Configure the URL in CloudReady Web Hook with the JSON payload and use it to make an HTTP POST request to Slack. The link below provides more information on the steps involved.
+
+https://api.slack.com/incoming-webhooks
+
+4) Streamline Incident Workflow
+
+Moogsoft is an AIOps and observability platform to assist ITOps and DevOps teams in resolving incidents and fulfilling SLAs. Web Hook integration sends events from CloudReady to Moogsoft. The integration allows you to send JSON payload to a specific Moogsoft instance via HTTP/HTTPS and basic authorization. After configuring the integration within AIOps, enter all the details for the Webhook (URL, basic authentication, etc.) in CloudReady and you are ready to test the connection. The link below provides more information on the steps involved.
+
+https://docs.moogsoft.com/Enterprise.8.0.0/webhook.html
+
+There’s More
+
+These are just a few examples of the ability of CloudReady to share its data and incidents with other leading ITSM tools that are leveraged. We are adding new capabillities, integrations and workflows every day.
+
+Learn more about Exoprise and sign up for a FREE 15-day trial here.

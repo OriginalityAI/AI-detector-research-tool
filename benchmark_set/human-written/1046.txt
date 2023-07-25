@@ -1,0 +1,19 @@
+If you setup a HOTAS control interface, wear a VR headset, and activate voice commands, then Elite: Dangerous may very well be the premiere virtual reality simulation experience available today. That’s likely rivaled only by racing wheel setups with games like Project CARS and DiRT Rally. But if you’re looking for something a bit lighter that still retains that simulation vibe without the futuristic bells and whistles, then Ultrawings from Bit Planet Games is just right.
+
+Taking a page from Nintendo’s Pilotwings book, Ultrawings is a light-hearted sim-lite flight game. When I opened up the experience for the first time, I found myself sitting at a desk in the office of an airport. On my left was a bulletin board serving as a replacement for an options menu. I could move sticky notes around to designate my various selections, such as the aircraft I wanted to fly and how many comfort measures are included. There is also a choice between arcade and sim-style flying. I picked the most intense of everything, naturally.
+
+The laptop in front of me has a touchscreen with a few different choices, but the last two are grayed out right now since I don’t have my license yet. Naturally, I jump into the core training missions first. The first mission tasks me with simply taking off and staying in the air for a full minute. No problem — that’s only 48 seconds longer than the Wright Brothers’ first flight. I crank the throttle, pull back on the controls, and I’m up into the air.
+
+Whilst marveling at the bright, colorful, and polygonal landscapes before me, I noticed multiple islands off in the distance. When we first revealed this game, Bit Planet described it as an open-world flight game and that notion is starting to show through. I could set my course west and fly over to this other region that I’d later discover has a landing strip of its own, or the island to the south that features a large statue I see looming in the distance. But not yet. After the minute is up, I’m sent back to the training office.
+
+My next Ultrawings mission tasks me with flying through a single ring — which is harder than you’d think considering how touchy and realistic the plane’s banking physics are — and then eventually multiple rings and so on until the powers that be have determined my maniacal air-wobbling is somehow safe enough to grant a license.
+
+The objectives are often simple like this — fly here, land there, deliver this, do that — but the magic is in the details. Before take off, you’ve got to actually flip the fuel gauge switch, adjust some levers, and crank the throttle after turning on the engine. Gesturing with the Touch controllers is intuitive and instead of memorizing button prompts you just remember what to do physically. It feels like you’re actually flying a tiny, lightweight aircraft. You can even snap photos with the little tablet in your cockpit.
+
+I’ve never been one to be affected by simulation sickness and the hand interaction likely helps even further, but for those that are Ultrawings has a handful of comfort options. You can customize how much of the cockpit view is available, optionally blocking off the periphery to simulate the field of view seen in other games like Eagle Flight.
+
+The core gameplay loop is to complete jobs, get money, buy new planes and new airports, complete more jobs, and repeat. It’s addictive, fun, and a real treat to let someone relatively new to VR try out. I’d have liked to see a bit more content in terms of environments or things to actively participate in, but it feels like a great start that will only continue to grow and get better over time.
+
+Ultrawings is slated to release for Oculus Rift with Touch on Oculus Home soon. That’s the only platform they’re focused on developing the game for right now, but have not ruled out the possibility of other releases.
+
+Tagged with: air, bit planet, flight, oculus, sim, touch, ultrawings

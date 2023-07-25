@@ -1,0 +1,21 @@
+Hello,
+
+I have an optimization problem to solve with non-linear constraints. It is a control theory based discrete time model (which i feel fules out using fmincon) over a time horizon say N seconds.
+
+I found a few old posts similar to this, but none I felt had clear answers.
+
+I am going nuts trying to find a way to implement it in matlab. Which Matlab tool would be best suited in this case?
+
+Thanks,
+
+italic EDIT: the system is continuous, but we analyse it in a discrete time domain. Thus, variables have discrete values. There are n_v entities and each of the entity has each parameter described below:
+
+variables: p,v,u; size(p)=size(v)=size(u)=(1,N) vectors
+
+Obj. fn: minimize sum(u(1,:))
+
+ANSWER:
+
+Matlabsolutions.com provide latest MatLab Homework Help,MatLab Assignment Help for students, engineers and researchers in Multiple Branches like ECE, EEE, CSE, Mechanical, Civil with 100% output.Matlab Code for B.E, B.Tech,M.E,M.Tech, Ph.D. Scholars with 100% privacy guaranteed. Get MATLAB projects with source code for your learning and research.
+
+I tried to create an example. Hope this helps.

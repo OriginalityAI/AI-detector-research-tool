@@ -1,0 +1,29 @@
+In the subtitle of his remarkable history about the race for the nuclear bomb, science writer and historian of science Jim Baggott referred to World War II as the “first war of physics”.
+
+Today, the efforts waged to curb the COVID-19 pandemic may be the first example of a large-scale, global data-driven response to a worldwide crisis, and as such perhaps the first war of data science.
+
+It is difficult to overstate just how much data has become available in an extremely short time, and open science and the networks for sharing clinical and epidemiological data have enabled an unprecedented depth of analytics. We have the data, we have the tools, and we have experts. They are working hard, but we’ve never done this before and haven’t trained for it. While much progress is being made, we still must overcome many challenges.
+
+The Starschema COVID-19 dataset
+
+One of the tactical challenges lies in making the data “analytics ready” — ensuring the data is accurate, readily available, constantly updated, and in a format that can be easily used by data scientists on the front lines.
+
+The case count dataset collated by Johns Hopkins University’s Center for Systems Science and Engineering (JHU CSSE) is referenced and relied on by hundreds if not thousands of data scientists. This dataset, and the dashboard JHU CSSE provides, is very important and helpful, but it wasn’t constructed in a way that makes the data analytics-ready and often data scientists who want to use the dataset need to go through a time-consuming process to unpivot, union and clean the data before they can use it in their own models and applications.
+
+Based on the JHU CSSE data stream, Starschema has built — and will continue to update and improve — an analytics-ready dataset that draws on multiple data sources, eventually integrating high temporal resolution domestic data (e.g. the dataset provided by Italy’s Department of Civil Protection). The entire dataset is available for download via AWS S3, as well as via Snowflake‘s Data Exchange. This will enable data scientists, epidemiologists and analysts to access the most up-to-date data on COVID-19 cases through a cloud-based data warehouse, including datasets enriched with relevant information such as population densities and geolocation data. Users can leverage this information to build inferential models of disease propagation and provide their customers with unique insights into the behavior of this novel epidemic.
+
+The Starschema COVID-19 data set on Snowflake’s Data Exchange
+
+The Starschema COVID-19 dataset is in a classical “long” format — each permutation of a point in time and a case type — confirmed, recovered, deceased, active — is a row. In addition, many of the inconsistencies between county-level reporting — prior to 10 March 2020 — and state-level reporting have been resolved.
+
+We are in the process of collating all data pertaining to COVID-19 and making additional data available, such as information on population size, population density, and other metrics that enable contingency planning, forecasting, and visualization. As the data size expands, we are constructing an Airflow-based dynamic DAG in order to provide a reproducible workflow for rapid ingestion and transformation of data.
+
+The outlook
+
+As the COVID-19 pandemic progresses, we can expect data to play an increasing role in both public and private operations. Public health authorities are already using data-driven approaches to monitor the spread of SARS-CoV-2, and phylogenetic analyses are used to identify whether particular strains of SARS-CoV-2 carry a higher risk. In the private sector, information on the number of cases is used to support business contingency operations and analyze supply chains for possible vulnerabilities.
+
+With the increasing importance of data, ensuring data quality and consistency is paramount. Through this dataset Starschema intends to provide a practical demonstration of best-of-breed data quality assurance and data management procedures to provide public health professionals, contingency planners, and enterprises with an outline of data management sound enough to stake lives on.
+
+As we fight SARS-CoV-2, data-driven approaches may well be what gives humanity an edge. With the rapid expansion and democratization of data and advanced analytics, data science is in a unique position to bring the tools, techniques, and procedures that were developed in the analytics domain over the last decade to bear on this unprecedented challenge.
+
+If you have any questions regarding this dataset or how to use it, please reach out. We are here to help.

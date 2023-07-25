@@ -1,0 +1,17 @@
+Using grep
+
+grepping recursively in the current directory
+
+In Ubuntu: grep -R "foo"
+
+In Mac: grep -R "foo" .
+
+Highlighting
+
+The lack of output highlighting bugs me. You can append the --color flag to highlight the search term, but I like for filenames to be highlighted too.
+
+Solving both issues
+
+I ended up installing grep through Homebrew ( brew install grep ), accessible with the ggrep command. The --color flag for ggrep highlights filenames and the search term.
+
+I added the following alias to my .bash_profile so I never have to type --color :

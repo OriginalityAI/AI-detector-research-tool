@@ -1,0 +1,119 @@
+Result :
+
+Counting 404 Response Codes :
+
+found 251 404 Urls Listing 404 Status Code Records :
+
++---------------------------------------+
+
+|path |
+
++---------------------------------------+
+
+|/css/bootstrap.min.css.map |
+
+|/robots.txt |
+
+|/djs/vendor/bootstrap-datetimepicker.js|
+
+|/favicon.ico |
+
++---------------------------------------+ Listing The Top Twenty 404 Response Code Paths :
+
++---------------------------------------+-----+
+
+|path |count|
+
++---------------------------------------+-----+
+
+|/css/bootstrap.min.css.map |1 |
+
+|/djs/vendor/bootstrap-datetimepicker.js|7 |
+
+|/favicon.ico |19 |
+
+|/robots.txt |224 |
+
++---------------------------------------+-----+ +--------------------+--------------------+-------------+
+
+| path| collect_list(host)|count(status)|
+
++--------------------+--------------------+-------------+
+
+|/css/bootstrap.mi...| [10.130.2.1]| 1|
+
+|/djs/vendor/boots...|[10.131.0.1, 10.1...| 7|
+
+| /favicon.ico|[10.128.2.1, 10.1...| 19|
+
+| /robots.txt|[10.131.0.1, 10.1...| 224|
+
++--------------------+--------------------+-------------+ +--------------------+--------------------+-------------+
+
+| path| collect_set(host)|count(status)|
+
++--------------------+--------------------+-------------+
+
+|/css/bootstrap.mi...| [10.130.2.1]| 1|
+
+|/djs/vendor/boots...|[10.130.2.1, 10.1...| 7|
+
+| /favicon.ico|[10.130.2.1, 10.1...| 19|
+
+| /robots.txt|[10.130.2.1, 10.1...| 224|
+
++--------------------+--------------------+-------------+ Listing the Top Twenty-five 404 Response Code Hosts :
+
++----------+-----+
+
+|host |count|
+
++----------+-----+
+
+|10.128.2.1|67 |
+
+|10.131.0.1|61 |
+
+|10.130.2.1|52 |
+
+|10.129.2.1|41 |
+
+|10.131.2.1|30 |
+
++----------+-----+ Listing 404 Errors per Day :
+
++---+----+-----+
+
+|day|year|count|
+
++---+----+-----+
+
+|312|2017| 8|
+
+|313|2017| 10|
+
+|314|2017| 6|
+
+|315|2017| 12|
+
+|316|2017| 6|
+
+|317|2017| 10|
+
+|318|2017| 18|
+
+|319|2017| 8|
+
+|320|2017| 10|
+
+|321|2017| 5|
+
++---+----+-----+
+
+only showing top 10 rows
+
+Summary :
+
+In this lab we learned how to load data and parse it with regexp_extract function, then we cleaned the data with the help of na package, we then convert the date column to a valid timestamp using a UDF and finally we explored the data and made some analysis on it.
+
+Appendix :

@@ -1,0 +1,53 @@
+Roborock’s S4 Max is an evolution and replacement of its S4 robot vacuum, the company’s first model to not include a wet-mopping function. “MAX” might seem to promise some grand upgrades, but the vacuum offers mostly small, but effective refinements on its predecessor.
+
+
+
+Cosmetically, the S4 Max looks identical to the S4. On top is a pair of rubberized buttons that activate auto cleaning and docking, a turret housing the vacuum’s laser sensor, and a 460ml dustbin concealed beneath a lid. There’s a single rolling brush and a silicone edge brush, plus two main wheels and an omnidirectional wheel. The vacuum has an attractive matte black finish, setting it apart from its mostly glossy competitors.
+
+
+
+This review is part of TechHive’s coverage of the best robot vacuum cleaners, where you’ll find reviews of competing products, plus a buyer’s guide to the features you should consider when shopping for this type of product.It follows the standard process for connecting to its companion app and your Wi-Fi. You press a big plus symbol in the Roborock app, select the S4 Max once it’s recognized, and follow the on-screen prompts. The setup was seamless for me, and the vacuum was up and running in less than a minute.
+
+
+
+Roborock The S4 Max can recognize when it’s on carpet and automatically adjust its suction strength.
+
+
+
+The first time you run the S4 Max, it creates a map of the room that you can save and modify to make future cleanings more efficient. You must enable the map-saving feature by hitting the Edit button and flipping a toggle in the app settings, though. Ideally, you’d do this before the vacuum’s first cleaning job, but if you forget—as I did—you can do it as soon as the job is done and manually save the map. You can save up to four maps, one more than with the S4, making it a great option for multilevel homes.
+
+
+
+Once a map of your floor plan is saved, you can customize it by creating rooms, invisible walls, and no-go zones. Again, this is done through the Edit function and is as simple as dragging and sizing lines or boundary boxes where you want them on the map. With these modifications in place, you can deploy the S4 Max to clean specific rooms—either manually or on a schedule—and know it will stay out of areas you’ve designated as off limits.
+
+
+
+Like the S4, the S4 Max has four cleaning modes, though their names have changed from Silent, Standard, Medium, and Turbo to Quiet, Balanced, Turbo, and Max. They’re effectively the same and can be selected from the app’s main screen.
+
+
+
+Michael Ansaldo/IDG The S4 Max can save up to 4 maps.
+
+
+
+If you only want to clean a specific area rather than the whole room, you can use Zone cleaning. This allows you to send the S4 Max to a space you define on the map. The S4’s “go to” feature, where you drop a pin on the map and send the vacuum to Spot clean the area, is still here as well. The advantage of Zone cleaning is that it lets you define how big the cleaning area is, rather than relying on a pre-programmed diameter.
+
+
+
+I used the S4 Max on my downstairs level to see how it performed on carpet, hardwood, and vinyl bathroom tiles. It was able to transition from one floor type to another without issue. It can recognize carpet, and you can hear the suction kick up automatically when it does. It did particularly well here, sucking plenty of pet hair, food crumbs, and dirt from the fibers—far more than was visible to my eye.
+
+
+
+The S4 Max navigates as well as the S4 did. Between the vacuum’s sensors and the virtual boundaries I placed in the map, it stayed out of trouble as long as I provided a clutter-free path for it. Its turret prevented it from getting under my couch and the toe-kick under my cabinets, but these were the only drawbacks I encountered.
+
+
+
+The Roborock app includes a wealth of options for customizing the S4 Max. These include, language and volume settings for the voice prompt, a “find my robot” feature, and a virtual remote control for manually directing the vacuum. It also maintains a cleaning history that logs details of every job and tracks usage of the vacuum’s brushes, filter, and sensors, so you know how long each has until it needs to be cleaned or replaced.
+
+
+
+Essentially the Roborock S4 Max does everything the S4 did, just a little bit better. In the end, its modest upgrades likely make it a better vacuum than if Roborock had just piled on new features. It’s highly recommended if you want some of the best robot vacuum technology has to offer without emptying your wallet.
+
+
+
+Note: When you purchase something after clicking links in our articles, we may earn a small commission. Read our affiliate link policy for more details.

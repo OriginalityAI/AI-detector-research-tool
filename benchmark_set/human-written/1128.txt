@@ -1,0 +1,37 @@
+CORD.Finance reopens partner vaults on Binance Smart Chain starting with valued partner Coval cordfinance Apr 11·2 min read
+
+CORD.Finance has officially reopened partner vaults on Binance Smart Chain, starting with valued ongoing partner Coval (Circuits of Value). This is our first live partnership since migrating over to BSC from Ethereum, and we hope only the first of many such partnerships! If you were staked in the old CORD-BNB-LP -> VACC vault, please exit vault at https://pool.cord.finance/retired/6/, then stake in the new vaults at https://pool.cord.finance. Hint: you may need to hit Control-F5 to refresh the vaults in your browser.
+
+Token pairs may differ from those in screenshot
+
+The live vaults are as follows
+
+CORD -> VACC
+
+CORD-VACC-LP -> VACC
+
+CORD-BNB-LP -> COVAL-BNB-LP
+
+COVAL-BNB-LP -> VACC
+
+Contract for CORD on Binance Smart Chain (BSC)
+
+0xa3506A4f978862A296b29816C4e65cf1a6F54AAA
+
+Contract for VACC on Binance Smart Chain (BSC)
+
+0xb01228C32F85db30b8F9fc59256B40C716b0E891
+
+To buy or trade CORD-BNB on PancakeSwap V2, enter the BSC contract address of CORD in one of the PancakeSwap V2 exchange token fields, and select BNB in the other field.
+
+https://exchange.pancakeswap.finance/#/swap
+
+To buy or trade CORD-Sushi on SushiSwap, enter the BSC contract address of CORD in one of the SushiSwap exchange token fields, and select Sushi in the other field.
+
+https://app.sushi.com/swap
+
+To buy or trade CORD-VACC on PancakeSwap V2, enter the BSC contract addresses of CORD and VACC in the PancakeSwap V2 exchange token fields. https://exchange.pancakeswap.finance/#/swap
+
+Come join us in our new partner vaults fellow CORDians!
+
+- The CORD.Finance Team

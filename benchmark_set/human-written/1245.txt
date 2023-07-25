@@ -1,0 +1,57 @@
+Accompanied with the surge in demand of cryptocurrency there are always security threats to one’s assets. With a $400 billion global cryptocurrency value market capital and less regulations opens doors for umpteen hackers to intercept transactions threatening private property.
+
+The safety performance of the exchange has always been a top priority. The history of hacking occurred because of the lack of security in the exchange. Some of them are:
+
+In December 2017, South Korea’s Youbit Exchange was hacked and stolen was 17% of its assets. Site eventually closed the exchange and filed for bankruptcy;
+
+On January 25th, 2018, Japan’s Coincheck was hacked, and exchange customers lost 530 million US dollars in cryptocurrency assets;
+
+On March 7th, 2018, traders suspected that Binance exchange being hacked, which caused Bitcoin to fall for two consecutive days and the market value fell by 15%.
+
+Cryptocurrency exchanges have become the hardest hit by hacker attacks, and security has become a top priority for all trading platforms.
+
+There are myriad exchanges in the market but choosing the right one is and should be the utmost priority for any trader. To avoid any Ponzi scheme, the traders should be alert when it comes to asset exchange over the internet. There are exchanges which are also giving options to run on a platform other than blockchain. This might be tempting for some traders but one has to verify and authenticate a few things before the inception of trading.
+
+Decentralized Exchange may provide a solution
+
+All these damaged exchanges (Bitstamp, Bitfinex, Youbit, Bitthumb,…) are centralized. This is not unusual, because most major exchanges are centralized. When exchanges are centralized, there are two forms of concentration:
+
+1. Asset control and system management.
+
+With asset management, a trusted institution such as a bank operates very well. When you use a centralized exchange, you agree to let the exchange hold your funds and deposit it privately in your account until you wish to withdraw it. Exchanges typically deposit client funds in hot wallet reserves (online).
+
+2. Another form of centralization is how the exchange stores its data and the infrastructure it uses to support itself.
+
+If hackers want to conduct centralized transactions, they only need to go through a central portal, usually a third-party hosting server. Once they are inside, hackers can obtain central funding sources, exchange hot wallet reserves and private keys.
+
+Of course, they all have some security features to prevent malicious actors. But as the history shows, these measures are far from enough.
+
+This is why we need decentralized communication. Decentralized trading exchange (DEX) provides a series of enhanced security advantages.
+
+1. No central point of entry or control.
+
+Unlike centralized exchange, DEX is not controlled by a single entity. Of course, the domain name servers that people use to access the exchange are centralized, but no entity controls the market and the exchange does not support a server.
+
+For now, most of the decentralized exchanges are built on the Ethereum blockchain and supported by a network of nodes rather than a central server. This means that the attacker has to compromise half of the nodes that support the exchange to control it, which is an almost impossible.
+
+2. User controlee the funds.
+
+Since there is no entity with DEX, there is no central hub to control user funds. Decentralized exchange is not credible, which means that users are always controlling their assets and all transactions are peer-to-peer.
+
+For this reason, DEX uses Ethereum-driven smart contracts to manage the cryptocurrency. Once the funds are locked in smart contracts, only those with the corresponding private key can touch the funds. Under a centralized system, you give up your private key and they all come together in a single ledger that reflects the exchange’s hot wallet reserve. If hackers catch these keys, your money can be cleared.
+
+Under a decentralized system, you are always in control of your own private key. As long as you do not disclose to malicious third parties, your assets are safe in the DEX smart contract.
+
+3. Integrate with hardware wallet.
+
+This may be the greatest benefit of DEX. Most decentralized exchanges, such as Ether Delta and IDEX, can be synchronized with the Ledger Nano S or Trezor hardware wallet. In addition to being refrigerated, hardware wallets are the safest choice for storing and managing personal funds because they are not affected by the same malware that could harm the software wallet. With a DEX that meets the hardware wallet, you can insert your Ledger Nano S or Trezor and direct funds into the exchange’s smart contracts.
+
+Liquidity is generally thought to be worse on decentralized exchanges right now, because they don’t have nearly as many market-makers, although they do route orders and information through a peer-to-peer protocol in a manner that is more scalable.
+
+On the other hand, decentralized exchanges are generally more expensive and complicated to use right now. User interface isn’t amazing, and they are more of an intellectual accomplishment than a perfect tool. So far, a lot has to change before they can properly compete with centralized exchanges. Perhaps, this is why centralized exchanges are still prevailing in the market.
+
+However, with the technology rapidly evolving and new solutions arriving, a shift in user preferences might be instantaneous.
+
+You can read also The Verification Process For Cryptocurrency Exchanges is Becoming More and More Strange.
+
+Image via pixabay

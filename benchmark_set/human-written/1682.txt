@@ -1,0 +1,13 @@
+How to prototype your design idea like a pro
+
+Throwing back to the old days when I was a young consultant. There was a time my boss asked me to work on a PowerPoint deck for his presentation. And you can imagine that he does not have time to walk me through his idea; instead, he gave it an open-end question and asked me to build with my best knowledge and effort.
+
+Challenge accepted. I was so excited to formulate the deck in the way I wanted it. So I directly jumped into my creative zone, crafted out the content, and made it the most appealing presentation in my life. Carefully selected wordings, visually-appealing graphics, fancy animation between slide and slide, all you can imagine. I made it like a decent art piece in the exhibition, awaiting my boss to applause.
+
+When I finally scheduled a time to show him my deliverables after a week, things did not go as planned. He did not find the flow of content resonating with him at all. The next minutes, he stood up and started doodling on the whiteboard to show me the presentation flow in his head — which, surprisingly, is the opposite direction of my beautiful slides built.
+
+My learning? I should have shown him the presentation deck’s strawman a week ago before spending much effort worrying about nice touch-ups.
+
+Since then, I have learned to visualize and test the initial concept before investing the effort to build the final deliverable. I always align and test the ideas before developing the products, whether it is a document, a project plan, or a mobile app. And the earlier I show the working version to others, the easier to get feedback to ensure we are on the right track. This is why the concept of prototyping started melted into my day-to-day life.
+
+In this article, I’ll provide cover the below topics related to prototyping:

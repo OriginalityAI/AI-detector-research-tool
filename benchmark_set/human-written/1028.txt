@@ -1,0 +1,75 @@
+A prelude to the future
+
+Hey there! I’m Mark, a recent graduate from the University of Toronto. As a former student from a modern university, there’s one type of item that, until recently, much of my life revolved around:
+
+Cards.
+
+Accessing a computer lab? Student card. Heading to the campus gym? Student card. Attending any of the events offered by the endless plethora of clubs and associations? Membership cards, for all of them.
+
+Cards are the key to not only college and university, but any place that needs to know who you are. If you forget your cards at home, you’re effectively locked out for the day. And if you happen to outright lose one of your cards? Better cough up the cash and wait for a new one.
+
+My friend and business partner, Aradhya, learned this the hard way when he lost his student ID card and had to pay a whopping $20 just to get it replaced. After that, we decided enough was enough and that the best way to overcome these limitations was to bring the future to ID cards.
+
+That future is called iden-T-fy.
+
+A master key you can’t lose
+
+Wouldn’t it be nice if you could cut out 99% of the cards in your wallet and have just one “omni-card” to carry? And wouldn’t it be even nicer if this omni-card followed you everywhere, magically?
+
+Both of these are benefits that iden-T-fy reaps by going digital. More specifically, it’s a mobile app that you can get on the App Store or Google Play at:
+
+When you log into the app, you’re immediately greeted with a single profile card showing your photo and a QR code. This QR code is unique across all people and organizations registered in iden-T-fy. Just let an organization admin scan that code using the app, and voila! You’ve proven your membership through 2 seconds of showing someone your phone screen — rather than 2 minutes of waiting for them to scramble through papers or spreadsheets.
+
+Since this profile is entirely on your phone, you can only forget or lose it as often as you forget or lose your phone. So basically — hopefully — never, right?
+
+Double the apps, double the utility
+
+Now, you’re probably wondering, “How do I create a profile to log into in the first place?”
+
+Registration and account management are all handled through the web companion app at:
+
+We think this dual-pronged web-and-mobile approach is great for two reasons: security and separation of concerns.
+
+On the off chance you do happen to drop or forget your phone somewhere, anyone who nabs it will have access to the app’s omni-card — but you’ll already be one step ahead because you can still change your password, cancel memberships, or even delete your account online.
+
+Besides security, keeping all the management features in the web app helps keep the mobile app lean and easy-to-use. We want you to feel like you’re carrying a card in your pocket, not a briefcase.
+
+Invitations you can trust
+
+The web app is also where you join organizations by accepting invitations. All you have to do is log in, look at the Invitations list, and click “Accept” on the entries there. Joining is instantaneous, and organization admins can send invites to anyone at any time.
+
+Of course, that last part raises concerns about fraud. How do you know this local book club you’re joining is the real deal, and not a fake with the same name created by malicious individuals (or robots)?
+
+Worry not, because each invitation also comes with a “View inviter information” link. Clicking on this opens a small window that shows the inviter’s full name, photo, and the email address they used to register on iden-T-fy.
+
+If you do find something sketchy (“why is her email address a bunch of ones and zeroes?”), you can then click “Reject” to cast that invitation into the nether. So long, robot fiends!
+
+Organize however, whenever
+
+Let’s say one day, you have the brilliant inspiration to start a new club for your neighbourhood or campus. You’re confident there’ll be more people eager to join than you can keep track of, so it’d be nice if you could use iden-T-fy as an organization owner yourself.
+
+Well… you can! Any user can create any number of organizations at any time. It’s as easy as clicking a button on the web app and entering a name for your new social abode.
+
+From there, you can start inviting members by entering their email addresses. Once they join, you can even promote some of them to admins to help with inviting more members and other managerial duties. On the flipside, revoking memberships is just two clicks: one for intent and one for confirmation.
+
+Then, in the mobile app, you can head over to your organization’s profile page and use the scanner on other people’s profiles to see if they’re in or not. If they aren’t a member, you can tap a button to instantly send them an invitation — perfect for quickly adding people to fun things like gaming guilds!
+
+What‘s it cost?
+
+In order for a new era to arrive in any space, it has to be accessible for anyone to step into. Following this belief, we’re proud to announce that all of
+
+iden-T-fy’s features are one-hundred-percent free! …To a point.
+
+For any organization, you can invite and manage 25 members (including the owner) completely free of charge. If you need more members than that, you can purchase an organization subscription that allows you to pay a flat fee for a certain threshold of members. Once you reach the threshold capacity, you can still invite more members — but you’ll pay extra for each one.
+
+With this model, small clubs and associations can use the full suite of iden-T-fy’s features without hurting anyone’s wallet. Larger organizations can test out the app with a small subset of their members before deciding on the subscription package that works best for the whole company.
+
+On the flipside, the mobile app is free forever — because why should you have to pay for your own identity?
+
+The future awaits
+
+And that’s iden-T-fy: an app that revolutionizes identity verification. By launching it, we hope to make everyone’s everyday lives just a little bit easier — because everyone deserves the best, newest, and fastest way of proving something as fundamental as who they are.
+
+So… Are you ready to say goodbye to physical ID cards? Are you itching to make your event admissions smoother, for your attendees and your staff?
+
+Try iden-T-fy today!

@@ -1,0 +1,59 @@
+How does it work?
+
+GitHub Webhooks: As per GitHub Docs, “Webhooks allow you to build or set up integrations, such as GitHub Appsor OAuth Apps, which subscribe to certain events on GitHub.com. When one of those events is triggered, an HTTP POST payload is sent to the webhook’s configured URL. Webhooks can be used to update an external issue tracker, trigger CI builds, update a backup mirror, or even deploy to your production server. You’re only limited by your imagination.”
+
+Heroku CI: When a test or build gets triggered for a new git commit, it broadcasts the webhook events for Status. The event gets triggered for different stages like in_progress, success, failure, cancel, etc. GitHub catches those events and updates the pull request page build flag. For our scenario, we intercept status in our integration app.
+
+DEBUG probot: Webhook received
+
+event: {
+
+"event": "status",
+
+"id": "da6ec6b8-2250-11eb-8843-f0563e0c2987",
+
+"installation": 12779415,
+
+"repository": "<Github-owner>/<Repo-name>"
+
+}
+
+Status (webhook event): When the status of a Git commit changes, the type of activity is specified in the action property of the payload object.
+
+Probot Integration App: We created a Probot intermediate app that basically intercepts the GitHub webhook events and then executes specific logic as per our requirement. You can catch status events with the following code snippet:
+
+app.on('status', async (context) => {
+
+console.log('Status event update');
+
+}
+
+The “context,” in this case, is an object with details related to issues, pull request, repository, actions, etc. You will also find a related CI URL with context.payload.target_url . You can get the state of CI build / test using context.payload.state .
+
+Once you have the CI target URL, you can get logs directly from it or you can create a test log URL from it that will return a simple text log in response. For example, in Heroku CI, you will get a target URL from the context which will be in the format of
+
+https://dashboard.heroku.com/pipelines/<pipeline-id>/tests/<test-run-number>
+
+The URL will look something like this, with your specifics:
+
+And to get a plain text log, you can convert this URL to a different URL format which will be something like https://api.heroku.com/pipelines/<pipeline-id>/test-runs/<test-run-id>. Here’s an example:
+
+If your Probot app receives a Status event with state in_progress , it will create a GitHub Checks run using Checks API with the status “In Progress.” You can do that with the following code:
+
+Next, if your Probot app receives a Status event with the state failure , success or canceled , it will update the GitHub Checks run using the Checks API with the status “Received.” You will fetch all the checks run for a specific commit and then update the checks run (which has the status “In progress”) with the latest status.
+
+And we are all set.
+
+If you want to improve your user experience, there are a couple of additional things that can be tweaked in our integration implementation:
+
+Add the annotations object as part of the output in check run params to help to show errors and lint details for each commit file. (See this article for more details: https://developer.github.com/changes/2019-09-06-more-check-annotations-shown-in-files-changed-tab/)
+
+Display a processed log for better presentation in Checks Tab.
+
+Conclusion
+
+In order to keep all information related to pull requests and commits in one place, it’s good to use various GitHub apps properly. That way, you don’t have to worry whether external collaborators have access to all of your tooling or not, and you don’t have to make your CI tool accessible to everyone. If you’re not using GitHub Actions, but you are using Heroku CI or another CI tool, then this integration with GitHub Checks will prove very useful.
+
+To see the complete code for the integration, visit this git repository: SubratThakur/Heroku-Github-Checks-Integration.
+
+References:

@@ -1,0 +1,265 @@
+STEP ONE
+
+create a project folder
+
+enter the project folder with VS code (or preferred text editor)
+
+open your Vs code terminal
+
+STEP TWO
+
+type npx express-generator
+
+After generating your app
+
+Your folder
+
+├── app.js
+
+├── bin
+
+│ └── www
+
+├── package.json
+
+|── package-lock.json
+
+├── public
+
+│ ├── images
+
+│ ├── javascripts
+
+│ └── stylesheets
+
+│ └── style.css
+
+├── routes
+
+│ ├── index.js
+
+│ └── users.js
+
+└── views
+
+├── error.pug
+
+├── index.pug
+
+└── layout.pug
+
+8 directories, 9 files
+
+1 — the App.js is where you set up your App,require all the dependencies and setup the route.
+
+2 — the second folder i.e bin contains the www.js file is where your app is executed or the server is started
+
+on default port 3000.
+
+3 — package.json file contains all the detail of your project in Json format such as the project name, entry point,
+
+the list off all your dependencies.
+
+4- package lock.json
+
+5- Node modules is where all you dependency filles are kept
+
+5- public folder is where alll the css, javascript and other asset files are kept
+
+6- routes folder is where you’ll put your router files. The generator creates two files, index.js and users.js,
+
+which serve as examples of how to separate out your application’s route configuration.
+
+7- The views folder is where you have the files used by your templating engine. The generator will configure Express
+
+to look in here for a matching view when you call the render method.
+
+STEP THREE
+
+Install sequelize,mysql2
+
+npm i sequelize --save npm i mysql2 — save
+
+
+
+(the — save means to save it as a dependency in your package.json)
+
+
+
+Installing the sequelize CLI
+
+To install the Sequelize CLI
+
+npm install --save-dev sequelize-cli
+
+npx sequelize-cli init
+
+This will create following folders
+
+config
+
+— — — -in the config folder there is config.json file. which tells CLI how to connect with database
+
+models — — contains all models for your project
+
+migrations — — contains all migration files
+
+seeders — — contains all seed files
+
+Enter the config.json folder chande the database name name to existing database name or write a new one
+
+if you dont have
+
+if you write a new one
+
+Start your mysql server
+
+Ctrl+ALt+T
+
+type
+
+sudo /opt/lampp/lampp start
+
+open your VS code terminal and type the below sequelize command to create a new database
+
+type
+
+npx sequelize-cli db:create
+
+next is to create a model named user with attributes (that is columns) name,email and password
+
+the :string means datatypes string(VARCHAR) which can be changed to boolean or integer in some cases
+
+npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string <hit Enter>
+
+This will:
+
+Create a model file user in models folder;
+
+Create a migration file with name like XXXXXXXXXXXXXX-create-user.js in migrations folder.
+
+
+
+Note this does nt insert anything to the database you have to run the migration
+
+— — in your terminal type npx sequelize-cli db:migrate
+
+this will:
+
+-ensure a table called SequelizeMeta in database. This table is used to record which migrations
+
+have run on the current database.
+
+-Creates a table called Users with all columns as specified in its migration file.
+
+STEP FOUR
+
+creating user route and controller
+
+The Route
+
+The controller
+
+
+
+Since you have user route already created by default you will just edit it
+
+-write the below code
+
+
+
+var express = require(‘express’); // importing the express library
+
+var router = express.Router(); // creating a router variable using the express.Router() method
+
+const userController = require(‘../controllers/user.controller’) // importing the user controller file router.get(‘/’, userController.getUsers); //A get request that use the getUsers controller as a callback function to return all
+
+Users in the users table router.get(‘/:id’, userController.getSingleUser); // Another get request that use getSingleUser as a callback function to get a user with
+
+the req.params.id id
+
+
+
+router.post(‘/’, userController.createUser); // A post request that use createUser as a callback function to create new users
+
+module.exports = router;
+
+create a new folder name it controllers
+
+inside the folder create a new file name it user.controller.js
+
+-write the below code
+
+
+
+const model = require(‘../models’); // importing all the database models in the new constant
+
+const User = model.User; // creating a constant of user model from the models
+
+async function getUsers(req,res){
+
+const users = await User.findAll(); // returning all the User entry’s to the users constant
+
+res.json(users);
+
+}; async function getSingleUser(req,res){
+
+userId = req.params.id
+
+const user = await User.findAll({where:{id:iserId}}); // returning the columns entry of the User table where id is req.params.id
+
+res.json(user)
+
+};
+
+async function createUser(req,res){ const user = await User.create(req.body) // creating a new User entry or field with the req,body
+
+res.json(‘user created’)
+
+}; module.exports ={ // exporting the functions
+
+getUsers,
+
+getSingleUser,
+
+createUser
+
+};
+
+STEP FIVE
+
+download and install postman
+
+start your server in the project folder terminal enter
+
+npm start
+
+create a new tab
+
+navigate to
+
+— localhost:3000/users
+
+requst/GET
+
+click enter — — — you will see all the users in the database
+
+(in this case it will be empty)
+
+navigate to
+
+— localhost:3000/users
+
+requst/POST
+
+content-type — Application/json
+
+choose body(raw);
+
+in the body write the below code with your preferred value
+
+Now if I change the request to get it’ll responded with the data of the user I just created created.
+
+GET localhost:3000/users
+
+Thank you for viewing like and follow me thank-you

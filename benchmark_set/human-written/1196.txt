@@ -1,0 +1,127 @@
+The command line ( also known as shell, bash, console or prompt) is a powerful tool able to give orders to the Operating System or applications in our computer without a graphic user interface (GUI). You can become intimidated by the black windows displayed in your screen. Anyway, in this article you will learn how to use it and why it’s useful.
+
+How the command line looks like.
+
+What is the command line?
+
+We can see computers as onions, because as well as onions, computers have layers. The layers in a computer are:
+
+First layer: hardware
+
+Second: operating system (OS)
+
+Third: apps
+
+Fourth: the user (you)
+
+The user is like the boss in a big corporation. He gives instructions to the apps and the OS about what they have to do and when. Usually, users give these instructions through apps with a GUI, such as Photoshop or even the browser. However, there is other method how users can communicate with the computer. This way is the command line.
+
+Why is the command line useful?
+
+Why would you use the command line when there exists a graphical user interface that makes the softwares much more intuitive?
+
+From my own experience, the terminal becomes useful for these three reasons:
+
+It is faster to run programs because it doesn’t need to render the user interface.
+
+to run programs because it doesn’t need to render the user interface. Once you get familiar with it, you can increase your performance . Specially in certain tasks such as “finding and replacing words in big files” or “finding specific files within a big repository”, etc.
+
+. Specially in certain tasks such as “finding and replacing words in big files” or “finding specific files within a big repository”, etc. The terminal is the only way how we can communicate with servers.
+
+How to open the command line in my computer?
+
+Each Operating System has its way to open the command line.
+
+Windows
+
+Press Windows+X to open the Power Users menu, and then click “Command Prompt” or “Command Prompt (Admin).”
+
+iOS
+
+Click the Spotlight icon. It’s the magnifying glass at the top right corner of the screen. You can also open Spotlight by pressing Command+Space .
+
+Type “terminal.app” and hit Return. Or you can click the Terminal.app icon that appears.
+
+Basic commands in the terminal
+
+Now I am going to show you how to start using the command line. In my case, I am going to use Ubuntu terminal because it is a Linux-based OS. If you are using a Mac, there is no problem, we are going to use the same commands. In the case you are using a Windows pc, you would need to get Ubuntu, because Windows terminal uses different commands. Learn how to get Ubuntu in the blog below.
+
+Who am I
+
+There is a command that tells you what user is using the computer. This becomes useful when you are sharing a server with co-workers. Some of them have permissions that others not. You can type the command whoami to see the current user in the computer.
+
+Where am I
+
+There is another command that tells you the exact directory where you are. You can use this command to make sure you are going to create a file in the correct place, for example. Just type pwd to ubicate yourself in your computer repository.
+
+pwd stands for “print working directory”
+
+Watching files inside the current directory
+
+When you know in what directory you are, you would like to see the files or embedded directories in the current directory. To do this, you can type ls (stands out for list) to watch a list of all the documents in the current directory.
+
+Nevertheless, there is another way how we can see the files and directories in a more organized way. To do it, we add the flag -l , for example ls -l .
+
+If you want to see the hidden files, add the flag -a . In other words, type ls -la .
+
+You can identify hidden files because they start with a dot, example: .hiddenFile
+
+Editing a plain text file
+
+Once you know what are the files and directories in your current directory, you can either open a file or moving to another directory. You can differentiate a file and a directory becacuse the console itself tells you in the ls -l command.
+
+To open a file, you need to make sure the file has a plain text extension, some examples of these extensions are:
+
+.html
+
+.txt
+
+.js
+
+.css
+
+.py
+
+If the extension is: .docx, .pdf, .xls, .gif, .png, .jpg, .mp4, .pptx or any other binary file, it will not work. This is because the console only read plain text files.
+
+Example of a binary file
+
+Then, making sure the file has a proper extension, just type the command vim and the file with the extension, example: vim file1.py to open the file with vim text editor. Vim is my favorite text editor, but there are more. I encourage you to see the post below and choose whatever text editor you prefer.
+
+Once you entered to your file with vim text editor, the next step is typing i (insert) to start typing. To exit the text editor, you can type esc , then ::q and enter . The ::q saves the changes and the enter return you to the directory. If you don’t want to save the changes, type :q! .
+
+Moving myself throughout directories
+
+Now, if you want to move yourself to other directory, you can type cd directoryName and enter.
+
+cd stands for “change directory”
+
+If you don’t know the complete name of the directory, you can start typing the first letters and press tab to auto-complete the directory matching those letters.
+
+When starting with “d” is a directory
+
+Frequently, there are more than 2 directories starting with the same combination of letters. To get a list of all the matches, press tab twice.
+
+Finally, you can return to the “parent directory” with ../ instead of the name of a directory, for example: cd ../ . And if you want to return to your home, just use the figure ~, for example: cd ~ .
+
+Creating a file
+
+When you are in a given directory, you may create a file to start working on it, to do this there are two ways.
+
+The first way is when you want to create a file, but you are not going to start working on it. To do this, we use the command touch , for example: touch file.txt .
+
+The other way is when you are going to start working on the file inmediately after to create the file. In this case, we just use the command vim , for example: vim file.html . Here we need to be careful, because as you know, vim command opens a text editor and if the file doesn’t exist, we are going to create a new one.
+
+Creating a directory
+
+In order to create a directory, we use the command mkdir , for example: mkdir directory1 .
+
+mkdir stands for “make directory”
+
+Deleting a file & directory
+
+You can delete a file with the command rm , for example rm file1 .
+
+rm stads for remove.
+
+In the case of directories, rm will not work because the console needs to delete the files and directories inside the directory we want to remove. Then, we use the flag -r , for example rm -r directory1 .

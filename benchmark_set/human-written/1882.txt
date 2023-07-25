@@ -1,0 +1,37 @@
+≈ Which strategies do you use most often? ≈
+
+Traders,
+
+When choosing which product and strategy to trade, how do you determine if you are going to use options, stock, futures or forex?
+
+Delta trading allows you to trade directional setups based on technical analysis, trends, and price action. You can use Stock, Options, Futures or Forex to play Delta trades.
+
+Theta trading, on the other hand, allows you to build trades that benefit (positive theta) from time passing. Positive theta trading strategies include Covered Calls, Naked Puts, Credit Spreads (Bull Put or Bear Call) as well as Iron Condors.
+
+There are more theta strategies though, and you can review all of the theta strategies (as well as delta and/or vega strategies) in our playbook: https://tackletrading.com/store/tackle-trading-playbook/
+
+Learning to trade different trading strategies so that you can take advantage of different market conditions is a valuable skill to have. In your own education, have you spent more time studying Delta, Theta or Vega strategies? Whatever your focus has been, consider spending some time learning another style so that you have a well-rounded approach to the markets.
+
+#TeamTackle
+
+Chart of the Day
+
+AAPL Daily Chart
+
+Apple Inc. (Ticker: AAPL) is up +2.8% in early trade on Tuesday. There are reports the company will increase iPhone production by 30% on a year-on-year basis in the first half of 2021.
+
+Video of the Day What is Theta?
+
+Time passing will impact an Options contracts price. Theta measures the impact of time passing on your options. Watch this video tutorial from Coach Noah to better understand the concept of Theta.
+
+Financial freedom is a journey
+
+The Tackle Today series is brought to you by Tackle Trading.
+
+Sign up now and gain unfettered access to all of the quality content and powerful Scouting Reports that our Pro Members enjoy for 15-days absolutely free with no strings attached and let us show you what your trading has been missing.
+
+Legal Disclaimer
+
+Tackle Trading LLC (“Tackle Trading”) is providing this website and any related materials, including newsletters, blog posts, videos, social media postings and any other communications (collectively, the “Materials”) on an “as-is” basis. This means that although Tackle Trading strives to make the information accurate, thorough and current, neither Tackle Trading nor the author(s) of the Materials or the moderators guarantee or warrant the Materials or accept liability for any damage, loss or expense arising from the use of the Materials, whether based in tort, contract, or otherwise. Tackle Trading is providing the Materials for educational purposes only. We are not providing legal, accounting, or financial advisory services, and this is not a solicitation or recommendation to buy or sell any stocks, options, or other financial instruments or investments. Examples that address specific assets, stocks, options or other financial instrument transactions are for illustrative purposes only and are not intended to represent specific trades or transactions that we have conducted. In fact, for the purpose of illustration, we may use examples that are different from or contrary to transactions we have conducted or positions we hold. Furthermore, this website and any information or training herein are not intended as a solicitation for any future relationship, business or otherwise, between the users and the moderators. No express or implied warranties are being made with respect to these services and products. By using the Materials, each user agrees to indemnify and hold Tackle Trading harmless from all losses, expenses and costs, including reasonable attorneys’ fees, arising out of or resulting from user’s use of the Materials. In no event shall Tackle Trading or the author(s) or moderators be liable for any direct, special, consequential or incidental damages arising out of or related to the Materials. If this limitation on damages is not enforceable in some states, the total amount of Tackle Trading’s liability to the user or others shall not exceed the amount paid by the user for such Materials.
+
+All investing and trading in the securities market involves a high degree of risk. Any decisions to place trades in the financial markets, including trading in stocks, options or other financial instruments, is a personal decision that should only be made after conducting thorough independent research, including a personal risk and financial assessment, and prior consultation with the user’s investment, legal, tax and accounting advisers, to determine whether such trading or investment is appropriate for that user.

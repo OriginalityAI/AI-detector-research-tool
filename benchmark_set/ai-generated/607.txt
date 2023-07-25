@@ -1,0 +1,11 @@
+Title: GSX 1.9.9.11 - Major Update Offers Users an Array of New Features and Fixes
+
+The latest version of GSX, 1.9.11, has been released, offering users a range of new features and fixes that enhance its overall functionality. This significant update has brought about numerous improvements, such as more realistic icing conditions detection based on temperature and dew point, and the addition of deicing pads at Zurich and O'Hare airports. 
+
+Furthermore, this update has introduced several modifications to the refueling process, with fueling now starting in the wings' tanks before moving on to the central ones and finally to the externals. The update also extends support for Prepar3D 3.4.22 (Hotfix 3) and PMDG 747-400 V3, adding new ground operators in the process. 
+
+To install this update, users can choose between downloading the latest Full Installer, which contains all the necessary components, or opting for the latest Stand-Alone Addon Manager and the latest Vehicles Update available on the GSX page.
+
+The update has focused on providing a smoother user experience, making more precise collision detection at KMEM and addressing numerous bugfixes such as refueling, departure (PushBack) queuing, random operators appearing, and progressive refueling requested by custom aircraft systems.
+
+Although some users have reported issues with the new update not recognizing wheel chocks for the PMDG 747-400 V3, the developers are actively working to resolve these concerns and will provide further updates accordingly.

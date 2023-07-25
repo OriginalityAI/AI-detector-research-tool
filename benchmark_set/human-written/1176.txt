@@ -1,0 +1,23 @@
+When LG introduces its first all-metal flagship handset at Barcelona’s Mobile World Congress in less than a week, the LG G5 won’t be the only piece of hardware on stage. According to a person familiar with the company’s plans for the show, the modular handset will be demonstrated alongside a number of plug-in modules and bespoke accessories, together known as “G5 and Friends”
+
+The various hardware components (both attached and independent) are said to be controlled by an app known as the LG Friends Manager.
+
+Expansion slot
+
+As we reported last month, the G5 features a so-called Magic Slot at the bottom of the device; CNET Korea later provided a graphic elucidating the concept (pictured above), which also allows the battery to be swapped out. Initially, LG is only allegedly planning to show off two modules compatible with the slot: a battery grip for photography and digital audio chip (DAC) for improved sound quality.
+
+The grip, known as the LG Cam Plus (pictured above, courtesy of Android Authority), serves multiple functions. Besides alleviating the notoriously difficult balancing act associated with holding a razor-thin smartphone by its edges when taking pictures, it provides hardware buttons for commonly used functions like shutter release, zoom, and flash toggle. What’s more, it includes its own supplementary 1100mAh battery, which serves to complement the phone’s native, replaceable pack.
+
+For the second module, the DAC, the manufacturer teamed up with high-end consumer electronics maker Bang and Olufsen to develop the LG Hi-Fi Plus with B&O Play. Besides improving the native sound experience, the Hi-Fi Plus is also said to enhance audio routed through it from other connected Android devices or PCs.
+
+Accessory ecosystem
+
+LG is apparently getting even more ambitious when it comes to accessorizing the G5, far beyond past G-series devices and the single item revealed pre-launch, a smart cover designed to take advantage of its always-on display.
+
+Perhaps most exciting are a pair of devices aiming to buoy LG’s virtual reality cred, although the concept of VR here is seemingly used rather loosely, with functionality that’s probably better described as immersive video. As the name suggests, the LG 360 Cam is a spherical camera designed to capture 360-degree stills and video (at 16-megapixel and QHD resolutions, respectively). Playback is possible on the company’s first head-mounted wearable, the LG 360 VR.
+
+Said to feature nine-axis sensors and an 83-degree lens with its own LCD display, the 360 VR is alleged to be significantly lighter than true VR implementations like the Oculus Rift, Samsung Gear VR, or HTC Vive. Besides 360 footage captured with either the G5 or 360 Cam, it should also be compatible with YouTube’s 360-degree videos.
+
+Finally, LG’s got a camera-and-speaker-equipped, smartphone-controlled “drone” called the Rolling Bot — and as its name suggests, it can be remotely maneuvered around the house for observing and interacting with pets, for instance. It’s also capable of sending signals for turning smart appliances on and off.
+
+These products will all be revealed at a press conference on February 21, though they may not be available for purchase until as late as April. LG’s slogan for MWC 2016 is said to be “Life’s good when you play more.”

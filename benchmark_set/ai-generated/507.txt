@@ -1,0 +1,11 @@
+Over the past few months, significant advancements have been made in Counterparty's code refactoring, testing, and dependency management. These developments contribute to the ease of creating alternative Graphical User Interfaces (GUIs) and light wallets, solidifying Counterparty as the premier framework for Bitcoin 2.0 application development. In addition, these enhancements enable third-party developers to construct their wallet versions effortlessly through our updated API while providing end users with a stable, user-friendly desktop wallet.
+
+On Wednesday, the debut beta version of the wallet, counterparty-gui, was publicly released, with a more polished interface soon to follow. This desktop wallet can be utilized with a local Counterparty server and blockchain or trustlessly with a light wallet and a remote server, as mentioned in our previous update.
+
+The GUI, equipped with a standalone installer for Windows and an imminent MacOS installer, will operate in 'light' mode by default. Consequently, users will no longer need to run local instances of Bitcoin/Counterparty clients or download the blockchain to commence their work. To access the files, navigate to counterparty-gui releases on GitHub.
+
+The desktop wallet was constructed with both the requirements of end users and the demands of third-party developers in mind, resulting in a fully open wallet that includes essential API methods for simplified development of alternative Counterparty wallets. Furthermore, the wallet is expandable, allowing for the integration of plugins written in QML/JavaScript and, eventually, HTML/CSS/JavaScript.
+
+Future steps for GUI development include adding unit tests in counterparty-lib for all Remote Procedure Call (RPC) operations, placing all RPC calls in a separate process, and ensuring that the BIP32 wallet is compatible with Counterwallet. As always, progress and new version releases will be communicated promptly.
+
+Please feel free to reach out to us via our support channels, Gitter, forum, or Github if you have any questions or concerns. Remember to follow us on social media and subscribe to our newsletter to receive weekly updates via email.

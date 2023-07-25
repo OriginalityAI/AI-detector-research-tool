@@ -1,0 +1,9 @@
+Preterm birth is a significant public health issue that affects approximately one in ten pregnancies. This medical condition can lead to severe health complications and even death, for both the mother and the baby. Despite researchers' attempts to understand the causes behind preterm birth, much remains unknown. However, a recent study by scientists at Washington University in St. Louis may have paved the way for predicting preterm birth.
+
+Led by the Eugene and Martha Lohman Professor of Electrical Engineering, Arye Nehorai, the research team developed the first 3-D multiscale mathematical model of the electrophysiology of a woman's contractions. This model aims to improve understanding of the electrical activity that causes contractions, in the hope of predicting preterm birth.
+
+The study, published in the PLoS journal, explains that the team applied sensors to the abdomen of 25 pregnant women using a new instrument. This instrument has 151 magnetometers that can gauge the strength of the magnetic field in the abdomen caused by electrical activity in the uterus during contractions. From these readings, the team created a mathematical model that precisely replicated the electrical activity in the uterus during a contraction.
+
+For Nehorai, the next step is to work with data from women experiencing preterm and term labor to determine which parameters can predict between preterm and term labor. Using the instrument's measurements, Nehorai aims to estimate the position, number, and distribution of electrical sources in the uterus, hoping ultimately to make predictions about whether a woman will experience a preterm or term labor.
+
+Creating such a model can allow obstetricians and gynecologists to make more accurate predictions about preterm labor, reducing the risk of negative health outcomes for mothers and their babies. This research provides a promising direction as we continue to unlock the mysteries behind preterm birth.

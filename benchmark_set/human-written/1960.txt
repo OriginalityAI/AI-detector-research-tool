@@ -1,0 +1,49 @@
+For many universities, the landscape is changing. Gone are the days when the throughput of students was the major measure of success. Now universities are evaluated on the outcomes for their students, and the extent to which those students have the right skills to join the workforce.
+
+Perhaps the most challenging shift is that of expectations among students themselves. As digital natives, they live with information and opportunities at their fingertips. When they want to research something, book something or share an insight, they jump online looking for high quality and frictionless experience from their university.
+
+Meeting these expectations is more complex than simply digitising course content. Instead, it must involve shaping all the factors, both online and offline, that influence whether students achieve their goals. Many factors are within the university’s control, such as campus culture, spatial design and course content, while other factors are harder to influence, such as students feeling lonely or trying to succeed at university with a physical or mental health condition.
+
+Human-centred design can be a game-changer for universities
+
+One factor determines the success of these efforts to shape the student experience: design, specifically human-centred design (HCD).
+
+HCD involves gaining deep insight into the needs of all users of a system and using those insights as a base for ideas or solutions. These solutions are tested, and users provide feedback for further refinement before solutions are implemented. Ongoing user feedback and data drive continuous improvement; the design process never ends.
+
+What we mean by design, inspired by Margaret Hagan, who specialises in HCD in legal services.
+
+A traditional approach to rethinking student support services might have focussed on reorganising the student support team, recruiting to new roles or changing the performance metrics of the team.
+
+These interventions may not be helpful if they are not implemented with students’ experience of the service front and centre. By starting with the student experience, a university can consider all the opportunities that might exist to support students. The university might even anticipate some risk factors and offer the right support mechanisms before crisis hits.
+
+Putting HCD into practice
+
+Nous Group has worked with a range of universities and other organisations to drive outcomes using HCD. From our experience, when thinking about system (re)design, the hardest part can be getting started. But breaking the process down to stepping stones can help create a clear path forward.
+
+Universities are rich with data, which can be a blessing and a curse. As the results of research prompt further research questions, it is easy to fall into a research infinity loop and never actually take any action. This is understandable, given the human instinct to want to know more, but is not helpful. Instead, customer experience designers need to pursue progress rather than perfection. This involves doing enough research to be confident in the insights to take a first step. There is no right way to start, so be brave and start somewhere.
+
+Customer experience designers should apply the same thoughtfulness to designing a project as to designing solutions. Every phase of the task — from research, to workshop, to a governance group conversation — is a chance to engage people in developing a shared language and understanding of the problem and can unite people in taking collective action later.
+
+Genuine involvement from people across the university — including students — helps to break down barriers, develop understanding and bust assumptions, all of which makes embedding change simpler.
+
+Involving students in design requires a different dynamic to that that traditionally exists in university-student relationships. It needs to be more equitable, so designers and students tap into the skills and experiences of the other to come up with answers that will work for everyone. This may mean accommodating differences in suitable hours, spaces, communications technology and timeframes.
+
+To build engagement with people from across the university, find a small group willing to start using a new service, system or way of working. Then monitor their progress to create a buzz and build from there.
+
+For many universities, this will be daunting, so having the right governance and mandate is important. Be creative about how engagement is done and always be sure to close the feedback loop. Let those you have engaged with know how their contributions have influenced the work.
+
+To make a change sustainable it needs to go beyond changing the behaviour of individual users and instead needs to alter the organisation, culture or system. Start with short-term fixes to generate evidence of progress, celebrating successes and learning as you go, but always keep the longer-term goal in mind.
+
+Finding the right blend of technical and design expertise can be difficult. Some universities have built strong linkages between services based on goodwill and communication, but now face the challenge of sustaining widespread commitment amid competing priorities. Other universities have developed effective IT systems to connect functions, but lack commitment from users due to a lack of understanding of students’ experience.
+
+Part of the solution is to be deliberate about who you have in the project team so that you have the right expertise and all members are active contributors. Many customer experience designers find great success in creating a dedicated space where colleagues and customers can be immersed in the experience of using design-led approaches. This needs to be visual and show rather than tell.
+
+Teams need to explore problems from multiple perspectives
+
+Like a stone dropped in placid waters, the ripples caused by bad design can extend to the furthest reaches of a university’s performance.
+
+It is the role of customer experience designers to locate the pain points in a process, and then do something about them. This requires using robust research techniques to diagnose the issues well and strong evaluation techniques to measure the impact of progress to inform continuous improvement and to demonstrate the value created by the work.
+
+Good design requires a vast array of skills, from strategy to qualitative and quantitative research, advanced data analytics, knowledge of existing and emerging technology, and quality evaluation techniques. So more than ever we need to collaborate and create teams that can explore problems from multiple perspectives.
+
+User expectations are not staying still, so design solutions cannot either.

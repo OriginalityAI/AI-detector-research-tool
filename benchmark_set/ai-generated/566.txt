@@ -1,0 +1,15 @@
+VMworld 2017: A Successful and Memorable Event
+
+VMworld 2017 has finally drawn to a close, making it a great addition to the collection of memorable experiences. This year's event was particularly fruitful, with the Hands-on-Labs (HOL) area being a major highlight. As a proctor, I witnessed more than 11,000 labs being completed in under a week, a remarkable achievement.
+
+This year, my involvement in the HOL area was more substantial than in previous years, which is why you may not have seen me around the conference as much. This role required a significant amount of work and energy, making it essential to rest and recuperate. Despite my physical absence, my presence was felt through various media scattered across the event.
+
+Throughout the past year, Ariel had requested a high-resolution picture of my face as part of an ongoing joke about being "The Face" of vExpertNSX. The result? My face appearing on stickers that were distributed at VMworld in Las Vegas and made their way to Barcelona for VMworld EU.
+
+In collaboration with Ronbecca and Rubrik, I also became part of the #vAllStars trading card series, an exciting opportunity. If stickers and trading cards don't pique your interest, you may have discovered the vTrail Map book, a wonderful resource on the various aspects of VMware, curated for those new to the field. Huge thanks to Druva's Yadin for putting this book together, which is part of their new LevelUp Program. As the NSX Ambassador for the vTrail Map, I'm honored to share my knowledge and experience with the VMware community.
+
+During the rare moments when I managed to step away from the HOL area, I participated in several activities, such as a brief chat with Tim Smith at the VM Village. As you might have guessed, our conversation revolved around NSX! Additionally, I presented a session on the vBrownBag stage called "NSX: Out of the Box, and into Production!" It focused on various NSX use cases, the easiest one to deploy, and how vRNI can accelerate the process.
+
+In conclusion, VMworld 2017 was a fantastic experience that allowed me to connect with many community members in person. The contributions I was able to make through my involvement in the HOL area, as well as the various print and visual media, were truly gratifying. I hope everyone had a safe journey home, and I'm looking forward to the next VMworld!
+
+- vTimD

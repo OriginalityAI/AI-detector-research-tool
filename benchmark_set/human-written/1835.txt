@@ -1,0 +1,35 @@
+Elite: Dangerous is shaping up to be the best open galaxy/virtual reality space trucking game this side of the Milky Way (which it includes all of), but controversy recently blotted out its starry sky when Frontier yanked a long-promised offline mode right before release. Worse, not everybody was offered refunds.
+
+In a recent interview with Elite mastermind David Braben at a preview event in San Francisco, I asked him what exactly happened—why a series with such strong offline single-player roots ended up with no offline mode whatsoever, despite an internet-connected solo mode in addition to online multiplayer—not to mention the promise of offline to slavering fans, some of whom had already paid quite a bit of money for the game.
+
+"Offline was initially not a planned feature when we went to Kickstarter," Braben confessed. "We said we were making an online game. But then there were some people on forums and on the Kickstarter saying it'd be really great to have offline. So then we looked at it and thought, 'Actually, why can't we just run [what we have offline]?' We looked at the design and saw that it'd be quite empty. And I did say that. But I did say we'd be able to do a purely offline mode."
+
+Slowly but surely, however, Braben and co realized an offline mode might not be as easy as they originally thought. On top of that, concerns of cheating and hacking in multiplayer—something made much easier when players can tinker around offline, without watchful eyes on them—began to arise.
+
+Advertisement
+
+"During development, we looked at that and saw issues with it," Braben explained. "We were moving more and more onto the servers. We were also looking at how people could cheat and those sorts of things. It's a problem for a lot of games—for instance with exploration—the cheating spoils it for everybody. If someone does a blanket discovery of everything, that spoils things."
+
+"So we were looking into different ways of handling that and, to be honest, we pushed back development of the offline mode. We needed to replicate some of the work locally that was being done on the server. It was one of those things where we could do it, but the amount of work involved increased over time. The emptiness would be a real factor as well."
+
+Advertisement
+
+Ultimately, however, fans felt blindsided by the announcement that offline mode was being completely, 100 percent called-off. Worse, many had already spent money on the game as Kickstarter backers or alpha/beta players. They felt like they'd been swindled. And while Braben confessed that he understood where they were coming from, he claimed he honestly didn't decide to cancel the feature until the very last second.
+
+"We still intended to do it right up to release," he said. "That's why we delayed the announcement for so long. But we finally decided to bite the bullet and say no."
+
+So Elite: Dangerous will require an Internet connection, in a similar fashion to games like Diablo III on PC and SimCity (for a while). The rationale behind the decision—to leverage server-side tech and avoid cheaters—appears to be fairly similar too, albeit in a game that was definitely originally built to be multiplayer first and foremost. If you don't want to deal with that, you can ask for a refund. You just might not get it.
+
+Advertisement
+
+Back when Braben and co first announced that offline mode wasn't gonna make the cut, they only offered refunds to people who hadn't spent a significant amount of time playing Elite's alpha or beta. They were worried, Braben told me, that people might take advantage of the system if they offered refunds to everybody—get their money back and then buy the final version of the game for a lower price. More community outcry, however, caused them to reconsider that stance, electing instead to offer refunds on a case-by-case basis. Players would take up their beef with Frontier, and if it checked out they'd get their money back.
+
+Still though, that's a lot of fuss over a crowd of players possibly trying to game the system to get some money back, even if a small contingent of players did spend $300 (during the Kickstarter) or $150 for alpha/beta access. I was skeptical. It sounded like a moved designed more to avoid losing money than to apologize to dissatisfied customers. Braben, though, claimed it wasn't just about locking down the Frontier orbital outer space piggy bank. He said that some players who'd dropped their $150 or $300 fair and square felt slighted at the prospect of other players taking the easier, cheaper way out, and he didn't want to punish them for their loyalty.
+
+Advertisement
+
+"We wanted to be fair to everyone," Braben explained. "We wanted to be fair to people who'd been really supportive of us as well. Part of it was comments I'd been seeing on social media where people were saying, 'Hey cool, I can get my money back and then re-buy the game for a little less.' That's why we ended up doing the case-by-case. There were some people who were genuinely upset by [others trying to exploit the system]."
+
+Which brings us to now. Elite: Dangerous will be out for real—no more beta—on December 16. It is, by most accounts, a really neat video game! But if constant Internet connected-ness isn't your thing, you might want to pass on it for now. What about in the future, though? Once Braben and co have a little more time and space (in multiple senses of the word), could they hack something together?
+
+"We may still do something [offline]," Braben said. "We just don't want to promise it at this point."

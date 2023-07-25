@@ -1,0 +1,93 @@
+I always liked city maps and a few weeks ago I decided to build my own artistic versions of it. After googling a little bit I discovered this incredible tutorial written by Frank Ceballos. It is a fascinating and handy tutorial, but I prefer a more detailed/realistic blueprint maps. Because of that, I decided to build my own version. So let’s see how we can create beautiful maps with a little python code and OpenStreetMap data.
+
+Installing OSMnx
+
+First of all, we need to have a Python installation. I recommend using Conda and virtual environments (venv) for achieving a tidy workspace. Moreover, we are going to use OSMnx Python package that will let us download spatial data from OpenStreetMap. We can accomplish the creation of a venv and installing OSMnx just writing two Conda commands:
+
+conda config --prepend channels conda-forge
+
+conda create -n ox --strict-channel-priority osmnx
+
+Downloading street networks
+
+After successfully install OSMnx, we can start coding. The first thing we need to do is to download the data. Downloading the data can be achieved in different ways, one of the easiest ways is to use graph_from_place() .
+
+Downloading Berlin street network
+
+graph_from_place() has several parameters. place is the query that is going to be used in OpenStreetMaps to retrieving the data, retain_all will give us all the streets even if they are not connected to other elements, simplify clean a little bit the returned graph and network_type specify what type of street network to get.
+
+I am looking to retrieve all possible data but you can also download only drive roads, using drive , or pedestrian pathways using walk .
+
+Another possibility is to use graph_from_point() that allows us to specify a GPS coordinate. This option is more in handy in multiple cases, like places with common names, and gives us more precision. Using dist we can retain only those nodes within this many meters of the centre of the graph.
+
+Downloading Madrid street network
+
+Also, it is necessary to take into account that if you are downloading data from bigger places like Madrid or Berlin, you will need to wait a little bit in order to retrieve all the information.
+
+Unpacking and colouring our data
+
+Both graph_from_place() and graph_from_point() will return a MultiDiGraph that we can unpack and store in the list as shown in Frank Ceballos tutorial.
+
+Reaching this point we just need to iterate over data and colour it. We can colour it and adjust linewidths base on street lengths.
+
+But there is also the possibility of identifying certain roads and only colour them differently.
+
+In my example, I am only using colourMap.py Gist with the following colours.
+
+color = “#a6a6a6”
+
+color = “#676767”
+
+color = “#454545”
+
+color = “#bdbdbd”
+
+color = “#d5d5d5”
+
+color = “#ffff”
+
+But feel free of changing the colours or conditions in order to create new maps that suit your taste.
+
+Plot and save the map
+
+Finally, we only need one thing left that is plotting the map. First, we need to identify the centre of our map. Choose the GPS coordinates where you want to be the centre. Then we will add some borders and background colour, bgcolor . north , south , east and west west will be new borders of our map. This coordinates will crop the image base on these boundaries, just increase the boundaries in you want a bigger map. Take into account that if you are using graph_from_point() method you will need to increase the dist value base on your needs. For bgcolor I am choosing a blue a dark blue #061529, to simulate a blueprint, but again you can adjust this to your liking.
+
+After that, we just need to plot and save the map. I recommend use fig.tight_layout(pad=0) to adjust the plot params so that subplots are nicely fit.
+
+Results
+
+Using this code we can build the following examples but I recommend that you tunning your settings like line widths or border limit for each city.
+
+Madrid City Map — Poster size
+
+One difference to take into account between graph_from_place() and graph_from_point() it is that graph_from_point() will obtain street data from the surroundings, base on the dist that you set. Depending on if you want a simple map or a more detailed one you can exchange between them. The Madrid city map has been created using graph_from_place() and the Berlin city map has been created using graph_from_point() .
+
+Berlin City Map
+
+On top of that perhaps you want a poster size image. One easy way to accomplish that is to set figsize attribute inside ox.plot_graph() . figsize can adjust the width, height in inches. I usually chose a bigger size like figsize=(27,40) .
+
+Bonus: Add Water
+
+OpenStreetMap has also data from rivers and other natural water sources, like lakes or water canals. Again using OSmnx we can download this data.
+
+Downloading natural water sources
+
+In the same way as before we can iterate over this data and colour it. In this case, I prefer blue colours like #72b1b1 or #5dc1b9.
+
+Finally, we just need to save the figure. In this case, I am not using any borders with bbox inside plot_graph . That's another thing that you can play with.
+
+After successfully downloading rivers and like we just need to join the two images. Just a little Gimp or Photoshop will do the trick, remember to create the two images with the same fig_size or limit borders, bbox , for easier interpolation.
+
+Berlin natural water sources
+
+Finishing touches
+
+One thing that I like to add is a text with the name of the city, GPS coordinates and the country name. Once more Gimp or Photoshop will do the trick.
+
+Also if you add water you will need to fill some spaces or paint other water sources, like seawater. The line with of the rivers is not constant but using the paint bucket tool you can fill those gaps.
+
+Code and conclusions
+
+The code for creating these maps is available on my GitHub. Feel free to use it and show me your results!! Hope you liked this post and again thanks to Frank Ceballos and the Medium community. Additionally, if any of you want to print some posters I opened a little store on Etsy with my map creations.
+
+Thanks for reading me and sharing knowledge will guide us to better and incredible results!!

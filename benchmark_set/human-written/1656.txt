@@ -1,0 +1,41 @@
+The deep learning tool performed better than trained clinicians. Photo by Luma Pimentel on Unsplash
+
+“There is so much at stake for our patients with each IVF cycle. Embryologists make dozens of critical decisions that impact the success of a patient cycle. With assistance from our AI system, embryologists will be able to select the embryo that will result in a successful pregnancy better than ever before,” said co-lead author Charles Bormann, PhD, MGH IVF Laboratory director.
+
+How Accurate Is the Deep Learning Tool?
+
+According to a study published by eLife, the deep learning system was able to choose the most high-quality embryos for in-vitro fertilization (IVF) with 90 percent accuracy.
+
+When compared with trained embryologists, the deep learning model performed with an accuracy of approximately 75 percent compared to an average accuracy of 67 percent by the embryologists.
+
+What Are the Benefits?
+
+For women starting IVF, the average success rate is 33% as a result of their first cycle, increasing to 54–77% by the eighth cycle. The treatment is also expensive, costing patients over $10,000 for each IVF cycle with many patients requiring multiple cycles in order to achieve a successful pregnancy.
+
+The challenge of a non-invasive selection of the highest available quality embryos from a patient remains one of the most important factors in achieving successful IVF outcomes.
+
+Currently, tools available to embryologists are limited and expensive, leaving most embryologists to rely on their observational skills and expertise.
+
+The Study
+
+A team of researchers from Brigham and Women’s Hospital and Massachusetts General Hospital (MGH) wanted to develop an assistive tool that can evaluate images captured using microscopes available at fertility centres.
+
+The team trained the deep learning system using images of embryos captured at 113 hours post-insemination. Among 742 embryos, the AI system was 90 percent accurate in choosing the most high-quality embryos.
+
+To further assess the system’s ability, the team decided to compare the system’s performance to that of trained embryologists. The results showed that the system was able to differentiate and identify embryos with the highest potential for success significantly better than 15 experienced embryologists from five different fertility centres across the US.
+
+What Does It Mean for the Future of Deep Learning in Healthcare?
+
+The deep learning system is only used as an assistive tool for embryologists to make more informed judgments during embryo selection.
+
+“We believe that these systems will benefit clinical embryologists and patients,” “A major challenge in the field is deciding on the embryos that need to be transferred during IVF. Our system has tremendous potential to improve clinical decision making and access to care.” said Hadi Shafiee, PhD, of the Division of Engineering in Medicine at the Brigham.
+
+While the study shows the potential for deep learning to outperform humans, further research is required before the tools can be used in everyday clinical care.
+
+Artificial Intelligence (AI) is getting increasingly sophisticated at doing what humans do. They do it more efficiently, quickly, and at a lower cost. The potential for both AI in healthcare is vast. Just like in our every-day lives, AI is increasingly becoming a part of the healthcare system.
+
+Using machine learning algorithms and deep learning, AI technology has the ability to gain information, process it, and give a well-defined output to the healthcare provider or the patient. These algorithms can recognize patterns in behaviour and create their own logic.
+
+“Our approach has shown the potential of AI systems to be used in aiding embryologists to select the embryo with the highest implantation potential, especially amongst high-quality embryos,” said Manoj Kumar Kanakasabapathy, one of the co-lead authors.
+
+The findings offer hope for individuals seeking to undergo IVF, the team concluded.

@@ -1,0 +1,71 @@
+“The Beam pipelines specify what has to be done. The Dataflow service chooses how to run the pipeline.”
+
+Quick notes
+
+1 - I would like to start this piece by mentioning my total admiration for the articles and sketchnotes by Priyanka Vergadia. Due to how my brain works, it’s key for me, to visualize all the abstract concepts that GCP manages. Her work helps me greatly. Thanks so much. I encourage you to check her videos, articles and sketchnotes at thecloudgirl.
+
+2 - I have used Miro web application for my sketchnotes. Since I cannot embed the board in Medium, I attach the links below so that you can comment and write down any ideas or suggestions that you may have. Medium comments, at the end of the article, are also welcome. I will try to update the board in the near future.
+
+READ ONLY. NO MIRO ACCOUNT NEEDED:
+
+https://miro.com/app/board/o9J_kia5jmU=
+
+TO COMMENT. MIRO ACCOUNT NEEDED:
+
+https://miro.com/welcomeonboard/ldDXiIxU2IrDRCC6pyK00ID2BViokWa214CZLNFkeH9Oo6ksFjJioJbLTFqMXUvJ
+
+The origins
+
+To understand the steps that have taken to Dataflow and Beam it’s important to understand some previous technologies:
+
+Hadoop, base on Google’s The Google File System (2003) paper and the MapReduce (2004) paper. This last paper changes the way we do distributed data processing.
+
+FlumeJava (2010), created by Google as an internal data pipeline tool on top of MapReduce (later moved from MapReduce). It permits creating whole graphs in data-parallel pipelines.
+
+Spark (2010) (see also resilient distributed datasets, RDDs (2012), was born in origin to replace MapReduce, and to lead stream processing. In-memory cluster computing.
+
+MillWheel (2013), created for stream processing. It defined some of the principal concepts around state management, watermarks, and timers, but with a higher level of complexity of use than Beam.
+
+In 2014, Google releases Cloud Dataflow, a programming model in SDK for writing data-parallel processing pipelines and a fully managed service for executing them.
+
+Apache Beam (2015) developed from a number of internal Google technologies, including MapReduce, FlumeJava, and Millwheel.
+
+What is Apache Beam?
+
+Dataflow is the serverless execution service from Google Cloud Platform for data-processing pipelines written using Apache Beam. Apache Beam is an open-source, unified model for defining both batch and streaming data-parallel processing pipelines.
+
+The main advantages of Apache Beam are:
+
+1 Can handle batch and streaming data with no need to write different logics separately; it combines them.
+
+2 Portability. Clear separation on the programming layer with the runtime layer. This means code can be migrated to any supported execution engine (runner).
+
+Since my beginnings in college, I have always believed in the concept of asking the right questions before heading down a path like a headless chicken. The Beam Model does this work for me in the design of the pipelines:
+
+“What results are being calculated?”
+
+The business logic. The algorithms that perform over the data.
+
+“Where in event time?”
+
+How does the time event occur and affect the results? What size of windows do we use?
+
+“When in processing time?”
+
+How do the elements actually arrive at the system, and how does it affect the results.
+
+“How do refinements of results relate?”
+
+What do we do when we decide to emit multiple results as we get higher and higher fidelity. Do those different versions of the result build on each other or are they distinct?
+
+Apache Beam is designed around several key concepts:
+
++Pipelines +PCollection +PTransforms +ParDo +Pipeline I/O +Aggregation +User-defined functions +Runner +Triggers
+
+Check Miro board for walking through them.
+
+The Beam pipelines specify what has to be done. The Dataflow service chooses how to run the pipeline.
+
+Why use Dataflow as a runner instead of Apache Flink, Spark, Beam Model, etc…?
+
+What does Dataflow do for us?

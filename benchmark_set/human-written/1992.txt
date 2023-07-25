@@ -1,0 +1,11 @@
+Depending on where you're from and where you've lived in the United States, you probably say things a little differently than people from other parts of the country. You've experienced this, but you've never seen how the regional dialects of the United States break down quite so cleanly.
+
+Ph.D student Joshua Katz has applied some academic rigor to the old "soda, pop, coke" debate. Katz studied data from a 122 question survey examining the differences in how we speak across the country, plugging the that data into an interactive heat map displaying the answers to the many questions.
+
+Advertisement
+
+Katz also made a page that allows you to examine the aggregate dialect differences between one city and the rest of the country. For example, Barrett and I are from Washington DC, so I looked up the map below. Who know that we spoke so similarly to people in Florida? Wow.
+
+Advertisement
+
+This is a perfect example of how to make a really powerful visualization that's informative rather than gratuitous and silly. Katz's work takes information that's been abstractly planted in our heads and turns it into something we can understand. Kudos! [Joshua Katz via The Abstract via Reddit via Business Insider]

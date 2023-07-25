@@ -1,0 +1,46 @@
+How to visualize your favorite beer How to visualize your favorite beer Aug 18, 2015 
+ 
+ I've seen quite a bit of interest in how to create a My Favorite Beers Viz on Reddit, so I thought I'd make a post outlining the process. I'll first outline how to create one from scratch, then I'll show you how to easily update it with your own data (that way less work is required). 
+ 
+ Create a perfect visualization 
+ 
+ Step 1: Get the data in the desired format 
+ 
+ Step 2: Create Top 5 Chart 
+ 
+ 1 Star Rating: 
+ 
+ 
+ 2 Star Rating: 
+ 
+ 
+ 3 Star Rating: 
+ 
+ 
+ 4 Star Rating: 
+ 
+ 
+ Five Star Rating: 
+ 
+ 
+  1/2 star position: 
+ 
+ 
+  1/4 star position: 
+ 
+ 
+  3/4 star position: 
+ 
+ 
+ index: 
+ 
+ 
+ Step 3: Create a brewery map 
+ 
+ Step 4: Create the Breweries Table 
+ 
+ Step 5: Summarize Everything in One Dashboard 
+ 
+ Update My Viz with your own data 
+ 
+ I explained how to get the data in my original post, but I'll  explain it again. You can become a "supporter" on his website on Untappd. Once this is done, you will have access to all  your data in  .xls or .csv format. Please note that it costs $5 to become a supporter. If you don't cancel your subscription, you will be charged $5 each month. So I told him he paid  $5, downloaded the data,  canceled the subscription, and was never charged again. After downloading the data,  open it  in Excel. If you open the data, you can see that there are fields for  Brewery State and Brewery City. What we need to do is copy b

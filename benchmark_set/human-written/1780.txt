@@ -1,0 +1,7 @@
+Over the past year, the relationship between Microsoft and HTC seems to have cooled off a bit. HTC seems to be focused more on Android, but late last night, Microsoft and HTC announced a new agreement between the two companies. Microsoft and HTC have signed an agreement which gives HTC access to Microsoft’s patent portfolio, but it may not be what you are expecting. The agreement covers HTC handsets which run on Google’s Android OS and have nothing to do with Windows Mobile or Windows Phone 7.
+
+“HTC and Microsoft have a long history of technical and commercial collaboration, and today’s agreement is an example of how industry leaders can reach commercial arrangements that address intellectual property. We are pleased to continue our collaboration with HTC.”
+
+Microsoft has been licensing out its patents and IP for the past seven years and has made it a point to collaborate with other companies that may be infringing on their proprietary technology. Microsoft has a long history of patent claims over Linux and has a few licensing agreements already in place for the OS. We’re not entirely sure what claims Microsoft thinks they have on Android, but it’s good to see a licensing agreement between them and HTC rather than a lawsuit. I find it a little humorous that HTC is paying Microsoft to use Google’s FREE Android OS.
+
+Source: Microsoft via Engadget

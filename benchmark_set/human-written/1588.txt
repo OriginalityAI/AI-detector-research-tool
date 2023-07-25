@@ -1,0 +1,141 @@
+This is an opportunity for you to deploy a machine learning model to production server — to Amazon Web Services. You can potentially found a machine learning, data centric startup today. In this article you will learn how to initialize a Jupyter Notebook on Amazon SageMaker. First of all, you will need an Amazon Web Services (AWS) developer account. All the tasks and tutorials below will take place in the developer Console and the SageMaker dashboard.
+
+Please follow our profile, our publication, give the article a clap if you like it in any way. Thank you for your support. It takes a lot of effort to write succinct, free, high quality tutorials. Use incognito mode if you don’t feel like paying. Thanks! Despite mentioning production server, this article is for your demo, personal use only. It should not be considered professional advice. Read our full disclaimer and disclosure here.
+
+What is Amazon SageMaker?
+
+Amazon SageMaker is a fully managed machine learning service. With Amazon SageMaker, data scientists and developers can quickly and easily build and train machine learning models, and then directly deploy them into a production-ready hosted environment. It provides an integrated Jupyter authoring notebook instance for easy access to your data sources for exploration and analysis, so you don’t have to manage servers. It also provides common machine learning algorithms that are optimized to run efficiently against extremely large data in a distributed environment. With native support for bring-your-own-algorithms and frameworks, Amazon SageMaker offers flexible distributed training options that adjust to your specific workflows. Deploy a model into a secure and scalable environment by launching it with a single click from the Amazon SageMaker console. Training and hosting are billed by minutes of usage, with no minimum fees and no upfront commitments. This is a HIPAA Eligible Service.
+
+Navigating to the SageMaker Notebook Instance Dashboard
+
+First navigate to the AWS developer console https://console.aws.amazon.com
+
+Sign in
+
+Type in SageMaker in the Find Services search box
+
+You are now viewing the SageMaker Dashboard
+
+On the left side menu, select Notebook Instances
+
+Click on the Create a notebook instance
+
+Read the next Medium article section for role setup
+
+Role Management
+
+Before you can create a notebook instance, you must give your notebook a name and also a role. The role configures and gives the notebook permissions to access specified AWS resources. The most important resources to include are the S3 buckets (used for data and model artifact storage).
+
+Click on Create a Role
+
+Use the screenshot below for your starter configuration
+
+Change the S3 bucket you specify to None
+
+You can leave all the other configurations as it is.
+
+Click on Create Role when you are done
+
+Create Notebook
+
+Click on Create Notebook when you are done
+
+when you are done Notebook status will show pending for the time being
+
+for the time being When AWS is done setting up the environment, notebook status changes to InService
+
+Click on the name of the Jupyter Notebook, then Open Jupyter button to view the workspace, which should be empty. See the screenshot below for a list of Kernels available.
+
+button to view the workspace, which should be empty. See the screenshot below for a list of Kernels available. Remember to STOP the notebook when you are done using it. See next section
+
+List of Jupyter Notebook kernels available on Amazon SageMaker
+
+Cost Management
+
+Cost management is an importance piece of using cloud services, which generally bills on usage and or storage.
+
+Cost of a notebook instance is based on the time it is running. Default behavior is that the notebook runs when it is created. Remember to click STOP on the Notebook Instance Dashboard Page. Click START before using the notebook again.
+
+In addition to time active, SageMaker can also bill you for usage. It is a common cost model in cloud computing.
+
+Working with an Existing Git Repository
+
+It’s easy to git clone a repository into your SageMaker workspace.
+
+Click START on your notebook instance that is just created. Skip this step if the instance is already running.
+
+on your notebook instance that is just created. Skip this step if the instance is already running. First, let’s launch Terminal in the Jupyter Notebook file directory click New and select Terminal near the end of the vertical Menu. Jupyter Notebook directory >> New >> Terminal
+
+In the command line. Change directory into the SageMaker Directory
+
+Copy the name of the git repo. The format is an https address ending in .git
+
+address ending in When done and successful, enter exit and close the Terminal
+
+
+
+sh-4.2$ git clone
+
+sh-4.2$ exit sh-4.2$ cd SageMaker/sh-4.2$ git clone https://github.com/user_name/name_of_repo.git sh-4.2$ exit
+
+Production Support
+
+Scalable fully managed infrastructure
+
+Ground Truth for human and automated data labeling workflow
+
+Performant NVDIA Tesla GPU, memory per GPU
+
+API Endpoints, web development for machine learning model development
+
+Support for Tensorflow, Apache MXNet, Keras, and Pytorch
+
+Tensorflow optimization in the cloud
+
+Docker container deployment
+
+One-click deployment
+
+Petabyte dataset support capable
+
+Fully managed training and hosting
+
+Auto ML style automatic hyperparameter tuning and optimization
+
+Train once, deploy anywhere using Neo, EC2 ready
+
+High performance high availability elastic acceleration
+
+Build-in A/B testing for model versions
+
+Read more here https://aws.amazon.com/sagemaker
+
+Best in Class Algorithms to Seed Your Project
+
+200 models available in the AWS market place! While Amazon SageMaker supports bring-your-own-algorithms model, it also has a reservoir of top notch machine learning and deep learning algorithms: including XGBoost, a clear winner of data competitions on Kaggle, as well as Sentiment Analysis examples, Convolutional Neural Networks, and the service is eligible for HIPAA compliance! You can prototype your next big healthcare startup idea here!
+
+It also supports Google’s deep learning framework Tensorflow and MXNet MXNet: A Scalable Deep Learning Framework hosted on apache.org.
+
+Explore More! Best Reading List for Amazon SageMaker
+
+Amazon SageMaker getting started page
+
+- https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html
+
+- https://docs.aws.amazon.com/sagemaker/latest/dg/gs.html
+
+- https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html - https://docs.aws.amazon.com/sagemaker/latest/dg/gs.html Amazon SageMaker landing page https://aws.amazon.com/sagemaker
+
+A webinar is worth a million words: Train and Deploy on AWS with Amazon SageMaker BlazingText Cold-Start Recommendation Engine Example — https://pages.awscloud.com/Build-Train-and-Deploy-Machine-Learning-Models-on-AWS-with-Amazon-SageMaker_0910-MCL_OD.html
+
+Under the hood: how Amazon SageMaker works: https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works.html
+
+Amazon SageMaker the latest and greatest https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html
+
+A super repo of SageMaker examples and tutorials https://github.com/awslabs/amazon-sagemaker-examples
+
+Footnotes
+
+To use GPU on Amazon SageMaker you will need to increase the resource limit for ml.p2.xlarge or higher. If this doesn’t make sense, or you have not run into it, ignore this section for now.
+
+Contact Amazon SageMaker team, get support https://pages.awscloud.com/SageMaker_Contact_Us_WB.html

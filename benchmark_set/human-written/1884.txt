@@ -1,0 +1,163 @@
+How Do We Run an Ethereum Node on Raspberry Pi?
+
+Now to set up our rig, we need to have some tools of the trade. So let’s have a look at some of the prerequisites:
+
+Raspberry Pi 3B+ with quality case and heatsinks (cooling fan) to prevent overheating and shutdown
+
+32G+ MicroSD card
+
+HDMI cord and a display
+
+A keyboard and a mouse (of course you need that!)
+
+We are assuming that Raspbian OS is already installed on the Raspberry Pi. If not, don’t worry, follow the link below to get things done:
+
+https://www.raspberrypi.org/downloads/raspbian/
+
+Once the basic setup of the OS is done, we are ready to go! Let’s move forward with the following steps:
+
+Step 1: Start with updating the packages to the latest versions
+
+Commands:
+
+$ sudo apt-get update
+
+$ sudo apt-get dist-upgrade
+
+Step 2: Free the memory for the Ethereum client, aka, Geth (Go Ethereum)
+
+A good way of freeing up RAM for memory-intensive tasks is to reduce the amount allocated to the GPU. Also, if you don’t need a graphical desktop, configure your system to simply boot to the command line.
+
+$ sudo raspi-config
+
+1. For booting to the command line:
+
+3 → Boot
+
+B1 → Desktop / CLI
+
+B1 → Console
+
+2. For reducing the memory allocated to the GPU:
+
+7 → Advanced
+
+A3 → Memory Split
+
+32 (MB)
+
+3. At last, reboot.
+
+Moving further, we will install the package dependencies in the next steps.
+
+Step 3: We need to install Golang before moving on to installing Geth. This can be done using the following command
+
+$ sudo apt-get install git golang libgmp3-dev
+
+The Golang version that gets installed will be outdated, so we need to upgrade its version above 1.10 using Golang version manager “g.”
+
+Link: https://github.com/stefanmaric/g
+
+Commands:
+
+
+
+$ g install <version> (above 1.10 ex. 1.11.2) $ curl -sSL https://git.io/g-install | bash$ g install (above 1.10 ex. 1.11.2)
+
+Step 4: Installing Geth
+
+We will opt for building the Geth from source instead of using binaries because building from source allows heavy customization options.
+
+For instance, we can add some features which may not be provided in the binary, provide our hardware (Raspberry Pi) specific info for suitable installation, and install it at the location we desire.
+
+Also, we can install the latest version and later update, whether it be a security patch or a new feature.
+
+Commands:
+
+$ mkdir src $ cd src
+
+(release number should be the latest one for efficient working.) $ git clone -b release/1.8 https://github.com/Ethereum/go-Ethereum.git (release number should be the latest one for efficient working.) $ cd go-Ethereum $ make $ sudo cp build/bin/geth /usr/local/bin/
+
+Step 5: Creating an account
+
+$ geth account new
+
+This will generate a new set of cryptographic keys and protect the private key with a password.
+
+Note that if we were using this account to mine cryptocurrency and meaningfully transact, we would want to make sure to back up our keys to prevent our private key from being accessed.
+
+Step 6: Syncing the Ethereum Mainnet in light mode
+
+$ geth — syncmode light — cache 64 — maxpeers 12
+
+If we ran Geth without any arguments, it would start up a node and attempt to sync the entire public Mainnet blockchain — which, at >50GB in size and constantly growing, might not be a great idea on an embedded computer.
+
+So instead we start the node in light-synchronization mode. This only fetches block headers as they appear and other parts of the blockchain on-demand.
+
+To stop the execution, press Ctrl + C
+
+To run in the background you can simply use nohup .
+
+$ nohup geth — syncmode light — cache 64 — maxpeers 12 &
+
+It will run the syncing process in the background. To view the logs, open the file nohup.out using any code editor (e.g., Vim or Nano).
+
+Logs appear as:
+
+Step 7: JavaScript console
+
+The Geth Javascript console is available through the Geth-attach command.
+
+To check the latest block synced:
+
+>>> eth.getBlockNumber ( console.log )
+
+Output:
+
+To list the current accounts:
+
+>>> eth.accounts
+
+To list peers:
+
+>>> admin.peers
+
+Output:
+
+Step 8: Setting up RPC
+
+Open the JavaScript console, and run the following command.
+
+>>> admin.startRPC ( ‘0.0.0.0’, 8545 )
+
+Output:
+
+Syntax: admin.startRPC ( ‘ IP address ’, PORT number )
+
+RPC will start running on that IP and PORT.
+
+Now we can do simple API calls using Postman, or we can do any REST API calls in a programming language of our choice and fetch the data through the Ethereum Management API.
+
+Step: 9 Send transactions on Ethereum blockchain
+
+Well, this step is the real fun; however, it will cost us real ethers. (The best of things are never free!)
+
+The transaction is the same argument as for eth_sendTransaction and contains the from address. The passphrase is used to decrypt the private key belonging to tx.from .
+
+If only the passphrase decrypts the private key, then and only then does the transaction become verified, signing in the user and sending the transaction onto the network. The account is not unlocked globally in the node and cannot be used in other RPC calls.
+
+Console: personal.sendTransaction(tx, passphrase)
+
+RPC: {“method”: “personal_sendTransaction”, “params”: [tx, string]}
+
+On the JavaScript console:
+
+>>> var tx = {from: “0x391694e7e0b0cce554cb130d723a9d27458f9298”, to: “0xafa3f8684e54059998bc3a7b0d2b0da075154d66”, value: web3.toWei(1.23, “ether”)}
+
+undefined
+
+>>> personal.sendTransaction(tx, “passphrase”)
+
+To play more with the Ethereum blockchain using Raspberry Pi, please refer to the go-Ethereum Management APIs.
+
+That’s all from this section. Keep innovating!

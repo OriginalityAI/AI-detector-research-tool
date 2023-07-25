@@ -1,0 +1,15 @@
+For PC gamers, playing games on Windows often involves downloading game files from different platforms. From popular services such as Steam to Uplay titles from Ubisoft or games purchased on GoG, we tend to accumulate a significant amount of game files over time. And with too many game files on our computers, we may find that our storage space is running low.
+
+After uninstalling games from different platforms, we often end up with duplicate files, leftover files, or useless redistributables that we no longer need. These files can take up valuable hard drive space, and unfortunately, removing them manually can be a long and tedious process. 
+
+Thankfully, solutions exist. Steam Cleaner is one such tool that can help PC gamers take care of these leftovers. Its primary function is to clean up junk files from your games, freeing up space on your hard drive.
+
+Think of Steam Cleaner as a specialized version of CCleaner for video games. Steam Cleaner can be used to delete redundant files from different game platforms that you have downloaded, including Steam, Ubisoft's Uplay and GoG Galaxy. It's not uncommon for gamers who own hundreds of games to have a PC filled with gigabytes of duplicate game files. Using Steam Cleaner can help clear this clutter.
+
+It is important, however, to use this tool with care. Steam Cleaner is conservative with what it deletes and only targets redistributables and files that are not necessary after uninstalling a game. The tool will not delete any critical files such as save games or user data. Therefore, when using Steam Cleaner, gamers need to go through the suggested deletion list thoroughly and make sure they are not randomly deleting everything suggested.
+
+In our tests, we found Steam Cleaner to be an excellent tool to clean up all the unwanted files on the computer after uninstalling games. In comparison to other cleaning tools, Steam Cleaner is not too aggressive in deleting files. Steam Cleaner targets files that the user no longer needs and deletes them to create more storage space. 
+
+Steam Cleaner has been around for a while and can be downloaded as either an installable or portable version. It is a free tool and available exclusively for Windows users. With Steam Cleaner, gamers can free up space on their hard drive from all the unnecessary game files that are no longer needed.
+
+If you want to make more space on your hard drive by removing unwanted game files, give Steam Cleaner a try! It might amaze you the amount of storage space you can reclaim.

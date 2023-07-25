@@ -1,0 +1,181 @@
+Eul
+
+本文为 Eul 样章，如果您喜欢，请移步 AppStore/Eul 查看更多内容。 Eul 是一款 SwiftUI 教程类 App（iOS、macOS），以文章（文字、图片、代码）配合真机示例（Xcode 12+、iOS 14+，macOS 11+）的形式呈现给读者。笔者意在尽可能使用简洁明了的语言阐述 SwiftUI 相关的知识，使读者能快速掌握并在 iOS 开发中实践。
+
+Button
+
+构建方法
+
+Button 的构建主要有以下两种方法：
+
+// 1、字符串构建，支持本地化字符串
+
+Button("Hello World") {
+
+// action
+
+} // 2、自定义样式
+
+Button {
+
+// action
+
+} label: {
+
+VStack(spacing: 8) {
+
+Image(systemName: "square.and.arrow.up")
+
+Text("Share")
+
+}
+
+.padding()
+
+.foregroundColor(.white)
+
+.background(Color.blue)
+
+.cornerRadius(10)
+
+.shadow(color: Color.black.opacity(0.35), radius: 5, x: 0, y: 5)
+
+}
+
+自定义 ButtonStyle
+
+系统提供了六种 ButtonStyle，其中只有 DefaultButtonStyle 、 PlainButtonStyle 和 BorderlessButtonStyle 是用于 iOS 系统的。但是我们可以通过以下两个协议自定义样式：
+
+ButtonStyle ：支持自定义样式
+
+：支持自定义样式 PrimitiveButtonStyle ：支持自定义样式和交互
+
+这两个协议的定义几乎一样，唯一的区别是 ButtonStyle 内部有一个 Bool 类型的属性 isPressed ，而 PrimitiveButtonStyle 内部有一个 trigger() 方法供我们自己手动调用。
+
+下面我们通过实例来加深了解，我们先定义一个遵循 ButtonStyle 协议的 ShadowButtonStyle，它可以给按钮添加带圆角的阴影，使按钮在按下时改变字体和背景。
+
+如果一个视图内部有多个 Button，我们只需要在调用一次 .buttonStyle(ShadowButtonStyle())，系统会通过环境变量将该样式注入各个子视图。
+
+struct ShadowButtonStyle: ButtonStyle {
+
+func makeBody(configuration: Configuration) -> some View {
+
+configuration.label
+
+.foregroundColor(configuration.isPressed ? .gray : .white)
+
+.padding()
+
+.background(configuration.isPressed ? Color.purple : Color.blue)
+
+.cornerRadius(10)
+
+.shadow(color: Color.black.opacity(0.35), radius: 5, x: 0, y: 5)
+
+}
+
+} HStack {
+
+Button("Hello") {}
+
+Button("World") {}
+
+}
+
+.buttonStyle(ShadowButtonStyle())
+
+然后我们定义一个遵循 PrimitiveButtonStyle 的 DoubleTapButtonStyle，它表示按钮受到双击时，才会触发点击事件。代码如下：
+
+struct DoubleTapButtonStyle: PrimitiveButtonStyle {
+
+func makeBody(configuration: Configuration) -> some View {
+
+configuration.label
+
+.gesture(TapGesture(count: 2).onEnded { configuration.trigger() })
+
+}
+
+} Button("Double Tap") { print("Tapped ") }
+
+.foregroundColor(.white)
+
+.padding()
+
+.background(Color.blue)
+
+.cornerRadius(10)
+
+.buttonStyle(DoubleTapButtonStyle())
+
+EditButton
+
+系统提供了一个快速构建编辑功能的按钮：EditButton ，它的功能和使用场景比较单一，按下的时候会进入编辑状态，按钮文字变成 “Done” ，再次按下变回 “Edit”，主要和 List 配合使用，通常这样调用： .navigationBarItems(trailing: EditButton()) 。
+
+Menu
+
+构建方法
+
+Menu 用于快速构建菜单视图，有如下两种构建方法：
+
+// 1、字符串构建
+
+Menu("More") {
+
+Button("Add") {}
+
+Button("Edit") {}
+
+Button("Delete") {}
+
+} // 2、自定义构建
+
+Menu {
+
+Button {} label: {
+
+Label("Add", systemImage: "plus")
+
+}
+
+
+
+Button {} label: {
+
+Label("Edit", systemImage: "pencil")
+
+}
+
+
+
+Button {} label: {
+
+Label("Delete", systemImage: "minus.circle")
+
+}
+
+
+
+// 只要是 View 类型皆可，这里使用了 Picker
+
+Picker("Picker", selection: $selection) {
+
+Text("Item1").tag(0)
+
+Text("Item1").tag(1)
+
+Text("Item1").tag(2)
+
+}
+
+} label: {
+
+Text("More")
+
+Image(systemName: "ellipsis")
+
+}
+
+自定义 MenuStyle
+
+遵循 MenuStyle 协议并实现相应的方法，样例代码如下：

@@ -1,0 +1,49 @@
+Deploying blueprints in vRealize Automation is one thing, but with all things as code, we need to be able to move this work from our test instances to development and production instances. It's pretty important to be sure that the code being moved to a new instance is identical. We don't want to have a user re-create the blueprints or workflows because it's prone to user error. Luckily for us, we have a solution. VMware has the vRealize Code Stream Management Pack for IT DevOps which I though about nicknaming vRCSMPITDO but that didn't really roll off the tongue. VMware previously nicknamed this product "Houdini" so for the purposes of this post, we'll use that too! This article will kick off a few more posts on using the product but for now we'll focus on installing it.
+
+Houdini Architecture
+
+You could set this up in a few ways but we'll keep this pretty simple for a starting point. Houdini needs a few things. For our scenario we'll have two separate vRA instances, development and production and we'll deploy a third vRA appliance (No IAAS Serves required) to serve as a remote content server which will cache our blueprints. These remote content servers can be used when passing artifacts over the WAN or between security zones can be an issue.
+
+We'll also need to install Houdini in the default tenant of one of our instances. This is important since right now, Houdini can only be installed in the default tenant.
+
+Houdini Prerequisites
+
+Before we click those install buttons, we'll need to ensure that our default tenant is in tip top shape. We'll need a vRealize Code Stream license applied since vRCS is the major mechanism used by Houdini. After this, we'll need to ensure that we have a user with the appropriate permissions on the default tenant to operate Code Stream. Be sure that your Houdini user has the following roles:
+
+Release Engineer
+
+Release Manager
+
+Tenant Administrator
+
+XaaS Architect
+
+Houdini Installation
+
+Houdini gets installed from vRealize Orchestrator and not as a windows installer package or OVA file or something. Download the vRealize Code Stream Management Pack for IT DevOps Package from the VMware product downloads page. Once done, open your vRealize Orchestrator console and change to the design view. Switch over to the packages tab and click the import button. Find the com.vmware.cse.clm.all.package file that you've downloaded from the VMware product page.
+
+Import and trust the provider of the package.
+
+Review all of the workflows, actions, and resources used by Houdini and click "Import selected element".
+
+Basic Configuration
+
+Once your package has been imported, you can begin some of the configuration with vRealize Automation. This configuration is done by running one of those shiny new vRO workflows that got imported as part of the packages. Navigate to Library –> Content Management –> Configuration –> Install Content Management. Run the workflow.
+
+On the first screen of the workflow, accept (after thoroughly reading) the EULA and then click "Next".
+
+Go ahead and read through the pre-requisites screen which will give you a pretty good idea of what the architecture will look like. Click Next when you're ready.
+
+On the next screen we need to enter in our vRealize Automation information that will house our Houdini blueprints. I've selected my development instance. Fill in the vRA FQDN, tenant admin user, password and SSH username and password of the vRA appliance. Also be sure to select the tenant which will need to be the default tenant "vsphere.local".
+
+Next enter the vRealize Orchestrator username and password. I've changed my authentication groups from the default so yours might still be [email protected]
+
+Now enter in our Houdini user account information which has Code Stream permissions on the default tenant.
+
+Now we need to enter in the root username/password for our vRA content server which is just a simple vRA deploment. We didn't even need the IaaS servers installed for that one. You can select "stop unused component services on the Primary Content Server" so that unnecessary services can be stopped.
+
+Enter in a password to be used for a repository admin account and a repository auditor account for the Xeon repository. This is where content will be cached on the content repository.
+
+You can also move your artifactory content to the Xenon repository if you wish, but I've decided to skip this step. Click Submit to kick off the workflow.
+
+Be patient while the workflow runs. It took me about 15 minutes for the workflow to run. If the workflow fails, check to see if

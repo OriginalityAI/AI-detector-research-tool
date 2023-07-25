@@ -1,0 +1,11 @@
+On February 12th, the much-anticipated Fluxbox Community Edition of Linux Mint was released. As a long-time Fluxbox user and a recent enthusiast of Linux Mint, I couldn't wait to get my hands on it and test its capabilities. My loyal Toshiba Satellite A75, a five-year-old laptop, provided an excellent testing bed as the release is designed to optimize limited resources.
+
+Linux Mint 8 Fluxbox Community Edition is built on the Linux Mint 8 Main Edition, the 2.6.31 Linux kernel, and Fluxbox 1.1.1. This latest edition delivers the clean and streamlined user experience Linux Mint is known for with the highly customizable and speedy Fluxbox, a combination that truly offers the best of both worlds. 
+
+The installation process was efficient, using the Ubiquity installer providing the same customization as Ubuntu and regular Mint. Upon installation, users are welcomed by a lightweight Mint-themed SLiM login manager. The default desktop continues with the Linux Mint 8 Main Edition's eye-catching wallpaper and Shiki theme, presenting a clean and aesthetically pleasing look. 
+
+After logging in, users will be greeted with a familiar welcome screen, reminiscent of the Linux Mint 8 Main Edition. Utilizing a straightforward Fluxbox menu, users can quickly access a variety of applications, such as Thunar, LXTerminal, Sylpheed, and Pidgin. Notably, the desktop also contains VolWheel and the GNOME NetworkManager Applet.
+
+Linux Mint 8 Fluxbox CE opted to use lighter, faster apps, mainly from Xfce and LXDE, rather than installing GNOME. The release contains OpenOffice.org 3.1.1, Xfce's Mousepad text editor, MintInstall application, and the unique mintConfig. MintConfig provides a centralized graphical control panel for your environment, enabling users to access various tools for managing Fluxbox menu, keybindings, and other settings more efficiently. This makes customization much more accessible for users who prefer a graphical interface rather than editing files through a text editor.
+
+Overall, the Linux Mint Fluxbox experience is swift, streamlined, and highly customizable, making it an excellent option for those who want a unique, optimized system for their older devices.

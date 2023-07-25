@@ -1,0 +1,51 @@
+Okay. We want to do a remake of The Sting, but set it in a modern age.
+
+So the plot could go like this … we are the police — let’s set it in The Netherlands and get great views of canals and boats. Now we aim to target illegal betting, so we set up a sting.
+
+We find the King-Pin, who runs the major illegal betting shop in the major city (let’s say it’s Amsterdam), and then rather than arrest him, we aim to shut down his operation. Before this, we will take-over his main competitor in the city, and then they will tell us everything about their operation and give us their keys to the operation.
+
+We then run their illegal better system (but change all the telephone numbers and all the back-end functions). Next we pounce on King Pin who tells us everything and we shut down his operation. After this, we watch all the bookies and their customers move into our operation, and each time they make a bet, we arrest them.
+
+And just to make sure we catch all of them, we ask them to send us a picture of themselves outside their home.
+
+Far fetched?
+
+Well, replace betting for drug dealing, and a city for the Dark Web, and you have the Dutch Police Sting … read on …
+
+Hansa
+
+The Dark Web has traded fairly free from the prying eyes of law enforcement, mainly because it is difficult to find out where the servers are actually running (as the route to a destination is hidden, along with all the details of the communication). But the Dutch police managed to take-over one of the sites: Hansa. Also part of their plans was a take-down of AlphaBay, and where many users moved to Hansa Market. This saw an eight-fold increase in users.
+
+The start of the take-over happened when, in 2016, a company named Bitdefender told the Dutch Police that Hansa’s servers were operating in the Netherlands. Like AlphaBay, Hansa sold drugs, credit card details, and many other criminal related activities. It also traded with Bitcoins, in order to hide transactions from law enforcement.
+
+The Netherlands National High Tech Crime Unit then took an image of the server and were able to control the administration pages. They also found the chat logs and details of two German nationals who were running the site. These two individuals were well-known to the German police for criminal activities.
+
+The people running the site found out that they were being investigated, so they moved the servers to Lithuania and shut down the Dutch servers. The payment for the servers was then paid through the Bitcoin account that they had been using in the Netherlands, and thus the police were able to trace them. After the police tapped into the communications of the network and found out details of the four administrators and their login details for the chat system.
+
+Then … the sting continues to develop … and where the FBI had found out that Alphabay was hosted in the Netherlands, and where police hatched a plan to close down Alphabay and get dealers and customers to move to Hansa, and then monitor usage (and where the Dutch police would control of the site).
+
+The administrators of Hansa were then arrested on 20 June 2017 and they handed over their login details, and where the police could take over the site and run it. At this point, the servers were now back in the jurisdiction of the Dutch police. They copied the whole site and created a new Bitcoin wallet, and with a downtime of only three minutes. Then, after modifying details for deliveries, they watched the site being used for drug dealing.
+
+Every transaction has then tracked, and EUROPOL sent out offices to intercept the packages and make arrests. Along with this all of the business details and contacts were captured, along with the addition some code which revealed the actual IP address of the buyer and seller. To capture even more, they sent out a message to dealers to resend the image of their “products” as they had had a crash on one of their drives. The images came back often containing the metadata in the image, and where the police could find out their actual location (note the image below is just a demonstration of examining the location information from an image).
+
+So the sting moved into top gear on 4 July 2017, and where Alphabay was shut down and which drove many servers to Hansa. Overall the Dutch police seized over 2,500 Bitcoins and recorded 26,000 transactions, and eventually showed this message:
+
+AlphaBay
+
+AlphaBay had become a bazaar for buying and selling of illegal contraband, including drugs, personal IDs, and weapons, and where vendors can set-up shops and trade:
+
+It had, at its peak, over 200,000 users, 40,000 vendors and generated over $1 billion in transactions. At the time of the take-down, it had nearly $4 million in bitcoins within wallets stored on the site.
+
+As the sites only link to Tor, they cannot be accessed without a Tor browser, and thus cannot be found on Google. Along with, because it uses Tor routing, it is often difficult to find the actual location of the servers.
+
+There were initial signs of a take-down on 4 July 2017 and occurred around the same time that Alexander Cazes (shown below), a Canadian citizen, who created and maintained AlphaBay, was arrested in Thailand and has since been found dead in his prison cell (it is thought that he hanged himself with a towel).
+
+Alexander is now thought to be one of the richest operators on the Dark Web with a wealth of over $15 million, and with a stash of over $5 million in bitcoins, and several million dollars in other . His many top-of-the-range cars have also been seized.
+
+The main reason that Cazes was caught was that he was using his own name in a Hotmail email address that he had used for years (Pimp_Alex_91@hotmail.com). It was this address which was used to welcome every user to the site, and also for password resets. This made it easy for investigators to trace him. Along with the alias for the site (Alpha02) was linked to his email address. When investigators seized his laptop they found it wasn’t encrypted, and where they could gain passwords to the Alphabet servers. It is estimated that AlphaBay was bringing in between $600,000 and $800,000 in revenue every day.
+
+Conclusion
+
+On the Dark Web, which legal jurisdiction actually applies? Only by finding the physical location of the servers will it be possible to apply the laws of that jurisdiction. Also, will law enforcement go after those who sold or purchased goods on the sites, and will they actually be able to trace them (as their IDs will be hidden within Bitcoin IDs)?
+
+Here is a bit of background on Tor:

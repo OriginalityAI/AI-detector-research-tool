@@ -1,0 +1,26 @@
+Title: PiWall & Infinnovation Ltd: Innovating Video Wall Technology Through Art and Science
+
+PiWall, in collaboration with Infinnovation Ltd, is constantly working on groundbreaking artistic installations, with several projects underway in 2016. While our main focus has shifted towards the art market, we remain dedicated to creating unique video wall displays that go beyond the boundaries of traditional digital signage applications. As a result, we have recently embarked on a joint project aimed at creating our largest PiWall yet, featuring over 200 screens, in association with a highly skilled creative and technical team in London.
+
+In 2015, we were involved in some significant projects and accomplishments, including:
+
+1. Assisting with the deployment of a 70-screen CRT-based wall at the Eaux Claires Festival 2015 in Wisconsin. With the aid of a creative team from New York, we put together a live PiWall that supported several live onstage performances at this prominent arts festival.
+
+2. Investing substantial effort in hardware development while learning valuable lessons from numerous ongoing Kickstarter projects. Although our ideas and products were promising, we realized that scaling them out as initially planned was not entirely feasible.
+
+3. Contributing to the development of nuclear fusion research while balancing other family and general life commitments.
+
+Despite these challenges, PiWall remains alive, active, and ready to kick off new projects. Our new focus leans more toward bespoke consulting work under our private company, Infinnovation Ltd. However, we remain open to exploring various approaches and continue to hope that we can eventually leverage our work to generate (and share) economic benefits.
+
+During the "2015 Summer of PiWall," we updated everyone on our progress, outlining our upcoming plans, including:
+
+- Revamping our website and incorporating regular blog updates on project developments.
+- Launching an updated series of videos on our YouTube channel, demonstrating how to set up a wall and other cool things to do with it.
+- Migrating our open-source code to GitHub.
+- Providing details on commercial support and our pro-edition software with updated features.
+- Offering more information about projects and better methods to connect users with helpful forum discussions.
+- Connecting with social media channels to facilitate more engaging conversations.
+
+The PiWall software package empowers users to build video walls of any size by combining an assortment of screens, adding one Pi per screen to control the corresponding part of the wall, and a master Pi to oversee them all. Initially developed in 2013 to meet personal needs and give back to the Raspberry Pi community, our free software has been used worldwide to create video walls for numerous distinctive projects.
+
+While our primary focus is on software, we also excel in hardware and electronics design. We have conceptualized and constructed a custom case that holds a set of Pi modules and the necessary network switch for seamless collaboration. In addition, we have designed unique wiring for better power management and cooling to maintain optimal performance. Our goal is to develop a cost-effective method for producing these components to benefit other projects. No stranger to challenges, we remain determined to explore the potential of launching a Kickstarter project in the future to make this solution accessible to all.

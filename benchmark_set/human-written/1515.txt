@@ -1,0 +1,71 @@
+Creating Desktop Applications with Titanium
+
+After my adventures in developing with Adobe AIR, I've been keeping an eye on the state of cross-platform desktop application frameworks. In the past year or so, I know of JavaFX and Titanium that have also hit the market. Not being a fan of Java, I stayed clear of JavaFX. Titanium, on the other hand, with its similarities to Adobe AIR, has been a more compelling option.
+
+Titanium is an open source platform for building desktop applications using HTML, CSS and JavaScript. Applications can run on Windows, OSX and Linux and have access to local resources, the TCP stack, integrated SQlite support along with the ability to create standard and chromeless windows.
+
+Webkit conquers all
+
+The most compelling part for me is the use of Webkit as the primary engine. Theoretically speaking, an application could be built using a similar codebase and deployed for the web or as a desktop application via Titanium or Adobe AIR, which also uses Webkit.
+
+Where Titanium excels over AIR is in its support of more current Webkit features. Adobe's version, in many ways, is actually quite limiting with lack of support for the little things that can really provide the polish for a desktop application: like Cmd/Ctrl-Z support for undo. Keyboard support in HTML-based AIR apps was frustratingly poor in earlier versions.
+
+It has support for CSS animations and transformations. The examples from the Webkit blog work just fine.
+
+It even has support for custom scrollbars (although that may only be recent builds of and not PR3, specifically). Adobe AIR has rather unattractive scrollbars with no way to change it except to use JavaScript widgets. Here's the kicker, though: Titanium automatically uses the OS style for things like scrollbars, which, in my case, actually made custom scrollbars somewhat moot.
+
+Chrome
+
+The OS windows chrome and transparency support in Titanium also excels over Adobe AIR by allowing native controls — like close, minimize and maximize — and semi-opaque documents at the same time. With AIR, you have to make an either/or choice.
+
+Type Rendering
+
+Type rendering, especially on the Mac, is much better as it uses the OS for control. Likewise, it supports the OSX's built-in spellchecker.
+
+Cursors
+
+Adobe AIR has poor support or CSS cursors, missing all of the resize cursors. If you have a UI that needs resizable panes you'll have to be creative. Titanium on the other hand, has full support for CSS cursors including the ability to declare a custom cursor.
+
+OSX features
+
+Now that I'm on OSX, I understand some of the frustrations that users had with Snitter. A good example of that was lack of menubar support. A twitter application is actually well suited to find its way into the menubar and Titanium allows you to do that, where Adobe AIR can't.
+
+Titanium even comes with Growl support, out of the box.
+
+Not all roses
+
+Despite all the stuff going for it, Titanium isn't all roses. It's still in development, which means the application can and will crash. During testing, I've locked up my simple app and crashed it a few times.
+
+Debugging
+
+Debugging is also cumbersome. The Webkit Inspector comes built-in but the debugger isn't enabled by default. Opening the inspector also opens as a popup pane of the current document instead of in its own window. They'd do well to build a simple debugger shell that could be included with an application during development and that would launch in its own window by default.
+
+Documentation
+
+Documentation is also lacking, forcing you to look at the example applications, or hanging out on the IRC channel for more details. Thankfully, the folks on the IRC channel are super helpful and very friendly. They were able to answer any of the questions I had quickly.
+
+Small Community
+
+It's hard to argue this as a good point or a bad point but the fact is, the community of developers working on Titanium is quite small. As a result, there simply isn't many resources available to try and troubleshoot these types of issues.
+
+On that note, the Adobe AIR community for JavaScript developers is also somewhat small. At Adobe MAX last year, there were very few AIR/JavaScript sessions and certainly none that went into any detail on the platform.
+
+Advantage, AIR
+
+There are still some solid advantages to using Adobe AIR over Titanium. Adobe AIR is a stable platform with a larger developer community as a whole, especially if you're a Flex developer. AIR has plenty of documentation and plenty of people building applications on the platform. There's better "web site to application" integration (although few really take advantage of this).
+
+AIR also runs on top of the Flash runtime, allowing pixel bending on the entire canvas, including the Webkit control.
+
+Deployment
+
+Deployment is quite interesting in that it creates native installers for each platform, instead of a packaged file like Adobe AIR. It also handles packaging via a cloud deployment system, which means you have to be connected to create your applications.
+
+There's also currently no command line interface, which forces you to keep the developer application open to continuously relaunch your application during testing.
+
+One of the nice things about deployment is the ability to choose what components of the runtime actually get bundled with the app. This should help ensure that your app doesn't suffer when the runtime gets a new version. (Snitter ran into this and is broken in AIR1.5.)
+
+Next Version
+
+The next version of Titanium is expected within a few weeks and it'll be interesting to see how things have progressed since the last release. If you're particularly adventurous, you can also check out the Github repo.
+
+Titanium looks to have great potential but needs to stay focused on getting a stable 1.0 release out the door along with quality build tools and documentation. If they can do this, they have a good chance at creating a successful platform.

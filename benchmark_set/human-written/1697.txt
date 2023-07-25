@@ -1,0 +1,17 @@
+Colin Jemmott is a Senior Data Scientist at Seismic, and a Data Science lecturer at UCSD who has taught DSC 10 Principles of Data Science, DSC 96 Workshop in Data Science, and DSC 90 Seminar in Data Science. In this podcast episode, Colin discusses his experiences in industry and academia, challenges as a Data Scientist, advice for students, and more.
+
+During his undergrad in the pre-data science era, Colin took interest in becoming a Computer Science major, declaring it as the perfect combination between practicality and “mathy”. But having had a distant relationship with computers, which made them incompatible at the time, he decided to become an engineer and finished his PhD in acoustics. Wandering into Data Science was what Colin described as a “ping-pong ball in the dryer experience”, making career plans which were thwarted and embarking on new paths.
+
+After working in sonar signal processing while working as an acoustical scientist for the Navy, Colin then taught himself python and talked his way into a startup, which eventually got acquired by Colin’s current company, Seismic.
+
+Colin is on the AI/ML team at Seismic, a sales enablement platform that builds software for sales and marketing teams to collaborate more efficiently — or to put it shortly, Colin describes it as a “really fancy google drive, plus version control”. He explains that it’s a B2B company, selling to other businesses rather than end consumers, and their clientele comprises of mostly large companies, especially those in financial services. Colin’s day-to-day life has changed drastically since his start at Seismic, which has grown from less than a hundred to almost a thousand employees during his time there. He currently focuses on content discovery and building appropriate and improved recommendation systems.
+
+Transitioning into his career at UCSD, he recalls becoming a lecturer as a “total accident.” He gave a guest talk for the masters program and thereafter was encouraged to apply for a Distance Ed position. Confused on what the position entailed, he ended up teaching Computer Science in his first quarter despite his short relationship with it in his undergrad.
+
+Because of the prevalent notion that academia is behind industry in terms of state-of-the-art technologies and teachings, he recalls being shocked at how well-aligned his industry and academic experiences were, particularly so for the Data Science program at UCSD. He explains that many of the faculty members at the Halicioğlu Data Science Institute had prior industry experience and that greatly shapes how the courses are designed.
+
+As a lecturer in the unprecedented crisis of COVID-19, Colin notices the pandemic is accompanied with a few undervalued benefits. He notes that his students tend to interact more, and that “not commuting is kind of awesome”, but acknowledges the difficulties undergone in this “emergency pandemic response crash course.” When asked for advice on internships in this climate, he encourages students to do side projects and work on cloud or open source assignments, but, to put it bluntly, not spend too much time looking for internships due to the poor job market.
+
+Looking beyond his career, Colin enjoys tweeting on his whyamibleeding twitter page (caution: there is blood, please do not look if you’re uncomfortable), and engages in projects such as his art with Dada Scientists, and an anti-recommender playlist for Spotify. If you want to learn more about Colin, check out his personal website.
+
+Co-written by Derek Leung and Emily Zhao

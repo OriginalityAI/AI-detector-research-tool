@@ -1,0 +1,16 @@
+Ranged Monks are masters of thrown weapons, from shurikens to throwing axes and spears. The Ranged School sees thrown attacks as an extension of unarmed attacks, and masters of this school can infuse thrown weapons with energy. 
+ Mastery of Weapons and Armor  
+ 
+ In addition to the monk's standard  weapon proficiency, the ranged monk is proficient with all thrown weapons. 
+ Whirlwind of Strikes (Ex) 
+ 
+ A ranged attacking monk can deliver a flurry of blows as a full attack action while attacking with a thrown weapon. He cannot deliver unarmed strikes or ferocious blows with  any other weapon. The monk's long-range bombardment otherwise functions as a standard feature of the  monk class. 
+ A ranged attacking monk cannot use Quick Shot while striking a blow with a thrown weapon. 
+  This ability changes Wild Strike. 
+ bonus feet 
+ 
+ A ranged monk adds the following feats to his list of bonus feats at 1st level: Long Shot, Point Blank Shot, Precision Shot, and all Aiming feats. 
+ At 6th level, he adds the following feats: Improved Precision Shot, Dash Shot, Sharpshooter. At 10th level, he adds the following feats: Instant Weapon Proficiency and Precision Aim. 
+ fast pitcher 
+ 
+ At 1st level, ranged monks gain Quick Draw as an extra feat, even if they don't meet the requirements. At 4th level, he gains Run Shot as an extra feat, even if he doesn't meet the requirements. At 8th level, you can do a second ranged attack at -5 when using a shot while running.

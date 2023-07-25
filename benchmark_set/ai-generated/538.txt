@@ -1,0 +1,31 @@
+Creating Visually Dynamic Web Elements with CSS 2.1 Pseudo-elements
+
+With the use of CSS 2.1 pseudo-elements, designers and developers can now create up to three background canvases, two fixed-size images, and various complex borders for a single HTML element. This progressive enhancement method works with all browsers that support CSS 2.1 pseudo-elements and their positioning, meaning no CSS3 support is necessary.
+
+The supported browsers include Firefox 3.5+, Safari 4+, Chrome 4+, Opera 10+, and IE8+.
+
+How It Works
+
+CSS 2.1 pseudo-elements, like :before and :after, are similar to nested HTML elements within your target element but offer additional benefits over semantics. To achieve multiple backgrounds and borders, these pseudo-elements are positioned behind the content layer and pinned to specific points within the HTML element using absolute positioning.
+
+By having no actual content and utilizing absolute positioning, the pseudo-elements can be stretched to cover any part of the parent element without affecting its content. This level of flexibility is achieved by using combinations of values for top, right, bottom, left, width, and height properties.
+
+Achievable Effects
+
+Using a single element, designers can create parallax effects, multiple background colors or images, clipped background images, image replacement, expandable boxes with image borders, fluid faux columns, images outside the box, multiple borders, and other popular effects typically achieved with images or presentational HTML. It is also possible to incorporate two extra presentational images as generated content.
+
+The Multiple Backgrounds with CSS 2.1 and Multiple Borders with CSS 2.1 demo pages demonstrate various examples of these effects using this method.
+
+Since most structural elements contain child elements, you can generally gain an extra two pseudo-elements to use in the presentation by generating them from the first child (or even the last-child) element of the parent element. Additionally, you can use style changes on :hover to create complex interaction effects.
+
+Example Uses
+
+1. Multiple background images: This technique allows you to create a multiple-background parallax effect, similar to the Silverback site, using just one HTML element.
+
+2. Fluid faux columns: Another application of this method is creating equal height fluid columns without using images or extra nested containers.
+
+3. Multiple borders: You can create multiple borders for a single element, which can replace the need for images to achieve simple effects.
+
+Progressive enhancement and legacy browsers
+
+This method provides a way to maintain a visually appealing website that operates seamlessly without relying on CSS3 support. As such, it is an ideal solution for those looking to enhance their site with minimum impact on the user experience in older, unsupported browsers.

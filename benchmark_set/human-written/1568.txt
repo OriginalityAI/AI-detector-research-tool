@@ -1,0 +1,25 @@
+The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations, and narrative text. Uses include data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.
+
+The custom themes we are about to see are only for jupyter notebook and not jupyterlab. We hope for the custom themes for jupyterlab to be released soon.
+
+Let’s see some cool themes; firstly, we will need a command prompt. If you use JupyterNotebook using command prompt, then use the command prompt for the commands that we are going to use soon, or if use anaconda, then use anaconda prompt. I’ll be using anaconda prompt. Let’s go!
+
+First, open your command prompt, and enter this command: pip install jupyterthemes, and press enter. Then to see the available themes in this package, enter: jt -l , and then hit enter.
+
+Now to apply one of these themes, enter this command: jt -t [name of theme]
+
+For example
+
+Now, let’s see how our notebook looks like
+
+Bam! it looks cool, right?, If you want to revert to the default jupyter notebook (without any custom theme applied), just enter the command: jt and hit enter, you will be reverted back to the default notebook theme.
+
+Let how the theme that I use, you’ll definitely like that. The theme that i use is monokai. I like it the most because it’s damn cool.
+
+Monokai theme
+
+I have also made a video of the same. If you have any problem understanding the article, see this video on youtube, you will get it.
+
+You can apply any one of the available themes. Try using them one by one, and stick with the one you like the most. Signing off. Enjoy!
+
+Gain Access to Expert View — Subscribe to DDI Intel

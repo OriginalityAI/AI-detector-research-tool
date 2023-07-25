@@ -1,0 +1,141 @@
+This article is also available here.
+
+If you’re interested in: simulations 🖥, how the universe works 💫, how an ant colony manages to gather 125kg of food a day 🐜, how bird flocks emerge 🦅, then natural systems modelling may be the topic for you.
+
+One example of natural systems are bird flocks. Simulating a flock of birds is surprisingly simple. There are 3 basic rules:
+
+Cohesion : Birds will try to move towards other birds
+
+: Birds will try to move towards other birds Separation : Birds will try to avoid crashing into other birds
+
+: Birds will try to avoid crashing into other birds Alignment: Birds will try to move in the same direction as other birds
+
+Using these three simple rules, we can create impressively life-like simulations.
+
+Boids algorithm example
+
+The three rules mentioned above is known as the Boids algorithm, which was originally developed by Craig Reynolds in the 80’s and has been implemented countless times. From Wikipedia boid is defined as:
+
+The name “boid” corresponds to a shortened version of “bird-oid object”, which refers to a bird-like object. “boid” is also a New York Metropolitan dialect pronunciation for “bird”.
+
+This article is yet another tutorial on the amazing phenomena of emergent behavior based on simple rules.
+
+1. Basic structure
+
+I made a lightweight “rendering engine” for TypeScript that allows me to quickly prototype animations using the HTML5 Canvas. View it on Github. This is what I will be using here.
+
+Let’s create our boids class which will hold our rendering engine, and all the birds tracked by the system.
+
+In our constructor, we first define the canvas where the birds will be rendered with the call to “new RenderingLayer()”.
+
+We then add a few hundred birds to simulate. These birds will first start at random locations on the screen.
+
+We can then start the rendering by calling the start method on the engine.
+
+1.1 Basic Bird Class
+
+Each bird has a position, velocity and acceleration vector. Just as we’ve learnt in physics, position is calculated from velocity, which in turn is calculated by the accelerations. Acceleration is found by the following equation:
+
+Force = Mass*Acceleration therefore Acceleration= Force/Mass. In a universe where there is no mass (our simulation), then Acceleration = Force.
+
+The velocity here is initially given based on a random initial angle. The X component of our velocity vector can be found using the cosine of our angle, whilst the Y component can be found using the sine.
+
+However since this is graphics based mathematics, angles are not given in degrees, they are instead in radians.
+
+Therefore, we must convert our random 0–360° into radians.
+
+We then normalize this vector so it is of length one. This is important, because without this, birds going at 45° angles will be displaced further than birds going at a 90°. (Hint: a²+b² = c²). However this unit vector means birds will travel 1 pixel, every 16ms (1000ms / 60fps = 16ms per frame). Let’s change that by multiplying by the bird speed. This will result in a velocity of: 100px per 1000ms. Or 100px/second.
+
+To render the bird, we can simply attach a render function to our bird.
+
+Since we want our bird to have an orientation based on their velocity, we must rotate the canvas, then draw the bird, then undo the rotation so that the next bird can be rendered properly.
+
+Here a bird is represented by a simple triangle.
+
+I opt to rotate by the opposite values instead of saving canvas states and restore canvas for performance.
+
+We end up with a decently interesting random mess already:
+
+Random bird placement
+
+1.2 Adding velocity!
+
+By using the engine, we can add velocity with ease. We add an update function (which is an optional method on the IEntity interface) and take into account the time since the last render to get a fluid movement. Using deltaTime is useful for framerates that may not be constant (i.e. going from 30fps to 60fps would calculate position badly).
+
+The checkBoundary() function simply wraps the bird around to the opposite side of the screen.
+
+Adding velocity to position
+
+To get the position, we use the velocity and multiply by the amount of time this velocity was maintained. In this case, the velocity will be maintained for roughly 16ms, going at 100px/s the boid will have moved 1.6px.
+
+Random movement of boids
+
+And with this, we are now ready to change their behavior!
+
+2. Implementing Boid Rules
+
+In my implementation, performance is a big factor, especially because it is ran in JavaScript (we all know it isn’t very performant…).
+
+The pseudo-code for Boids algorithm is originally of O(rN²) where r is the amount of rules, in this case 3. I opted to increase performance by removing consecutive inner loops. This is done with accumulators, they add up the values of each boid, before being calculated. This reduces the complexity to O(N²).
+
+A new function to perform all maneuvers will help separate our code out:
+
+Each frame the rule accumulators are reset, and re-calculated. The acceleration is defined as the sum of all boid rules.
+
+Birds can only see other birds if they are close by as birds are not omnipotent.
+
+The velocity is then calculated from the acceleration.
+
+Setting the magnitude of our velocity to the maximum bird speed will ensure that the birds don’t end up going the speed of light ⚡.
+
+2.1 Cohesion
+
+Cohesion says that birds will try to move towards the center mass of nearby birds. This can be done by adding the position of nearby birds together and then finding the distance from the current bird’s position.
+
+The position of the nearby birds are accumulated by summing their positions.
+
+And then the rule is performed by dividing by the amount of birds seen, and finding the distance between the current bird and the center of mass.
+
+A constant can be used to resist this cohesion force.
+
+Resulting in a pretty satisfying animation already.
+
+Boids cohesion rule
+
+However there is one problem… all the birds just collide together and will form a single dot. This is where the 2nd rule comes in…
+
+2.2 Separation
+
+Separation fixes the problem that cohesion brings, it isn’t very natural for birds to just collide together and not to drop out of sky 💀. A new rule — separation — is created to keep birds a certain distance away from other birds.
+
+In this case, we accumulate the distance between two birds (if they’re within separation distance).
+
+We can add this value directly to velocity to get the separation factor.
+
+Boids separation rule + cohesion
+
+2.3 Alignment
+
+Although we fixed the problem with cohesion by adding the separation rule, a new problem can be seen… The birds will just coalesce into a ball, and end up canceling the movement out. To fix this, we can add a new force aligning birds in the average direction of movement.
+
+Alignment is defined as taking the average velocities of the nearby birds, and subtracting our velocity from this average.
+
+The bird alignment eagerness constant is a meta variable allowing us to change the behavior of the flock from a constants file.
+
+And there we have it. Add the three rules together… Change values for some meta variables… and we get flock simulation.
+
+Boids alignment rule + separation + cohesion
+
+3. Extras
+
+Original research by Craig Reynolds — http://www.red3d.com/cwr/boids/
+
+Further improvement ideas:
+
+Hunger, exhaustion, maximum velocity change (before death), age; Predators, Mating, different rule weights based on behavior; Genetic algorithm! NEAT?;
+
+I wanted to add a nice background for the birds, so I made one using Perlin noise.
+
+Boids source code on Github — demo
+
+TypeScript Render Engine on Github

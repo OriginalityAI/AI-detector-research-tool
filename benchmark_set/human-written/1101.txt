@@ -1,0 +1,29 @@
+Problem: If your D3 script has a data file loaded in (e.g. d3.csv) when you open the HTML, it will fail to read the data because most browsers don’t allow XMLHttpRequest or fetch requests to local files.
+
+D3 error message — fail to read data
+
+Solution 1: Set up a local server
+
+There are a couple of options to set up a local server, but I used the HTTP-server in the command line below(Github page).
+
+#run as an administrator to get around permission limitation
+
+sudo -i #install http-server globally
+
+npm install -g http-server #go to the directory of your D3 files
+
+cd /Users/ChiHuang/Documents/d3 #activate the http-server
+
+http-server &
+
+You should see the link to the local servers now.
+
+URL of the local server
+
+Go to either URL in the browser, then you can open files in the directory.
+
+Files in D3 directory
+
+Solution 2: Use IDE’s extensions
+
+If you use an IDE like Visual Studio Code (Free), you should be able to find extensions that allow you to debug/run on your local server and even see the changes live in a browser (Live Server).

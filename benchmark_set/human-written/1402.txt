@@ -1,0 +1,11 @@
+Cruise CEO Dan Amman announced yesterday that his company will test fully driverless vehicles on the streets of San Francisco “before the end of this year.”
+
+The post heavily emphasizes the environmentally friendly nature of Cruise’s all-electric fleet, including its Origin prototype vehicle.
+
+“Single occupant, human-driven, gasoline-powered cars are the second largest contributors of greenhouse gases on Earth…burning fossil fuels is no way to build the future of transportation.”
+
+A video by Cruise founder and CTO Kyle Vogt accompanies that announcement. Vogt mentions that Cruise has accumulated “over a million miles of fully autonomous driving, in complex urban environments.”
+
+That seems much lower than I would’ve guessed, so much so that I wonder if it was a mis-statement. Given Waymo’s record of over 20 million autonomous miles, I would assume Cruise would want something closer to that before putting fully autonomous vehicles on the road.
+
+Combined with Waymo’s recent move to open driverless vehicles in Phoenix to the public, it’s been a great week for self-driving cars.

@@ -1,0 +1,23 @@
+Title: Requesting Reviews Without Compromising User Experience
+
+The Basecamp 3 app's initial App Store ratings were disappointing, both in quantity and quality. Poor communication from our side led to low ratings and many customers missed the fact that the app was specifically for the newly launched Basecamp 3. With usage and growth metrics looking strong, we knew we needed to take action to better reflect the product's true value.
+
+Traditionally, Basecamp's approach is to create the best product possible and trust that problems will resolve themselves over time. However, this did not seem to be the case for Basecamp 3, and we needed to find an alternative method for acquiring valuable App Store ratings without intruding on our customer's user experience.
+
+In-house opinions varied greatly regarding requesting reviews, with some feeling uncomfortable about prodding users for ratings. But when we considered the historical success of Basecamp's previous app asking for reviews, we realized there must be a better way to request ratings without harming the user experience.
+
+We combined two ideas –highlighting new features to customers and asking for their reviews– into a mutually beneficial offer. When disclosing new features to customers, we would request their review at the same time. This would eliminate unnecessary interruptions and offer easy dismissal through two choices – "Review" and "No thanks".
+
+This design offered various advantages:
+
+1. A fair trade where both parties benefit.
+2. Requesting reviews with the added value of new features, making it a less arbitrary and interruptive process.
+3. Enhancing customer satisfaction as we provide them with something new.
+4. More opportunities to ask for ratings without being bothersome.
+5. A guilt-free experience for our team.
+
+After implementing this design, we received more reviews during the first weekend than in the app's entire history, and our App Store rating improved significantly. This approach helped us achieve our goal without compromising our values at Basecamp. Now, our presence in the App Store is more representative of the app's true value, and our reviews make us proud.
+
+Do you like the Basecamp 3 app? Share your opinion with the world. Have an issue? Email our support – you will receive a personal response from a dedicated Basecamp team member.
+
+Basecamp 3 is available on iOS, Android, Mac, and Windows – anywhere with a web browser and an internet connection. Your first Basecamp is free – sign up today and experience the benefits for yourself.

@@ -1,0 +1,91 @@
+admin
+
+How to prevent your project from failing to land!
+
+Have you ever had the situation, or perhaps seen the situation, where all the tasks in a project have been executed on time but the project has not been a success? To be more specific, the people who should benefit from the project deliverable are not able to gain the expected benefit.
+
+This is a classic case of the project change not “landing” with the end users.
+
+Project failure to land
+
+This issue is unfortunately very common, especially in projects with a heavy bias towards a technology delivery i.e. new system.
+
+All the hard work is put in by the project team to build a plan. Then they design, build, test and implement the solution. However, when it is promoted into production, the solution does not provide the end users with what they need and they are reluctant to use the new solution.
+
+Even worse, if the push back from the users is severe, this can result in the new solution to be backed out. Not a good position for the project team.
+
+This is why the term “failure to land” is used. Very simply, the change has not landed well with the people who need to use the new solution.
+
+Why projects fail to land?
+
+There are many reasons why a project fails to land including:
+
+Users not engaged in the project
+
+Solution not clearly articulated to users
+
+Users not involved in user testing so no early sight of solution
+
+No communication before and after go-live
+
+No training of end users
+
+The failure to engage, educate, prepare and train the end users means that the change is not understood or, in extreme cases, not wanted.
+
+How to stop projects failing to land?
+
+Given the risk associated with projects failing to land, what steps can you take to minimise the impact?
+
+Very simply this is where you must use real change management.
+
+What is Change Management.
+
+Wikipedia provides the following definition of change management.
+
+Change management (sometimes abbreviated as CM) is a collective term for all approaches to prepare and support individuals, teams and organizations in making organizational change. The most common change drivers include: technological evolution, process reviews, crisis, and consumer habit changes; pressure from new business entrants, acquisitions, mergers and organizational restructuring.
+
+Very simply, it is making sure that the end users, the recipients of the change are engaged and prepared to accept the change.
+
+Change management action plan
+
+Engage early
+
+Communication in all aspects of project management is king.
+
+As soon as you are aware of the areas that will be impacted by the change start to build a stakeholder map. A list of the people / groups you need to engage.
+
+You may want to start with senior management and work down. As part of the early meetings ask who else needs to be engaged.
+
+Seek support of local management
+
+As you start engaging senior management, ask for their assistance in who needs to be engaged. Additionally ask them to help get the message out using their established communication channels. This will help the message pass through the organisation.
+
+Briefing pack
+
+It is a good idea to create a short and concise briefing pack to be used as part of your engagement strategy.
+
+This should contain the important information together with contact details for further information.
+
+The briefing pack can then be easily shared during and after each session.
+
+Training plan
+
+The very nature of projects is that you are normally changing something. Therefore, you must ensure that there is a plan to train the users on the change.
+
+Preparing a comprehensive training plan that captures all important users is critical. You then can run training sessions with all of the impacted parties.
+
+Tip: ensure you have multiple sessions at different times to allow all impacted parties to attend. This is especially important for global changes with teams in different time zones.
+
+Self service resources
+
+It is a good idea to create resources that allow users to find out the answers to questions they have themselves.
+
+This could be as simple as a user guide that can be downloaded or, it can take the form of video tutorials that demonstrate what needs to be done.
+
+Tip: you can record training sessions and then make the video available. Even better, split the video into segments that address a specific question. This will result in a better user experience allowing users to find the answer to their specific question.
+
+Summary
+
+To make sure that your project does not fail to land, make sure you make use of change management. Including this as activities in your project plan will make sure this important step is not forgotten.
+
+Related Posts:

@@ -1,0 +1,25 @@
+On Saturday, International Launch Services (ILS) launched their Russian Proton-M rocket, which carried the MexSat-1 (Centenario) communications satellite. The launch took place at Pad 39 at the Baikonur Cosmodrome in Kazakhstan and was supposed to be a multi-hour flight to transfer orbit. However, the ascent experienced a third stage failure, resulting in the loss of the mission.
+
+The Proton booster responsible for launching the Boeing-built satellite has an impressive history of over 400 launches since 1965. Constructed by Khrunichev Research and State Production Center, a significant contributor to the global space industry and the majority owner of ILS, the Proton is a reliable and powerful rocket.
+
+The Proton's first stage comprises a central tank housing the oxidizer, surrounded by six external fuel tanks. Each fuel tank supports one of the six RD-276 engines, which provide first-stage power. In total, the first stage produces a vacuum-rated level thrust of 11.0 MN (2,500,000 lbf).
+
+With a conventional cylindrical design, the second stage utilizes three RD-0210 engines and one RD-0211 engine, generating a vacuum thrust of 2.4 MN (540,000 lbf). The third stage relies on a single RD-0213 engine that develops a thrust of 583 kN (131,000 lbf) and a four-nozzle vernier engine with a thrust of 31 kN (7,000 lbf). This stage encountered difficulties during Saturday's launch.
+
+The Proton-M's guidance, navigation, and control during the operation of the first three stages are facilitated by a triple redundant closed-loop digital avionics system mounted in the third stage. The mission involved a 5-burn profile, with the first three stages placing the Breeze M upper stage and the Centenario satellite into a sub-orbital trajectory. The Breeze M was then supposed to execute planned mission maneuvers to advance the orbital unit through a circular parking orbit, an intermediate orbit, a transfer orbit, and ultimately to a geosynchronous transfer orbit.
+
+The Centenario satellite was scheduled to separate approximately 9 hours and 13 minutes after liftoff. Despite an ordinary launch, with ILS only noting telemetry losses, Roscosmos soon identified an "emergency situation." According to unconfirmed reports, the failure resulted in the stage and satellite re-entering over Russia's Chita region.
+
+In a failure statement, ILS announced, "Khrunichev and International Launch Services (ILS) regret to announce an anomaly during today’s Proton mission with the Centenario satellite." The statement detailed that an anomaly occurred during the third stage, about 490 seconds after liftoff. The failure will now be subject to reviews in both Russia and the United States, with the vehicle halted until the root cause is identified and rectified.
+
+A Russian State Commission is in the process of determining the reasons for the anomaly. Parallel to this, ILS will form its own Failure Review Oversight Board (FROB). The FROB aims to review the commission's final report and corrective action plan, in compliance with US and Russian government export control regulations.
+
+ILS remains dedicated to providing reliable and timely launch services for all its customers, working closely with Khrunichev to ensure the Proton returns to flight as quickly as possible. The Centenario satellite, weighing over 5.3 metric tons at liftoff, was a fourth-generation Boeing satellite and the first 702HP GEM platform to be utilized by Mexico. It was anticipated to have a 15-year service life.
+
+The purpose of the Centenario satellite was to provide mobile satellite services to support national security, civil and humanitarian efforts, disaster relief, emergency services, telemedicine, rural education, and government agency operations. The satellite was equipped with a 22-meter L-band reflector that connects to handheld terminals and a 2-meter Ku-band antenna.
+
+The MexSat-1 forms part of an end-to-end satellite communications system that offers 3G+ communications services for voice, data, video, and internet access to terminals on multiple platforms. This next-generation satellite system for Mexico consists of three satellites, two ground sites, and the associated network operations.
+
+Saturday's launch marked the ILS Proton's second mission of the year and the 89th ILS Proton launch overall. The launch experienced a delay from April due to issues detected with the satellite during integration checkouts. This mission was the first SCT satellite to be lofted by the ILS Proton and the 18th Boeing satellite to ride on the vehicle. Further information will be provided as it becomes available.
+
+(Images via ILS and Roscosmos)

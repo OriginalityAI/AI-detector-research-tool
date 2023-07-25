@@ -1,0 +1,9 @@
+Dungeon Crawl Stone Soup has recently released version 0.7. This release includes several new features, such as elephants, improved tiles, and recharged electric eels. With these new features, players can expect an even more engaging dungeon-crawling experience.
+
+However, the initial release of version 0.7 was not without issues. A severe bug was discovered that affected ziggurats and other Lua-triggered features such as bazaars. Thankfully, the development team worked quickly to release version 0.7.1, which includes a fix for this issue. Players who had already downloaded version 0.7.0 were advised to update their game to the latest version.
+
+All release files for version 0.7.1 are now available for download on the Dungeon Crawl Stone Soup website's Downloads page. The changelog, which provides a summary of the changes included in this version, is also available for players to review.
+
+The development team faced a tight deadline in releasing version 0.7, as they wanted to get it out in time for the annual August crawl tournament. Despite this, they managed to deliver an exceptional update that players could enjoy. The team would like to extend their gratitude to everyone who contributed to the release, especially kilobyte and rob for their help. They would also like to thank Napkin for hosting the Crawl development on CDO and the entire Crawl player community for providing feedback and suggestions to make the game even better.
+
+Overall, Dungeon Crawl Stone Soup version 0.7.1 marks a significant update to the game, offering new features and fixes that improve the gameplay experience. With the focus on improving the game, we can expect more exciting updates in the future.

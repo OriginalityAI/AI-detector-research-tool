@@ -1,0 +1,39 @@
+These concerns have escalated since the government upset Beijing with its decision to block the 99-year lease of NSW power asset Ausgrid to either Chinese state-owned company State Grid, or Hong Kong-based Cheung Kong Infrastructure.
+
+The websites in question had all been established with web addresses ending in the .au domain, which requires the owner to have an official Australian registration such as an Australian Company Number or Australian Business Numbers.
+
+However auDA discovered the sites had been established by criminals who illegally acquired ACN and ABN details then used them to set up the sites.
+
+The sites were related to numerous business types, but predominantly small and medium-sized businesses, with low-profile existing web presences.
+
+Consumers were sold goods which they will never receive or were misrepresented, and credit card details were harvested.
+
+Large-scale operation
+
+AuDA's chairman Stuart Benjamin told The Australian Financial Review that operations of this kind usually involved one or two websites being taken down for breaching the terms of trade, so this represented a significant escalation in illegal activity.
+
+He said the nature of the scam indicated it was a criminal endeavour with a financial motive, rather than anything related to state-based involvement or espionage.
+
+Advertisement
+
+"What concerns us is that it appears to have been a very targeted approach," Mr Benjamin said.
+
+"Usually it is just a mistake or a one-off case, but in this case there has been a mass registration and it is certainly the largest ever policy delete we have done."
+
+Mr Benjamin said the investigation into the identity of the criminals was continuing, and it was yet to be determined if all of the websites had been registered by the same organised crime group.
+
+The investigators are also reaching out to their equivalent agencies overseas to determine whether Australia had been singled out, with signs a major European nation had also been targeted.
+
+International sensitivity
+
+Placing the blame for such matters largely on Chinese operators can shape up as an international relations problem, and Mr Benjamin said auDA had taken steps to ensure the websites were genuinely being run from China.
+
+He said in recent times some eastern European cyber criminals had adopted a strategy of routing their traffic through China, to try to cover their tracks.
+
+"We don't believe that it is the Chinese government or anything like that, but we do believe that it is coming out of China in a mass wave," Mr Benjamin said.
+
+"A number of the websites have Chinese language components; they are using Chinese-based forms and templates and also have China-based payment gateways."
+
+He said auDA had moved to swiftly close down the sites to maintain the high regard in which the most popular Australian internet domain is held.
+
+He said consumers had learnt to trust websites that end with .au, and while it was legitimate for overseas companies to own such addresses, it needed to carefully police improper use.

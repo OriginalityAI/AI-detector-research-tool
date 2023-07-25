@@ -1,0 +1,23 @@
+Photo by Lukas Blazek on Unsplash
+
+COUNTIF is an essential spreadsheet formula that most Excel users will be familiar with. I’ll now show you how to achieve the same results using Python (specifically the pandas module).
+
+Here is a dataframe that contains a list of all the athletes that have competed in the olympic games since 1896. We want to know how many athletes each country has fielded for all of these games. The data looks like this:
+
+Using Excel, we would need to create new rows with each of the country codes, and then write a formula that looks something like =SUMIF(name_column, country, country_range)
+
+With pandas, we use the “groupby” formula to do the hard work for us:
+
+How does this work?
+
+athletesDf.groupby([‘noc’])… -> Tell pandas to create “groups” based on the ‘noc’ column for the dataframe “athletesDf”. This doesn’t do anything yet.
+
+…[[‘name’]].count() -> Tell pandas to count all the rows in the spreadsheet. It doesn’t really matter what column we use here because we are just counting the rows
+
+Let’s now add another variable to turn the COUNTIF into a COUNTIFS:
+
+That was easy. All we did was add another column in the groupby bracket to say how we wanted to split the data again -> athletesDf.groupby([‘noc’, ‘sex’])…
+
+Thanks for reading! Stay in touch if you are looking to develop your data analysis skills and enjoy these quick tips!
+
+-Alex

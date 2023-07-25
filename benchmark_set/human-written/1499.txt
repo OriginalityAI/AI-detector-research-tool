@@ -1,0 +1,45 @@
+On March 21 the scandal about Facebook data happened. Users (surprise, surprise!) found out that funny quiz apps used and analyzed their data.
+
+I am not sure it was the same people, I rather believe that those who like tests didn’t pay attention but those who like scandals did.
+
+What is the solution?
+
+Does Blockchain offers solution to this well-known problem of centralized stored social data? In this article I review just few blockchain projects which addressed this issue.
+
+Privacy — our data doesn’t belong us
+
+My opinion — if I publish something it doesn’t really belong to me anymore. Is it bad if someone use this data to show me advertisement?
+
+I don’t think so. I don’t like too many ads, but it is not a question of targeting — they can spam me with something not related to my personal characteristics too.
+
+So I don’t consider this a problem. But someone does and decision from most relevant blockchain is to let the advertisers pay you directly for your data (and continue to show their ads):
+
+With Sphere’s decentralized social network, all of your personal browsing and search engine results are privately secured and stored away from the prying eyes of advertisers. And if they want a peek, they have to pay you!
+
+So this kind of projects wants businesses to pay users so they watch their ads. Make it more absurd: why not users should be get paid per action? It is almost there:
+
+With the new Ovato Coin, users can get rewarded from your everyday purchases and be apart of daily deals from both national and local merchants. Merchants can now save time and market directly to Users.
+
+No direct reward to content creators
+
+We come to a social network to find some good content. The system looks like this: users come for content, organizations come for users, content-creators come for… what? So there are projects which offer to reward influencers by other users.
+
+Sapien: Creators and Curators will receive payouts for content that have created quantifiable value. Users will be able to tip one another for posts and comments
+
+Also, many projects want brands to reward users for content and interactions. This solution is less beneficial for users: influencers are getting paid now and it is not a problem for them, average users never get considerable money anyway from their social activity but will annoy others.
+
+Businesses can’t reach their audience
+
+Forbes thinks the main problem is that some organisations can influence our opinion, but if you ever tried to reach your audience you know it’s not easy. To make your page post visible on Facebook even to subscribers you have to pay. The problem iswhen users see only paid advertisements instead of valuable page content.
+
+The ability to analyze target audience is not a problem either (Google Analytics and other platforms can do the same). The problem is to reach the right people as cost-effectively as possible even for small businesses.
+
+Here is a complex idea for targeting ads without the middleman:
+
+Instead of housing user data in a centralized data store, MAD Network allows users to keep their data completely private by pushing ad decisions to the edges — to the users’ devices. To target desired users, advertisers create machine learning models that they deploy to the MAD Network. Then a personal Artificial Intelligence “AI” Agent on a user’s device runs those models using the consumer’s personally identifiable information (PII), and cryptographically confirms or denies if the user is in the desired cohort. If they are, the agent then pulls in the relevant ads without ever revealing anything about that user.
+
+My feed is managed by someone else
+
+Someone chooses what I see and I don’t know the rules. People come to social networks to communicate through their personal feed with people, communities, and brands. However, Facebook decides instead of them. The feed became uninteresting and obsolete.
+
+I personally have nothing against someone using my data, but I am against a boring feed even with all analytical tools which these platforms have. As a user, I want the controllable, interesting and useful feed which makes me better. I didn’t find any project which addresses this need, though blockchains have potential to solve it. They offer mechanisms for decentralized management, at the same time they can keep data integrity, privacy and availability.

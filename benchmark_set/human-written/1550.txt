@@ -1,0 +1,33 @@
+TL;DR
+
+User Story Template
+
+Title: <What this user story is about> Story
+
+-----
+
+As a <type of user>,
+
+I want <to perform some task>,
+
+so that I can <achieve some goal>. Acceptance Criteria
+
+--------------------
+
+Scenario A: <What should happen> Given that <some context>,
+
+when <some action is done>,
+
+then <such outcomes are expected to occur>. Stretch Goals
+
+--------------
+
+<optional> Notes
+
+-----
+
+<optional> Priority: <Highest, High, Medium, Low, Lowest, Unprioritized> Story Points: <1, 3, 5, 8, 13, 21, ... >
+
+—
+
+Example (*)

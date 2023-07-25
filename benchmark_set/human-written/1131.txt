@@ -1,0 +1,59 @@
+What is the problem we are trying to solve?
+
+In this era of powerful software, we can easily edit any image. One of the most powerful software for this is Adobe photoshop using which we can easily change, crop, delete or do many more things to any part of the image.
+
+These images can then be a part of fake news which is a major problem nowadays for every major social media platform. This problem also exists in various domains where documents are used which can be easily manipulated.
+
+The IEEE Information Forensics and Security Technical Committee (IFS-TC) launched a detection and localization forensics challenge, the First Image Forensics Challenge in 2013 to solve this problem.
+
+Further information about the problem:
+
+Research paper 1
+
+Research paper 2
+
+IEEE Challenge
+
+Introduction
+
+To solve this problem first we will build a model to detect whether an image is authentic or manipulated. If the image is manipulated then we will try to predict the manipulated region of the image.
+
+Different ways to manipulate an image:
+
+Image Splicing: Copying regions from an authentic image and paste them to other images. Copy-Move: Copies and pastes regions within the same image. Removal: Eliminates regions from an authentic image followed by inpainting.
+
+About the dataset
+
+For the Classification task, the model was trained on the CASIA2 and IEE IFS-TC datasets.
+
+For mask prediction, only IEEE IFS-TC dataset is used to train the model.
+
+CASIA2 : It contains 7408 authentic and 5123 fake images.
+
+IEEE IFS-TC dataset: It contains 1050 authentic 450 manipulated images along with their 450 masks.
+
+Mask of a fake image is a black and white (not grayscale) image describing the spliced area of the fake image. The black pixels in the mask represent the area where manipulation was performed in the source image to get the forged image, specifically it represents the spliced region.
+
+Fake image with corresponding mask
+
+Architecture
+
+We will use transfer learning in both classification and mask prediction tasks since this technique gave the best results in my experiments.
+
+Classification Model
+
+Mask Prediction Model
+
+UNET from segmentation models library is used with different backbone models for this task
+
+About the filters used in the mask prediction model
+
+SRM Filter: SRM features gather basic noise features. SRM quantifies and truncates the output of these filters and extracts the nearby co-occurrence information as the final features. The feature obtained from this process can be regarded as a local noise descriptor. We directly use the noise features as the input to the noise stream network. The backbone convolutional network architecture of the noise stream is the same as the RGB stream.
+
+The three SRM filter kernels used to extract noise features.
+
+ELA Filter: Error Level Analysis (ELA) permits identifying areas within an image that are at different compression levels. With JPEG images, the entire picture should be at roughly the same level. If a section of the image is at a significantly different error level, then it likely indicates a digital modification.
+
+ELA highlights differences in the JPEG compression rate. Regions with uniform coloring, like a solid blue sky or a white wall, will likely have a lower ELA result (darker color) than high-contrast edges.
+
+Look around the picture and identify the different high-contrast edges, low-contrast edges, surfaces, and textures. Compare those areas with the ELA results. If there are significant differences, then it identifies suspicious areas that may have been digitally altered.

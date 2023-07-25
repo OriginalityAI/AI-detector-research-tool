@@ -1,0 +1,5 @@
+Yesterday, Zoox unveiled its long-awaited vehicle. It doesn’t yet have a name (the Zoox website lists it simply as, “VEHICLE”), although the press describes it as a “carriage”, at least in form factor. It resembles the Cruise Origin more than a little bit, including the glass elevator-style doors.
+
+Zoox has done some amazing technical work with this vehicle. Most notably, the vehicle supposedly moves it not only forward and backward, like a normal car, but also side-to-side, like a dolley.
+
+That said, I am a little skeptical about the utility of a four-person passenger vehicle as the true form factor for the self-driving future. We’re used to four-person vehicles now because consumers have to purchase cars that fill lowest-common-denominator needs. In a transportation-as-a-service world, though, I suspect we’ll all want to travel in our own personal vehicles.

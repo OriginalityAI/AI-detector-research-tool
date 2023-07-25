@@ -1,0 +1,59 @@
+Types of Panel Data Regression
+
+The following explanations are built on this notation:
+
+Notation
+
+where:
+
+y = DV
+
+X = IV(s)
+
+β = Coefficients
+
+α = Individual Effects
+
+μ = Idiosyncratic Error
+
+Basically, there are three types of regression for panel data:
+
+1) PooledOLS: PooledOLS can be described as simple OLS (Ordinary Least Squared) model that is performed on panel data. It ignores time and individual characteristics and focuses only on dependencies between the individuums. However, simple OLS requires that there is no correlation between unobserved, independent variable(s) and the IVs (i.e. exogeneity). Let´s write this down:
+
+Exogeneity Assumption
+
+The problem with PooledOLS is that even the assumption above holds true, alpha might have a serial correlation over time. Consequentely, PooledOLS is mostly inappropriate for panel data.
+
+Serial Correlation between alpha
+
+Note: To counter this problem, there is another regression model called FGLS (Feasible Generalized Least Squares), which is also used in random effects models described below.
+
+2) Fixed-Effects (FE) Model: The FE-model determines individual effects of unobserved, independent variables as constant (“fix“) over time. Within FE-models, the relationship between unobserved, independent variables and the IVs (i.e. endogeneity) can be existent:
+
+Endogeneity allowed
+
+The trick in a FE-model is, if we assume alpha as constant and subtract the mean values from each equation term, alpha (i.e. the unobserved heterogeneity) will get zero and can therefore be neglected:
+
+Get rid of Individual Effects in the FE-Model
+
+Solely, the idiosyncratic error (represented by my = unobserved factors that change over time and across units) remains and has to be exogen and non-collinear.
+
+However, because heterogeneity can be controlled, this model allows heterogeneity to be existent within the model. Unfortunately, due to the fact that individual effects are fixed, dependencies can only be observed within the individuums.
+
+Note: An alternative to the FE-model is the LSDV-model (Least Squares Dummy Variables), in which the (fixed) individual effects are represented by dummy variables. This model will lead to the exact same results, but has a main disadvantage, since it will need a lot more computation power if the regression model is big.
+
+3) Random-Effects (RE) Model: RE-models determine individual effects of unobserved, independent variables as random variables over time. They are able to “switch” between OLS and FE and hence, can focus on both, dependencies between and within individuals. The idea behind RE-models is the following:
+
+Let´s say, we have the same notation as above:
+
+Notation
+
+In order to include between- as well as within-estimators, we first need to define, when to use which estimator. In general, if the covariance between alpha and IV(s) is zero (or very small), there is no correlation between them and an OLS-model is preferred. If that covariance is not zero, there is a relationship that should be eliminated by using a FE-model:
+
+When to use which model?
+
+The problem with using OLS, as stated above, is the serial correlation between alpha over time. Hence, RE-models determine which model to take according to the serial correlation of the error terms. To do so, the model uses the term lambda. In short, lambda calculates how big the variance of alpha is. If it is zero, then there will be no variance of alpha, which, in turn, means that PooledOLS is the preferred choice. On the other side, if the variance of alpha tend to become very big, lambda tends to become one and therefore it might make sense to eliminate alpha and go with the FE-model.
+
+Desicion-making Process
+
+Now that we know the common models, how do we decide which model to take? Let´s have a look on that…

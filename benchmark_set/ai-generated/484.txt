@@ -1,0 +1,13 @@
+Alphabet, Google’s parent company, is planning to cut its Google Fiber staff numbers by half, reducing its workforce from 1,000 to approximately 500, as reported by The Information. This decision comes amid rising costs and slower-than-anticipated subscriber growth, with Google Fiber falling below the pace required to reach a projected target of 5 million subscribers within five years. The service was initially launched in Kansas City in July 2012.
+
+Google Fiber ended 2015 with just over 53,000 video subscribers, as per MoffettNathanson’s analysis of data from the U.S. Copyright Office. These numbers do not factor in Google Fiber’s broadband subscriber numbers, which are expected to be higher considering that the service provider tends to lead with its $70 1-Gig broadband offering.
+
+Google has been asked for comment on the report but has declined to give any official statement. However, Light Reading, citing a person with knowledge of the situation, said that the report of drastic cutbacks at Google Fiber is false.
+
+The report from The Information emerges as Google Fiber explores the use of wireless-based high-speed Internet technologies, aiming to reduce expenses and speed up the acceleration of deployment. Google’s interest in wireless was seemingly intensified when it acquired Webpass earlier this year, a company that specializes in wireless broadband delivery in markets such as San Francisco, Oakland, San Diego, Miami, Chicago, and Boston.
+
+Though Google Fiber has reportedly put some expansion plans on hold in Portland and San Jose as it weighs wireless alternatives, the company did launch service sign-ups in portions of Salt Lake City recently.
+
+Google Fiber has also launched service in parts of Austin, Texas; Nashville, Tenn.; Atlanta; Kansas City; and Provo, Utah, with commitments to deploy in San Antonio; and Charlotte and Raleigh-Durham, N.C. The company is considering expansions in Los Angeles, Chicago, Dallas, Portland, Ore., San Jose, Irvine, and San Diego, Calif., Phoenix, Oklahoma City, Louisville, Ky., and Jacksonville and Tampa, Fla. Google Fiber also has plans to offer service on a network being built by Huntsville Utilities.
+
+Google Fiber is part of Alphabet's "Other Bets" unit which includes other long-term "moonshot" projects. This unit generated Q2 revenues of $185 million, up from $74 million a year ago, while operating losses widened to $709 million, from $555 million.

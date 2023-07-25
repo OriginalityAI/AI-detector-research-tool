@@ -1,0 +1,17 @@
+Today we are happy to announce the launch of Service Credits on Quadrant. This is a path-breaking initiative that allows customers to purchase QUAD tokens — known as Service Credits — from Quadrant. Although a simple concept, this is a turning point in enterprise adoption of blockchain technology.
+
+Since the creation of blockchain technology, the transformational power of the technology has not been matched by the user experience it offers. This is a simple fact that anyone active in the space is likely to be aware of. Blockchains are powerful, but to use them in a professional setting has not always been easy. The introduction of Service Credits changes this.
+
+What are Service Credits?
+
+The QUAD token is a utility that is required in order to use the Quadrant platform, and will be used as payment for access to services like Data Stamping and Verification. Quadrant’s enterprise customers, though, often have strict security and reporting requirements and policies that make it difficult for them to transact on crypto exchanges, which often lack institutional-grade UX and back-end bookkeeping and invoicing capabilities. So we decided to build a solution ourselves.
+
+With the launch of the Service Credits, customers can now purchase QUAD tokens from Quadrant at the rate of 1 QUAD = 1 USD. This obviates the need for users to obtain QUAD on independent, third-party exchanges.
+
+How it works
+
+The way it works is simple. When a customer makes a purchase request, Quadrant obtains the desired amount of tokens from the market. We then, in turn, remove one eQUAD token from circulation for each QUAD purchased, keeping the total number of circulating tokens unchanged. Within 48 hours the QUAD will appear in the customer’s wallet in the form of a Service Credit. No cryptocurrency is needed — all purchases can be made in fiat currency.
+
+Quadrant is a leading innovator in the data space. In only a year we have built a robust, expanding platform backed by a talented and growing team. As we continue to map the data universe, our data solutions offer unparalleled insight into customer behaviours, particularly in the realm of authenticated location data, that can help our enterprise clients maximise the effectiveness and reach of their products. Our Service Credits enhances these benefits by making the experience of using the Quadrant platform seamless. Enterprises are now able to enjoy the full benefits of our data verification and mapping capabilities — made possible by the power of the blockchain — with the transparency and ease of use they require. And this is just the beginning — as we continue to build new features(data tools and services) for our enterprise clients, our Service Credits will further contribute to their continued adoption of our platform.
+
+You can purchase Service Credits on our website here. As always, we are happy to answer any questions you may have; please reach out to marketing@quadrant.io and we will respond as quickly as we can. Thank you again for your continued support.

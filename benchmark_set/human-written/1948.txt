@@ -1,0 +1,47 @@
+Do you or your team want to learn how to build a design system for Figma from scratch?
+
+I receive many requests from team managers and individuals like these:
+
+Hi Matt, are you available for any freelance work? We need help with doing a color theory audit for our Figma design system and software. There are definite problems as different designers did it, and several parts don’t work together. We are trying to find someone great with Figma, Design Systems, and Color Theory.
+
+Hey Matt, Would you find a few hours to share your expertise in Figma with our designers? We have been using Figma in cooperation with our customers, and we have some difficult questions to answer. We also want to improve our workflow. Please let me know.
+
+I’ve noticed that many companies need to learn how to design advanced components, style guides, and documentation in Figma. Improving the workflow and onboarding the new designers to the team is also a challenge.
+
+I do freelance work and run a couple of side projects, and my time is limited, so I can’t help everyone. However, I always dreamed about creating an educational resource to share my knowledge about the design systems and workflow in Figma. I’ve decided to create a project that will help them.
+
+Meet The Figmaster.co!
+
+figmaster.co is a workbook for Figma that contains a large set of exercises on how to build your modern design system from scratch.
+
+By doing exercises in Figma, you learn and design your guide style and component library simultaneously. It is a format that will help you get the most out of each lesson. By learning — you create, and by the way, you get to know keyboard shortcuts, plug-ins, and techniques of working in Figma that will speed up your workflow. Everything happens in Figma — no distractions.
+
+Design Systems are becoming so popular because they make products more consistent, accessible, improve their usability, and reduce design decision-making.
+
+In Figmaster, you will learn how to create a design system from scratch in Figma. The Figmaster is purely and simply about practice, so you can start using acquired knowledge right away.
+
+In this course, you will learn how to set up all the needed design tokens, such as defining proper grids, layouts, spacing, managing icons, choosing and creating color and typographic scales. You will also learn how to make the components like buttons, inputs, modals, text areas, checkboxes, notifications, radio buttons… You will learn how to name components correctly using naming conventions and translate your components into variants. You will also learn how to improve your workflow by using handy keyboard shortcuts, plugins, and tricks. At the end of this course, you will create your own complete Design System and apply it anywhere with confidence.
+
+In the team version, you will learn how to work on a design system in a team and how to onboard new designers with the Figmaster. I will also share resources so you can learn more about design systems theory and get inspiration from the existing systems.
+
+We will use the full potential of Figma, making our Design System with variants and auto layout.
+
+So if you want to learn how to create a Design System from scratch in Figma, this is for you.
+
+Who’s the author?
+
+My name is Mateusz Wierzbicki, and I am a product designer specializing in creating comprehensive design systems for Figma. Up until now, I’ve built dozens of systems, including client work and side projects. I’m the creator of the Ant Design System for Figma, Product Design Kit for Figma, and the co-founder of SystemFlow.
+
+Preview what we’ll build here: https://figmaster.co
+
+My products facilitate the work for thousands of designers, developers, and entrepreneurs. As the creator of many design systems and component libraries — I want to share the knowledge I acquired in over four years of using Figma. In Figmaster, you will learn how to create a system similar to those mentioned above.
+
+Why it’s not a video course?
+
+Video courses are ok, and I use them all the time. However, when I watch a lesson, I often forget most of the things the author mentioned in the long video. Another problem is jumping between the video player and the software I’m learning. It distracts me a lot.
+
+‍
+
+That’s why in the Figmaster, everything is done in Figma — without jumping between 3rd party apps/websites, without pausing the video, etc.
+
+Learn more about the project here and join the newsletter to get free lessons in which you’ll learn how to create a neutral color palette and a dropdown component for your project.‍

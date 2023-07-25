@@ -1,0 +1,27 @@
+The Human Machine Interface as it relates to automotive has come a long way in just the past few years. New technologies have opened up a world of possibilities offering exciting new ways for drivers and passengers to interact with vehicles and for designers to create new ways to create better accessibility, usability and overall experiences for drivers and passengers alike.
+
+In this series we will be exploring the future of automotive HMI as it relates to UX design. In doing so, one of the first things we want to do is define the different interface display types and some possibilities that might be designed through the vehicle and in doing open new ideas for the future of automotive UX and HMI.
+
+The Cluster
+
+Since the automobiles inception, the instrument cluster that sits directly in front of the driver and behind the wheel has been one of the most important aspects conveying salient information to the driver that is paramount to safety and car control. The cluster was physical created from plastics or metals and this still holds today in some automobiles. However, the cluster is increasingly becoming a digitized graphical interface representing classic controls and icons like speed, rpm, gear,lighting and blinker status. On top of the more traditional representations, the digitization of the cluster has also created a new set of possibilities for designers.
+
+3D navigation has become an added element to the modern instrument cluster (Source: https://www.behance.net/gallery/65565269/HMI-Digital-Dashboard)
+
+Using GPS and 3D and sensor technologies the cluster has now become a popular place to ingrain navigation, animated or otherwise. Electric vehicles obviously now have charging information as opposed to fuel status where drivers can see battery life and miles left on their charge.
+
+A automotive cluster displays music that can be (Source: https://dribbble.com/shots/7249226-Car-HMI)
+
+Music and some infotainment features have also become part of some cluster that can be controlled by physical controls on the wheel or even by touch. Automotive UX designers will have a variety options about what to include and/or exclude within the context of the cluster or to have a cluster at all.
+
+The Central Display
+
+The central display is a touchscreen usually the main hub for controlling climate, entertainment, lighting, seating and navigation. As we saw in looking at the cluster, there may or may not be some overlap for possibilities of features. Since there is no standardization and designers have the opportunity to test new ideas and combinations, interface sizes may be vary greatly while shapes and positioning will work in conjunction with the overall car design and engineering.
+
+The central display may be a seperate interface or be part of a continuous interface that also includes the cluster and passenger display. Some of the most important determinations that UX designers will need to make is what will be included in the central display and which of the controls in the car will be digitized vs. physical. The key component in answering many of these questions are the safety and level of distraction when the user inputs the action. User testing, quick controls and haptics (which we will be discussing in part 2) also play a large role in making these determinations and allow a lot of room for exploration based on the user testing results.
+
+The central display touchscreen is often a main control system for many in-vehicle features. (Source: https://bit.ly/3gq6tkx)
+
+Front Passenger Display
+
+It makes sense that driver-centric design is still a main focus for designers when considering interfaces. However, designers have begun to expand beyond the driver for more controls for the front passenger. By adding an front passenger interface, the passenger using the car HMI can now become a dynamic navigator and assistant. They can relieve the driver of distractions having the option of putting the passenger in control of more complex tasks that might require multiple inputs from the driver be it through voice touch or haptic. With their own interface, the passenger can now also now feel a deeper sense of connection to the vehicle as part of the the overall user experience.

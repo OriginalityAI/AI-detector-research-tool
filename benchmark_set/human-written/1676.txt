@@ -1,0 +1,59 @@
+Getting From a Data to Insight
+
+Between primary and secondary research utilizing both qualitative discovery and quantitative validation, you’re going to have a mountain of information on hand. That’s good! A mountain is the opposite of that little stack of notes you had earlier. That information needs to be distilled into something more allegorical before we can use it though.
+
+As human-centered designers, few constructs more poignantly illustrate our quest for the holy grail of user insight than the history of the persona.
+
+Before the Internet became a thing, research cost a whole lot of money to commission and — true story — they faxed it to you. I know, right? What? Yes I was alive then. Stop laughing.
+
+Way back in the 1990s most businesses couldn’t afford the time and expense of developing the validated user models required by user-centered design, so personas were the response. They were cardboard cutouts meant to stand in for a well researched target.
+
+Personas of that era were not expected to be accurate representations of the latest demographic and psychographic data. Their primary function was to provide teams with a basic understanding the people they were supposed to interact with. The details weren’t all that important. Teams had the “what” from the stakeholder, and a cardboard version of “who” was enough to start generating ideas.
+
+In summary, the original persona was a life hack.
+
+Over time the persona has evolved into something much more vital. It has been grounded in behavioral psychology, steeped in online secondary research, quantified through analytics, and optimized with data science.
+
+The Cooper Persona
+
+A Classic Cooper persona (source — Ross Belmont)
+
+A Modern Cooper Persona (credit: Keep It Usable)
+
+On his website Alan Cooper writes “The Inmates Are Running the Asylum, published in 1998, introduced the use of personas as a practical interaction design tool” before going into a long explanation of how it evolved over time.
+
+A Cooper persona is a snapshot of a person that any of us might meet in the lunch line. Their profile is typically named, given an age, a lifestyle, habits, quirks, and enough color that you could comfortably write them into a screenplay as an extra. The Cooper persona is less concerned with behavioral psychology and more concerned with humanizing. That is because creatives design things for actual people, not statistical models. In this context, they work really well.
+
+The Nielsen Norman Persona
+
+An NNG style persona from Dolby (source — Smashing Magazine)
+
+In 2015, Aurora Haley wrote “A persona is a fictional, yet realistic, description of a typical or target user of the product. A persona is an archetype instead of an actual living human, but personas should be described as if they were real people.”
+
+In 2017, Page Haubheimer goes on to say: “Definition: Jobs-to-be-done (JTBD) is a framework based on the idea that whenever users “hire” (i.e., use) a product, they do it for a specific “job” (i.e., to achieve a particular outcome). The set of “jobs” for the product amounts to a comprehensive list of user needs.”
+
+The key difference between a Cooper persona and the Neilsen Norman persona is that NNG’s version is realish instead of realistic. NNG personas dispense with frivolous details about the character’s personal life and stick to a description that affects how people are likely to interact with a product or service.
+
+For example, if I’m selling a $65,000 Dell EMC storage array to a business, I probably don’t need to know that the IT Decision maker likes to bake cupcakes on the weekend with her 2.5 children.
+
+The NNG persona is typical of what most UX teams use during ideation.
+
+The Behavioral Persona
+
+Amplitude’s Behavioral Cohorts — Fun with Cluster Mapping
+
+Behavioral personas are a recent evolution. They take the Nielsen Norman Group’s focus on relevant interaction to its natural conclusion.
+
+Behavioral personas are cohort-based and backed up by quantitative and analytic data. Unlike classic personas, they represent an actual statistical group within a data lake and focus on how certain behaviors affect the conversion funnel. These personas don’t really care if they’re named sue, have a photo, or prefer to use social media on an iPhone. They care about actions that turn visitors into users, customers, and subscribers. Behavioral personas are all about trigger, response, and retention.
+
+Behavioral personas tend to be dry and are better for post-launch evaluation than creative ideation. Tools like Amplitude can help you uncover surprising cohorts in the data that you’re unlikely to have thought of early on.
+
+Cohort retention analysis based on use of a specific feature or resource
+
+The Data Driven Persona
+
+Tools like UX360 connect SQL data to the user journey and persona model
+
+The data driven persona model allows Design teams to rapidly source insights about cohort groups then construct NNG style personas, which correlate to behavioral profiles in near real-time. They are a work in progress but strive to give us the best of both worlds. The creative team gets a human target , which is linked to a data cohort so that it can also be used to measure KPI growth down the line. If the data shifts, the design team reviews the persona the moment they are notified of a change.
+
+If you want to experiment with data driven persona modeling, your best bet is to plug a valid data source (using an API connector to Amplitude or MixPanel groups) into a tool like UX360’s journey mapping software, which allows you to construct persona templates on the fly as part of the process. Just keep in mind that you’ll be beta testing a future state of UX, so it won’t always be a smooth ride.

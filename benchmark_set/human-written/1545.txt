@@ -1,0 +1,81 @@
+I love smoothies. I make the same recipe nearly every morning. Someday, I may be considered shokunin. Instead of Jiro Dreams of Sushi, perhaps Matthew Dreams of Smoothie.
+
+Cost is a factor in my decision to make this at home; however, control and understanding are larger factors. Specifically, I would prefer to exert control over the negative externalities associated with my diet — whether those manifest prior to my consumption or afterwards. In this lens, this means zero added sugar, almond milk, and fair renumeration to those who harvest the cacao and ceylon cinnamon integral to the recipe.
+
+Negative externalities result from practically any input. Drive a car? Emissions are a negative externality. Your chai latte addiction? Sugar and caloric content are negative externalities, manifesting in poor health.
+
+Whether in a personal or corporate sense, proper value assessment requires understanding of relevant externalities and the responsibility allocation relating to them. This forms the basis for the intrinsic value of data, which promises to assist us in determining the value of a product, service, or general choice.
+
+Data Inequality
+
+Just a few decades into the information age, humans and machines have collected mountains of data. The collection is only increasing in scale. Great, right?
+
+Not quite. The intended outcome must still be worth more than the resource input. Many of us — whether at our homes or in command of a business — do not have choices with scale that would warrant substantial organic data collection and synthesis.
+
+Certain businesses have the scale, impetus, and expertise to leverage mountains of data they own. Generally, these examples surround big tech, mega-retailers, and industrials. This has created a measure of “data inequality”, in the sense that most businesses generate and often hold substantial amounts of data, yet the fungibility of that data is unrealized.
+
+Data inequality among B2B businesses often breeds one of two commercial strategies among those with high volumes of fungible data.
+
+Exceptionally convoluted pricing, substantial negotiation to come to terms, de facto opacity due to complexity. UPS and FedEx fit the bill. Bundled, flat rate pricing. One-size-fits-all terms. No negotiation, no visibility into cost areas. Think Amazon FBA, or transportation procurement via Shopify.
+
+While these two strategies look completely different in terms of a procurement process, companies employing these have the upper hand. They control the blender. Let’s examine landscapes and approaches with companies and business lines that employ what I like to call “blender economics”.
+
+Amazon FBA
+
+Not one company runs further with the concept of blender economics than Amazon. It is at the core of the Prime consumer channel, as well as FBA and scores of other business lines. FBA, or Fulfillment by Amazon, permits merchants to ship their goods to Amazon warehouses, where they are stored, listed, sold, and shipped.
+
+There is no doubt that for certain merchants, this all-in-one service is the right choice. It is convenient, simple, and provides access to Amazon customers worldwide.
+
+On the flip side, it’s somewhat akin to going to dinner at your county jail. Yes, you will be fed. Plenty of equality in that everyone is eating the same gruel and all the rooms are the exact same size. Chances are that if you have something valuable upon arrival (IP?), it may be confiscated. You may not get it back.
+
+As an example, let’s say I begin selling Black and Decker toasters on Amazon via FBA. If I go to the calculator, I find there are two FBA fees: monthly storage and a fulfillment fee. This covers intake, storage, pick and pack, ship (transportation), and fulfillment-related customer support. Quite a powerful blender.
+
+Monthly storage comes out to $1.38 per-piece. Fulfillment comes out to $21.56 per-piece, for a total of $22.94. I will be shipping 200 toasters/month to the Amazon facility on four pallets.
+
+Now, let’s look at a typical 3PL pricing arrangement, with bi-coastal distribution. Around 95% of the domestic population is served by Ground services in 1–2 days. These numbers are derived from an iDrive fulfillment partner and reflect costs for an order of one toaster.
+
+Receiving Fee: $0.50
+
+Storage Fee: $0.25
+
+Order Fee: $1.50
+
+SKU Fee: $0.15
+
+Pick Fee: $0.10
+
+Packaging Fee: $1.35
+
+2-Day Shipping: $14.35
+
+Total: $18.20
+
+FBA Packs on the Sugar
+
+FBA is a raw deal in this scenario, with no visibility into cost areas yet carrying an inflated price tag. Through leveraging of their internal data, Amazon has been able to confidently present an all-in price. This blended cost offering is attractive in its simplicity but roundly unattractive elsewhere. As you’ll read in a few paragraphs, this is not (by any stretch) the only downside.
+
+UPS and FedEx
+
+Parcel carriers have troves of fungible data and a far different pricing and acquisition strategy. Through employment of hundreds of unique revenue levers, including (but not limited to) base rates, surcharges, discount matrices, rebates, and volume bands, UPS and FedEx are able to give the impression of highly tailored offerings. In truth, procurement professionals are simply engaging with a different brand of blender.
+
+Let’s say you sell skis and ski boots. You sell on average 700 pairs of skis and 300 pairs of boots per month. All items are shipped via Ground to residences across the United States. All boots are equal in weight, as are skis.
+
+UPS has produced a proposal that offers a 20% discount on Ground base rates, as well as a 20% discount on residential surcharge. All other surcharges are at list.
+
+You feel alright about their offer, however, you also feel as though the full application of Delivery Area Surcharge is problematic. UPS makes another offer, where they reduce the residential surcharge discount to 10% but then apply a 30% discount on Delivery Area Surcharge. You feel better. That is a substantial discount, or so you’ve heard.
+
+The reality isn’t so rosy. DAS only affects approximately 30% of your total package volume. In effect, you just took a small rate hike. Costly deliberations.
+
+Circling Back
+
+In the first few paragraphs, I discussed control of externalities. When one truly understands the data they hold, the trajectory of their business, and the customer experience they desire, many negative externalities can be avoided.
+
+Let’s look at the FBA offering once more. If you are importing commoditized consumer products and are looking for a sales channel, FBA is fairly attractive. Merchants of $10 garlic presses or iPhone cases need not be concerned so much with branding, kitting, or whether customer experience is handled by a bot or human.
+
+The opposite is the case if you’re selling, say, lifestyle apparel or premium cosmetics. FBA saddles these brands with a laundry list of potential negative externalities.
+
+Many of these center around customer experience. FBA merchants cede their choice of carrier as well as kitting options. Moreover, first line customer experience is handled by bot. This offering could be even less satisfactory if the brand’s native website is well-built, rich, and carries the same SKUs.
+
+If this wasn’t enough, risk of brand dilution/IP theft is heightened. Just take a look at what Allbirds has experienced this past year.
+
+I’ve covered a lot of ground in this post. Through proper management and leveraging of the data you possess, gaps in data equality can be narrowed. This in turn permits control over negative externalities and lose-win tradeoffs, and allows one to cut through marketing noise while putting an actual price on “convenience”. In transportation and warehousing procurement, few abilities are more valuable.

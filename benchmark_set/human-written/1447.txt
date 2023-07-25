@@ -1,0 +1,61 @@
+Over the last couple of years the innovative tools that has emerged around big data technologies were immense. Each tool has its own merits and demerits. Each tool need fair amount of expertise and infrastructure management since it is going to deal with large amount of data. One architecture philosophy I always like is “Keep it Simple”. The primary motive behind this design is to make sure there should be only one enterprise data hub management software to fit Lambda Architecture in to it. These are my thought process of how we can fit Lambda architecture with in Cloudera enterprise data hub.
+
+For brief introduction about Lambda Architecture, Please see part-1 of Lambda Architecture.
+
+Lets walk through each layers in Lambda Architecture and examine what tool we can use with in Cloudera distribution.
+
+Data Ingestion Layer:
+
+Though Lambda architecture doesn’t speak much about Data Source and Data Ingestion Layer, during my design I found understanding this layer is very important.
+
+Before going to choose the tools for data ingestion, it is important to understand the nature of data sources. We can broadly classify data sources in to four categories.
+
+1. Batch files
+
+Batch files are periodically injected data in to a file system. In practical sense we used to consume it as a large chunk of data periodically (typically once in a day). Example of these files like XML or JSON files from external or internal systems.
+
+DB Data:
+
+Traditional warehouse and transaction data usually been stored in to a RDBMS. This will be well structured data.
+
+Rotating Log files:
+
+Rotating Log files usually machine generated data which keep appending immutable data in to the file system. In most of the use cases it will be either structured or semi-structured data
+
+Streaming Data:
+
+I would say the modern data source. Streaming data usually accessed by a fire hose API, which keep injecting the data as it comes. A good example would be Twitter fire hose API.
+
+Technology choice:
+
+Apache Flume for Rotating Log files, batch files and streaming data.
+
+Apache Sqoop for getting data from databases.
+
+Speed Layer:
+
+Technology choice: Spark Streaming and spark eco system
+
+Spark is phenomenal with it’s in memory computing engine. One could argue in favor of Apace Storm. Though I’ve not used Apache Storm much, Spark stands out it’s concept of “data local” computing. The amount of innovation with in Spark core context and Spark RDD made Spark is a perfect fit for Speed Layer (Mahout recently announced they going to rewrite Mahout with spark Eco system).
+
+Batch Layer:
+
+Technology Choice:
+
+Master data: Apache Hadoop Yarn — HDFS with Apache Avro & Parquet
+
+Batch View processing: Apache Pig for data analytics. Apache Hive for data warehousing and Cloudera Impala for fast prototyping and adhoc queries. Apache Mahout of machine learning and predictive analysis
+
+Apache Yarn is a step ahead of Hadoop Eco system. Its clear segregation of map reduce programming paradigm and HDFS made other programming paradigms play on top of it. It is important to move to Yarn to keep the innovation open on your big data enterprise data hub as well.
+
+Data serialization is an important aspect when we maintain the big data system. It is important to force a schema validation before storing data. This will reduce surprises when we do analytic on top of it and save lot of development time.
+
+Columnar Storage with Parquet. Hadoop designed to read row by row. The master data design will be a de-normalized data design hence there will be N number of columns in a row. When we do analysis we don’t want all the data to be loaded in the memory. We need those data which we really required. Parquet enables us to load only the data we require in memory to help increase the processing speed and efficient memory utilization. Parquet has out of the box integration with Avro as well.
+
+Apache Spark, Apache Pig, Apache Hive and Impala having out of the box integration with Parquet as well.
+
+Servicing Layer:
+
+Technology Choice: Apache HBase
+
+The only NoSQL solution on Hadoop eco system. This is a bit of tough choice. Servicing layer need to be highly available since all the external consumer facing application will access it. HBase Master / Slave architecture make it little tough and it need a lot of monitoring. Region Failure, MTTR (Mean time to recover), high availability of Master node are some of the concerns while maintain HBase. There are a lot of activity happening to make HBase master highly available and improve MTTR.

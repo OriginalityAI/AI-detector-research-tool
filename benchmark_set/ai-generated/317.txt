@@ -1,0 +1,9 @@
+As a web developer writing PHP applications, it is essential to learn how to store user passwords securely. Storing passwords in plain text is not secure, and using insecure password hashing algorithms like MD5 or SHA1 can make it easy for attackers to break into your web application if it is ever hacked. Even adding a salt does not make these algorithms secure, as the salt needs to be stored alongside the password, weakening the encryption.
+
+Another potential failure of security for developers is encrypting passwords with a key, making them susceptible to decryption. Hence, there needs to be a surefire way to hash passwords in PHP securely.
+
+One option is to use a feature introduced in PHP 5.5, which is a native password hashing API for PHP. This library contains two functions, password_hash() and password_verify(), that wrap built-in PHP behaviors for cryptography but with sane defaults that serve even the most inexperienced developer well. For developers who care about security, these functions make it easier to hash passwords and keep them secure. Password_hash() and password_verify() functions use bcrypt, which is usually sufficient for most developers. Each password hash should be unique for the same password between different users.
+
+However, if you don't have access to PHP 5.5, Anthony Ferrara has backported the native password library for earlier versions of PHP, which is available on GitHub. The library requires PHP 5.3.7 and later, which is widespread.
+
+In conclusion, as a web developer, you do not need to hash passwords yourself but should rely on a well-established methodology to keep your users secure in the event of a data breach. By using built-in PHP behaviors or backported libraries, you can ensure your application's security and your users' passwords.

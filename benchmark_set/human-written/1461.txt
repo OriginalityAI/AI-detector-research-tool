@@ -1,0 +1,7 @@
+Just under three hours after Burger King unveiled a new advertisement designed to hijack your Google Home to read a long-winded description of its Whopper burger, Google has disabled the functionality. It was fun / horrifying while it lasted!
+
+As of 2:45PM ET, Google Home will no longer respond when prompted by the specific Burger King commercial that asks “What is the Whopper burger?” It does, however, still respond with the top result from Wikipedia when someone else (i.e., a real user) other than the advertisement asks the same question. Google has likely registered the sound clip from the ad to disable unwanted Home triggers, as it does with its own Google Home commercials.
+
+After the ad debuted at 12PM ET today, many users have edited the Wikipedia entry for the Whopper, adding a slew of troll-tastic descriptions including “cancer-causing,” “a chocolate candy” (in reference to the Hershey candy) and ingredients like “toenail clippings” and “rat.” Briefly, some users were able to get their Google Homes to respond with the edited entries (as did we, in a test yesterday). Wikipedia has now locked the entry, allowing changes to be made only by authorized administrators.
+
+We’ve reached out to Google and Burger King for comment and will update if we hear back. For now, the mischief’s over, but maybe you still have the Whopper on your mind so perhaps the ad did its job after all. Google Home voice tags could not come soon enough.

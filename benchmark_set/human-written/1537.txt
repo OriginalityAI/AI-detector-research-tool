@@ -1,0 +1,43 @@
+What Will I Tell You?
+
+As I mentioned in my previous article, visualization is a key point in the data science world. The primary goal of any data science project is to create value. Regardless of the domain, Data Science teams somehow touch the heart of the business and play an important role in every decision that can be made. If you cannot visualize the results of the project in good order, you cannot convey the value of the project in the correct way. Data scientists are responsible for which technologies are installed with which structures in the content of the project. In meetings with one of the stakeholders or other departments, as a data scientist, you need to guide the results of the project rather than the technical details. Insights from the data will help guide the meeting. This article will provide information about how your visualization project should be by using ready-made data sets.
+
+The article was written for visualization projects based on analysis demand rather than the visualization mechanisms of the projects to be sent to production. I will explain the visualizations on the basic chart types without going into too much detail. Producing complex data visuals does not mean creating a good story. Revealing the patterns that need to be explained in your data with as simple plots as possible will contribute to the fluency of the project.
+
+The Common Approach
+
+The essential way is to preserve the codes in the Jupyter notebook, which is data enthusiasts’ main squeeze. It is considered advantageous for Jupyter to be in notebook form and run cell by cell. The codes are all there, and it can be difficult to find the visualizations you will present among the codes you write irregularly. It is often not possible to clean the Jupyter notebook that is being worked on, either because of ‘lack of time’ or for other reasons. It will not be nice during your meeting to any stakeholder or any other department if you present the visualized data from here. The only solution that will make the common approach sustainable is to take the visualizations to be presented from the Jupyter notebook and narrate them through any presentation tool. Actually, this is a work-around procedure that has started your laziness. I only recommend doing this way in case of an emergency. To give an example from real life, there had happened some problems with our map system in my previous company. The problems were related to new business decisions made quickly. Licensed cartographic service was replaced with an open-source routing service called OSRM in a week on the backend side, and it was requested some stats about the comparison of both services. If you are in these conditions and have only a few hours, you can present your results in any presentation tool (or in the same notebook) after you have done your visualizations in Jupyter.
+
+Another important feature that makes the first way fast is that the created visualizations are generally static. The main reason for this situation is that the functions under very easy-to-use packages such as pandas, matplotlib, and seaborn are preferred when visualizing.
+
+Below I have exemplified some of the chart types drawn in the common method that I have mentioned in general terms. The first two of the plots are static while the last two map visualizations are an interactive Leaflet map. You can access the codes of the interactive ones from the python file called imm_free_wifi_locs in the repo. In the visualizations below, I used a data set from the IMM Data Portal, which I will talk about a lot in the article. The following data set contains the number of newly registered subscriptions in WiFi service that are offered free of charge in some locations of Istanbul.
+
+Change of monthly subscription count on the line graph
+
+Indication of county-based subscription count on the bar graph
+
+In addition to showing IMM’s free wifi locations in point form, they are also presented in hexagonal form with their subscription count in below.
+
+By the way, let’s talk about ‘Datapane’. Datapane is an application programming interface that makes it easy to share results from data with other people after analyzing data. It is the world’s most popular way to share data science insights from Python. You can make great reports and dashboards by making use of this very easy-to-use Python library.
+
+The Holistic Approach
+
+The second way is to do a project design on the codes. I used Jetbrains’ PyCharm product for this. In the designed data visualization study, besides keeping the codes organized, you can provide a better meeting experience by presenting the outputs of the project in your local with different libraries, such as Streamlit. The next step of this systematic approach is to present the results to the relevant teams in real-time with a determined date planning. In this article, I will give information about how the project should be concluded by giving the details of the second way. I will also show some examples of the basic visualization outputs I made on Istanbul Metropolitan Municipality (IMM) data sets using the ‘plotly’ library.
+
+One of the most significant features that distinguishes the second way from the first is that the visualizations are usually dynamic and interactive. You can play with the plots or save the plots as images by using the toolbar that automatically appears in the plots generated as a result of the code.
+
+Plotly Toolbar
+
+IMM Open Data Portal
+
+The positive change that started in the administration of Istanbul two years ago caused an increase in the quality of service offered to the people of the city. Within the framework of transparent steps in the right direction, it was decided that Istanbul, one of the most beautiful cities in the world, should have an open data platform. IMM Open Data, published in January 2020, is providing access to data provided by IMM and its subsidiary companies. The data is free to access regardless of your intent. There are 171 data sets under 10 different categories. The number of data sets in the portal is increasing day by day. At the same time, you can make a data set request according to your field of study, interest, or any need. IMM Open Data Portal is a good resource for anyone interested in data visualization. I suggest you do data visualization works by choosing some data sets from the portal.
+
+In the article, I used various datasets from governance, people, environment, and mobility. You can see how many data sets there are under the categories from the image below.
+
+Lux
+
+Before the graphics, I want to talk about Lux. Lux is an application programming interface (API) where you can examine general visualizations on any data with a single line of code, and a Python library that simplifies the preliminary steps of data science by automating the data exploration process. Just import the library before you start your work. Using the visualizations created by Lux, you can create an overall picture of your data sets, plan your preprocessing steps on your data and share them with other people by saving the visualizations as ‘html’. For detailed information about Lux-API, you can check Ismael Araujo’s article.
+
+Below you can see Lux outputs of daily IMM wifi new user data.
+
+Correlation graphs

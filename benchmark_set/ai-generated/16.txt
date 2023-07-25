@@ -1,0 +1,55 @@
+SAN FRANCISCO—Google lawyer Robert Van Nest on Tuesday argued that the company is entitled to a summary judgment, with the argument that Oracle cannot prove that Android infringed on its Java patents.
+
+If Judge William Alsup grants Google's motion, it will be a major setback to Oracle's suit against Google. Oracle has already suffered two setbacks in the trial—a ruling that it could not copyright the Java APIs, and a partial ruling that the APIs were not covered under Google's fair use defense.
+
+Van Nest argued that Oracle's patent claims are invalid because they are based on technology that was previously patented.
+
+"They're just double-dipping," Van Nest said.
+
+He also argued that Oracle cannot prove that Google infringed on its patents because the company did not produce any evidence that Google knew of Oracle's patents.
+
+"There's no evidence that Google knew of the patents," Van Nest said.
+
+Oracle lawyer Peter Bicks countered that Google knew of the patents because it had access to Oracle's Java code.
+
+"Google had access to the Java code. They knew of the patents," Bicks said.
+
+Bicks also argued that Oracle can prove that Google infringed on its patents because the company's Android operating system contains code that is similar to the patented code.
+
+"Google copied the code," Bicks said.
+
+Oracle is seeking $9.3 billion in damages from Google.
+
+The trial is scheduled to resume Wednesday.
+
+For more on the trial, check out our live blog.
+
+This story, "Google lawyer argues company is entitled to summary judgment" was originally published by TechCrunch.
+
+More on Google:
+
+Google is building a self-driving car
+
+Google is hiring a head of social media
+
+Google is building a new headquarters in SF
+
+Google is releasing its own messaging app, Allo
+
+Google is releasing a new music streaming service, All Access
+
+Google is releasing a new phone, the Pixel 2 and Pixel 2 XL
+
+Google is releasing a new AI platform, TensorFlow 2.0
+
+Google is releasing a new app, Apps For Work
+
+Google is releasing a new app, Files Go
+
+Google is releasing a new app, Sheets
+
+Google is releasing a new app, Slides
+
+Google is releasing a new app, Keep
+
+Google is releasing a new app, Duo Security      

@@ -1,0 +1,37 @@
+MediaTek has just added two new SoC (system-on-chip) products to its Helio X20 lineup of mobile processors. The new chips are the Helio X22 and Helio X25, and they are based on the company's all-new deca-core CPU, the Cortex-A72.
+
+The Helio X22 is the more powerful of the two, featuring four Cortex-A72 cores clocked at up to 2.3GHz, four Cortex-A53 cores clocked at up to 1.85GHz, and two Cortex-A53 cores clocked at up to 1.4GHz.
+
+The Helio X25, on the other hand, features a slightly lower-clocked version of the Cortex-A72 CPU, with three cores clocked at up to 2.5GHz, four cores clocked at up to 1.85GHz, and two cores clocked at up to 1.4GHz.
+
+The Helio X22 and Helio X25 are both manufactured using TSMC's 16nm FinFET process, and they feature MediaTek's Imagination Technologies-licensed PowerVR G71 MP2 GPU.
+
+The Helio X22 and Helio X25 will be available in the second quarter of 2017, and they will be priced at $199 and $299, respectively.
+
+Source: MediaTek (via Android Authority)
+
+See also:
+
+MediaTek announces the Helio X20, its new deca-core mobile processor
+
+MediaTek unveils its new Helio X20 mobile processor
+
+MediaTek announces the Helio X20, its new deca-core mobile processor
+
+MediaTek unveils new Helio X20 SoC for mobile devices
+
+MediaTek unveils new Helio X20 SoC for mobile devices
+
+MediaTek to launch Helio X20 mobile processor in first quarter of 2017
+
+MediaTek to launch Helio X20 mobile processor in first quarter of 2017
+
+MediaTek to launch Helio X20 mobile processor in first quarter of 2017
+
+MediaTek to launch Helio X20 mobile processor in first quarter of 2017
+
+MediaTek to launch Helio X20 mobile processor in first quarter of 2017
+
+Helio X20: MediaTek's new deca-core mobile processor
+
+Helio X20: MediaTek's new deca-core mobile

@@ -1,0 +1,67 @@
+Now, let’s understand a bit about Data Science and then move on to how it can be applied to improve ERP systems.
+
+Data — Numbers, Words, Sound, Images, etc.
+
+Any object, palpable or not, is data. Even our thoughts are data that are almost never harnessed (and perhaps should not be!). This entire article can be a data set ready to be broken down into multiple singular datum. Data can be machine-readable, also called structured, or human-readable (unstructured). Clearly, the terminologies — structured and unstructured are from the machine’s point of view.
+
+· Structured data is information that a computer can easily process using a program. Structured data has a uniform structure (no points for guessing this), like number of mouse clicks on a web page, census data, cricket scores, etc. It can be collected through online tools such as Google Analytics or Facebook also. IoT devices such as smart watches or devices to measure weather parameters too throw out structured data.
+
+· Unstructured data can be read by a machine that has been equipped with a certain intelligence to interpret and analyse data in the form of images or understanding the meaning of a block of text. For example, an invoice.
+
+There are tons of data that is not being used by many companies that could help in making smarter business choices. There are tons of data that is not even being recognised as useful pieces of information. For example, customer data can tell us which products we should focus on and maybe sell next. IoT data can be used for process optimization and replacing parts before they begin to malfunction. This helps improve forecasting, as we have more and more information and context.
+
+Before we can use data for deriving insights, it needs to be processed and interpreted. This is done by using Data Management and Data Science techniques.
+
+There are 4 steps involved in extracting knowledge out of Data. Data Ingestion being the first one.
+
+Data Ingestion
+
+The process of obtaining and importing data for immediate use or later (by storing it in a database). Data can be streamed in real-time or ingested in batches, which is done by a Data Engineer.
+
+Data Processing
+
+The data obtained is seldom in a useable format. It almost always requires reformatting, or cleaning, for it to be made useable. Data Processing ensures that our data is consistent, correct and useable. It removes the common issues with data like missing values or typos. Data quality is important for accurate knowledge derivation and hence all the known rules should be applied with respect to the context in which data will be used. The other important thing to understand is if there are missing data then one can get from another source, and if there is uniformity in the data then that can be converted to the same units/measures. The accuracy and consistency of the data can also be compared other similar data sets and real values. Usually a process consisting of python scripts, R or other tools is used for finding unexpected or incorrect data, cleaning it or removing the inaccuracies.
+
+Data Mining
+
+Data mining is the process of finding patterns, anomalies and correlations in data to solve problems through data analysis. Additionally, data mining techniques are used to build machine learning (ML) models that power applications such as search engine algorithms and recommendation systems.
+
+Mathematical or Statistic models are used to find patterns in the data using data tools. There are a lot of libraries in Python or R that make a lot of these tools available, such as Tensorflow. Some examples of techniques include:
+
+· Sequence or Path Analysis looks for patterns where one event leads to another.
+
+· Clustering is done to find and group data sets in ways that were previously unknown. Clustering groups are aggregated based on how similar they are to each other.
+
+· Classification looks for new patterns and might result in a change in the way the data is organized. These algorithms predict classifications based on multiple features.
+
+In the end, the results are evaluated and compared to business objectives. Businesses can learn more about their customers and develop more effective strategies related to various business functions and in turn leverage resources in a more optimal and insightful manner. This helps businesses be closer to their objectives and make better decisions.
+
+Visualization — Reporting
+
+It’s important that findings through all the above listed steps be reported in a manner that is understandable for the key stakeholders of the organisation. Monitoring involves providing an alert for certain events or after a particular time period. Whereas, reporting is about displaying information in an organised manner. This is usually done in the form of charts, graphs and tables.
+
+Data Science in ERP –
+
+And now, to the main course.
+
+Companies with well-established ERP systems generate a lot of data due to day to day operations. This can be used for their digital transformation. Some of the areas where Data Science can help are:
+
+Demand Forecasting
+
+ERP systems contain extensive data about sales. Data science can help in finding trends that helps the company to understand and determine the timing of ordering more products or raw material and which offering will most likely sell in the next season. Seasonality factors can be discovered that guides the key users in Inventory Management, for example. In manufacturing these advantages can be used to predict prices, determine amount of supplies to be purchased, manpower required, etc.
+
+Integration of ERP with Outside Data
+
+Domain context is critical in data analysis. Hence, ERP data may not always be sufficient in reaching meaningful conclusions. In such cases, data scientists can merge data from external sources and match that with ERP data to improve the insights for decision making or prediction models. Also, external factors do play an important role in the functioning of every business hence, it becomes all the more imperative to take them into account.
+
+Predictive Maintenance
+
+Machine sensors generate data that is used to monitor production quality and machine efficiency. Knowledge about when the machine is beginning to produce sub-optimal quality is essential for ERP planning. Advance knowledge about this can help us perform preventive maintenance of the machine and avoid unnecessary down time. Data scientists create models of machine performance designed to minimize downtime and fit irregular preventive work into ERP production schedules.
+
+Predicting likely errors
+
+Data Science techniques can be used to develop Machine Learning algorithms that find patterns in quite different data sets. For example, detecting invoices that are likely to contain errors, based on supplier, number of items, amount and other features that can lead to errors in the given context. This can minimise the efforts required during month ends and prevent any rework.
+
+Having Data Scientists working closely with the business is a great way to produce short- and long-term results. Extracting new insights from already existing data improves decision making, through a simple process involving simple programming languages (such as Python) and any visualization tool (such as Tableau or Power BI). Or it could be a bit complex, using elements of existing enterprise architecture such as AWS or Azure Cloud Services.
+
+Ref: Valter Caldeira, https://www.tenthpin.com/

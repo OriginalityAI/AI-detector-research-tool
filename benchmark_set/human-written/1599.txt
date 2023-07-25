@@ -1,0 +1,71 @@
+Conversational AI agent illustration
+
+Intro
+
+At nexC, we develop a state-of-the-art solution for product understanding and conversational commerce, directly to the consumers. This series will dive into our main conversational AI technology and the road to generating the best Virtual buying expert.
+
+Conversational AI
+
+Though Conversational AI has long been around, it has recently received renewed attention. It’s not new anymore, according to the Smart Audio report- nearly one of 4 american owns smart speakers, and thanks to COVID-19 their adoption has increased significantly. But as we all experienced, there is still a HUGE gap between our conversational expectations and the actual experience. This gap is tremendously bigger when you compare between the well known agents — Alexa, Siri, Google assistant, to what you can find on B2B and eCommerce sites.
+
+For most, it might sound weird, but the complexity of building a real conversational solution for a real life problem (banking, eCommerce,..) can be much harder to solve. That’s why in some of these cases the agent needs a very wide domain knowledge and experience to be relevant, creating excellent companies with a domain specific solution. There are good examples for this like KAI for banking, Luke and Dooron for realestate, and nexC for durable good.
+
+By reading this series I’m aiming to help you understand that building an actual conversational experience is a challenging mission, but if you choose to pursue it, I will save you some time hitting the wall.
+
+In this part, I will review a high level of types and their road to solution.
+
+What am I building?
+
+Like in any project we need to start by understanding the problem we need to solve. The different problems will send us to a different path of challenges and requirements to building our conversational agent.
+
+We can usually divide it to 3 major types:
+
+Chit-chat — conversational agents that focus on the social part of the conversation — the best example you can find is Mitsuku, but most of the solutions are much inferior to it. Informational — The agent goal is to help the user search and answer informational questions, usually related to the agent source. The most common implementation is the FAQ chatbot in websites, and the more complex ones are when you ask your smart home and she looks for it for you in Wikipedia. Task oriented — The agent goal is to commit an action. It can vary from a simple mission — get leads by collecting email, name and phone numbers, to a complex missions like scheduling a flight, or finding the right product.
+
+Some of you will start thinking about combining them, So I will tell you this — think about your Alexa for example, it is very good in setting alarms and turning on the light, but can it order you a flight, help you find a product or specific information? [Hint: not]
+
+Obviously, we can combine a few of them in the same visual agent, but for most, it will have different agents in the back, just like the Alexa skills and Google assistant apps.
+
+My first 2 cents is knowing what you actually NEED to build, because trying to solve all of these issues together will throw you away to a very long journey.
+
+Why is it important to understand the type?
+
+The type has a direct impact on the solution, available frameworks and the development team.
+
+To build an actual chit chat you will have to go to the deep conversational AI models — such as Facebook Blender, Google Meena, GPT2/3, Plato(by uber). You will also have to write or collect thousands of conversations to build your own chit-chat strategy and persona.
+
+Building an informational ot task oriented, will require answering these 2 questions:
+
+How wide do we want it to be? In informational it can be addressed as only the website FAQ page, the entire domain-knowledge, or it might even include searching over the web. What level of assistant?
+
+level of AI Assistants
+
+In this part the credit goes directly to the Rasa team that built a leveling chart that I found really relevant. I highly recommend to read it yourself in this link.
+
+But I will sum it up for you. The main Idea of the levels are to measure the amount of burden on the end-user.
+
+There are 5 levels:
+
+Basic command — action — the end user needs to know exactly what he wants and how to write it. Basic chatbot — path based agents that follow a predefined “happy path” to guide the user throw a certain quest. Contextual agents — the user can leave the path in order to change answers or get clarification. The user needs to know his goal but he doesn’t need to follow an exact path to prevent from breaking the conversation. Consultative assistant — the user doesn’t necessarily know what he wants, and he needs the assistant to guide him through, from an unknown opening point. Adaptive assistant — understands the unwritten meaning of the text — the cues the user supplies, and adapts to personalize it to him.
+
+Extract the conversation goal from a non-definitive sentence (image from nexC)
+
+Each level requires a completely different team, framework and time to build. That’s why understanding what level you really need is essential. And while most of us want the challenge of building a level 5 assistant, you need to remember that the assistant needs to answer some KPI’s and a business need.
+
+If you are building a company slack bot to inform about new registers and allow users to query data from a different backend system, then you don’t need more than a level 1 simple bot.
+
+Budget planing
+
+Now before you continue to the other parts, it is the time for you to decide what the complexity level is. If you choose level 1 or a level 2 with a very specific task- like lead generating, simple FAQ or company information bot, The most cost effective next step is to use one of the great almost no-code solutions. From my point of view, I would recommend one of these:
+
+These solutions will cost you the Saas monthly subscription, a conversation designer and some level of attention from the backend team.
+
+And these costs only goes up with the levels and the complexity(remeber the qustion about the “how wide?”). In general any custom solution will require building a dedicated team. In my experience the core elements in the team are:
+
+Fullstack developer Backend developer Conversation designer Product manager
+
+Now, this is only the basic. If you are building a completely independent solution you will need also a DevOps and more than 1 backend developer. And for the levels — the higher you aim the more Data scientist and data analysts you need. In other words — identifying the right problem and solution will help assess the costs, timeline, and outcome. (Much more expensive than you thought after reading “building chatbot in 5 min”)
+
+This part was mainly about understanding the field, the problem and starting to think about the possible solutions.
+
+The next part will review the available frameworks, their pro and cons, and for what solution they can fit.

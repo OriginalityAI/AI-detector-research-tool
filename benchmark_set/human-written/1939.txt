@@ -1,0 +1,3 @@
+Review: Residual Attention Network — Attention-Aware Features (Image Classification)
+
+In this story, Residual Attention Network, by SenseTime, Tsinghua University, Chinese University of Hong Kong (CUHK), and Beijing University of Posts and Telecommunications, is reviewed. Multiple attention module is stacked to generate attention-aware features. Attention residual learning is used for very deep network. Finally, this is a 2017 CVPR paper with over 200 citations. (Sik-Ho Tsang @ Medium)

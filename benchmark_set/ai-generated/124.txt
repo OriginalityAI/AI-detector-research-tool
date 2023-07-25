@@ -1,0 +1,38 @@
+With macOS High Sierra rolling out, users will want to make sure their Macs are running smoothly. In this guide, we'll show you how to adjust your Mac's Built-In Storage Settings to free up CPU usage and make sure your Mac is running as efficiently as possible.
+
+1. Go to System Preferences
+
+2. Click on the Storage tab
+
+3. Click on the Optimize Storage button
+
+4. Check the following options:
+
+Reduce Clutter
+
+Empty Trash Automatically
+
+Reduce the Size of Photos Library
+
+5. Click on the Optimize button
+
+6. Restart your Mac
+
+7. Check the results in System Preferences
+
+If you're experiencing slowdowns, you may want to consider adjusting your Mac's Built-In Storage Settings. By reducing the amount of data stored on your Mac, you'll free up CPU resources and help improve your Mac's overall performance. Keep in mind that this procedure may also reduce the amount of storage you have available on your Mac, so be sure to make a backup before proceeding. If you experience further issues, please contact Apple Support. Thank you for using MacRumors! 
+If you need help with anything related to your Mac, please don't hesitate to reach out to us. We're here to help!
+
+Please note that these steps are intended for advanced users and should not be attempted without proper guidance. If you experience any problems while following these steps, please contact Apple support. Thank you for using MacRumors!
+
+If you need help with anything related to your Mac, please don't hesitate to reach out to us. We're here to help!
+
+Please note that these steps are intended for advanced users and should not be attempted without proper guidance. If you experience any problems while following these steps, please contact Apple support. Thank you for using MacRumors!
+
+If you need help with anything related to your Mac, please don't hesitate to reach out to us. We're here to help!
+
+Please note that these steps are intended for advanced users and should not be attempted without proper guidance. If you experience any problems while following these steps, please contact Apple support. Thank you for using MacRumors!
+
+If you need help with anything related to your Mac, please don't hesitate to reach out to us. We're here to help!
+
+Please note that these steps are intended for advanced users and should not be attempted without proper guidance. If

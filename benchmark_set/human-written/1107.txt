@@ -1,0 +1,79 @@
+(CNN) The future of flu vaccines just might come in a tiny, prickly patch.
+
+A phase 1 clinical trial, the results of which were published in the medical journal Lancet on Tuesday, has deemed the dissolvable microneedle flu patch to be "well tolerated" and safe for possible use.
+
+Instead of receiving a flu vaccine with the typical prick of a syringe, the petite patch comes equipped with 100 microneedles that deliver a vaccine when pressed onto your arm.
+
+Mark Prausnitz, a Georgia Tech Regents professor in the School of Chemical and Biomolecular Engineering, holds a microneedle vaccine patch containing needles that dissolve into the skin.
+
+"They're really small; you can barely see them," said Dr. Nadine Rouphael, an associate professor at the Emory University School of Medicine and lead author of the trial, which was a collaboration with the Georgia Institute of Technology.
+
+She described the microneedles as minuscule enough to not cause as much pain as a traditional flu shot; however, collectively, they were associated with itchiness at the injection site in the trial.
+
+"We also looked at the efficacy of the vaccine. Is it able to induce a similar immune response to the regular flu shot? And it did, actually," Rouphael said.
+
+The patch contains the same type of vaccine that would be found in a traditional needle and syringe, but it is placed within tiny needles in the patch instead of being placed in only one large one for a flu shot, she said.
+
+JUST WATCHED Don't believe this about the flu Replay More Videos ... MUST WATCH Don't believe this about the flu 01:21
+
+"They are placed on a Band-Aid-like structure, and then that Band-Aid is applied, in this case, to the wrist," she said. "There is an audible snap that you hear when you apply enough pressure to ensure that the microneedles will actually penetrate the skin. ... After few minutes, we remove the patch. By then, those microneedles will be completely dissolved within the skin, along with the vaccine."
+
+'They were impressed by how tiny it was'
+
+For the clinical trial, 100 adult volunteers were vaccinated between June and September 2015 at the Hope Clinic of the Emory Vaccine Center in Atlanta. They were randomly separated into four groups before being treated.
+
+One group received a flu vaccine via the patch, administered by a health care worker; another received a flu vaccine via a traditional flu shot; another group received a placebo microneedle patch, administered by a health care worker; the fourth group used the patch to self-administer a flu vaccine.
+
+JUST WATCHED Seven questions about the flu shot Replay More Videos ... MUST WATCH Seven questions about the flu shot 02:33
+
+The researchers found that, immediately after vaccination, 96% of adults who received the patch reported in a questionnaire that they felt no pain, whereas 82% of those who received the traditional flu shot reported no pain.
+
+At a 28-day followup, about 70% of the participants who received the patch vaccine reported in a questionnaire that they'd prefer the microneedle patch vaccination over a traditional flu shot or intranasal vaccination.
+
+"We had 25 participants that were in the self-administer group who could do it themselves, and they felt like it didn't bother them as far as pain or tenderness in particular," Rouphael said. "They were impressed by how tiny it was, how easy it was to administer."
+
+The researchers also found that reactions to the vaccinations were similar among the patch and flu shot groups, as some participants in both groups experienced mild cases of tenderness at the injection site, headache and fatigue.
+
+The users of the patch, however, experienced much more itching and redness at the injection site that lasted two to three days, Rouphael said.
+
+When comparing the immune responses to the patch and traditional flu shot among the participants, the researchers found similar results.
+
+"We conclude that influenza vaccination with microneedle patches is well tolerated, well accepted, and results in robust immunological responses, whether administered by healthcare workers or by the participants themselves," the researchers wrote in the study.
+
+Stephen Morse, professor and director of the infectious disease epidemiology certificate program at Columbia University's Mailman School of Public Health, said the side effects associated with the patch surprised him.
+
+Overall, "it looks remarkably comparable to what happens when you give it the standard way," Morse said of the patch's effects, compared with flu shot effects. He was not involved in the clinical trial.
+
+The microneedle patch could be useful in situations in which many people must be immunized at once, such as during a widespread influenza outbreak, Morse said.
+
+"The technology is limited by the stability of what you're trying to administer and the volume. It has to be a small volume, because you know, the patches are not that big; they can't hold that much," Morse said.
+
+However, "now that you know you can give the vaccine this way and you have a suitable product, then I think it would be very useful in a mass-immunization situation," he said. "The flu being the most straightforward example."
+
+Similar vaccines that can be administered through the skin have been developed, including a dissolving microneedle patch in development in Japan and the short-needle Fluzone intradermal vaccine available in the United States.
+
+The US Centers for Disease Control and Prevention recommends an annual flu vaccine for everyone 6 months and older. Between 2014 and 2015, fewer than half -- about 47% -- of those people in the US were vaccinated against the flu , according to the CDC.
+
+In Canada, among adults 18 and older, 34% reported receiving the 2015-16 influenza vaccine, according to the Public Health Agency of Canada
+
+In the US, the CDC recommended against the available needleless flu vaccine option, FluMist nasal spray , during the 2016-17 flu season because it was found to be less effective than the traditional flu shot.
+
+Just last week, a CDC advisory committee recommended against FluMist again for the upcoming flu season. The pharmaceutical company behind the product, AstraZeneca, said it is working to be able to change that recommendation during the flu season so that the nasal spray is available for consumers who want it.
+
+The flu is a contagious respiratory illness caused by influenza viruses that can infect the nose, throat and lungs. Though mild in most cases, the infection can become severe and at times even deadly. Health officials recommend flu vaccines to prevent such infections each year.
+
+Next steps for the flu patch
+
+The new clinical trial is a preliminary study, so more research is needed before the microneedle patch could be made available to the general public.
+
+Yet in the future, Rouphael said, she also viewed the patch as potentially useful in an outbreak. She added that it could reduce public health costs, as it could cut health care administration fees.
+
+"It would remove the bottleneck of actually going to a health care provider to actually receive the vaccine, and it could put people less at risk of acquiring influenza in the hospital and clinic by just receiving it at their home," Rouphael said.
+
+Join the conversation See the latest news and share your comments with CNN Health on Facebook and Twitter.
+
+The patch also could reduce the need for bins to dispose of syringes and for a cold chain to store vaccines, she said.
+
+"This particular patch is very stable at room temperature. So in theory, it can be mailed to your house. You can apply it at home and then discard it as well there," she said. "If we are to have a pandemic influenza and we need to vaccinate people quickly, that could be one way of achieving so."
+
+Next, the researchers plan to test the new patch in children as well as with other types of vaccines beyond influenza, Rouphael said.

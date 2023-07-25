@@ -1,0 +1,31 @@
+A Control Tower for eCommerce Companies that use 3PL Services
+
+A guide on how to use location analytics with Locale to evaluate performance
+
+Key Takeaway
+
+If you are an e-commerce company that has outsourced their delivery to third-party logistics companies, then this blog is for you. In this piece, we talk about how you can create a central place for your ops and city teams to monitor and analyze the performance of these 3PL providers.
+
+Introduction
+
+E-commerce has changed the way in which society sells goods and services and become a part of our daily lifestyle. It has experienced rapid growth since its humble beginnings with e-commerce sales projected to grow to 599.2 billion USD by 2024. The COVID-19 outbreak saw e-commerce sales spike 25% in March 2020 alone.
+
+With e-commerce companies rapidly expanding and serving more orders per day, it has become important for them to outsource these orders to specific people who can manage granular city level supply chains on their own. This need has resulted in the global third-party logistics (3PL) market with specialized services such as inventory management, cross-docking, door-to-door delivery, and packaging of products.
+
+In this blog,we will talk about how e-commerce companies that use third party logistics providers can use location analytics to set up what we call a control tower for their ops and city teams.
+
+The Problem(s)
+
+A report from Tomkins Associates shows that E-commerce firms pay their 3PL providers upto 10.8% of their own net revenue. This makes it very important to realize exactly how valuable is your 3PL partner, and how much does the service really cost on-ground.
+
+While e-commerce companies gain a lot in terms of hyper-local supply chain management by partnering with these providers, they also end up taking significant risks in doing so.
+
+There are multiple providers with different pricing and delivery capabilities in different areas, so evaluating their performance & having the visibility is critical to find the right provider for the right area.
+
+These are not limited to a high cost in terms of overheads and base charges per delivery paid to the 3PL Partner but extend to risks in an information gap between the provider and the city level ops team of the e-commerce firm. Some companies do get individual dashboards from each of their providers but the process is currently painful to get answers to their questions.
+
+As a result, the commerce firms don’t have direct visibility on how much the shipments cost to delivery across their customer geography and they end up suffering in cases of delays, damages, returns, cancellations and so on!
+
+The Status Quo: What’s happening in e-commerce companies currently?
+
+E-commerce firms must measure and evaluate the costs that they undergo in outsourcing and weigh it with respect to the performance of their 3PL partners. Doing this currently is a very painful process. They have to compile large amounts of data regarding their delivery trips, their user behaviour,and the performance of their storage units.

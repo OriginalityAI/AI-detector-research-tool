@@ -1,0 +1,119 @@
+Your first user defined function in R
+
+You might be using R frequently for data processing and modelling, but do you want to try efficient user defined functions to make your work easy? Then this post is for you.
+
+Photo by Goran Ivos on Unsplash
+
+User defined functions need not be complex or difficult to build, but can make you very efficient if you are smart about where you use it. It can be small or big based on your needs. A user defined function can be used for any action to be performed in R.
+
+Read on to know more about user defined functions — step by step. Once you have a basic algorithm & a cup of tea ready, let’s get started.
+
+Step 1: Understanding your algorithm
+
+Identify different sections in your algorithm that needs to be repeated again. If there is a continuous chunk that is being repeated, you would need a single function, else you can use two functions separately. There is also a chance that you can use a user defined function within another user defined function. Sounds cool right!
+
+Look for possibilities, identify the part that you would want to convert into a function. Now, let’s concentrate on just that section.
+
+Step 2: Input & Output
+
+There will be an input and output for this section. Input will be a variable or multiple variables/datasets that you have. It could be read directly into R or could be a result of the code that you plan to write.
+
+Identify and visualize how the input looks like. You can either code it out or use pen and paper.
+
+Think about what you would want as an output of this function. Output of this function should be such that it can be easily plugged into the rest of the code or saved without further complex transformations.
+
+You don’t have to worry much about the exact format of the output. You can figure that out on the way.
+
+Step 3: Flow Chart for your UDF
+
+Figure out a rough algorithm as to how would you reach from the decided input to the desired output. If you are a beginner, don’t be lazy to draw a flow chart before you code (thank me later!). List down detailed steps, transformations and if you are comfortable with R, write down the in-build functions directly.
+
+Step 4: Start Coding
+
+Now we can start coding. Yay! The basic syntax for user defined function is given below:
+
+Function_name <- function(a,b,...){
+
+---- Function Body ----
+
+}
+
+where ‘a’ and ‘b’ are arguments.
+
+And once you define a function, you can call it later as
+
+Result <- Function_name(a,b)
+
+Let me show you a small example. As discussed above, I am identifying that I need to convert addition of two numbers into a user defined function. I want my input to be the 2 numbers and output should be a sentence containing the 2 numbers and its summation. Flow chart will be as given below
+
+Image by Author
+
+Now we have to code it:
+
+MyAddFunction <- function(a,b){
+
+output = a + b
+
+result = paste0("Addition of ", a, " and ", b, " gives ", output)
+
+return(result)
+
+}
+
+Try calling this function using different values for a and b as given below:
+
+For a = 3 and b = 5,
+
+MyAddFunction(3,5) gives result as “Addition of 3 and 5 gives 8”
+
+Congratulations! You have written your first function.
+
+Step 5: Customizing your UDF
+
+Ready to take it further? It is always better to build a skeleton of the function as we did above and then build on it for further modifications or customization. This way, you can clearly check where you are going wrong.
+
+Let’s say instead of 2 numbers, a user tries to insert a = “one”. Do you want to add error messages telling the user to use a numeric variable rather than a character?
+
+To do this, we can further modify the same function.
+
+Image by Author
+
+Let’s see how my function will look like now:
+
+MyAddFunction <- function(a,b){
+
+if(all(is.numeric(a), is.numeric(b))){
+
+output = a + b
+
+result = paste0("Addition of ", a, " and ", b, " gives ", output)
+
+}else{
+
+result = "Please make sure that inputs are numeric"
+
+}
+
+return(result)
+
+}
+
+Try calling this function using different values for a and b as given below:
+
+Now for a = 3 and b = 5, the results will remain the same;
+
+MyAddFunction(3,5) gives result as “Addition of 3 and 5 gives 8”
+
+But for a = 4 and b = “two”,
+
+MyAddFunction(4,”two”) gives result as “Please make sure that inputs are numeric”
+
+What’s next?
+
+Now that you have learnt how to build a basic user defined function in R, I hope you will be able to use it to make your code better. User defined functions can help achieve a lot of coding milestones like below:
+
+Your code is now easy to understand by you and others It is now better structured and client ready UDF can help pin point algorithmic errors It leads to easy modification and code alterations in future
+
+From now on with use of UDFs, hope you never feel lost while approaching yours or your peers code after a while!
+
+Do you want to know how to make advanced user defined functions using loops or to call a user defined function inside another function? Check out my next post for more such interesting functions.

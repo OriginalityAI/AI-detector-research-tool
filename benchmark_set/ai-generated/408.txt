@@ -1,0 +1,11 @@
+Immigration and Customs Enforcement (ICE) has faced widespread criticism for its aggressive pursuit of undocumented immigrants under the Trump administration. However, recent reports suggest that the agency has added a concerning new tool to its arsenal: a cell-site simulator device, which is designed to monitor the location of suspected terrorists.
+
+According to an affidavit unsealed by a federal search warrant, investigators have used the device – also known as a "Hailstorm" or "Stingray" – to track down undocumented immigrants. The machine mimics cell phone towers, tricking phones within range into transmitting their location data. It can also interrupt the service of all phones within its selected area. Use of the device requires prior approval from a judge.
+
+The Detroit News reported that ICE and FBI agents used a Stingray to locate a 23-year-old restaurant worker from El Salvador named Rudy Carcamo-Carranza. Carcamo-Carranza had no violent record but was known to law enforcement for alcohol-related offenses and hit-and-run incidents.
+
+In response to questions about the use of the Stingray, an ICE spokesperson defended its use in a statement to The News, saying: "Cell-site simulators are invaluable law enforcement tools that locate or identify mobile devices during active criminal investigations."
+
+Critics argue that the use of Stingrays by ICE and other agencies raises serious concerns about privacy and civil liberties. The device's ability to monitor the movements of innocent bystanders – as well as its potential to disrupt phone service – is troubling to many.
+
+The use of cell-site simulators is not new, but their application in immigration enforcement is a recent development. With public scrutiny of ICE already at a high level, the use of devices like Stingrays is likely to only intensify concerns about government surveillance and the treatment of undocumented immigrants.

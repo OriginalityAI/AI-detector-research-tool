@@ -1,0 +1,111 @@
+Blockstream Markets Weekly — Sep 17, 2021
+
+BMN sells out in two minutes, Fidelity lobbying for BTC ETF, Cathie Wood reiterates $500k price target, Coinbase bonds oversubscribed, MicroStrategy sells stock to boost BTC war chest, and El Salvador promises foreigners no tax on BTC Blockstream Follow Sep 17 · 7 min read
+
+By Jesse Knutson
+
+Bounce
+
+Bitcoin is on pace to reclaim about half the ground lost last week and tracking the seventh weekly gain of the past ten.
+
+Major stonks indices ended the week near the top end of their historic range as gold dropped through its 50-day moving average to a one-month low, the USD strengthened and the CNY continued to drift lower as the domestic real estate crisis unfolds.
+
+Bitcoin, technically, continues to look interesting as the volatility squeeze highlighted over the previous two weeks continues to play out. Onchain data, fund flows and funding rates also look supportive.
+
+The herd is coming
+
+Blocksteam followed up on a string of positive headlines over the past few weeks with the successful completion of tranche three of the Blockstream Mining Note. Today’s tranche saw $5.5M of BMN orders filled in under two minutes.
+
+Outside of that, news flow this week was led by institutional and corporate headlines with reports that Fidelity had met with the SEC to pitch its BTC ETF application, Cathie Wood reiterating her $500,000 Bitcoin target price, Coinbase junk bonds ~5x oversubscribed, and MicroStrategy reportedly selling $400M in stock to boost its Bitcoin holdings.
+
+Canary in the CNY coal mine?
+
+There’s a big bubble bursting in China, and it’s not Bitcoin.
+
+The ongoing Evergrande saga is massive in scale: $300B in liabilities, commitments to complete 1.4 million properties, 16% of China’s total high-yield bond market, and swarms of disgruntled retail investors.
+
+Evergrande is a systemically important company to China’s economy and the ripple effect could drive real pain; fire sales across real estate markets, evaporation of supply chain profit margins, and a nosedive in capital markets. The stakes are high and it’s unclear how this will be navigated.
+
+China already has a lot on its plate with an ongoing economic slowdown, rising tensions with Western countries, and a crackdown on private sector companies from a broad range of industries — including Bitcoin.
+
+I wonder if the Bitcoin crackdown is a canary in the coal mine, and perhaps part of a larger effort to tighten capital controls as the powers that be attempt to address escalating issues in China’s massive real estate market.
+
+The surprise string of 2015 CNY devaluations took markets by surprise, and I think we’re a primary driver of Bitcoin’s grind higher in 2016 (chart below).
+
+A repeat of that would be massively bullish for Bitcoin.
+
+Cups, handles, and squeezes
+
+Over the past two weeks, I’ve highlighted the volatility squeeze playing out and how last week’s dump was probably a head fake, so it’s encouraging to see price rebound back up around the 20-day moving average.
+
+The overall setup continues to look supportive; Bitcoin saw +$60M in fund flows over the past two weeks and MicroStrategy buying has lifted BTC in corporate treasuries to around an all-time high, funding rates remain low, and charts on the crypto space as a whole look like they could be setting up for a broad-based break higher.
+
+With both the 50-day moving average and the 200-day moving average sitting at $46,000, I think this is probably a fairly strong line of support. Just north of $52,000 marks both two standard deviations above the 20-day moving average and the price peak from a few weeks ago. This is probably the main line of near-term resistance.
+
+Onchain data also looks increasingly positive, with indications that both small and large wallets are now pulling in the same direction for the first time in weeks.
+
+What’s going on in China (Evergrande and real estate) is a bit off the Bitcoin radar at the moment, but could also be a massive Bitcoin price driver if it spills over into pressure on the CNY.
+
+📬 Register your email to receive Blockstream Markets Weekly delivered straight to your inbox. 📬
+
+Bitcoin markets news
+
+Tranche three saw €4.7M (~ $5.5M USD) worth of the BMN sell out in less than two minutes
+
+Each BMN was offered at €240,000 (~ $280,000 USD)
+
+Brings the total issuance of BMNs to €11.3M (~ $13.3M USD)
+
+Filings show that Fidelity’s head of Digital Assets, Tom Jessop met with SEC officials earlier in the month
+
+Fidelity filed for a BTC ETF in March, called the Wise Origin Bitcoin Trust
+
+There are several Bitcoin ETF applications in the works, data from Bloomberg shows potential approval for most of them clustered around the last week of October and the first week of November
+
+Speaking to reporters at the Salt technology conference in New York, Wood said:
+
+“If we’re right and companies continue to diversify their cash into something like bitcoin, and institutional investors start allocating 5% of their funds, we believe that the price will be ten-fold of where it is today…so instead of $45,000, over $500,000”
+
+Demand reportedly hit $7B allowing Coinbase to jack size 33% from the original $1.5B
+
+Interest rates were set at 3.375% and 3.625% for seven and ten-year bonds
+
+This shows that industry financing has graduated from venture funding
+
+Reported earlier in the week that it had acquired 8,957 BTC between July 1 and Sep 12 at an average price of $46,875
+
+The company also disclosed that it had issued and sold a total of 555,179 shares of common stock to raise about $400M
+
+The announcement is part of an effort to attract Bitcoin HNW and stimulate investment into the country
+
+Javier Argueta, a legal adviser to President Nayib Bukele, announced that
+
+“There will be no taxes to pay on either the capital increase or the income”
+
+Possibly the most beautiful sentence in human history
+
+SEC Chairman Gary Gensler told the Senate Banking Committee the SEC is trying to protect investors through better regulation of the thousands of new digital assets and coins, as well as oversight of the more-familiar BTC and ETH markets.
+
+Sen. Pat Toomey said
+
+“My whole point is, I think we need clarity on this….I think you should publicly disclose this. … And we certainly shouldn’t be taking enforcement action against somebody without having first provided that clarity”
+
+The rest of the world struggled to gain access to US innovation over the previous 30 or 40 years, it looks like US investors are being increasingly locked out of innovation happening in global markets
+
+Korea has imposed a September 24 deadline when more than 60 trading venues in South Korea must notify customers of a partial or full suspension
+
+To continue operating, exchanges must register with the Financial Intelligence Unit by Sept. 24. They must also partner with banks to ensure real-name accounts.
+
+There are only so many banking relationships to go around, though, which is creating a musical chairs situation in which many platforms will be left without a partner on the banking side
+
+AMC has been one of the focus of meme mania, with stonk prices surging > 2,000% YTD
+
+The company plans to accept Bitcoin for theatre tickets by the end of the year. They have mentioned this plan previously, so not a surprise
+
+Looks like an effort to diversify away from commission compression in spot trading
+
+Last year, Coinbase bought Skew, a derivatives market tracker
+
+Charts
+
+Remember 2016?

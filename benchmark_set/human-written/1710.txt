@@ -1,0 +1,27 @@
+The open domain problem of question-answer systems assumes that the model is able to answer new questions using the knowledge learned during training. In addition, the model should be able to generalize existing knowledge to answer new questions.
+
+However, the results on the test dataset do not show the actual quality of the models. Researchers at Facebook AI Research (FAIR) analyzed the top 3 popular open-domain QA datasets. In 60–70%, the answers to the questions in the test set were in the training set. In addition, 30% of the test questions had a duplicate in the training set. The researchers then tested the state-of-the-art models. The speed of all models dropped significantly lower when it was necessary to answer a question that was not directly in the training set. The average difference in prediction accuracy between repeating and non-repeating data was 63%.
+
+More about analysis
+
+The datasets that the researchers analyzed included Natural Questions, TriviaQA, and WebQuestions.
+
+WebQuestions
+
+WebQuestions is a dataset of 3,778 training and 2,032 test question and answers pairs. The questions were pulled from the search engine and the answers were pulled from Freebase.
+
+TriviaQA
+
+TriviaQA is a dataset of 78,785 training, 8,837 validation, and 11,313 test question and answer pairs. Created and pinned questions and answers from quiz sites.
+
+Open-Natural Questions
+
+Natural Questions consists of search engine questions and Wikipedia answers. There were 79,168, 8,757 and 3,610 pairs of questions and answers in the training, validation, and test samples.
+
+An example of overlapping questions in Open-Natural Questions. Source: Arxiv
+
+The researchers normalized the responses before looking for overlaps in the samples. Intersections of questions were identified partially manually using paraphrase markup. You can read more about the intersection search method in the original article.
+
+Before you go…
+
+If you found this article helpful, click the💚 or 👏 button below or share the article on Facebook so your friends can benefit from it too.

@@ -1,0 +1,91 @@
+FrontEnd: Angular & GitHub
+
+I recently worked on a fun personal project, creating a web-based tool for client management and build my front-end app with angular. Now, if you are new to Angular like I was, It’s quite confusing and there aren’t many directives on how to get your application out there for other people to use (taking an angular app from dev environment to a live environment that users can access and use).
+
+So for the purpose of this article, We’ll explore how to deploy or publish an Angular app on GitHub pages.
+
+I’ll assume that you have already created an angular app or are currently working on one and are familiar with angular CLI, Git, and Github. The Angular CLI makes it easy to create an application that already works, right out of the box. It already follows our best practices. If you don’t have it installed, I would highly recommend that you do.
+
+Angular CLI installation
+
+npm install -g @angular/cli
+
+If you don’t have an angular project to deploy, you can simple create a demo project and follow along by running the command “ng new” followed by your application name. I decided to named mine “my-app-demo”, yours will have a different name or you can name it whatever you wish:
+
+ng new my-app-demo
+
+Once it’s created, change working directory to your app directory and run it to make sure everything is working correctly:
+
+cd my-app-demo
+
+ng serve --open
+
+Ng “serve” follow by “ — open” flag will automatically launch and open the web browser. if you simply typed “ng serve” and once your app is up and running, visit the page http://localhost:4200 to make sure everything works fine. My app demo looks like this:
+
+screenshot of terminal — mac
+
+The next step is making sure you have ghpages package installed on your computer. The ghpages package is used to deploy your build file to GitHub pages. run the following command to install it globally:
+
+npm install -g angular-cli-ghpages
+
+Create a GitHub repository
+
+Push content to your GitHub repository
+
+Follow the quick setup up steps below. When setting up a remote repository, make sure you replace the path with the correct path to your remote repository:
+
+echo "# my-app-demo" >> README.md
+
+git init
+
+git add .
+
+git commit -m "first commit"
+
+git remote add origin https://github.com/githubusername/reponame.git
+
+git push -u origin master
+
+Now, running “ng build” create a distribution folder which contains all the files necessary for your projects to run in a production environment or server host.
+
+ng build --prod
+
+Adding the production flag “ — prod” to ng build reduce significantly the size of your bundle files. If your app doesn’t integrate any type of back-end, you can simply take the content of your dist folder and upload them to a server via FTP and your app will work just fine.
+
+You can also specify the base reference of your build files with the following command:
+
+ng build --prod --base-href //urlOfYourSubfolderDomain
+
+Deploy your app to Github pages
+
+In order to deploy to Github pages, we need to run “ng build” with the base-href flag and it looks like this:
+
+Make sure to put your Github username and the name of the remote repository you associated with the local repository of your angular app. Mine looks like this:
+
+Screenshot of terminal — mac
+
+It’s very important to add the slash “/” after the repository name at the end of the path otherwise it would not work.
+
+Now, once it’s done, you can run ngh to invoke the hgpage command line interface tool we installed earlier.
+
+Turns out Angular 6 changed angular.json 's "outputPath": "dist/" into "outputPath": "dist/[PROJECTNAME]" , which placed everything in the dist folder in a subfolder, which breaks ngh's functionality.
+
+ngh
+
+if you are using Agular 6 and above, run:
+
+ngh --dir dist/[PROJECTNAME]
+
+Here is the screenshot when I ran ngh after ruining ng build on my project demo:
+
+Here is the screenshot when I ran ngh on a project that was built recently with Angular 6 version:
+
+After successfully publishing, simply go ahead and visit that URL you specified on you base-href flag to see your deploy and publish angular app running. here is my screenshot:
+
+So, that’s it! now you can go ahead and make changes on your app, simply repeat the build and deploy processes whenever you want to share it with others in your organization or if you simply want to put it out there.
+
+If you enjoyed this article, you might also like “How to build a bidirectional app for Internet of Things/Chat with Python”
+
+Cheers!!!
+
+Also, Read

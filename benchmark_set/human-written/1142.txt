@@ -1,0 +1,275 @@
+Matplotlib
+
+There is no method for instantly creating funnel charts in Matplotlib, so let’s start with a simple horizontal bar chart and build from there.
+
+import matplotlib.pyplot as plt y = [5,4,3,2,1]
+
+x = [80,73,58,42,23] plt.barh(y, x)
+
+Horizontal Bar Chart — Image by the author
+
+That’s actually quite close to what we want, so why not stop here and use a bar chart instead?
+
+It may be even easier to compare the values with a simple bar chart, but choosing the funnel-shaped one can make the relationship between the bars more explicit and make our visualization more appealing.
+
+Ok, so we’ll need to plot one bar at a time and use the ‘left’ parameter to adjust its position in the chart. Let’s check how this works.
+
+y = [5,4,3,2,1]
+
+x = [80,73,58,42,23] x_max = 100
+
+x_min = 0 for idx, val in enumerate(x):
+
+plt.barh(y[idx], x[idx], left = idx+5) plt.xlim(x_min, x_max)
+
+Horizontal bar chart with floating bars — Image by the author
+
+We have the bars' size, which is x and the range of the x-axis, which is 100.
+
+The difference between those values is the blank space, and to center the bars, we need to have the same amount of blank space on each side.
+
+So we can say that:
+
+left = (size of the bar - x-axis range) / 2
+
+Let’s see how this looks.
+
+y = [5,4,3,2,1]
+
+x = [80,73,58,42,23] x_max = 100
+
+x_min = 0 for idx, val in enumerate(x):
+
+left = (x_max - val)/2
+
+plt.barh(y[idx], x[idx], left = left, color='grey') plt.xlim(x_min, x_max)
+
+Funnel chart — Image by the author
+
+Great! But the axis information doesn’t mean much now that the bars don’t have the same starting point.
+
+We need to print the values on the bars and connect them.
+
+y = [5,4,3,2,1]
+
+x = [80,73,58,42,23] x_max = 100
+
+x_min = 0 fig, ax = plt.subplots(1, figsize=(12,6)) for idx, val in enumerate(x):
+
+left = (x_max - val)/2
+
+plt.barh(y[idx], x[idx], left = left, color='grey', height=1, edgecolor='black')
+
+# value
+
+plt.text(50, y[idx], x[idx], ha='center', fontproperties=font,
+
+fontsize=16, color='#2A2A2A') plt.axis('off')
+
+plt.xlim(x_min, x_max)
+
+Funnel chart with values — Image by the author
+
+Alright, we could add a title, some labels for the bars, and call it a day.
+
+But let’s give our viewers some eye-candy and add a shadow connecting the bars instead of just stacking them. That will make our chart and the connection between the bars more clear.
+
+First, let’s define all the variables we’ll need
+
+from matplotlib import font_manager as fm # funnel chart
+
+y = [5,4,3,2,1]
+
+x = [80,73,58,42,23]
+
+labels = ['Hot Leads', 'Samples Sent', 'Quotes', 'Negotiations', 'Sales'] x_max = 100
+
+x_min = 0
+
+x_range = x_max - x_min fpath = "fonts/NotoSans-Regular.ttf"
+
+font = fm.FontProperties(fname=fpath)
+
+Now, let’s add some more details to our plot.
+
+fig, ax = plt.subplots(1, figsize=(12,6)) for idx, val in enumerate(x):
+
+left = (x_range - val)/2
+
+plt.barh(y[idx], x[idx], left = left, color='#808B96',
+
+height=.8, edgecolor='black')
+
+# label
+
+plt.text(50, y[idx]+0.1, labels[idx], ha='center',
+
+fontproperties=font, fontsize=16, color='#2A2A2A')
+
+# value
+
+plt.text(50, y[idx]-0.3, x[idx], ha='center',
+
+fontproperties=font, fontsize=16, color='#2A2A2A')
+
+
+
+plt.xlim(x_min, x_max)
+
+plt.axis('off') plt.title('Beskar Forging Services Inc.', fontproperties=font, loc='center', fontsize=24, color='#2A2A2A') plt.show()
+
+Funnel chart with title and labels — Image by the author
+
+*Font from https://fonts.google.com/specimen/Noto+Sans
+
+We’ll plot a line from one side to the other of the bars. We can use the value of left to find the start and end of the bar and the y-value to find its center.
+
+fig, ax = plt.subplots(1, figsize=(12,6)) for idx, val in enumerate(x):
+
+left = (x_range - val)/2
+
+plt.barh(y[idx], x[idx], left = left, color='#808B96', height=.8, edgecolor='black')
+
+# label
+
+plt.text(50, y[idx]+0.1, labels[idx], ha='center',
+
+fontproperties=font, fontsize=16, color='#2A2A2A')
+
+# value
+
+plt.text(50, y[idx]-0.3, x[idx], ha='center',
+
+fontproperties=font, fontsize=16, color='#2A2A2A')
+
+
+
+plt.plot([left, 100-left], [y[idx], y[idx]]) plt.xlim(x_min, x_max)
+
+plt.axis('off') plt.title('Beskar Forging Services Inc.', fontproperties=font, loc='center', fontsize=24, color='#2A2A2A') plt.show()
+
+Funnel chart with some lines on it — Image by the author
+
+Now let’s move this line to the bottom of the bar, and since we won’t have a connection after the last bar, we can skip drawing a shadow for it.
+
+We defined the bars' height as 0.8, so to move the lines to the bottom, we could decrease y to 0.4.
+
+We’ll also need the coordinates of the top of the next bar.
+
+fig, ax = plt.subplots(1, figsize=(12,6)) for idx, val in enumerate(x):
+
+left = (x_range - val)/2
+
+plt.barh(y[idx], x[idx], left = left, color='#808B96', height=.8, edgecolor='black')
+
+# label
+
+plt.text(50, y[idx]+0.1, labels[idx], ha='center',
+
+fontproperties=font, fontsize=16, color='#2A2A2A')
+
+# value
+
+plt.text(50, y[idx]-0.3, x[idx], ha='center',
+
+fontproperties=font, fontsize=16, color='#2A2A2A')
+
+
+
+if idx != len(x)-1:
+
+next_left = (x_range - x[idx+1])/2 plt.plot([left, 100-left],
+
+[y[idx]-0.4, y[idx]-0.4]) plt.plot([next_left, 100-next_left],
+
+[y[idx+1]+0.4, y[idx+1]+0.4]) plt.xlim(x_min, x_max)
+
+plt.axis('off') plt.title('Beskar Forging Services Inc.', fontproperties=font, loc='center', fontsize=24, color='#2A2A2A') plt.show()
+
+Funnel chart with even more lines on it — Image by the author
+
+We found all the points we need to draw. Now we can connect those points and see if we get the shape we’re looking for.
+
+Don’t forget to repeat the first point at the end to close the polygon.
+
+fig, ax = plt.subplots(1, figsize=(12,6)) for idx, val in enumerate(x):
+
+left = (x_range - val)/2
+
+plt.barh(y[idx], x[idx], left = left, color='#808B96', height=.8, edgecolor='black')
+
+# label
+
+plt.text(50, y[idx]+0.1, labels[idx], ha='center',
+
+fontproperties=font, fontsize=16, color='#2A2A2A')
+
+# value
+
+plt.text(50, y[idx]-0.3, x[idx], ha='center',
+
+fontproperties=font, fontsize=16, color='#2A2A2A')
+
+
+
+if idx != len(x)-1:
+
+next_left = (x_range - x[idx+1])/2 shadow_x = [left, next_left,
+
+100-next_left, 100-left, left]
+
+
+
+shadow_y = [y[idx]-0.4, y[idx+1]+0.4,
+
+y[idx+1]+0.4, y[idx]-0.4, y[idx]-0.4] plt.plot(shadow_x, shadow_y) plt.xlim(x_min, x_max)
+
+plt.axis('off') plt.title('Beskar Forging Services Inc.', fontproperties=font, loc='center', fontsize=24, color='#2A2A2A') plt.show()
+
+Funnel chart with the bars connected — Image by the author
+
+Perfect. All that’s left to do is change the .plot to .fill and we have our funnel chart ready.
+
+fig, ax = plt.subplots(1, figsize=(12,6)) for idx, val in enumerate(x):
+
+left = (x_range - val)/2
+
+plt.barh(y[idx], x[idx], left = left,
+
+color='#808B96', height=.8)
+
+# label
+
+plt.text(50, y[idx]+0.1, labels[idx], ha='center',
+
+fontproperties=font, fontsize=16, color='#2A2A2A')
+
+# value
+
+plt.text(50, y[idx]-0.3, x[idx], ha='center',
+
+fontproperties=font, fontsize=16, color='#2A2A2A')
+
+
+
+if idx != len(x)-1:
+
+next_left = (x_range - x[idx+1])/2 shadow_x = [left, next_left,
+
+100-next_left, 100-left, left]
+
+
+
+shadow_y = [y[idx]-0.4, y[idx+1]+0.4,
+
+y[idx+1]+0.4, y[idx]-0.4, y[idx]-0.4] plt.fill(shadow_x, shadow_y, color='grey', alpha=0.6) plt.xlim(x_min, x_max)
+
+plt.axis('off') plt.title('Beskar Forging Services Inc.', fontproperties=font, loc='center', fontsize=24, color='#2A2A2A') plt.show()
+
+Funnel chart — Image by the author
+
+There it is!
+
+Drawing a funnel chart with Matplotlib can go from simple to complex very quickly.
+
+But that’s the fun of Matplotlib; we have the freedom to draw pretty much anything.

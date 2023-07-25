@@ -1,0 +1,29 @@
+Om: A Functional Approach to Building Interactive Browser Apps
+
+Recently, David Nolen introduced Om, a thin ClojureScript wrapper over Facebook’s React that provides a functional API for building interactive browser apps. If you are looking to build web user interfaces in a functional style, Om is a practical and fun way to do so.
+
+I spent some time during my Christmas vacation building a sample app in Om and enjoyed the experience. CartoCrayon was an early experiment in styling geojson data. Initially, the app only had one baked-in dataset and only worked with a specific map, but you could select geographic features and style based on data or manually. The app was an interesting challenge for Om because it involved classic browser UI work and required cooperating with a stateful mapping library that could not be re-rendered every time.
+
+I am not a seasoned Clojurian, and I have no privileged information about the future or design of Om, so I believe that David will shake his head at different parts of this post and my code. Nevertheless, here are a few impressions and tips to help you when working with Om.
+
+Working with ClojureScript
+
+I have always been excited about ClojureScript ever since I first heard about it. However, I have tried to use it for real projects three or four times over the past two years but always had problems with getting an environment up and running, encountering incompatible version issues, debugging pains, slow builds that led to massive files, and difficulties with JS interop. Many months ago, upon my latest try, everything about the language clicked seamlessly, but the available options for working with the DOM either lacked the expressive power I needed or were only thin wrappers over the stateful DOM methods, marring the beauty of the Clojure code.
+
+If you have experienced similar problems when working with ClojureScript in the past, I invite you to give it a second try. ClojureScript, as a language, a toolset, and a library ecosystem, is now ready for prime-time. Starting a project, building it, and accessing a REPL is now easy. Build times and sizes are way down, and interop has become more convenient. Source-maps make debugging relatively effortless. Advanced options for compilation still pose some challenges, but overall, working with ClojureScript has greatly improved.
+
+Getting started with Om
+
+Before starting with Om, it's essential to learn ClojureScript and React first. Reading the book ClojureScript: Up and Running is an excellent starting point for learning ClojureScript, while the React Tutorial is an outstanding resource for mastering React. Be sure to also scan the Guides linked on that page and bookmark the Component Lifecycle document for future reference. Once you are well versed in ClojureScript and React, start learning about Om. Begin with the Conceptual Overview, then browse the Om TodoMVC implementation, which demonstrates how to use Om to render state to the DOM and react to DOM events with state changes. There are a few tricky areas regarding channels, but after two or three reads, it should be quite comprehensible. Finally, read the source code of Om's core and skim the cursor implementations the first time around.
+
+Interacting with Stateful Libraries
+
+In my project, a map with a rather expensive DOM setup and big pieces of geographic data that should only get parsed once were used. Surprisingly, interacting with these stateful items with Om was relatively easy. The map gets initialized only once when the map component is first attached to the DOM, then saved in the map's state. Similarly, the geographic data gets parsed only once, added to the map, and placed into the feature component's state when the component is first initialized. Each time the component is updated with new data, we get the existing data from the component state and restyle it. Om handles these kinds of situations effectively, allowing functional updates to remain straightforward.
+
+Lifecycle Methods
+
+Working with object-oriented, stateful UIs, I usually add additional display logic into event handlers besides merely altering model data. With Om, I was initially concerned that I would miss this feature since each component would render its current state without being aware of the particular change that caused it. However, I have found that it’s usually easy to work around this by using React’s lifecycle methods. In my project, when selecting a geographic feature on the map, the feature list should scroll to the newly-selected item. With React/Om, I made this the responsibility of the component that displays each feature's row in the table. In the did-update method, I check the row's current and previous state to see if it is now selected but was not previously visible, then scrolls the table to make itself visible.
+
+Conclusion
+
+If you are searching for a functional approach to building interactive browser apps, Om provides an idiomatic, functional DOM abstraction. Although it may take some time to learn, working with Om is practical, fun, and yields great results. Functional UI tools that I have tried in the past like Rx streams or FRP were very expressive but complicated to maintain as the app grew more complex. Om, on the other hand, makes it easy to build and maintain user interfaces in a functional style.

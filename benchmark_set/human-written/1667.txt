@@ -1,0 +1,35 @@
+Rewind back to 2010 and the way Bitcoin wallets worked. Users had a wallet.dat file on their computer with their private keys on it. They could optionally add a password to encrypt it. They SHOULD back up the file in case they lost their computer, like this guy. Life at the time was tedious! Some mobile wallets worked the same way. Users were given full responsibility for keys but without good tools to take responsibility.
+
+Fast forward to today. Now the defacto standard is to backup your wallet by writing down a 12 to 24 word passphrase which IS your master private key.
+
+In some ways this is easier than saving a file to a thumb drive and putting it in a safe. Especially on mobile. But have we just opened up ourselves to possibly the biggest attack vector on our devices?
+
+I recently sat down with John McAfee, life long hacker and former founder of popular anti virus software, and we discussed securing Bitcoin. Being buried in the hacker community, he sees the biggest threat to our devices as two things, and I would agree:
+
+Keyloggers Screen capture malware
+
+Both Android and iOS now allow custom keyboards and it’s entirely possible one of those is snooping your keys and sending them to a malicious party.
+
+With a 12–24 word seed backup, we’ve guaranteed that we’ve given attackers our private key on a silver platter. Show the words on screen and boom, a screen capture virus has it. Have the user enter it to verify the backup (many wallets do this) and bam, a key logger has you “pwned”!
+
+Some wallets talk about being uber secure because they use the Secure Element to store keys in hardware on the phone. But show the keys on screen or have the user type it in and all that hardware security is moot.
+
+KeepKey Wallet
+
+So what’s a user to do? Yes there are great, secure hardware wallets like Trezor, Keep Key, and Ledger. These are awesome solutions for very large fund storage. But trying to bring bitcoin to 10s of millions of users, we’d think a VERY small number of them would have the patience to use a hardware wallet for their first intro into bitcoin. Especially for their “spending funds”. How much are “spending funds” anyway? Many people say it’s the $100 cash they’d store in a leather wallet. But what if you’re traveling, booking hotels and flights? This could easily become $1000s.
+
+We need a more familiar and still secure way to protect against those top 2 forms of malware. The key (no pun intended) is to never show the user their own keys. Never display it on screen. Never have them type it in. But instead encrypt it with a separate set of credentials such as a strong password, then back it up, behind the scenes, with 2FA to protect it. If a key logger or screen grabber saw your encryption password, they still don’t have the encrypted data to decrypt it. It would require a whole new attack vector to get the data itself. On mobile that’s even orders of magnitude harder due to app sandboxing.
+
+This is actually how our old wallet.dat file worked. You never saw the actual keys, but it was a UX nightmare. Especially the backup part.
+
+Edge Wallet supports Bitcoin, Bitcoin Cash, Litecoin, Dash, Ethereum and ERC20 tokens
+
+This is where Edge comes in and solves the key management problem in the most seamless and secure manner. With the Edge Wallet, a user feels like they are creating a classic “account” on the system. However, private keys are created locally on the device. Then they are stored always encrypted with a strong hash of the user’s username and password, which only the end user knows. Then it’s automatically backed up in case of device loss and synchronized between their different devices. We then offer One-Touch 2FA, the world’s easiest 2FA implementation. With that enabled, a key logger or screen grabber that may have snagged the username/password won’t be able to use it on another device. Users get the ease and familiarity of standard authentication with the security of client-side encryption and automated backup.
+
+No security solution is perfect and it’s not a linear scale of less secure to more secure. It’s about which attack vector you’re concerned about and what your audience is willing to endure to protect against it. We’ve built the most secure implementation of private key management against the attack vectors we deem most likely to occur, factoring in the usability of the 90% of mobile device users. We’ve fundamentally focused on driving the amazing innovation of cryptography to the mass market by making it on by default, hiding the complexity, and presenting it with a familiar interface. Our mobile wallet has proven this model for the past 4years. Very soon, you’ll see us drive this solution to other blockchain apps enabling the an ecosystem of secure, zero-knowledge private applications.
+
+Paul Puey
+
+CEO / Co-founder
+
+Edge

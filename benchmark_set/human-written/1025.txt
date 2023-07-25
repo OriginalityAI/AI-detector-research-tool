@@ -1,0 +1,139 @@
+Yesterday I saw a cool map I wanted to make myself. (see at the bottom to see some examples) It costed a bit of time, but now I can do it. And you can do it too :)
+
+What do you need:
+
+Maperitive, you can download it at http://maperitive.net/
+
+Gravit Designer, or another program that can handle SVG files
+
+A fast computer with a lot of memory and/or a lot of patience
+
+0. Download Maperitive
+
+Download Maperative at http://maperitive.net/
+
+Download the rules at https://github.com/rcsmit/maperitiverules
+
+Save/copy them to the rules directory of Maperitive
+
+Go to the command prompt at the bottom of the screen in Maperitive
+
+Type use-ruleset location=”C:\Users\rcxsm\Documents\Maperitive-latest\Maperitive\rules\majorminorblackinverse.mrules” (change directory and file name of course)
+
+Repeat this for every rule
+
+1. Download the map of the area
+
+Go to the area you want to select
+
+Map -> Set Geometry Bounds
+
+Map -> Download OSM Data
+
+(your map won’t be saved this way)
+
+OR
+
+Go to https://scalablemaps.com/map-tool
+
+Go to the area you want to select. Don’t select to much!
+
+Copy the numbers after the # in the URL (like https://scalablemaps.com/map-tool#98.972233,18.776153,98.999902,18.800856) and paste them in eg. notepad
+
+Go back to the browser, copy thethis URL
+
+http://www.overpass-api.de/api/xapi?way[bbox=98.972233,18.776153,98.999902,18.800856.
+
+Paste it in the URL-bar and replace the numbers in the URL by the numbers you just found. A file is downloaded (“xapi”). Rename it to city.osm (or whatever name you want, but use the extension .osm)
+
+OR
+
+If you have problems with lakes and rivers:
+
+download a bigger map from [GeoFabrik](http://download.geofabrik.de/)
+
+crop it with [OSMConvert](https://wiki.openstreetmap.org/wiki/Osmconvert#Windows) with the option ` — complete-multipolygons`
+
+`osmconvert — complete-multipolygons — complete-ways — emulate-osmosis — max-objects=1471088640 — out-osm -b=5.841981,51.943983,5.93079,52.02912 “gld.osm”>”arnhem5.osm”`
+
+2. Open Maperitive
+
+Open Maperitive
+
+File -> Open mapsource. Select the file you just downloaded
+
+Map -> switch to rules. Select the rule you want.
+
+If you want, you can open the rules-file in notepad and adjust it. Changes will be done automatically in Maperitive after saving (make a backup first)
+
+If needed, hide the webmap by unselecting the star beside the webmap
+
+If needed, change the output frame by Map -> Set Printing Bounds
+
+Tools -> export to SVG (for Illustrator) (the Inkscape file won’t work for Gravit Designer!)
+
+3. Ungrouping and regrouping the layers
+
+The groups are made with a very basic number system (1 = 1, 111 = 3, 11111 = 5 etc.)
+
+Select all the groups of one category (eg main roads), with the use of the CTRL key
+
+cut your selection
+
+make a new page (not a new document!)
+
+paste it there
+
+If needed select outlook view or fast view
+
+Select the groups
+
+Ungroup (Shift-Ctrl-G)
+
+When zooming in, sometimes lines are not what you expect.
+
+Select all the paths
+
+Go to Advanced stroke settings
+
+Set the position on ‘center’
+
+Select all paths and group them [CTRL-G]
+
+Cut the group [CTRL-X]
+
+Paste the group in the original page [CTRL-V]
+
+4. Do what you want to do
+
+And you are done and beautiful maps are on your way :)
+
+TIPS
+
+A better tutorial how to work with Maperitive is here http://maperitive.net/docs/TenMinutesIntro.html
+
+Start with small areas
+
+If you want other colors or line thickness, do it in the rules, It is a hell of a job to do it in Gravit Designer
+
+It is recommended to save every layer in a seperate file (by commenting the other layers out in the rules), ungroup all the groups in each file, set the position in center and at the combining these files by copying/pasting in one document.
+
+As said before: when zooming in, sometimes lines are not what you expect.
+
+Select the line(s) and set the position on center
+
+You can also save it as SVG for Inkscape, open it in Inkscape, save it as PDF and open this PDF in Gravit Designer.
+
+Get inspiration at https://www.postertime.nl/c-4242401/geografische-poster-met-stadskaart/ or https://www.etsy.com/market/city_maps
+
+I still have to play with the value of the waterline
+
+Patience is important :) You might want to use the outline and/or fast view when using GD with the maps
+
+You can also use the _bw.rules_ (not made by me, but it’s more a greyshades map)
+
+You can give your map an coloured overlay (paying with blending styles (overlay gives good results and opacity %)
+
+New rules will be published here: https://wiki.openstreetmap.org/wiki/User:Rcsmit and/or here https://github.com/rcsmit/maperitiverules
+
+The cartography is licensed under the Creative Commons Attribution-ShareAlike 2.0 license (CC BY-SA). It is required that you use the credit “© OpenStreetMap contributors”.

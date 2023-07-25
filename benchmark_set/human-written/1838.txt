@@ -1,0 +1,43 @@
+Professor Thomas Davenport of Babson College, Harvard Business School and the MIT Sloan School of Management delivered his keynote address on the history of data analytics at Open Data Science Conference East 2017 in Boston, titled Four Eras of Analytics and Data Science.
+
+Prof. Davenport’s speech covered the span of data analytics from a business perspective, beginning in the 1970s up through modern times, breaking the practice out into four main eras.
+
+The history of data science is extraordinarily brief compared to the long arcs of biology, chemistry, and other disciplines. Nonetheless, this history rich in its own way, drawn from a group of movers and shakers that contrasts sharply with the academics who established the study of the physical world centuries before. Read on to get a sense of how we got from ‘back room’ analysts to the ‘sexiest job of the 21st Century’.
+
+Era One: Artisanal Analytics
+
+According to Prof. Davenport’s view, data analytics commenced in earnest with what he dubs “artisanal analytics” in 1975. This methodology was primarily geared towards producing insights for internal decision-making using small-scale, structured datasets.
+
+From an organizational perspective, the analyst of the 1970s played a fundamentally different role than the modern data scientist. Analysts weren’t creating customer-facing tools that could be reused. Instead, they honed in on predictive models based on human hypotheses that took significant amounts of time to refine. This meant that the analyst wasn’t out front, but more of a “back room” support member, in Dr. Davenport’s phrasing.
+
+Davenport points out that this form of analysis isn’t gone, but it has taken a backseat to other techniques capable of discovering insights without human intervention, such as machine learning. Still, the artisanal analysts did make significant contributions which continue to be used, such as business-oriented statistics and rudimentary visualization.
+
+Era Two: Big Data Analytics
+
+As Silicon Valley began to boom in the late ’90s and early 2000s, the volume and variety of data available for the analyst ballooned. With the new challenges that this changing landscape provided, a new title entered the lexicon: the data scientist.
+
+Davenport remarked, “I must confess that when I first started hearing about big data and data scientists and so on, I wasn’t entirely sure that this was anything really that different from the sort of analytics that I had been talking about and writing about. So I started to study them.”
+
+Davenport began collaborating with Dhanurjay “DJ” Patil, who would go on to become the first Chief Data Scientist of the United States Office of Science and Technology Policy. In their conversations, Patil’s remarks proved instructive on the dividing line between the analyst and the data scientist. According to Davenport, Patil would say that “data scientists need to be on the bridge… right up there with Captain Kirk,” taking charge of the decision-making process rather than supporting leaders from the rear.
+
+In Davenport’s opinion, “Supporting managerial decision-making? That’s the dead zone.”
+
+Era Three: Data Economy Analytics
+
+Before and around 2013, another major change occurred. As massive tech firms found new ways of wrangling their outsized datasets, they also found new ways of commoditizing them. In addition to building products around the datasets they maintained — the model companies had used for nearly forty years, in Davenport’s framing — they also began to sell the data they were collecting from users.
+
+In Davenport’s words, “industrialized decision-making at scale” became the new way of leveraging data, acting on changes as rapidly as new information was coming in. At this point, business analytics became almost unrecognizable next Davenport’s first era, where models were unreactive to new information — especially since so little new information was entering the picture at any moment. Now, companies were not only able to collect information from users and sell it as a commodity, they were also able to change their strategies on the fly, automatically.
+
+Era Four: Autonomous Analytics
+
+According to Davenport, we have just entered a new era of analytics in the past year, characterized by an even stronger role for autonomous decision-making — probably the loosest definition of artificial intelligence.
+
+In this model, machines not only perform the analysis; they also act on the insights, making decisions faster and more efficiently than any human could.
+
+Davenport’s stands apart from many automation alarmists who often stake the claim that AI and machine learning methods will obsolesce existing jobs. From his perspective, data scientists who refuse to update their toolboxes are the ones in the crosshairs. As he puts it, “the only people who are going to lose their jobs are the people who don’t embrace these new technologies.”
+
+Above all else, Prof. Davenport emphasized that the modern data scientist is tasked with understanding the full breadth of techniques, from the ones the ‘back room’ analysts embraced in the ’70s to the sophisticated deep learning methods that are currently in vogue. Fortunately, many of these techniques logically build off of each other, and if you are already familiar with the precursors, it’s relatively easy to pick up new methods.
+
+You can find Prof. Davenport’s full video lecture here — Four Eras of Analytics and Data Science.
+
+Read more data science articles on OpenDataScience.com

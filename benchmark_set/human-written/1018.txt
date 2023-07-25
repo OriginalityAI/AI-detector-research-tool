@@ -1,0 +1,21 @@
+Synaptics, a company best known for making touchpads for laptops, touchscreen technology for notebooks, tablets and smartphones has announced a new force-sensing touchscreen controller called the ClearPad 3700.
+
+Similar to Apple’s 3D Touch, Synaptics technology enables functionality in mobile devices; a component which the company hopes will be incorporated in many 2016 Android flagship smartphones.
+
+Currently, the new Synaptics 3700 Series touch controller is in mass production, and supports Synaptics ClearForce and SideTouch (edge gesture) technologies.
+
+ClearForce technology enables enhanced control by applying different levels of pressure on an interface (such as a touchscreen) for various functions like game control input, unlocking and waking up a device and adjusting line thickness control while drawing. This means that smartphone and tablet manufacturers can use the 3700 Series touch controller technology to enable iPhone 6 Plus-style features, since the phone would be able to differentiate between light and hard presses.
+
+It also enables gestures that let users to set off by tapping on the side of their phone. Additionally the technology could enable variable speed scrolling, zooming and panning in images and other new contextual menus.
+
+According to Synaptics, the new ClearPad 3700 series provides support for active stylus input, including non-touch hovering from a distance of up to 25mm / approx. 1 inch away from the display.
+
+The Synaptics 3700 Series touch controller is designed to be packed inside flagship Android smartphones, but Synpatics also plans to launch another 3600 Series touch controllers for mid-tier smartphones that boasts of a FaceDetect Plus feature, two-finger tracking when there is moisture present on the display and improvements for detecting fingers through gloves.
+
+There's also the new ClearPad 7800 series controller which is intended for large touchscreens, meaning tablets, laptops, or convertibles. It brings support for passive pen input, and palm rejection and is optimized for bigger touch screens up to 17.3 inches.
+
+The company announced that it has been working with major global OEMs and LCMs to deliver a new dimension to smartphones enabled with touch controller technologies, which are expected to ship early next year.
+
+While it’s not yet clear which devices will incorporate this new technology, but it is assumed that Android handset makers will want to implement the system into their devices in order to take on rival iPhone 6s.
+
+During this year’s IFA trade show, Huawei unveiled its own pressure-sensitive display on its Mate S smartphone. The device is the first to come with a Force Touch display that allows for zooming and previewing with a harder press.

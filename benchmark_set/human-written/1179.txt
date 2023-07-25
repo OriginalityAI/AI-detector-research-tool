@@ -1,0 +1,7 @@
+Global Forest Watch allows anyone, including you, to take a closer look at what’s happening in places reserved for indigenous peoples. A fast, smooth zoom enables and encourages deeper exploration of what’s occurring. No one can hide from satellites in the sky and with weekly GLAD alerts, any change in forest cover can be detected and reported in almost real-time. This is the power of data visualisation: it provides compelling, irrefutable evidence that allows us to speak up for the people and places that are not being heard.
+
+Good news for Indonesia.
+
+But it’s not all bad news. Indonesia saw a 63% reduction in primary forest loss from its peak in 2016 when new legal protections of peatlands were introduced. More recent government policies—which include a moratorium on issuing new licenses to use land designated as primary forest and peatland—have also helped slow deforestation.
+
+The clearing of rainforest to make way for oil palm plantations has attracted much media attention, and with a recently added ‘Global Plantations’ data layer, you can now use Global Forest Watch to explore where they are located. (Note: only data for 2015 is currently available). Although the moratorium is likely to stop any further conversion of pristine primary forest, GLAD alerts will help researchers, land managers, and interested citizens alike keep watch over Indonesia’s forests.

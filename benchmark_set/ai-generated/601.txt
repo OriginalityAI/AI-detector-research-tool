@@ -1,0 +1,19 @@
+Title: Exploring Core.Async and Transducers in the ClojureScript Ecosystem
+
+Last year, I began working on an extensive post but was soon interrupted with a new job and started writing a book, Learning ClojureScript. This book has provided me with a chance to explore aspects of the ClojureScript ecosystem that I wouldn’t have otherwise delved into, leading to some fascinating discoveries.
+
+Particularly, I’ve been concentrating my efforts on learning about core.async and transducers. Core.async is considered a highly popular Clojure(Script) library for embedding CSP-style concurrent program design in libraries and applications. Transducers, on the other hand, are composable functions primarily employed for data transformations.
+
+While there are numerous articles available online discussing core.async, transducers still seem to be largely misunderstood. Personally, I found it challenging to grasp the entire concept. However, what has helped me understand their specific use cases are certain examples where transducers were used in tandem with core.async to build data transformations in asynchronous application message queues. In this article, I will be highlighting those use cases.
+
+Error Handling Patterns:
+
+One of the many advantages of core.async is that it encourages programs with a clear separation of concerns. Data is produced in one part of your application and is consumed and processed in another. However, this separation of concerns also presents a drawback. When errors occur on the input side of a channel and we have code that expects to read from it, how do we handle the errors? We could catch and handle errors on the input side, but this might be undesirable under certain circumstances.
+
+To resolve this, one possibility would be to create a separate channel for error messages and have an independent listener for that channel. Let's assume we have an application that regularly polls a factory to ensure smooth production flow. If everything is running smoothly, we will create a report. If not, we'll log it to our exception tracking service. Using channels, we can provide a central pipeline for handling errors.
+
+An alternative pattern would involve passing the errors themselves into the channel and checking if a message is an error when consuming it. David Nolen has written about this pattern on his blog. By implementing the <? macro, we can throw and catch errors with ease.
+
+However, instead of relying on the <? macro, we can use a pure function (a transducer) to apply transformations on any values passed through the channel. By initializing the channel with a transducer, we can simply map our helpful throw-err function over values being taken from the channel, making error handling more efficient.
+
+In conclusion, transducers continue to be an essential aspect of the ClojureScript ecosystem. By understanding their use cases and exploring their application alongside core.async, we can achieve more efficient programming and bolster our skills as developers.

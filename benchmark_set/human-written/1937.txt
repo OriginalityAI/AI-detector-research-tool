@@ -1,0 +1,35 @@
+How to Use Angular’s i18n Module?
+
+To begin with, we first install the i18n module. we do this with this command: -npm install i18n — save
+
+Next, we configure a file for i8n. We can do this in angular.json. In configurations, we define many things like output path, i18n file, i18n locale, etc.
+
+We then mark all the static messages in our templates with the i18n module for translation. Let’s assume we have the message below. To wrap it with the i18n module, we use the code below
+
+In the case of HTML files, we execute this as:
+
+Now, for translations, we can also define id or message along with the i18n attribute. This should be unique for unique messages. If we do not assign an id by default, a unique id is assigned instead.
+
+Make sure that the id for different messages is different. When we translate, only the first message assigned to an id is extracted.
+
+In the case of attributes translation, an attribute in the form of i18n-x is added. Here ‘x’ defines the attribute. In other words, it is the attribute that we want to translate. For example, if I want to translate a title, I can place it as shown below:
+
+When we have implemented this in our application, we need to create a translation source file. To extract the messages marked with i18n, we execute the command ng xi18n .
+
+This command will create a message.xlf file, which will have all messages that mention i18n. We can change the name, format of our file, and location of the extracted file.
+
+For example, if we want to create our file in the src/locale folder, we can run the ng xi18n –output-path src/locale command to do so.
+
+We can run the command below to specify the format of our file:
+
+ng xi18n –format=xlf
+
+>> Now that we have all our messages in one file (which we want to translate), the next step is to generate a translation file for any language we want.
+
+For this, we need to copy our message.xlf file and rename it in a way that makes it easy to identify the language it is created for since we can have multiple translation files. For example, message.ja.xlf for Japanese.
+
+Now here comes the role of the translator, which would translate our messages. The goal is to replace the original message with the translated message. This file is written in the following format:
+
+Now, implementation is complete. To run our application with translated text, we compile our application with the translated file (For this, we need to specify the path in angular.json, in our configuration).
+
+In case if we have missed any translation, our project is compiled along with warnings.

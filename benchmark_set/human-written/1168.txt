@@ -1,0 +1,15 @@
+Let’s break it down by what happens depending on the stock price
+
+Assume we sold the contract that expires Jan 8 with a $230 strike price for $136 in the example above.
+
+Case 1: The stock price is below $230 by the end of the expiration date
+
+If the shares aren’t worth over $230 (lets say its $227 by the expiration date), nobody would want to buy them for $230. The contract is now worthless, and you keep the money they paid you for it ($136). The stock price may have gone down (maybe it drops to $210) and you lost some value there, but if you were planning on keeping the shares anyway, at least you got the extra $136.
+
+Case 2: The stock price is above $230 (lets say its $235) by the end of the expiration date
+
+In this case, your shares will be sold for $230 each. While you are selling your shares at a discount of $5 each, it’s important to note that you have only lost out on potential profits! You still turned a profit of $9 each compared to the day you sold the contract when the stock was valued at $221, and you kept the $136 as well. All you did was put a cap on your profits, but you still profited regardless.
+
+Case 3: Before the expiration date, you decide you want to get out of this contract
+
+You don’t have to wait for the contract to expire to get out of it. You can also “buy back” your contract before the expiration date. If the price of $MSFT has exceeded/has a high chance of exceeding the contract’s strike price, you will probably need to pay more than you sold the contract for originally to get out of it. However, if the price of $MSFT has gone down, stayed the same, or only gone up a small amount (and has a low chance of getting to the strike price), you will likely be able to buy back your contract for less than what you were paid for it and be able to pocket the difference.

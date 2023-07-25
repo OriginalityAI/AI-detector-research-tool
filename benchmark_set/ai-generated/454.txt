@@ -1,0 +1,57 @@
+Title: Understanding Server Mergers in MMO Games: The Process and Its Effects on Players
+
+Why was the decision to merge the servers made?
+
+Merging servers within MMO games is a fairly common practice when the population of a server is not high enough to support server-wide activities. By merging servers, players can enjoy a refreshed gaming environment, where they may encounter new friends and worthy opponents. Server population will continue to be monitored, and merges, as well as the opening of new servers, will regularly take place to maintain engagement and entertainment for players.
+
+What is a server merge?
+
+A server merge is the process of transferring all characters from one server to another, combining the populations of both servers. For example, characters from "servername1" would be transferred to "servername2".
+
+What steps should players take in preparation for the merge?
+
+For the most part, players do not need to take any specific steps to prepare for a merge. Servers will undergo maintenance, and then certain servers (such as Corral, Eventide, Muroc, and Tusenwood) will be removed from the list of available servers. Characters from these servers will be transferred to their designated servers accordingly.
+
+What will happen to servers like Moonsea, Tidewater, Darkfall, and Snowpine?
+
+These servers will experience an increase in population due to the influx of players from merged servers. This may affect player ratings and character names, where duplicate names from previous servers will need to be changed.
+
+Will players keep all characters and their attributes from the original server?
+
+Yes, all characters along with their levels, experience, attributes, items, and funds in their inventory will be transferred during the server merge.
+
+Will players retain items in the auction and mail systems during the merge?
+
+Yes, all mail will be transferred and items placed in the auction system at the time of the merge will be moved to the auction system in the merged server.
+
+Will friend lists, enemies, alliances, and significant others be transferred?
+
+Yes, all information within the friends system, as well as guild-related information, will be transferred during the server merge.
+
+Will rankings and guild rankings be reset?
+
+Both player and guild rankings will be reset following a server merge.
+
+Will guild alliances be transferred?
+
+Yes, guild alliances will be maintained throughout the merge process.
+
+Will conquered territories for the week be transferred?
+
+No, after the server merge and until the next clan war battle, all territories will be unclaimed.
+
+Will the Guild Tournament be reset?
+
+Yes, the Guild Tournament will be reset after the merge is completed.
+
+What will happen to the Chronicle after the merge?
+
+The merged server will utilize the main server's Chronicle, and all characters transferred to the server will be able to play and progress according to that server's Chronicle.
+
+Will players keep their achievements?
+
+Yes, all player achievements will be preserved following a server merge.
+
+What will happen in cases where character names coincide?
+
+In cases where characters from different servers have the same name, the one with a higher level and experience will retain their name. The other character will be prompted to choose a new name upon their first log-in after the merger. If characters have the same level and experience, the character from the server being merged into the main server will be required to change their name.

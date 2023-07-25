@@ -1,0 +1,33 @@
+A think tank run by the European Parliament recently released a discussion paper on the use of bitcoin and blockchain technology in elections, analyzing the topic through the broader lens of electronic voting.
+
+Published on 29th September, the paper was authored by Phillip Nicholas Boucher, a researcher for the European Union Think Tank. Boucher wrote that adoption would represent a major shift in how trust is managed within the voting process, moving that kind of control “away from central actors”, leading to “tech-enabled community consensus”.
+
+The question, as the paper presents it, is whether the technology could be leveraged to provide either piecemeal or wholesale changes to existing voting systems, including those already operating via digital means.
+
+Boucher wrote:
+
+“Many experts agree that e-voting would require revolutionary developments in security systems. The debate is whether blockchain will represent a transformative or merely incremental development, and what its implications could be for the future of democracy.”
+
+The European Parliament isn’t alone in weighed the concept.
+
+It’s an application that has been pursued in various forms in both the public and private sectors, with the idea being that a blockchain can allow users with software clients to signal preferences in distributed governance decisions.
+
+The nature of bitcoin’s proof-of-work was even described in the original white paper as a kind of “vote” for what constitutes the longest chain of transactions.
+
+The bitcoin option
+
+The paper goes on to speculate about what form a blockchain-based voting system might look like, suggesting that the bitcoin blockchain could be preferable over something entirely new and untested.
+
+“One way of developing BEV systems for e-voting is to create a new, bespoke system, designed to reflect the specific characteristics of the election and electorate,” Boucher wrote. “A second approach that may be cheaper and easier is to ‘piggyback’, running the election on a more established blockchain, such as that used by the virtual currency, bitcoin.”
+
+There are risks, according to Boucher. Perhaps most notable is the need to maintain voter anonymity – what he called “a crucial element of democratic participation”.
+
+That kind of individual privacy, he wrote, could become complicated in a wholly digitized environment, particularly within one that is at least somewhat managed by a third party.
+
+Boucher concludes by pointing to efforts in e-voting throughout Europe. More effort, however, would be needed before widespread blockchain voting ever became possible.
+
+He wrote:
+
+“…proposals to use blockchain in national elections would have to comply with several other areas of European law, including privacy and data protection for voters, and accessibility for all citizens.”
+
+Polling booth image via Shutterstock

@@ -1,0 +1,53 @@
+In terms of exchanges, firstly, we have been awarded 4 out of 5 stars on the Cryptopia Exchange thanks to the latest round of deliverables we are finalising at the moment in the Android Mobile Wallet, and also Web Wallet.
+
+Secondly, another bit of great news is that we have also been listed this week on DigitalPrice Exchange, which is really positive. We are also in the running for listing on the CoinPulse and Shardax exchanges, but will need to rally the votes in order to be successful in these voting campaigns.
+
+We’ve shared the links further down the page, so if you have the time, please do head on over and cast a vote to help us along the way.
+
+This brings our exchange listings now to:
+
+Cryptopia
+
+Trade Satoshi
+
+Barterdex
+
+QIEX
+
+Crex 24
+
+DigitalPrice
+
+And voting underway for:
+
+CoinPulse
+
+Shardax
+
+Please remember that our aim as the development team is to deliver a transparent project that can be recognised as mainstay contender in the privacy coin realm and in the overall crypto space.
+
+As always, thank you all for your continued support on Zero’s path to steady, organic growth and we hope you enjoy the products being delivered that can attest to Zero’s current and future status in this realm.
+
+For anyone interested in investing — please do your own research prior to committing to any project, and we ask you to please not blindly commit to a project because someone else told you to.
+
+Let’s get into the details of what has been happening per section / discipline this week:
+
+Wallets
+
+Web Wallet, Mobile Wallet, and Arizen Wallet:
+
+Welcome Screen — Android Mobile Wallet
+
+TX Screen — Android Mobile Wallet
+
+Send TX Screen — Android Mobile Wallet
+
+Colour Scheme of the Web Wallet / Testing of Web Wallet
+
+The Android beta testing has been going extremely well, with 25 people assisting us with the testing of the app. There were a couple of tweaks to the interface in terms of colour scheme and also some minor UI tweaks.
+
+We are in the process of submitting the Android app now through the Google Play Store to make it nice and official, so please feel free to leave some reviews if you like it, or if you do have issues, please do let us know first so we can action prior to leaving a negative review.
+
+The IOS version is being compiled at the moment, as Cryptoforge managed to emulate the app onto a Mac.
+
+We will let you know when the beta testing opens for this version of the app, and we look forward to letting you test it out and help us identify any issues at all.

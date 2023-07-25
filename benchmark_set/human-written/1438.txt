@@ -1,0 +1,35 @@
+Election 2020
+
+From the President to the Local DMV: Who’s to Blame?
+
+Written by J. Andrew Sinclair and Nohl M. Patterson
+
+Although Joe Biden won the presidential election, President Trump was more competitive than many (including us) expected. This is not just about polling but also about the condition of society, with a high unemployment rate and a long casualty list from COVID-19. In the spirit of Fiorina’s 1981 Retrospective Voting in American National Elections: shouldn’t more voters have reasoned that if 240,000 people have died from a pandemic, something was wrong? Sure, Biden won and Trump lost, but was this the extent of the retrospective voting?
+
+I voted… based on what?
+
+There are reasons voters could blame the Trump Administration for some of the consequences of COVID-19. Beyond Trump downplaying the severity of the virus, and specific complaints one might have about the federal response, there is the fact Harry Truman understood about the presidency: “the buck stops here.”
+
+Other explanations for political behavior may look more compelling after the 2020 election (for example, Lilliana Mason’s Uncivil Agreement). Yet, it is retrospective accountability that must provide incentives for effective public administration. Understanding when voters will blame elected officials for performance — and what officials can try to do to get out of it (see Christopher Hood’s The Blame Game)— should continue to be an important part of this field. Recent work in understanding how citizens will understand public performance is also critical (see the new book from James, Olsen, Moynihan, and Van Ryzin, Behavioral Public Performance).
+
+As we watched the election results come in, we began discussing some of our own ongoing work about the California Department of Motor Vehicles (DMV). In the summer of 2018, California’s DMV struggled to implement the federal REAL ID Act (for background, see Krajewska 2020 and Regen and Deering 2009). We are interested in this because it is relatively simple governmental task: providing authenticating documents in exchange for a new ID. The DMV also had years to plan to implement this 2005 law. Unlike with many other policy tasks, the work here is both “evaluable” and “identifiable” — if people are stuck waiting in line for hours, it is clear something is not going right, and it is also clear which agency is tasked with the function (see Bertelli 2016). Who gets the blame?
+
+While there is more in the paper we are writing (and a bit of this was discussed in a visit to the Bedrosian Center at USC in January), the basic results are striking on their own. In a survey of over 4000 California voters from just before the 2018 election, respondents had the opportunity to assign blame to nine different sources, and could choose as many of them as they would like. These included DMV employees, the DMV Director, Republicans in the state legislature, Democrats in the state legislature, the Governor (then: Democrat Jerry Brown), Republicans in Congress, Democrats in Congress, the Secretary of the Department of Homeland Security, and President Trump. The politically relevant question is: who did Democrats, voters from the stronger party, blame for the long lines at the DMV?
+
+Now, there are reasons to blame just about all of these people, and more besides. The aphorism that “success has many authors and failure none” may be true in terms of credit claiming — but actual policy implementation failures often involve multiple participants who could have, at least in some way, changed the outcome. A great many respondents blamed the DMV Director or employees at the DMV (which should not be surprising, see Bertelli and Van Ryzin 2020).
+
+What about people who could actually be voted out of office?
+
+The Republican Party in California has been out of power in the legislature for a very long time. The last Republican governor, Arnold Schwarzenegger, left office in January 2011. And, while there is a role for the federal government, it is telling that (a) many other states successfully implemented REAL ID and (b) a California state audit found “problems with management practices, staffing levels, and technology” — not things in the control of the federal government. It is plausible one could blame President Trump for some of what happened, but it would be a bit strange to blame President Trump and not to blame the elected officials actually holding meaningful power in California.
+
+Yet: what do we find? If we look a Democrats — here defined as self-identified Democrats or Democratic independent “leaners”— here is the percentage of this group blaming these sources:
+
+· Blaming Democrats in the state legislature: 12%. · Blaming (outgoing, Democrat) Governor Jerry Brown: 14% · Blaming President Trump: 24%
+
+Generally speaking, these voters blaming President Trump for the long lines at the DMV blame neither the Democrats in the California legislature nor Jerry Brown, although the question format allowed them to blame them all. This does not make a great deal of sense. What is concerning about such results is that long lines at the DMV ought to be the easy case, and assigning blame for one issue asks less of a partisan than actually casting a retrospective vote.
+
+Yet, what is not simple about our case is a feature in common with just about every policy issue in the United States: the complexity of the government.
+
+We live with separation-of-powers at the national level and within the states. Federalism splits responsibility for many tasks between the national and state governments; additionally, state governments devolve further powers to local authorities. Everyone is, to some extent, involved in everything; additionally, actions in one state can impact outcomes in another, making it possible to assign blame across state lines even on local issues. There are tremendous opportunities for blame-shifting combined with partisan-motivated reasoning.
+
+Perhaps we should not be so surprised that many Republicans did not engage in accountability voting in 2020. And, while there are asymmetric attributes of this moment in time — we do not mean to imply an equality here — we should not assume that partisan motivated reasoning impacts only Republicans. We should be concerned broadly given the role accountability for performance is expected to play in the public policy process.

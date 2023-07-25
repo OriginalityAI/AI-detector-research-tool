@@ -1,0 +1,45 @@
+We have published a Company Watch article on Cover Protocol, an on-chain insurance product for defi platforms. Cover Protocol is giving out 654 COVER, its platform tokens, per week as rewards. The market value as of now is about 70,000 USD per day. Based on the innovative mechanism of Cover Protocol, one can hold its Claim and NoClaim tokens for a defi platform at the same time, and as a result, one can get COVER mining rewards independent of whether a claim event takes place. This saves a liquidity provider to assess the probability of a potential claim, and provides claim-neutral yield.
+
+​Thus, it gives rise a simple strategy:
+
+Deposit DAI into Cover Protocol to mint Claim and NoClaim tokens for an insured platform; Add extra DAI and deposit each token into their Balancer pools to provide liquidity; Deposit the BPT tokens to Cover Protocol’s Shield Mining section to earn COVER. The process can be rewinded any time.
+
+With the above, one earns COVER as mining rewards without being affected by the temporary price movement of Claim and NoClaim tokens, or whether a claim takes place. (If you find the logic confusing, please read the Company Watch article on Cover Protocol first.) As of now, AAVE’s tokes will provide a decent APY of over 90% blended.
+
+Whilst the strategy is simple, we wish to highlight that it’s not risk free. The risk comes from being a liquidity provider, one has to provide extra DAI into Balancer pools. As one of the tokens of Claim or NoClaim inevitably moves to the price of 1 and the other to 0, there’s definitely impermanent loss — an irreversible loss (which makes the term impermanent loss not so accurate here.)
+
+We have did the following computation to illustrate the case:
+
+Step 1: Invest
+
+​First, we execute our strategy to provide liquidity into one of the insuranced products. Let’s say it’s AAVE (does not matter what it is) and its price it now Claim token at 0.14 Dai and NoClaim 0.86 Dai. The prices are the single most parameter. We note that we have to provide 10,000 Dai for mint the Claim and NoClaim tokens and another 525.51 Dai into Balancer pools to provide liquidity.
+
+Step 2: Calculate Outcome of Events
+
+There are 2 possible events afterwards: 1) A claim takes place, then the Claim token can redeem 1 Dai and thus have a value of 1 Dai; 2) No claim happens and NoClaim token has a value of 1 Dai.
+
+​In the event of no claim, arbitrageurs can mint more tokens and sell the Claims to the pool and keep the noClaims to redeem 1 Dai. At the same time, arbitrageurs also buy the NoClaim tokens (which was previously at 0.86 Dai) till they are priced at 1 Dai. We used Goal-Seek function in Excel to simulate this. The result is above. The liquidity provider will suffer a bit of loss.
+
+​In the event of a claim, arbitrageurs will do the same. Mint as much tokens as possible, sell NoClaims and keep Claims. At the same time, buy Claim tokens till the price of Claim is 1 Dai. In this case, the loss of the liquidity provider is bigger.
+
+Step 3: Computer the Weighted-Average Loss
+
+We assume that the price of tokens are market-efficient reflection of the probability of a claim happening. Therefore, a 0.14 Dai Claim token suggests that there’s a 14% probability a claim will take place. Then, the probability weighted average loss of a liquidity provider is as follows:
+
+​In conclusion, over the insured period, the expected loss of a liquidity provider is 601 Dai out of his investment of 10525.51 Dai, which is about 5.7%. It’s justifiable to invest, if he is expected to receive more rewards (COVER mining rewards and Balancer pools trade commissions).
+
+As a strategy, the rewards from Cover Protocol now is higher than the risks; so it’s possible to take the risk and invest. For simplicity sake, we used Excel for computation. However, as there’s one variable in this case, the price of Claim token, it’s possible to prove it mathematically and derive a the expected loss of a liquidity provider give any Claim token price.
+
+Suggestions for the Team of Cover Protocol
+
+In the above analysis, we can calculate the expected liquidity provider’s loss based on the Claim token price; and we know it’s due to market arbitrageurs. Then the Cover Protocol can be adjusted to factor this into consideration. Giving COVER rewards is not a sustainable strategy; it only reduces the value of COVER in the long-run. Especially if we all wish to see Cover Protocol becomes a billion dollar TVL protocol, then a huge mount (e.g. a few % of the value of the total liquidity) of COVER has to be issued as rewards.
+
+There are a few fair measures:
+
+Having the insured platform compensating the liquidity provider. This can be done by EITHER the insured platform providing the mining rewards OR the insured platform be the major liquidity provider in the Balancer pools. (Specifically to this point, the insured platform should be given permission to halt tradings of its Claim and NoClaim tokens, to prevent other liquidity providers being front-run by arbitrageurs, in a known exploit event). This transfers the cost of liquidity provider to the insured platform, so this will discourage insured platforms to come to Cover Protocol. Having the users compensating the liquidity provider. This can be done increasing the Balancer pool fees. Or a one-time stamp-duty alike fee can be applied to a user (an address) who first buys or sells the tokens, e.g. 5% of an address’s first transaction on the tokens and subsequent transactions do not get charged this fee as long as it’s within the limit of the first transaction. The fees accrued here go to the liquidity providers. Having the arbitrageur compensating the liquidity provider. Here we can only define an arbitrageur to be someone who buys or mints tokens after knowing there’s an exploit (leading to a claim with certainty). We cannot prevent an arbitrageur from buying and selling before the price of Claim rises from where it was to 1 Dai. What we can do it to increase of the cost of minting after the exploit taking place and before the verdict from governance. This can be done by firstly introducing a minting cost, and allowing the liquidity providers to stake and lock their BPT till the end of the insured period, to justify its claim of the minting cost (and also rewards in point 2). The claim of the minting cost does not apply to those whose mints after the block (time) where the exploit happened — governance can decide on this as part of a claim.
+
+Last but not least, maybe it’s not absolutely necessary to combine the bi-token structure with AMM, as liquidity providers are always at loss by design. For instance, a group of market makers can be engaged (same like validators for other products) and these people should have better market knowledge to counter the front-running of arbitrageurs.
+
+Hope Cover Protocol to be a billion-dollar TVL platform soon.
+
+(Serenity Team, Twitter @SerenityFund, 8 Dec 2020)

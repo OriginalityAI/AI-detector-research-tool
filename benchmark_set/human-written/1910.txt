@@ -1,0 +1,45 @@
+DATA ON AWS
+
+Caching in AWS
+
+Repeat read access patterns have mandated the implementation of a caching layer in most modern applications. These access patterns might be for different use cases, such as configuration files, images, any file on a CDN. The idea behind caching is to store some items closer to the compute layer to avoid time spent on roundtrips and bandwidth limitations, usually resulting in sub-millisecond response times for building blazing fast applications.
+
+Scaling up an application, you’ll find yourself in a situation where you’ll have to scale up all the components so that they synchronize well after the scaling up. For most businesses, it is better to use managed solutions implementing different layers of the application.
+
+One such component is the cache. Caches are used everywhere — in your browser, in your mobile apps, when you’re streaming audio, and when you’re watching a YouTube video. It’s important to understand that what we’ll be talking about in this post is server-side caches and not client-side caches.
+
+Caches are usually implemented using high-speed volatile devices such as RAMs. To implement a cache, you can use one of many cache algorithms or cache replacement policies. Two of the most popular OSS caching projects that allow you to do that is — Redis and Memcached. AWS’s ElastiCache supports both these projects.
+
+A cache doesn’t necessarily have to be in-memory. You can use a fast SSD as a cache for a slow HDD with a rotating disk if you think about it. Anything with higher IO and lower latency can be used as a cache. That’s why services like DynamoDB are used as caches too. And then, there are in-memory tables in relational and non-relational databases, which use a part of the RAM to store data. We’ll talk about these different services in this post.
+
+ElastiCache for Redis & Memcached
+
+AWS ElastiCache is a caching service that supports both Redis and Memcached engines. Both Redis and Memcached have a baseline of standard features but provide enough unique features to have separate use cases for both. We’ll delve into the architecture and AWS-managed features for both of these caches in the upcoming posts.
+
+Memcached is a multi-threaded, in-memory key-value store that supports caching of simple data types. Memcached is meant just for caching simple string objects up to 1 MB in size. Redis, on the other hand, is much more than a cache. Redis can store advanced data types such as hashes, lists, and sorted sets. One other significant difference between these two is that Redis supports persistence on disk, enabling you to store long-lived data or reload your cache in case of a server restart.
+
+These caches can support many use cases, including storing and processing data from streaming platforms, leaderboards, IoT devices, etc. For example, Redis is increasingly being used for high-speed geospatial data storage and processing.
+
+As mentioned earlier, you can use these caches to improve the response times of an application drastically. For new data, rather than going to the database first and writing it, you can write it to a cache first and serve any following read requests from the cache itself. For older data, when something is requested after a long time, you can bring it to the cache for any further requests.
+
+DynamoDB
+
+Caching doesn’t start and end with Redis and Memcached. DynamoDB is a multi-purpose, serverless, key-value database used both as a key-value-cum-document store and a cache. For simple applications, you can use DynamoDB to store configuration files for your application. For high volume, complex applications like gaming platforms, you can use DynamoDB to store session information, leaderboards, etc.
+
+Although DynamoDB supports storing JSON data, don’t use it as a replacement of MongoDB on AWS. For availing all the capabilities of MongoDB on AWS, use DocumentDB.
+
+Data engineers can use DynamoDB to store data pipeline and orchestration metadata to enable replayability. ML engineers can use DynamoDB to feed data into SageMaker for real-time predictions and analysis. With DynamoDB being a much more flexible product than an in-memory cache, many use cases have a much wider array. I wrote about my experience using DynamoDB about two years ago:
+
+In-Memory Tables in Databases
+
+Having used relational databases extensively, I have to mention that I haven’t seen a complex application using only a single caching solution. Databases use the same caching mechanisms in the form of buffer memory. The idea is to keep as much of the database within memory as possible. For faster reads and writes of non-critical data, say, when you’re processing data for an ETL job using pure SQL, you can use in-memory tables. Keep in mind that these tables aren’t durable. Everything in the buffer memory of a database goes away if the server is restarted. The buffer is warmed up again when you start querying the database again.
+
+Using memory-based tables brings us back to the concept of using anything which has higher IO and lower latency than your next closest storage medium as a cache. And that’s exactly what memory tables are used for.
+
+What’s Next?
+
+This was the third post in a long series of posts about data-related services on AWS. Previously, I have talked about RDS in detail. The last post was about specialty (purpose-built) databases on AWS.
+
+If you’re interested in reading more of my writings about data & infrastructure engineering, you can visit this page and subscribe! You can also connect with me on LinkedIn.
+
+More content at plainenglish.io

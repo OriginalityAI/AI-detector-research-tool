@@ -1,0 +1,51 @@
+This article will discuss a few essential QA metrics that must be set and observed throughout the process to ascertain its performance.
+
+The Right Questions to Ask
+
+How long will the test take?
+
+How much money does the test require?
+
+What is the level of bug severity?
+
+How many bugs have been resolved?
+
+What is the state of each bug — closed, reopened, postponed?
+
+How much of the software has been tested?
+
+Can tests be completed within the given timeline?
+
+Has the test effort been adequate? Could more tests have been executed in the same time frame?
+
+Absolute QA Testing Metrics
+
+The following QA metrics in software testing are absolute values that can be used to infer other derivative metrics:
+
+Total number of test cases
+
+Number of passed test cases
+
+Number of failed test cases
+
+Number of blocked test cases
+
+Number of identified bugs
+
+Number of accepted bugs
+
+Number of rejected bugs
+
+Number of deferred bugs
+
+Number of critical bugs
+
+Number of determined test hours
+
+Number of actual test hours
+
+Number of bugs detected after release
+
+Needless to say, the entire QA process hinges on the use of a real device cloud. Without real device testing, it is not possible to identify every possible bug a user may encounter. Naturally, undetected bugs cannot be tracked, monitor, or resolved. Moreover, without procuring accurate information on bugs, QA metrics cannot be used to set baselines and measure success, This is true for manual testing and automation testing.
+
+Use BrowserStack’s cloud Selenium grid of 2000+ real browsers and devices to run all requisite tests in real user conditions. Manual testing is also easily accomplished on the BrowserStack cloud. Sign Up for free, choose the requisite device-browser combinations, and start testing.

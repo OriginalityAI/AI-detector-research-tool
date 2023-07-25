@@ -1,0 +1,67 @@
+Photo Credit: Markusspiske
+
+NET 5 has been released and It comes with a lot of exciting features, new technologies and performance improvements. It unifies the .net environment and replaces .NET Core. In this blog, we’ll focus on building high performance services using gRPC and .NET 5.
+
+Why gRPC?
+
+gRPC is not another buzzword being thrown around. It’s a popular open-source RPC framework. It has been around for a while but it’s built on new technologies like HTTP/2 and Protobuf. It’s platform-independent as it offers language-neutral contract language — which is designed for high-performance modern apps.
+
+How does it compare with WCF and REST ?
+
+WCF, which is also a RPC framework and achieves the same goals, but there are some key differences:
+
+gRPC uses Http/2 (You can learn more about Http/2 in detail here).
+
+It uses a faster binary protocol which makes it more efficient for computers to parse.
+
+It supports Multiplexing over a single connection (It means multiple requests can be sent without request blocking each other).
+
+It uses ProtoBuf which providers faster serialization/deserialization and also uses less bandwidth than other text-based formats.
+
+There’s much better tooling in .NET 5 to automatically generate boilerplate code to hide the remoting complexity so you may focus on business logic.
+
+Streaming allows multiple responses to be sent to the client and also the client to server and bi-directional streaming.
+
+It’s designed for low latency and high throughput so it’s great for lightweight microservices where performance is critical.
+
+Deadlines/timeouts and cancellation allows the client to specify how long they are willing to wait for an RPC to complete.
+
+Inter-Process Communication
+
+gRPC calls are sent usually over tcp sockets. However, if the client and server are on the same machine gRPC can use custom transport like Unix Sockets, Name Pipes, etc in IPC scenarios.
+
+Getting Started
+
+Install .NET 5.0 Runtime and SDK
+
+Update Visual Studio 2019 to 16.8 or later (There’s a C# extension that supports .NET 5.0 and C#9 for Visual Studio Code)
+
+Create your First gRPC Service
+
+Open Visual Studio (16.8) and Create a new project Select gRPC project template
+
+3. Select ASP.NET Core gRPC Service (You can see the “ .NET 5.0” in the framework drop if installed correctly)
+
+4. Enable Docker Support if you want to containerize this service (to be run as a docker container).
+
+It will create the asp.net core app with gRPC service. Let’s explore the solution folder — Protos -> greet.proto file.
+
+What is Proto file?
+
+Since gRPC is a contract first RPC framework, therefore the contract is defined in the proto file — which is the heart of gRPC. It’s a language-agnostic way of defining your apis and the messages.
+
+This proto file contains service definition — which in our case is Greeter
+
+SayHello is the method that takes a request and returns a response.
+
+HelloRequest and HelloReply are declared as messages and can have properties similar to classes and simply defines the strongly typed data that will be transmitted.
+
+Let’s explore the gRPC service (GreeterService.cs in our case)
+
+This server implements the same method (defined in the proto file above) and takes the HelloRequest object as a parameter and returns HelloReply in response
+
+(Advanced: It also has ServerCallContext object — It’s a context for server-side calls and is used for authenticating and authorizing gRPC calls).
+
+Code Generation — Where the Magic Happens
+
+You might wonder where are GreeterBase, HelloRequest, and HelloReply files? Well, that’s where the magic happens and they are automatically generated so they hide all the routing and remoting complexities.

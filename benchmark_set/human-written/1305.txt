@@ -1,0 +1,49 @@
+Hello Chris,
+
+That’s an excellent question, and one that we get a lot! While our goal is to block ads and make the internet a less distracting place for all, we know there are specific situations when you might need to disable AdBlock.
+
+The short answer to your questions is: yes! You can disable AdBlock temporarily on one site and stay protected elsewhere on the web. There are a number of ways you can do this right from the AdBlock menu.
+
+Read on for more info on how to temporarily disable AdBlock so you can access the content you enjoy!
+
+When It Might Make Sense to Temporarily Disable AdBlock
+
+Wait a minute — why would anyone want to disable AdBlock? We know turning AdBlock off is not typically anyone’s first preference, but there are a couple of situations when you might want to temporarily disable AdBlock:
+
+Visiting News Sites That Deny Access to Ad Blocker Users
+
+It’s no secret that many newspapers have struggled to stay afloat as news consumption has shifted almost exclusively online. Without daily subscriptions and print advertisements to rely on, their primary revenue stream of 20 years ago is effectively gone.
+
+To compensate, many publications ask readers to turn off their ad blockers in exchange for access to certain pages on their sites. For example, the Chicago Tribune greets you with this message when you click on an article:
+
+Here you are met with a crossroads: disable your ad blocker to read the article or go back and visit another site.
+
+To read the article, disabling AdBlock takes just a couple of clicks and AdBlock will automatically turn back on as soon as you visit a new page.
+
+Supporting Your Favorite Content Creators
+
+Most of us have favorite content creators who we read or watch regularly. We probably don’t understand all the backend details, but online ads likely make up at least a portion of their income. For example, some YouTubers earn money when viewers watch or click on ads before or during their videos.
+
+When watching your favorite YouTubers or video streamers, you may want to turn off AdBlock so you can support their channels. You can even add YouTube and Twitch channels to your AdBlock allowlist to keep AdBlock disabled for specific content creators (while keeping it on everywhere else).
+
+How to Temporarily Disable AdBlock on Google Chrome
+
+Now you know a couple of particular situations when it might make sense to turn AdBlock off.
+
+So how do you temporarily disable AdBlock in the Chrome browser? It takes two clicks and a matter of seconds! Here are step-by-step directions to temporarily disable AdBlock on Google Chrome:
+
+Step 1: Click on the red AdBlock stop sign in the upper right corner of your Chrome browser. If you don’t see it there, click the puzzle piece and it should be listed in a dropdown menu of your extensions.
+
+Step 2: Click “Once” in the AdBlock menu to temporarily allow ads on this site.
+
+The red stop sign will change to a green thumb:
+
+What Next?
+
+Now you’ve finished reading your article or watching your video, and feel good about supporting the content creator. What do you have to do to turn AdBlock back on?
+
+Actually, nothing!
+
+When you navigate to another website or click on a different page on the same website, AdBlock will automatically start blocking ads for you again. If you want to unpause AdBlock while staying on the page, that’s easy enough as well. Just click on the green thumb and select “Unpause AdBlock” from the dropdown menu:
+
+There you have it! If you need to briefly pause AdBlock but want to ensure your ad blocker is still protecting you around the clock, AdBlock has you covered.

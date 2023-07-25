@@ -1,0 +1,15 @@
+All you need to know about Pointers -Part-1
+
+Working with addresses and Understanding Dynamic memory allocation
+
+One of the most important concepts in C, is pointers. Moreover, this concept is considered to be most confusing and one of the most difficult to understand. I say, this is a misconception. It is not really that difficult to understand. This article will be really helpful and will make it really easy for you to understand!
+
+So, Let us get started!
+
+Dealing with Addresses and the need for Pointers
+
+We have been using addresses implicitly during programming. This can be realized with a simple example.
+
+In the above program, the variable a is a named location and is given a place in the memory (i.e., address).The value stored at that address is 10.
+
+Now, we often get situations where we need to explicitly work with addresses. This is where we need to realize the need for pointers.

@@ -1,0 +1,36 @@
+Greetings, Raiders! This is GM Orvel. 
+We are aware of the issue where the guild mission ‘The Choice’ is not completed even if the guild member who is currently on the mission finishes the mission.
+
+We are currently running tests to check the issue. We will inform you as soon as we have more information.
+
+We apologize for any inconvenience caused and will do our best to resolve the issue as soon as possible. 
+Thank you. 
+GM Orvel.
+
+2.2.3 - Fixed an issue where the guild mission ‘The Choice’ was not completed even if the guild member who is currently on the mission finishes the mission.
+
+2.2.2 - Fixed an issue where the guild mission ‘The Choice’ was not completed even if the guild member who is currently on the mission finishes the mission.
+
+2.2.1 - We are aware of the issue where the guild mission ‘The Choice’ is not completed even if the guild member who is currently on the mission finishes the mission.
+
+We are currently running tests to check the issue. We will inform you as soon as we have more information.
+
+We apologize for any inconvenience caused and will do our best to resolve the issue as soon as possible. 
+Thank you. 
+GM Orvel.
+
+2.2 - We are excited to announce the launch of our new guild mission system! 
+You can now take on challenging guild missions with your fellow Raiders! Complete these missions to gain rewards and strengthen your guild’s strength. 
+We hope you enjoy this new feature and please let us know if you have any feedback. 
+Thank you for your continued support. 
+GM Orvel.
+
+2.1.2 - We are aware of the issue where the guild mission ‘The Choice’ is not completed even if the guild member who is currently on the mission finishes the mission.
+
+We are currently running tests to check the issue. We will inform you as soon as we have more information.
+
+We apologize for any inconvenience caused and will do our best to resolve the issue as soon as possible. 
+Thank you. 
+GM Orvel.
+
+2.1.1 - Fixed an issue where the guild mission ‘The Choice’ was not completed even if the guild member who is currently on the mission finishes

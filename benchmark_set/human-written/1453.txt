@@ -1,0 +1,29 @@
+When it comes to synchronous motor, it is an AC motor in which the rotation of the shaft is synchronized with the frequency of the supply current at a stable state, the rotation period is exactly equal to an integral number of AC cycles. They are available in self-excited sub-fractional horsepower sizes to high power industrial sizes. In the fractional horsepower range, it is used exact constant speed is needed, for example, analog electric clocks, timers, and other devices where correct time is essential. On the flip side, in the high power industrial sizes, they offer two significant functions such as they convert AC energy to work and function at leading or unity power factor thus delivers power-factor correction.
+
+We have seen that in most of the industries, induction motors are mostly used as it is cost-effective, rugged construction and better starting torques as well as require less maintenance. On the other hand, synchronous motors are infrequently used in industries for drive applications. It is used as a power factor correction device and they help to increase the power factor of the system.
+
+Key features of Synchronous Motors-
+
+They are characteristically not self-starting so they need some outer resources to match the speed of synchronous speed before they are synchronized.
+
+They work as constant speed motors regardless of load condition for constant supply frequency.
+
+It has exclusive characteristics of functioning under any electrical power factor that makes it effective in electrical power factor upgrading.
+
+These synchronous motor are used for various applications. These motors with no load connected to their shaft are utilized for power factor development so they are widely used in the power system in situations where static capacitors are expensive.
+
+You can find then in an application where operating speed is less and high power is required. They are preferably utilized in Reciprocating pumps, compressors, rolling mills, etc.
+
+Key benefits of Synchronous Motors:
+
+There are various benefits of synchronous motor you can get by using it. Some of the most important advantages are discussed below-
+
+They have the ability to control the power factor. An over-excited synchronous motor can have a leading power factor so it can function in parallel to induction motors and other lagging power factor loads. Hence it improves the system power factor.
+
+Regardless of the loads, the speed will remain constant in synchronous motors. It helps in industrial drives where constant speed is needed. They are so useful when it is needed to drive another alternator to supply at a different frequency as in frequency changes.
+
+Synchronous motors can be made with wider air gaps that make them mechanically more stable. In these motors, the electro-magnetic power varies linearly with the voltage.
+
+They typically function with higher efficiencies especially in low speed and unity power factor applications.
+
+You just need to find the best synchronous motor manufacturer and supplier that give you a chance to buy or wholesale bulk synchronous motors at the best pricing range. You can find different companies online easily and compare the price of these motors.

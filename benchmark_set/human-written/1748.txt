@@ -1,0 +1,25 @@
+Microbes might power your devices in the future
+
+Scientists have captured microbes that digest pollutants and generate electricity, raising hope that such ‘electrogenic’ organisms could become a new source of power one day.
+
+In 10 seconds? In a breakthrough, researchers have managed to isolate power-producing microbes ‘in the wild’, allowing them to multiply the cells and observe their pollutant-destroying and electricity-generating capability. (Read the science)
+
+Wow, bacteria can generate electricity? Yes! All living cells are involved in the process of metabolism where they gain energy by letting electrons flow from “donors” to “acceptors”. For example, human cells use food as donors and oxygen as acceptors. Some bacteria ‘exhale’ electrons in raw form — as electricity. These special microbes pass their electrons to solid matter, like metals, using protruding hair-like wires. Harnessing this ability would enable us to use their electricity for low-power devices. (Read more)
+
+So how did they capture those bacteria? By placing electrodes in the alkaline hot springs of Yellowstone National Park — we are talking 90°C hot — and using their newly invented cheap potentiometer. This basically lets you control the resistance and the flow of electricity like volume controls in your home stereo. The scientists stuck several electrodes in the water and controlled the flow of electricity so that the bacteria donated or took up electrons. Leaving the electrodes in the water for a month allowed the bacteria to grow on them. (Read more)
+
+And why is finding them in a hot spring such a big deal? Because in a lab it is very difficult to replicate the extreme environment that these bacteria live in. So, up to now, researchers had to make do with a few model organisms in the lab. Also, the instruments used to perform the experiments and the biofilms required in the lab environment are expensive. (Read more)
+
+You’ve also mentioned they can fight pollution? Well, this kind of bacteria can use pollutants as its food while converting them into less harmful substances and exhale electrons in the process. Although the latest study did not name the dual-functioning bacteria, earlier research identified Desulfitobacteria that was found to be capable of breaking down a wide range of pollutants, including solvents and polychlorinated biphenyl present in coolants, electrical devices and other products. (Read more)
+
+So, what can we expect in future? As the instruments become cheaper and more portable, we can expect researchers to expand to niche environments. We will likely discover even more bacteria capable of exchanging electrons with solid surfaces, and scientists expect to see the emergence of metabolic traits. All this will expand our toolbox to create new technologies to solve problems, such as treating pollution and energy conversion. (Read more)
+
+Future uses of electrogenic bacteria One of the most important appeals of this field is the ability to interface biological processes with electronic systems. We already use these microorganisms for the production of small amounts of power in remote areas, and for the treatment of wastewater. As our understanding of the science and toolbox of microorganisms expand, we can expect new applications in many areas. Scientists are already looking into using such bacteria as specific biosensors, for environmental bioremediation, for biosynthesis processes, and production of hydrogen. Other exciting research questions include using this type of energy transfer in human tissues for managing neurological and mitochondrial conditions.
+
+Research was curated by Abdelrhman Mohamed
+
+Chemical engineering Ph.D. candidate in the Biofilm Engineering Research Group at Washington State University.
+
+His research focuses on biofilm electrochemistry and instrumentation.
+
+(Psst, Abdelrhman distilled 12 research papers to save you 839.5 min)

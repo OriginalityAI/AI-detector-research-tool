@@ -1,0 +1,65 @@
+Recursive function — The trick to get the next page
+
+Ok, here’s the trick to get the job done: Recursiveness.
+
+We are going to create a “parse_page’ function. That function will fetch the 10 albums the page will have.
+
+After the function it is done, it is going to call itself again, with the next page, to parse it, over and over again until we have everything.
+
+Let me simplify it for you:
+
+I hope it is clear: As we keep having a ‘next page’ to parse, we are going to call the same function again and again to fetch all the data. When there is no more, we stop. As simple as that.
+
+Step 1: Create the function
+
+Grab this code, create another function called ‘parse_page(url)’ and call that function at the last line.
+
+The data object is going to be used in different places, take it out and put it after the search_url.
+
+We took the main code and created a parse_page function, called it using the ‘search_url’ as parameter and took the ‘data’ object out so we can use it globally.
+
+In case you are dizzy, here’s what your code should look like now:
+
+Please check this line:
+
+Now we are not fetching the ‘search_url’ (the first one) but the URL that we pass as an argument. This is very important.
+
+Step 2: Add recursion
+
+Run the code again. It should fetch the 10 first albums as always.
+
+That’s why because we haven’t used recursion. Let’s write the code that will:
+
+Get all the pagination links
+
+From all the links, grab the last one
+
+Check if the last one has a ‘Next’ text
+
+If it has it, get the relative (partial) url
+
+Build the next page url by adding base_url and the relative_url
+
+Call parse_page again with the next page url
+
+If doesn’t has the ‘Next’ text, just export the table and print it
+
+Once we have fetched all the cd attributes (that’s it, after the ‘for cd in list_all_cd’ loop), add this line:
+
+We are getting all the ‘list item’ (or ‘li’) elements inside the ‘unordered list’ with the ‘SearchBreadcrumbs’ class. That’s the pagination list.
+
+Then, we go to the last one and get the text. Add this after the last code:
+
+Now we check if ‘next_page_text’ has ‘Next’ as text. If it does, we take the partial url, we add it to the base to build the next_page_url. If it does not, there is no more pages, so we can create the file and print it.
+
+That’s all we need. Run the code, and now you are getting dozens, if not hundreds of items!
+
+Step 3: Fixing a small bug
+
+But we can still improve the code. Add this 4 lines after parsing the page with Beautiful Soup:
+
+Sometimes there is a ‘Next’ page when the numbers of albums are multiple of 10 (10, 20, 30, 40 and so on) but there is no album there. That makes the code to end without creating the file.
+
+With this code, it is fixed.
+
+Your coding is done! Congratulations!

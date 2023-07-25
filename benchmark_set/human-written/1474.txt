@@ -1,0 +1,43 @@
+Full code
+
+The Full code can be found at the following link.
+
+Commentary on the main points
+
+This demo is a ScrollyTelling that integrates scrolling events with the FreeCamera API.
+
+The FreeCamera API uses two data from routes to control the camera: one is the data of the moving route of the camera gazing point. The other is the data of the moving route of the camera itself.
+
+First, here is an example of how to create these data.
+
+Data 1: Moving route of camera gazing point
+
+The data used here is the movement route of the gazing point located in the center of the camera. In other words, it is the pathway data that is the theme of ScrollyTelling.
+
+The theme for this demo is “the route to the summit from the fifth station of Mt. Fuji”. The route I chose was the Yoshida route, which is used by more than half of the climbers.
+
+The data was obtained from OpenStreetMap (OSM) Export.
+
+Once the OSM data is retrieved from OSM, convert it to GeoJSON with osmtogeojson.
+
+Extract the route you want to use from the GeoJSON you created in this way.
+
+(Don’t forget to credit OSM when you use it)
+
+Data 2: Moving route of the camera itself
+
+This is the route followed by the camera itself. You can specify the parameters for the altitude separately, so you can use the same data as in Data 1.
+
+However, for example, if a zigzag route is included the camera will swing violently along that route. That user experience can cause 3D sickness, so the data needs to be simplified.
+
+To simplify the data, mapshaper is useful.
+
+Code essentials
+
+The following is an excerpt of the code that operates the FreeCamera API.
+
+To explain briefly, the following process is repeated every time a scroll event is fired.
+
+Using Turf.js, manage scroll rate as a variable called rate. Using the rate, calculate the position according to the scroll rate from the gazing point of the camera and the movement route of the camera itself. Using each calculated position, set the FreeCamera API object (use lookAtPoint in this case) Move the camera
+
+(For your information, scrolling events are managed by EventListener and requestAnimationFrame.)

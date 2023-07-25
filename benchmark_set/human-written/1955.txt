@@ -1,0 +1,31 @@
+As an engineering manager, one of my duties is to do learning and development talks every 6 months for every engineer in my team. In order to assess how the person was developing within the last 6 months, we have many tools in place and one of them is running a small and anonymous survey and asking the circle of person colleagues a round of questions.
+
+We would usually ask a person to rate his peer on 4 different competencies:
+
+Self-awareness: Please rate the person on self-awareness relative to peers;
+
+Please rate the person on self-awareness relative to peers; Drive for results: Please rate the person in terms of the drive for results relative to peers;
+
+Please rate the person in terms of the drive for results relative to peers; Leadership : Please rate the person proficiency in leadership relative to peers;
+
+: Please rate the person proficiency in leadership relative to peers; Communication: Please rate the person ability with interpersonal communication;
+
+Also, we would throw a couple of open questions: Share a concrete example of something the person could improve or Share a concrete example of something the person does well.
+
+We would send out these surveys using Slack (or/and) email to 5–7 persons direct colleagues with the following message:
+
+Hi there! I’m planning a feedback talk with X. To give him holistic feedback, I’m using the standardized 360° feedback survey approach. Use this link to participate: link_to_a_google_forms_survey
+
+Everything is anonymous even to me. So feel free to be as open as you can. Thanks!
+
+Once the results arrive, we usually compile them into a summary (never directly present the results), and send to a person via an email before the actual L&D talks, so that:
+
+The person is aware of what the L&D talk will be about and there are more or less no surprises
+
+The person has a document he can go back to and reflect on later
+
+I can’t stress enough how these survey results have been helping me. It’s a great way to remove the bias from the evaluation as well as a great source of argument/point of reference during the talk.
+
+From my past experience, for some, it’s a warm bath and for some, it’s a cold shower to read these results, but it’s a great way of getting a reality checked/understand how people perceive you.
+
+Moreover, we, of course, do not base our evaluation solely on this document, it’s rather a complementary tool to many others we have in place.

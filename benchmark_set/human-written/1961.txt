@@ -1,0 +1,9 @@
+Cleveland is a dynamic city with an industrial past and an exciting future in healthcare and innovation. Given its history, I was curious about the placement of older homes throughout the city. In order for a home to be considered for the National Register of Historic Places, it needs to be at least 50 years old. Knowing the locations of older homes provides a quick estimate for the level of effort needed to assess the areas prior to development. In addition, development plans can be tailored to the preservation or reuse of these homes.
+
+Location, Location, Location!
+
+By visualizing building age by decade, some clear neighborhood housing trends become apparent in Cleveland, OH.
+
+Building Age of Housing Units from 1939 or earlier by census block group
+
+This map shows homes built from 1939 or earlier — dark green areas are places where there are a higher concentration of these homes.

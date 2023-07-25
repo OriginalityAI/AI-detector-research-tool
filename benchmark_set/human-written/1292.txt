@@ -1,0 +1,5 @@
+I remember around 3 or 4 years ago, there was a saying that I used to hear a lot: “Money Talks”. Now I can see that this no longer holds; the better way to phrase it would be: “Data Talks”. We are now in the Cognitive Era, all the buzzwords in the media are around data: Cognitive, AI, Machine Learning, Big Data, Data Analytics, etc… The big tech players are now shifting their focus as well. Amazon, Google, IBM, Microsoft, and now even Alibaba and Oracle are joining the race.
+
+Last week, Gitex tech week conclude in Dubai, and some of the major highlights were around data, from visualizing data to predicting city-wide events, to bring the cloud to the masses; everything was around data.
+
+Smart Dubai Office constructed a giant visualization of all the data flowing in Dubai (called Future Live) with the aim of using this data to prepare for Expo 2020. There was an entire hall in Gitex dedicated just for cloud featuring the typical Cloud Giants plus many newer entries. IBM showed a citywide solution called MetroPulse which helps understand city dynamics and how different events and data in the city correlate and affect each other.

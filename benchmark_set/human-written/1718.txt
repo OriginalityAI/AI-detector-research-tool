@@ -1,0 +1,11 @@
+When looking to buy a gaming mouse you often see them advertised with the specification Polling Rate. The most common question regarding this is what does it mean and how useful is it. This specification is not be mixed up with DPI
+
+Polling Rate Explained
+
+Polling rate is a specification which is mostly found on gaming mice. Polling Rate is measured in Hertz or HZ in short. Polling rate will help us gamers understand how fast the mouse will respond when connected to our computer.
+
+A mouse’s polling rate will determine how often it will report its position to the computer. This means that if a mouse has 125HZ it will report its position to the computer 125 times every second or every 8 milliseconds and if the mouse has 500HZ it will report its position to the computer every 2 milliseconds.
+
+A gaming mouse which has a high polling rate can decrease the input lag that occurs when you move your mouse, this means that when you move your mouse the inputs will be shown with less input lag on your screen. It is also important to understand that a high polling rate will also use more CPU resources on your computer as the CPU has to create more queries for the mouse to read its position.
+
+Gaming mice today support a high polling rate out of the box and often come with software that will allow the end user to change to polling rate or else the mouse will have a switch which will allow the end user to change the polling rate on the fly.

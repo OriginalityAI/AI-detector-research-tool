@@ -1,0 +1,5 @@
+Introduction
+
+After you have performed data cleaning, data visualizations, and learned details about your data it is time to fit the first machine learning model into it. Today I want to share with you a few very simple lines of code that will divide any data set into variables that you can pass to any machine learning model and start training it.
+
+It is trivially simple but an understanding of how the split function for training and test data sets work is crucial for any Data Scientist. Let’s dive into it.

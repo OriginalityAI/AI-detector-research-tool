@@ -1,0 +1,21 @@
+Meanwhile working on next part of Ruby C extension series I have faced different problem.
+
+Since it is more and more painful to install awesome capybara-webkit I have started to look around for some reasonable replacement. My requirements are really simple. It must be really easy to use it locally for developers and it should be possible to run it in containerized environment (Docker on CI in my case). Let’s generate example Rails 5.2 application we can use for testing based on my prepared template.
+
+There’s is one system test created testing some javascript execution. By running our system test suite we can easily check if our solution works. Let’s try it!
+
+If you have Chrome locally installed you should see new browser window for short time used to execute our system test. It works out of box! Nice! Our first requirement is met. There’s no need for any local configuration, no need to install any additional dependencies. All you need is Chrome installed. No more pain having proper Qt installed to compile capybara-webkit locally.
+
+test app running
+
+simple system test passing only when JavaScript is executed
+
+Docker
+
+Let’s slowly prepare application for containerization in Docker by adding simple Dockerfile using thin Alpine official Ruby images.
+
+Pretty simple Dockerfile , isn’t it? We need to install tzdata package and temporarily install build-base and ruby-dev packages to be able to compile nokogiri. Let’s try to build and start our app.
+
+App is running, we can reach it locally at http://localhost:3000/home/index. You should see “Hello from JS” text. Let’s try to run specs in our new container.
+
+Since we are using really thin docker base image (based on Alpine linux) Selenium WebDriver can’t start Chrome because it is not available in image. We can fix it by installing it into the image, but it will almost double our image size and also it will probably lead into two dockerfiles, since we don’t need Chrome installed in production container.

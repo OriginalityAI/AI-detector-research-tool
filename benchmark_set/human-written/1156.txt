@@ -1,0 +1,63 @@
+Product Manager vs Product Marketing Manager
+
+I recently saw this great thread from Lenny Rachitsky on Twitter where he asked the question about the boundaries between a Product Manager and a Product Marketing Manager.
+
+The common theme was that a Product Manager worries about getting the product ‘out the door’, whereas a Product Marketing Manager worries more about getting the product ‘into the customer’s hands’.
+
+Or as Evelyn Hartz put it:
+
+“PMs own getting the cereal ON to the shelf (i.e. ingredients, nutrients, placement in relation to competitors, etc.) PMMs own getting you to take the box OFF the shelf (i.e. packaging, pricing, etc.)”
+
+It’s important however to note that all this is in the context of organisations where they have both roles.
+
+There are many organisations — e.g. early-stage startups — where they may only have Product Managers. In these cases, the Product Manager would be doing both roles of getting the ‘product on the shelf’ as well as ‘off the shelf’.
+
+So to break this down a bit more, it can look something like this:
+
+Product Manager:
+
+Product Vision/Strategy/Roadmap
+
+Product discovery & development
+
+Product lifecycle management
+
+Product Marketing Manager:
+
+GTM strategy and execution
+
+Sales enablement (B2B) and lead generation
+
+Communicating the product to the market
+
+Marketing campaigns
+
+Where a Product Manager is more concerned with the overall direction of the product through defining its strategy, vision and roadmap. A Product Marketing Manager on the other hand would be more focused on taking the product to market — communicating its value proposition in a way that it attracts and retains customers.
+
+“While all product teams aspire to create an elegant user experience and functionality that enables customers to intuitively “get it” after they try it, product marketers are focused on conveying the product’s value to the customer to engage, convert and retain them. Product marketers play a key role in driving awareness and trial as well as packaging the product to appeal to customers. They accomplish this by packaging a product’s features and functionality into messaging and positioning, pricing, and collateral.” — What Is Product Marketing? by Ada Chen Rekhi
+
+But an important nuance is the fact that there is no definitive place where one role starts and the other finishes.
+
+We know that building good products is key to selling them, and how we market, position and sell our products impact the way we build them. As such the two roles (at least how I’ve experienced them) are more of a partnership than mutually exclusive roles.
+
+I liked the ‘Driver-Navigator’ analogy Brett Bryon used stating that “PM + PMM must be in lock-step throughout prod lifecycle, but who is sitting shotgun vs driving changes with phase.”
+
+Not an exact science as I believe the best approach is to get in a room together and talk about who’s going to do what — I recommend doing one of these Roles and Responsibility workshops to align together on what this means as it will be different from person-to-person, company-to-company, product-to-product.
+
+But an example of where both a Product Manager and Product Marketing Manager would be equally concerned with:
+
+Market segmentation
+
+TAM, OAM, SAM
+
+Value Proposition
+
+Personas
+
+Pricing
+
+Positioning
+
+Go-to-market planning
+
+etc

@@ -1,0 +1,31 @@
+Take a dive with me to better understand recursion.
+
+Photo by Roman Kraft on Unsplash
+
+The concept of recursion is something that has taken me a while to grasp because it didn’t make a whole lot of sense to me at first. I would imagine, or rather, hope that most developers would be able to empathize with that same feeling of frustration. I didn’t understand why or how it would be necessary in programming until I started playing with it in the console. If this is the first time hearing about recursion as a programmer, then I suggest studying up on the subject.
+
+So, what is it anyway?
+
+Wikipedia does an elegant job of defining recursion by describing it as “a method of solving a problem where the solution depends on solutions to smaller instances of the same problem.” Sounds simple enough, but it can seem complicated once you try implementing it yourself for the first time.
+
+When a function is recursive, it means that it is a function that calls itself within its own function block. The part in the function where it calls itself is referred to as the recursive call. The other necessary element in these types of functions is what is called the base case. Now, the base case is the stopping point which tells the function when and under what condition to stop calling itself. Comparative to “if” statements, there can be multiple base cases in a single function. However, without the base case, the function will continue to call itself, thus creating the dreaded infinite loop.
+
+Here is an example of a recursive function:
+
+Different types of recursion:
+
+There are several different types of recursion: single, multiple, direct, indirect, anonymous, structural and generative. Singe and multiple recursion refers to the number of recursive calls in the function, so one call would be single and hence forth. Direct recursion is when a function calls itself, but indirect recursion is when there is a chain of functions that eventually get to the recursive call. Basically, function “a” will call on function “b” which will then call function “a,” making “a” indirectly call itself. Most recursive functions explicitly call the function by name, but there are instances where an anonymous function can be called implicitly based on the current scope, making an anonymous recursive call. A structurally recursive function is one where the argument to each recursive call is a smaller piece of the original data input. Generative, on the other hand, will create new data each time the recursive call is made so it won’t necessarily make the new argument smaller, adding a level of complexity that might make it difficult to reach the base case.
+
+Recursive functions are not limited to one of the different types as listed above, and fall under a couple of these categories.
+
+Why not just use loops then?
+
+Recursive solutions are important to understand because they are used in popular algorithms like binary sorting or linear search, among others. There are some functional programming languages that don’t allow looping and only have recursion as an option. Though iteration with loops is more commonly less expensive than recursive functions, problems that have multiple possible branches are too elaborate for iterative solutions.
+
+When not to use recursion:
+
+If you can use iteration, then please do. Recursive functions can be harder and more complex to read and KISS (Keep It Simple, Stupid) is still a thing. Another important reason to not use recursion, or at least to not use it so often, is that it can be very expensive in your programs. Increasing the amount of memory usage is not always practical if you can’t afford it in larger applications.
+
+In conclusion…
+
+Recursion is an important topic to understand, especially if you have technical interviews on the horizon. Study up, and let me know how I did with the explanation. Writing about it has solidified my understanding of the topic, so I hope other developers get something out of it as well.

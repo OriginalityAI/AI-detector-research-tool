@@ -1,0 +1,167 @@
+Problem
+
+A hotel manager has to process N bookings of rooms for the next season. His hotel has K rooms. Bookings contain an arrival date and a departure date. He wants to find out whether there are enough rooms in the hotel to satisfy the demand. Inputs:
+
+- First list for arrival time of booking
+
+- Second list for departure time of booking
+
+- Third is K which denotes the count of rooms Output:
+
+- A boolean which tells whether its possible to make a booking
+
+false means there are not enough rooms for N booking
+
+true means there are enough rooms for N booking Example: Inputs:
+
+- arrivals = [1, 3, 5]
+
+- departures = [2, 6, 10]
+
+- K = 1
+
+
+
+Output: false. At day = 5, there are 2 guests in the hotel. But we have only one room.
+
+Solving Process
+
+This problem is interesting in my opinion because there are many different ways to solve it. Let’s see a possible process.
+
+Structure Storing Each Day Count
+
+Our first idea might be to have a structure to store the number of bookings for each day. This structure could be an array with a fixed size (the maximum departure day).
+
+Inputs:
+
+- arrivals = [1, 3, 5]
+
+- departures = [2, 6, 10]
+
+- k = 1
+
+This example would lead to having an array of size 10 (because the last departure is at day 10). To construct this array we iterate over each arrival and departure and we either increment or decrement the corresponding day. In pseudo-code:
+
+int[] counts = new int[maxDepartures(departures)] for each arr in arrivals {
+
+counts[arr]++
+
+} for each dep in departures {
+
+counts[dep]--
+
+}
+
+At the end we have the following array:
+
+value: 1 0 1 1 2 1 1 1 1 0
+
+index: 1 2 3 4 5 6 7 8 9 10
+
+Once the array is built, we just have to iterate on it and check if all the elements are smaller than k (the number of rooms).
+
+In the previous example, the maximum number of rooms was 1. Because on day 5 we have 2 bookings, we return false.
+
+The solution is O(n) in time with n the number of bookings but O(m) in space with m the maximum departure day. Not bad in theory but we can potentially allocate a very large array even though most of the space is not really useful. For example:
+
+Inputs:
+
+- arrivals = [1, 3, 5]
+
+- departures = [2, 10000, 10]
+
+- k = 1
+
+Would lead to allocating an array of 10k integers.
+
+Let’s see the other options.
+
+Storing a Collection of Events
+
+What are the other options? Let’s check again what we produced with the previous structure:
+
+value: 1 0 1 1 2 1 1 1 1 0
+
+index: 1 2 3 4 5 6 7 8 9 10
+
+We can see that some information are kind of duplicated. For instance, between day 6 and day 9, the number of bookings does not change as we know that nothing happened during this time frame.
+
+Would it help to store some sort of events instead? Let’s take again the same example:
+
+Inputs:
+
+- arrivals = [1, 3, 5]
+
+- departures = [2, 6, 10] Day 1: +1 booking
+
+Day 2: -1 booking
+
+Day 3: +1 booking
+
+Day 6: -1 booking
+
+Day 5: +1 booking
+
+Day 10: -1 booking
+
+The solution would be to iterate over those events and to either increment or decrement a counter. If at some point, the counter is greater than k , we return false. Yet, to iterate over this collection of events we need it to be sorted.
+
+What is the best structure here? Let’s summarize our requirements:
+
+Search to check whether a day already exists
+
+Add a new day
+
+Browse the structure to iterate over each sorted day
+
+What about using a Binary Search Tree (BST)?
+
+Each node could be represented this way:
+
+class Node {
+
+int day
+
+int count
+
+Node left
+
+Node right
+
+}
+
+The sorting would be done per day .
+
+Let’s see the impacts in terms of time complexity:
+
+Search to check whether a day already exists: O(log(n)) average case, O(n) worst case
+
+Add a new day: O(log(n)) average case, O(n) worst case
+
+Browse the structure to iterate over each sorted day: O(n) using an in-order strategy (Depth-First Search)
+
+As we have to iterate over each element and insert them in the BST, the algorithm complexity is O(n log(n)) average case, O(n²) worst case.
+
+Another option is to use a hash table and to sort the keys once we have added all the events:
+
+Search to check whether a day already exists: O(1) average case, O(n) worst case (the probability depends on the map capacity)
+
+Add a new day: O(1) average case, O(n) worst case
+
+Browse the structure to iterate over each sorted day: O(n log(n)) to sort the keys and O(n) for the iteration
+
+In the end, the solution is O(n log(n)) average case (due to the sorting operation), O(n²) worst case. This solution appears to have the same complexity than the one using the BST.
+
+Let’s see a possible implementation in Java using a sorted map:
+
+Constant Space Complexity
+
+If we want to optimize our algorithm, we need to think whether it is really mandatory to store those events? Can’t we just simply iterate over the given collections (arrivals and departures) and check the booking constraint on the fly?
+
+A solution would be possible but it would require to simplify the inputs by sorting them up front.
+
+If both collections are sorted, we can simply iterate over each element using two pointers (one on the arrivals, one on the departures) and perform the constraint check on the fly:
+
+As you can see, during each iteration we still have to check what is the minimum between arrivals.get(indexArrival) and departures.get(indexDeparture) to know what pointer to update.
+
+Overall, the algorithm has a constant space complexity and an O(n log(n)) time complexity due to the sorting operations.

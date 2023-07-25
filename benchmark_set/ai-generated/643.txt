@@ -1,0 +1,13 @@
+Introducing FreeBSD 8.0-RC2: A Step Closer to Stable Release
+
+The FreeBSD Project is excited to announce the availability of the second Release Candidate (RC2) for the anticipated FreeBSD 8.0 release. Most issues discovered during public testing have been addressed at this stage of the release cycle, and our current plan includes releasing 8.0-RC3 in about two weeks. For detailed information about the target schedule and the current status of the release, please visit the following link: http://wiki.freebsd.org/8.0TODO.
+
+To report any issues you encounter while using 8.0-RC2, please use the standard Gnats PR system or the freebsd-current mailing list. While we do cross-post announcements to the freebsd-stable mailing list, it is important to note that most developers pay more attention to the freebsd-current list as this release is on the verge of becoming a stable branch.
+
+ISO images for all supported architectures are available on the FTP sites, with a "memory stick" image provided for amd64/i386 architectures. For the amd64/i386 architectures, the cdrom and memstick images include documentation packages, while the DVD image contains the packages that are likely to be available on the official release media, subject to change between now and the release. For the sparc64 architecture, a livefs cdrom is now available, disc1 includes documentation packages, and the DVD image provides the set of packages that currently build for sparc64.
+
+For users updating an older system using csup/cvsup methods, the branch tag to use is RELENG_8_0. The freebsd-update(8) utility supports binary upgrades of i386 and amd64 systems running earlier FreeBSD releases. Instructions for upgrading from previous releases can be found in the original content.
+
+MD5/SHA256 checksums for the image files are provided in the original content as well.
+
+Please join us in making the FreeBSD 8.0 release a success by testing the RC2 and sharing your feedback with us. Your valuable input is crucial in ensuring that we deliver a high-quality, stable release.

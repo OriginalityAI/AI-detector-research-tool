@@ -1,0 +1,53 @@
+Tweet Tweet Share
+Share
+Last Updated on June 7, 2016
+I get daily emails asking the question:
+How do I get started in machine learning?
+This post provides my quick answer. Here is my long answer.
+So here is how to get started in machine learning, the quick version.
+Practice Creating Predictive Models
+You’re interested in machine learning but you’re not sure of the specific outcome you’re looking for.
+Maybe you’re interested in learning more about machine learning algorithms.
+Maybe you’re interested in creating predictions.
+Maybe you’re interested in solving complex problems.
+Maybe you’re interested in creating smarter software.
+Maybe you’re even interested in becoming a data scientist.
+I have a suggestion…
+Given a dataset, learn how to create accurate models, reliably.
+You will learn about the types and behaviours of machine learning algorithms.
+You can use the resulting predictions directly.
+You can build the skills to be able to solve your complex problems.
+You can use the models in your software.
+You can use the models in competitions, like those on Kaggle.
+You can use the results to demonstrate your skills at applied machine learning.
+Here’s What To Do, Step-by-Step
+You are going to be told to learn the math, read the textbooks and study theory.
+Maybe that path is good for academics. I call this approach the bottom-up approach to getting started in machine learning.
+This is not the only path. There are other ways.
+The Top-Down Approach To Getting Started in Machine Learning
+Here are the steps to get started:
+Believe. Know that you can learn machine learning by practicing working through problems (top-down) rather than studying theory (bottom-up).
+Pick a Process. Select a systematic process for working through a machine learning problem from beginning to end that you can use to reliably get a good result on any problem you work on.
+Pick a Tool. Select a tool or platform that you can use to actually work through problems and map it onto your chosen systematic process.
+Pick a Dataset. Select datasets to work on and practice the process. Ideally select properties of problems that you want to practice and find well understood datasets that have those traits on which to practice.
+Build a Portfolio. Write up your results and learnings in semi-formal work products (blog posts, presentations, tech reports) and share them publicly to demonstrate your growing machine learning skills and capabilities and engage like minded practitioners.
+A better approach to learning machine learning that starts with working machine learning problems end-to-end.
+Once you settle on a process and tool, repeat step 4 and build up your portfolio in step 5.
+Here is Specifically What You Can Do
+Good process but not specific enough for you?
+Let’s get more specific.
+Believe. Acknowledge that you have limiting beliefs that are holding you back.
+Process. Use my process. Use this checklist for working through classification problems.
+Tool. Use WEKA. It provides a large number of algorithms and a graphical user interface and does not require any programming. Here is a tutorial for creating your first classifier.
+Dataset. Select datasets from the UCI Machine Learning Repository. This post will help you select datasets by traits. Start with the Iris flower dataset.
+Portfolio. Checkout this post that explains how to build your machine learning portfolio.
+Weka Explorer Interface with the Iris dataset loaded
+Action Step
+There are a lot of reasons to not get started in machine learning.
+I don’t have the math. I can’t program. So on and on.
+If you want to get started in machine learning. Get started. Stop getting ready to start!
+If you want to dive deeper into how I think you should get started in machine learning, read my post titled “Machine Learning for Programmers“. It goes into a lot more detail.
+Do you have a question? A doubt? Leave a comment.
+Tweet Tweet Share
+Share
+More On This Topic

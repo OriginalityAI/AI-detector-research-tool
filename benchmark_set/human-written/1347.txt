@@ -1,0 +1,23 @@
+Basic Astronomical Image
+
+We all have come across various OpenCV libraries and have been using them to get the brightest area’s or spot’s on images. Apparently, we have our cv2.minMaxLoc(…) in OpenCV to do this and get our location. But have you ever wondered could we employ an dynamic programming method for this approach.
+
+This is a problem that's called the maximum contiguous subarray sum in Algorithms. We usually have a 1d array and are asked to find the maximum sum that's possible out of all subarrays of that array. We can employ brute force method to solve it in O(n²) times or a divide and conquer to get it in O(log n) times. We will use dynamic programming for our approach to get it in O(n) times.
+
+Coming to our problem, we have an image which we can read using an OpenCV method and we process the image to get a 2D array out of it.
+
+We cant directly input the array into Kadane’s Algorithm as after we read the image we wont get a 2d array and it will be of higher pixel rate which could run very slow on Kadane's Algorithm. Hence we first reshape it to a smaller matrix of say (150,150) shape. Please note that the more we reduce the faster we get the process done. It was noted that with 150 on an average it took 2 seconds. if we go for 100 we could get it in 0.7 seconds, but the accuracy gets reduced. So higher the better and hence we have to balance both time as well as pixel dimensions. 150 seems to work fine and get results pretty fast. Next we grayscale the array which makes our array into a 2d shape. It is important to note that we have the matrix of int8 type and hence the values will never go negative , but in Kadane’s we need negative too to get properly maximum sum area, else we may end up detecting full array as the sum. So we convert them to int16. We just smooth the array using a gaussian blur and then we subtract all values of array with its max value and add 1 to it. This solution help a lot when it want to get the exact area of brightest spot. Next we pass this array to a function for our Kadane’s Algorithm processing.
+
+Next we pass the matrix to a function called findMaxSum which will basically give us the highest sum as well as co-ordinates corresponding the. This function will work by passing matrix columns into Kadane’s function and comparing and getting the maximum sum. The code is given below:
+
+For deep understanding of working of the function, I have generated and example on 3 * 3 matrix. This link should guide you in live how each of the code works :
+
+Now, once we have passed it using Kadane’s Algorithm we would have obtained our highest sum with co-ordinates corresponding to them. Since we want to indicate the brightest area on our image we need to circle it. So to find that coordinate we have to take average of finalbottom and finaltop with finalleft and finalright. This gives us the center.
+
+The idea is to resize the image, but we know that once we resize the quality of image is reduced by huge margin. So the trick here is to use concepts of ratio and get the coordinates when the image is transformed into a particular larger pixels. So here we basically call the original image once again and find the coordinate with respect to the one generated on the resized image.
+
+Once this is completed, we use cv2.circle function to get the circle on the brightest area of our image.
+
+Thus in this way we end up getting the image like this:
+
+We can also use the same concept and run it to get the brightest area on a video. The code for both image and video are given below, so feel free to star the repo and help me in case you can find better optimizations or doubts:

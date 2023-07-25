@@ -1,0 +1,47 @@
+Technology has a long and winding history. As we have discovered, this journey began with the Sumerian Abacus, thousands of years ago. Continuing along this journey we’ve discovered simple devices, such as the Scytale, or complex devices such as the Antikythera Mechanism. Communication has had a fundamental role in the development of technology as we have seen with the optical telegraph and more recently the electrical telegraph.
+
+Throughout the past few months we’ve covered all of these major milestones in the history of computing.
+
+Most of them have been devices, devices invented to make life easier and newer devices that improve upon older technology.
+
+Some of these milestones have been processes, or ideas, processes that have shaped the hardware and devices we use.
+
+Yet throughout these many milestones we haven’t yet explored the true reason and source of these devices. Where did the idea for an abacus come from? What drives inventors, scientists, and companies to create the technology we use today? Well, that is the subject of today’s milestone.
+
+In June, I wrote about a hoax created by Wolfgang von Kempelen, the Mechanical Turk.
+
+Although the Turk was only a hoax and a clever trick, it inspired the human imagination.
+
+Computing giants such as Charles Babbage began to envision a future in which a device could beat a human at a game of chess. It took over one-hundred years, but the dream came true. The Mechanical Turk illustrates an often underrepresented aspect of computing and life in general: human imagination.
+
+Now, it may sound a bit childish, or even a smidge Walt Disney, but human imagination and human creativity drive innovation. It is human imagination that looks for something different than the here and now. Imagination dreams of what’s possible and looks to a different version of life on Earth. Combined with the human mind, academic studies, and a scientific understanding of the world, imagination births new developments, devices, processes and yes, technology.
+
+The Mechanical Turk may have been the first place we’ve been able to see true imagination, but in 1843 a story was published that caught a brand new generation of dreamers and imaginations.
+
+Edgar Allen Poe was a contemporary of the Mechanical Turk. He played the machine and was fascinated by it (Rhodes, “The Hoax that…”). Perhaps his own imagination was sparked to invent more puzzles and games.
+
+However, Poe wasn’t an inventor, he was a writer. So his puzzles, riddles, and dreams were formed into stories, story is perhaps the height of human imagination.
+
+In 1843, Edgar Allen Poe published one of his most popular stories, “The Gold-Bug” (Garfinkel and Grunspan 50). The story told a tale of adventure and treasure. Similar to the more modern, Indiana Jones saga, the main character embarks on a mission to find lost treasure and solve a series of riddles (Garfinkel and Grunspan 50).
+
+The adventure begins when William Legrand is bitten by a gold colored beetle. Legrand becomes convinced that the bug has a role in a hidden treasure or fortune. William Legrand
+
+“and his associates embark on an adventure to find buried treasure that involves cryptograms, invisible ink, and the bug, which must be dropped through the left eye of a skull to unlock the overall solution” (Garfinkel and Grunspan 50).
+
+It’s a classic. “The Gold-Bug” has adventure, treasure, and danger. Although just a story that appears to have little in common with computing, “The Gold-Bug” captured the imagination of generations of readers. One of these readers was William Friedman. Friedman was entranced by the story. He was inspired “to become a self-taught cryptographer, [who] trained two generations of cryptanalysts (one for each world war), and became the US National Security Agency’s first chief cryptologist in 1952” (Garfinkel and Grunspan 50).
+
+Shortly after publishing “The Gold-Bug,” Edgar Allen Poe created a newspaper contest asking participants to send in their own puzzles and riddles (Garfinkel and Grunspan 50). It is unknown how many this competition could have inspired.
+
+The importance of cryptography and encryption is well understood in our world today, but it took stories of adventure and treasure to inspire many to develop new methods of security.
+
+A simple story may not sound important in the grand scheme and history of computing, but without inspiration the security we benefit from today may not be present, or as strong.
+
+The human imagination and creativity is a powerful tool we as humans possess. It’s use shouldn’t be overlooked or disregarded in an age of scientific reasoning or digital innovation. I firmly believe that stories, legends, and fiction have vital roles not only for our present technology, but also for our future. Walt Disney often used the term “dreamer” to describe those who envisioned and worked to build an exciting tomorrow. I aspire to be a dreamer that uses my skills to better my community, my country, and my world.
+
+Edgar Allen Poe’s “The Gold-Bug” may be a simple story forgotten by history, but it is a vital monument to the power and role of human imagination, inspiration, and innovation.
+
+Edgar Allen Poe’s “The Gold-Bug” is the nineteenth major milestone in the history of computing.
+
+More on Technical Inspiration:
+
+More on Computer History:
