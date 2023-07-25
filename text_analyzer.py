@@ -1,7 +1,9 @@
-import requests
-import os
 import csv
-from typing import Dict, Any, List
+import os
+from typing import Any, Dict, List
+
+import requests
+
 from api_endpoints import API_ENDPOINTS
 
 """
@@ -12,15 +14,15 @@ This program takes in a directory of text files and runs them through the select
 class TextAnalyzer:
     """
     class that handles the text analysis
-    
+
     Parameters
     ----------
     output_csv: the output csv file to write the results to
     api_info: the API settings
     api_name: the name of the API
     writer_organization_id: the writer organization ID for the Writer.com API
-    copyLeaks_scan_id: the Copyleaks scan ID for the Copyleaks API
-    
+    copyleaks_scan_id: the Copyleaks scan ID for the Copyleaks API
+
     Returns
     -------
     None
@@ -32,42 +34,42 @@ class TextAnalyzer:
         api_info: Dict[str, Dict[str, Any]],
         api_name: str,
         writer_organization_id=None,
-        copyLeaks_scan_id=None,
+        copyleaks_scan_id=None,
     ) -> None:
         self.output_csv = output_csv
         self.api_info = api_info
         self.api_name = api_name
         self.writer_organization_id = writer_organization_id
-        self.copyLeaks_scan_id = copyLeaks_scan_id
+        self.copyleaks_scan_id = copyleaks_scan_id
 
     def _get_endpoint(self, endpoint):
         """
-        Replace the writer_organization_id and copyLeaks_scan_id in the endpoint with the actual values
-        
+        Replace the writer_organization_id and copyleaks_scan_id in the endpoint with the actual values
+
         Parameters
         ----------
         endpoint: the endpoint to replace the values in
-        
+
         Returns
         -------
         endpoint: The endpoint with the values replaced
         """
         if "{writer_organization_id}" in endpoint:
             return endpoint.format(writer_organization_id=self.writer_organization_id)
-        elif "{copyLeaks_scan_id}" in endpoint:
-            return endpoint.format(copyLeaks_scan_id=self.copyLeaks_scan_id)
-        else:
-            return endpoint
+        if "{copyleaks_scan_id}" in endpoint:
+            return endpoint.format(copyleaks_scan_id=self.copyleaks_scan_id)
+
+        return endpoint
 
     def _handle_data(self, data, keys):
         """
         Extract the values from the data that correspond to the keys provided
-        
+
         Parameters
         ----------
         data: the data to extract the values from
         keys: the keys to extract the values for
-        
+
         Returns
         -------
         row: the values extracted from the data
@@ -98,21 +100,20 @@ class TextAnalyzer:
         data: Dict[str, Dict[str, Any]],
         keys: Dict[str, List[str]],
     ) -> List[Any]:
-        '''
+        """
         Extract the values from the data that correspond to the keys provided needed to do it this way to avoid type errors
-        '''
+        """
         return self._handle_data(data, keys)
-
 
     def process_files(self, directory, text_type):
         """
         Main function that processes the files in the directory using the API and writes the results to the CSV file
-        
+
         Parameters
         ----------
         directory: the directory to process the files in
         text_type: the type of text to process (AI or Human)
-        
+
         Returns
         -------
         None
@@ -137,7 +138,9 @@ class TextAnalyzer:
             # if the file is a text file
             if filename.endswith(".txt"):
                 # open the file and read the text
-                with open(os.path.join(directory, filename), "r") as f:
+                with open(
+                    os.path.join(directory, filename), "r", encoding="UTF-8"
+                ) as f:
                     text = f.read()
                     body[text_key] = text
                     parameters = body.copy()
@@ -146,12 +149,16 @@ class TextAnalyzer:
                     except KeyError:
                         pass
 
-                    response = requests.post(endpoint, headers=headers, json=parameters)
+                    response = requests.post(
+                        endpoint, headers=headers, json=parameters, timeout=60
+                    )
 
                     # scan the text using the API to check if it is human or AI generated
                     if response.status_code != 200:
                         print(f"❌ Error: {response.text}")
-                        with open(output_csv, "a", newline="") as file:
+                        with open(
+                            output_csv, "a", newline="", encoding="UTF-8"
+                        ) as file:
                             writer = csv.writer(file)
                             writer.writerow(
                                 [
@@ -173,7 +180,7 @@ class TextAnalyzer:
                     )
 
                     # write the row to the CSV file
-                    with open(output_csv, "a", newline="") as file:
+                    with open(output_csv, "a", newline="", encoding="UTF-8") as file:
                         writer = csv.writer(file)
                         writer.writerow(row)
 
@@ -182,12 +189,12 @@ class TextAnalyzer:
     def _get_nested_value(self, dictionary, keys):
         """
         Retrieve the value from a nested dictionary using the keys provided
-        
+
         Parameters
         ----------
         dictionary: the dictionary to retrieve the value from
         keys: the keys to retrieve the value for
-        
+
         Returns
         -------
         dictionary: A dictionary containing the value retrieved from the nested dictionary
@@ -206,11 +213,11 @@ class TextAnalyzer:
 def set_headers(output_csv: str) -> None:
     """
     Set the initial headers for the CSV file
-    
+
     Parameters
     ----------
     output_csv: the output CSV file to write the headers to
-    
+
     Returns
     -------
     None
@@ -223,7 +230,7 @@ def set_headers(output_csv: str) -> None:
         "human_score",
         "Error_message",
     ]
-    with open(output_csv, "a", newline="") as file:
+    with open(output_csv, "a", newline="", encoding="UTF-8") as file:
         writer = csv.writer(file)
         writer.writerow(init_row)
 
@@ -231,11 +238,11 @@ def set_headers(output_csv: str) -> None:
 def api_constructor(selected_endpoints):
     """
     Construct the API settings dictionary using the selected endpoints and API keys
-    
+
     Parameters
     ----------
     selected_endpoints: the selected endpoints to use
-    
+
     Returns
     -------
     api_settings: the API settings dictionary
@@ -269,11 +276,11 @@ def api_constructor(selected_endpoints):
 def get_input():
     """
     Get the user input for the API endpoints, API keys, and directories
-    
+
     Parameters
     ----------
     None
-    
+
     Returns
     -------
     api_settings: the API settings dictionary
@@ -281,10 +288,10 @@ def get_input():
     human_directory: the directory path for human text files
     output_csv: the output CSV file path
     writer_organization_id: the writer organization ID for the Writer.com API
-    copyLeaks_scan_id: the Copyleaks scan ID for the Copyleaks API
+    copyleaks_scan_id: the Copyleaks scan ID for the Copyleaks API
     """
     writer_organization_id = None
-    copyLeaks_scan_id = None
+    copyleaks_scan_id = None
     selected_endpoints = {}
 
     for api_name in API_ENDPOINTS:
@@ -293,7 +300,7 @@ def get_input():
             if api_name == "Writer.com":
                 writer_organization_id = input("Please enter your Organization ID: ")
             elif api_name == "Copyleaks":
-                copyLeaks_scan_id = input("Please enter your Copyleaks scan ID: ")
+                copyleaks_scan_id = input("Please enter your Copyleaks scan ID: ")
             api_info = input("Please enter your API key: ")
             if api_info is None:
                 print("Invalid API Key")
@@ -306,7 +313,7 @@ def get_input():
 
     human_directory = input("Enter the directory path for human text files: ")
 
-    output_csv = input("Enter the output CSV file path: ")
+    output_csv = input("Enter the output CSV file name: ")
     if output_csv is None:
         print("Invalid output CSV file path")
         exit(1)
@@ -322,18 +329,18 @@ def get_input():
         human_directory,
         output_csv,
         writer_organization_id,
-        copyLeaks_scan_id,
+        copyleaks_scan_id,
     ]
 
 
 def text_analyzer_main():
     """
     main function that runs the text analyzer
-    
+
     Parameters
     ----------
     None
-    
+
     Returns
     -------
     output_csv: the output CSV file path
@@ -347,12 +354,12 @@ def text_analyzer_main():
         human_directory,
         output_csv,
         writer_organization_id,
-        copyLeaks_scan_id,
+        copyleaks_scan_id,
     ) = get_input()
 
     for api_name, api in api_settings.items():
         text_analyzer = TextAnalyzer(
-            output_csv, api, api_name, writer_organization_id, copyLeaks_scan_id
+            output_csv, api, api_name, writer_organization_id, copyleaks_scan_id
         )
         if ai_directory != "":
             print(f"🤖 Processing AI files using {api_name}...")
