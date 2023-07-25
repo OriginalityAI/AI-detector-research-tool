@@ -1,6 +1,6 @@
 from analyze_output import csv_analyzer_main
 
-input_csv = input("Enter the name of the csv file to analyze: ")
+input_csv = input("Enter the path to the csv file to analyze: ")
 if not input_csv.endswith(".csv"):
     input_csv += ".csv"
 try:
