@@ -6,7 +6,7 @@ This tool allows you to test the accuracy of various AI detectors. It is a comma
 
 ## Description
 
-The tool takes a set of text files and runs them through a number of AI detectors. It then outputs the results to a CSV file. The tool also generates a confusion matrix to show the accuracy of the detectors.
+The tool takes a set of text files and runs them through a number of AI detectors. It then outputs the results to a CSV file. The tool also generates a confusion matrix to show the accuracy of the detectors. But what is a confusion matrix? A confusion matrix is a table that is used to describe the performance of a classification model. It shows the number of correct and incorrect predictions made by the classification model compared to the actual outcomes. This table is extremely useful for comparing the performance of different detectors as it will show the true positives, false positives, true negatives and false negatives for each detector. This allows you to see which detectors are the most accurate.
 
 ## Requirements
 
@@ -27,7 +27,7 @@ The tool takes a set of text files and runs them through a number of AI detector
 
 Sample workflow:
 
-```
+```bash
 python main.py
 Type Y/N to select Originality.ai API: y
 Enter your Originality.ai API key: YOUR_API_KEY
@@ -45,9 +45,14 @@ Press enter to exit...
 - The tool will only run the detectors you have API keys for
 - If when the tool is finished you are not prompted to generate a confusion matrix or the generation fails run `python matrix.py` to generate the confusion matrix
 
+## Input Data Format
+
+The tool expects data to be in .txt files in a folder which is passed to the tool when it is run.
+
 ## Adding detectors
 
 To add a detector you need to do the following:
+
 1. Find the detectors API documentation
 2. Find the endpoint for the detector
 3. Find the parameters required for the endpoint
@@ -101,6 +106,26 @@ To add a detector you need to do the following:
 }
 ```
 
-## Input Data Format
+## License
 
-The tool expencts data to be in .txt files in a folder which is passed to the tool when it is run.
+MIT License
+
+Copyright (c) [2023] [Originality.AI]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
