@@ -97,6 +97,10 @@ class AnalyzeOutput:
         y_true, y_pred = self._calculate_labels(df)
 
         cm = confusion_matrix(y_true, y_pred)
+        cm = cm[::-1]
+        cm[1] = cm[1][::-1]
+        cm[0] = cm[0][::-1]
+
         print(API[0] + " Confusion Matrix")
         print(self._visualize_confusion_matrix(cm, API[0], y_true))
 
@@ -235,14 +239,14 @@ class AnalyzeOutput:
 
         y_true, y_pred = self._calculate_labels(df)
         cm = confusion_matrix(y_true, y_pred)
-        tp, fn, fp, tn = cm.ravel()
-        precision = tp / (tp + fp)
-        recall = tp / (tp + fn)
-        f1 = 2 * ((precision * recall) / (precision + recall))
-        accuracy = (tp + tn) / (tp + tn + fp + fn)
 
-        tnr = tn / (tn + fp)
-        fp_rate = fp / (fp + tn)
+        precision = precision_score(y_true, y_pred)
+        recall = recall_score(y_true, y_pred)
+        f1 = f1_score(y_true, y_pred)
+        accuracy = accuracy_score(y_true, y_pred)
+
+        tnr = cm[0, 0] / (cm[0, 0] + cm[0, 1])
+        fp_rate = cm[0, 1] / (cm[0, 0] + cm[0, 1])
 
         with open(f"{API}_true_rates.txt", "a") as f:
             f.write(f"F1 score: {f1}\n")
