@@ -98,7 +98,6 @@ class AnalyzeOutput:
 
         cm = confusion_matrix(y_true, y_pred)
         print(API[0] + " Confusion Matrix")
-        # print(cm)
         print(self._visualize_confusion_matrix(cm, API[0], y_true))
 
     def _unique_apis(self):
@@ -207,7 +206,7 @@ class AnalyzeOutput:
             df_cm,
             annot=df_labels,
             fmt="",
-        )  # use df_cm as data for heatmap
+        )  
         plt.xlabel("Predicted")
         plt.ylabel("Actual")
         plt.savefig(f"{api_name}_confusion_matrix.png")

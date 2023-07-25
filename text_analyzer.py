@@ -300,7 +300,7 @@ def get_input():
             if api_name == "Writer.com":
                 writer_organization_id = input("Please enter your Organization ID: ")
             elif api_name == "Copyleaks":
-                copyleaks_scan_id = input("Please enter your Copyleaks scan ID: ")
+                copyleaks_scan_id = input("Please enter a Copyleaks scan ID: ")
             api_info = input("Please enter your API key: ")
             if api_info is None:
                 print("Invalid API Key")
@@ -310,10 +310,9 @@ def get_input():
     api_settings = api_constructor(selected_endpoints)
 
     ai_directory = input("Enter the directory path for AI text files: ")
-
     human_directory = input("Enter the directory path for human text files: ")
-
     output_csv = input("Enter the output CSV file name: ")
+    
     if output_csv is None:
         print("Invalid output CSV file path")
         exit(1)
