@@ -10,7 +10,7 @@ The tool takes a set of text files and runs them through a number of AI detector
 
 ## Requirements
 
-- Python 3.8 or higher
+- Python 3.9 or higher
 - API keys for the detectors you want to test
 
 ## Installation
