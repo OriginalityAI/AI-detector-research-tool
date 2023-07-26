@@ -14,6 +14,7 @@ from sklearn.metrics import (
     precision_score,
     recall_score,
 )
+import pdb
 
 
 class AnalyzeOutput:
@@ -96,16 +97,9 @@ class AnalyzeOutput:
 
         y_true, y_pred = self._calculate_labels(df)
 
-        cm = confusion_matrix(y_true, y_pred)
+        cm = confusion_matrix(y_true, y_pred, labels=[1, 0])
 
-        # Confusion matrix reversed to adhere to the standard confusion matrix format this is for display purposes only and does not affect the calculations
-        # If you want to see the original layout for the confusion matrix, comment out the following 3 lines and reverse the labels in the heatmap
-        cm = cm[::-1]
-        cm[1] = cm[1][::-1]
-        cm[0] = cm[0][::-1]
-
-        print(API[0] + " Confusion Matrix")
-        print(self._visualize_confusion_matrix(cm, API[0], y_true))
+        self._visualize_confusion_matrix(cm, API[0], y_true)
 
     def _unique_apis(self):
         """
@@ -123,6 +117,17 @@ class AnalyzeOutput:
             group.to_csv(f"{name}.csv", index=False)
         return unique_apis
 
+    def _matrix_1x2(self, cm):
+        try:
+            if cm[0].sum() == 0:
+                cm = np.delete(cm, 0, 0)
+            elif cm[1].sum() == 0:
+                cm = np.delete(cm, 1, 0)
+            return cm
+        except:
+            print("Error deleting rows from the confusion matrix")
+            return cm
+
     def _get_visual_labels(self, cm, y_true):
         """
         Get the labels for the confusion matrix based on the number of classes
@@ -137,53 +142,53 @@ class AnalyzeOutput:
         df_cm: the confusion matrix as a dataframe
         df_labels: the labels for the confusion matrix as a dataframe
         """
-        # Calculate the row-wise sum
+        # if the sum of the first row is 0, delete the first row to make the matrix 1x2
+        cm = self._matrix_1x2(cm)
+        # Recalculate the row-wise sum after deleting rows
         cm_sum = np.sum(cm, axis=1)
 
-        # check if there's only one class in the predictions
-        if len(cm) != 1:
-            # if the sum of the first row is 0, delete the first row to make the matrix 1x2
-            if cm[1].sum() == 0:
-                cm = np.delete(cm, 1, 0)
-        # if the matrix is 1x1, add a 0 to the second row to make it 1x2
-        if len(cm[0]) == 1:
-            cm = np.append(cm, [[0]], axis=1)
-
         #  Calculate the percentage of each cell + add a small number to avoid division by 0
-        cm_perc = cm / (cm_sum[:, None] + 1e-10) * 100
+        cm_perc = (cm / (cm_sum[:, None] + 1e-10)) * 100
+        try:
+            if cm.shape == (1, 2):
+                # If there's only one class in the predictions, adjust labels and data accordingly
+                single_class = "AI Generated" if y_true[0] == 1 else "Human Written"
+                columns = ["AI Generated", "Human Written"] if y_true[0] == 1 else ["Human Written", "AI Generated"]
+                labels = [f"{cm_perc[0, 0]:.1f}%", f"{cm_perc[0, 1]:.1f}%"]
+                labels = np.asarray(labels).reshape(1, 2)
+                if y_true[0] == 0:
+                    labels = np.flip(labels, axis=1)
+                print(labels)
 
-        if cm.shape == (1, 2):
-            # If there's only one class in the predictions, adjust labels and data accordingly
-            single_class = "AI Generated" if y_true[0] == 1 else "Human Written"
-            columns = ["AI Generated", "Human Written"] if y_true[0] == 1 else ["Human Written", "AI Generated"]
-            labels = [f"{cm_perc[0, 0]:.1f}%", f"{cm_perc[0, 1]:.1f}%"]
-            labels = np.asarray(labels).reshape(1, 2)
-            df_cm = pd.DataFrame(cm, columns=columns, index=[single_class])
-            df_labels = pd.DataFrame(
-                labels,
-                columns=columns,
-                index=[single_class],
-            )
-        else:
-            # If there are two classes, the confusion matrix will be 2x2
-            labels = [
-                f"{cm_perc[0, 0]:.1f}%",
-                f"{cm_perc[0, 1]:.1f}%",
-                f"{cm_perc[1, 0]:.1f}%",
-                f"{cm_perc[1, 1]:.1f}%",
-            ]
-            labels = np.asarray(labels).reshape(2, 2)
-            df_cm = pd.DataFrame(
-                cm,
-                columns=["AI Generated", "Human Written"],
-                index=["AI Generated", "Human Written"],
-            )
-            df_labels = pd.DataFrame(
-                labels,
-                columns=["AI Generated", "Human Written"],
-                index=["AI Generated", "Human Written"],
-            )
-        return df_cm, df_labels
+                df_cm = pd.DataFrame(cm, columns=columns, index=[single_class])
+                df_labels = pd.DataFrame(
+                    labels,
+                    columns=columns,
+                    index=[single_class],
+                )
+            else:
+                # If there are two classes, the confusion matrix will be 2x2
+                labels = [
+                    f"{cm_perc[0, 0]:.1f}%",
+                    f"{cm_perc[0, 1]:.1f}%",
+                    f"{cm_perc[1, 0]:.1f}%",
+                    f"{cm_perc[1, 1]:.1f}%",
+                ]
+                labels = np.asarray(labels).reshape(2, 2)
+                df_cm = pd.DataFrame(
+                    cm,
+                    columns=["AI Generated", "Human Written"],
+                    index=["AI Generated", "Human Written"],
+                )
+                df_labels = pd.DataFrame(
+                    labels,
+                    columns=["AI Generated", "Human Written"],
+                    index=["AI Generated", "Human Written"],
+                )
+            return df_cm, df_labels
+        except:
+            print("Error calculating labels")
+            return None, None
 
     def _visualize_confusion_matrix(self, cm, api_name: str, y_true):
         """
@@ -200,20 +205,23 @@ class AnalyzeOutput:
         df_cm: the confusion matrix as a dataframe
             df_labels: the labels for the confusion matrix as a dataframe
         """
-
         df_cm, df_labels = self._get_visual_labels(cm, y_true)
-
-        # Visualize the confusion matrix
-        plt.figure(figsize=(10, 7))
-        sns.heatmap(
-            df_cm,
-            annot=df_labels,
-            fmt="",
-        )
-        plt.xlabel("Predicted")
-        plt.ylabel("Actual")
-        plt.savefig(f"{api_name}_confusion_matrix.png")
-        return df_cm, df_labels
+        try:
+            # Visualize the confusion matrix
+            plt.figure(figsize=(10, 7))
+            sns.heatmap(
+                df_cm,
+                annot=df_labels,
+                fmt="",
+            )
+            plt.xlabel("Predicted")
+            plt.ylabel("Actual")
+            plt.savefig(f"{api_name}_confusion_matrix.png")
+            return df_cm, df_labels
+        except:
+            print(
+                f"Confusion matrix could not be visualized. Check the shape of the matrix. It should be 2x2 or 1x2. Shape: {cm.shape}"
+            )
 
     def generate_stats(self, csv_file: str):
         """
@@ -241,33 +249,28 @@ class AnalyzeOutput:
         API = df["API Name"][0]
 
         y_true, y_pred = self._calculate_labels(df)
-        cm = confusion_matrix(y_true, y_pred)
+        cm = confusion_matrix(y_true, y_pred, labels=[1, 0])
 
-        precision = precision_score(y_true, y_pred, zero_division=0)
-        recall = recall_score(y_true, y_pred, zero_division=0)
-        f1 = f1_score(y_true, y_pred, zero_division=0)
-        accuracy = accuracy_score(y_true, y_pred)
+        try:
+            precision = precision_score(y_true, y_pred, zero_division=0)
+            recall = recall_score(y_true, y_pred, zero_division=0)
+            f1 = f1_score(y_true, y_pred, zero_division=0)
+            accuracy = accuracy_score(y_true, y_pred)
 
-        # Check for division by zero when calculating TNR and FPR
-        if cm[0].sum() == 0:
-            cm = np.delete(cm, 0, 0)
-        if cm[1].sum() == 0:
-            cm = np.delete(cm, 1, 0)
+            tnr = cm[0][0] / (cm[0][0] + cm[0][1] + 1e-10)
 
-        tnr = cm[0][0] / (cm[0][0] + cm[0][1])
-        if cm[1]:
-            fp_rate = cm[1][0] / (cm[1][0] + cm[1][1])
-        else:
-            fp_rate = 0
+            fp_rate = cm[1][0] / (cm[1][0] + cm[1][1] + 1e-10)
 
-        with open(f"{API}_true_rates.txt", "a") as f:
-            f.write(f"F1 score: {f1}\n")
-            f.write(f"Precision: {precision}\n")
-            f.write(f"Recall (True Positive Rate): {recall}\n")
+            with open(f"{API}_true_rates.txt", "a") as f:
+                f.write(f"F1 score: {f1}\n")
+                f.write(f"Precision: {precision}\n")
+                f.write(f"Recall (True Positive Rate): {recall}\n")
 
-            f.write(f"Specificity (True Negative Rate): {tnr}\n")
-            f.write(f"False Positive Rate: {fp_rate}\n")
-            f.write(f"Accuracy: {accuracy}\n")
+                f.write(f"Specificity (True Negative Rate): {tnr}\n")
+                f.write(f"False Positive Rate: {fp_rate}\n")
+                f.write(f"Accuracy: {accuracy}\n")
+        except:
+            print("Error calculating true rates")
 
 
 def csv_analyzer_main(csv_file: str):
@@ -301,6 +304,7 @@ def csv_analyzer_main(csv_file: str):
         output_analyzer.confusion_matrix(api_with_filetype)
         output_analyzer.generate_stats(api_with_filetype)
         file_cleanup(API[0])
+        print(f"Analysis complete for {API[0]}")
 
 
 def file_cleanup(api_name: str):
