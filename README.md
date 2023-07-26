@@ -31,8 +31,8 @@ Sample workflow:
 python main.py
 Type Y/N to select Originality.ai API: y
 Enter your Originality.ai API key: YOUR_API_KEY
-Enter the directory path for AI text files: /data/ai
-Enter the directory path for human text files: /data/human
+Enter the directory path for AI text files: data/ai
+Enter the directory path for human text files: data/human
 Enter the output CSV file name: output.csv
 
 Tool will process the data. This may take a while.
@@ -113,6 +113,7 @@ To add a detector you need to do the following:
 - GPTZero [API](https://gptzero.stoplight.io/docs/gptzero-api/d2144a785776b-ai-detection-on-single-string)
 - Writer.com [API](https://dev.writer.com/reference/contentdetectorapi)
 - Copyleaks [API](https://api.copyleaks.com/documentation/v3/writer-detector)
+
 ## License
 
 MIT License
