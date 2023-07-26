@@ -243,18 +243,28 @@ class AnalyzeOutput:
         y_true, y_pred = self._calculate_labels(df)
         cm = confusion_matrix(y_true, y_pred)
 
-        precision = precision_score(y_true, y_pred)
-        recall = recall_score(y_true, y_pred)
-        f1 = f1_score(y_true, y_pred)
+        precision = precision_score(y_true, y_pred, zero_division=0)
+        recall = recall_score(y_true, y_pred, zero_division=0)
+        f1 = f1_score(y_true, y_pred, zero_division=0)
         accuracy = accuracy_score(y_true, y_pred)
 
-        tnr = cm[0, 0] / (cm[0, 0] + cm[0, 1])
-        fp_rate = cm[0, 1] / (cm[0, 0] + cm[0, 1])
+        # Check for division by zero when calculating TNR and FPR
+        if cm[0].sum() == 0:
+            cm = np.delete(cm, 0, 0)
+        if cm[1].sum() == 0:
+            cm = np.delete(cm, 1, 0)
+
+        tnr = cm[0][0] / (cm[0][0] + cm[0][1])
+        if cm[1]:
+            fp_rate = cm[1][0] / (cm[1][0] + cm[1][1])
+        else:
+            fp_rate = 0
 
         with open(f"{API}_true_rates.txt", "a") as f:
             f.write(f"F1 score: {f1}\n")
             f.write(f"Precision: {precision}\n")
             f.write(f"Recall (True Positive Rate): {recall}\n")
+
             f.write(f"Specificity (True Negative Rate): {tnr}\n")
             f.write(f"False Positive Rate: {fp_rate}\n")
             f.write(f"Accuracy: {accuracy}\n")
