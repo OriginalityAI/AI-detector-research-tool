@@ -15,7 +15,7 @@ The tool takes a set of text files and runs them through a number of AI detector
 
 ## Installation
 
-1. Clone this repository
+1. Clone this repository or download the zip file
 2. Install the requirements using `pip install -r requirements.txt`
 
 ## Usage
