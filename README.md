@@ -31,8 +31,9 @@ Sample workflow:
 python main.py
 Type Y/N to select Originality.ai API: y
 Enter your Originality.ai API key: YOUR_API_KEY
-Enter the directory path for AI text files: data/ai
-Enter the directory path for human text files: data/human
+Enter the directory path for AI text files: data/ai/
+Enter the directory path for human text files: data/human/
+Enter the input CSV file path: data/input.csv
 Enter the output CSV file name: output.csv
 
 Tool will process the data. This may take a while.
@@ -48,6 +49,12 @@ Press enter to exit...
 ## Input Data Format
 
 The tool expects data to be in .txt files in a folder which is passed to the tool when it is run.
+Or if you are trying to process a csv file it expects the columns to be in the following order:
+
+```csv
+text,dataset,label
+sample text,gpt-3,ai
+```
 
 ## Adding detectors
 
