@@ -1,5 +1,6 @@
 import csv
 import os
+import pandas as pd
 from typing import Any, Dict, List
 
 import requests
@@ -105,7 +106,7 @@ class TextAnalyzer:
         """
         return self._handle_data(data, keys)
 
-    def process_files(self, directory, text_type):
+    def process_files(self, input_path, text_type, is_csv=False):
         """
         Main function that processes the files in the directory using the API and writes the results to the CSV file
 
@@ -125,7 +126,6 @@ class TextAnalyzer:
         output_csv = self.output_csv
         endpoint = self._get_endpoint(api_post["endpoint"])
 
-        # set the headers for the CSV file
         if "headers" in api_post:
             headers = api_post["headers"]
         else:
@@ -133,15 +133,58 @@ class TextAnalyzer:
 
         body = api_post["body"]
 
-        # loop through the files in the directory
-        for filename in os.listdir(directory):
-            # if the file is a text file
-            if filename.endswith(".txt"):
-                # open the file and read the text
-                with open(os.path.join(directory, filename), "r", encoding="UTF-8") as f:
-                    text = f.read()
+        if is_csv:
+            df = pd.read_csv(input_path)
+
+            for index, row in df.iterrows():
+                text_type = "Human" if row["dataset"] == "human" else "AI"
+                text = row["text"]
+                body[text_key] = text
+                parameters = body.copy()
+
+                try:
+                    del parameters["API_KEY_POINTER"]
+                except KeyError:
+                    pass
+
+                response = requests.post(endpoint, headers=headers, json=parameters, timeout=60)
+
+                if response.status_code != 200:
+                    print(f"❌ Error: {response.text}")
+                    with open(output_csv, "a", newline="", encoding="UTF-8") as file:
+                        writer = csv.writer(file)
+                        writer.writerow(
+                            [
+                                text_type,
+                                api_name,
+                                f"{row['dataset']}-{index}",
+                                "Error",
+                                "Error",
+                                f"Error: {response.text}",
+                            ]
+                        )
+                    continue
+
+                data = response.json()
+                row = [text_type, api_name, f"{row['dataset']}-{index}", row["dataset"]] + self._extract_values(
+                    data, api_response
+                )
+
+                with open(output_csv, "a", newline="", encoding="UTF-8") as file:
+                    writer = csv.writer(file)
+                    writer.writerow(row)
+
+                print(f"✅ CSV row {index} processed successfully using {api_name}")
+
+        else:
+            for filename in os.listdir(input_path):
+                if filename.endswith(".txt"):
+                    with open(os.path.join(input_path, filename), "r", encoding="UTF-8") as f:
+                        text = f.read()
+
                     body[text_key] = text
                     parameters = body.copy()
+
                     try:
                         del parameters["API_KEY_POINTER"]
                     except KeyError:
@@ -149,29 +192,18 @@ class TextAnalyzer:
 
                     response = requests.post(endpoint, headers=headers, json=parameters, timeout=60)
 
-                    # scan the text using the API to check if it is human or AI generated
                     if response.status_code != 200:
                         print(f"❌ Error: {response.text}")
                         with open(output_csv, "a", newline="", encoding="UTF-8") as file:
                             writer = csv.writer(file)
                             writer.writerow(
-                                [
-                                    text_type,
-                                    api_name,
-                                    filename,
-                                    "Error",
-                                    "Error",
-                                    f"Error: {response.text}",
-                                ]
+                                [text_type, api_name, filename, "Error", "Error", f"Error: {response.text}"]
                             )
                         continue
 
                     data = response.json()
-
-                    # create the row to be written to the CSV file
                     row = [text_type, api_name, filename] + self._extract_values(data, api_response)
 
-                    # write the row to the CSV file
                     with open(output_csv, "a", newline="", encoding="UTF-8") as file:
                         writer = csv.writer(file)
                         writer.writerow(row)
@@ -201,7 +233,7 @@ class TextAnalyzer:
         return dictionary
 
 
-def set_headers(output_csv: str) -> None:
+def set_headers(output_csv: str, file_type: str) -> None:
     """
     Set the initial headers for the CSV file
 
@@ -213,14 +245,26 @@ def set_headers(output_csv: str) -> None:
     -------
     None
     """
-    init_row = [
-        "Text Type",
-        "API Name",
-        "File Name",
-        "ai_score",
-        "human_score",
-        "Error_message",
-    ]
+    if file_type == "csv":
+        init_row = [
+            "Text Type",
+            "API Name",
+            "File Name",
+            "Dataset",
+            "ai_score",
+            "human_score",
+            "Error_message",
+        ]
+    else:
+        init_row = [
+            "Text Type",
+            "API Name",
+            "File Name",
+            "ai_score",
+            "human_score",
+            "Error_message",
+        ]
+
     with open(output_csv, "a", newline="", encoding="UTF-8") as file:
         writer = csv.writer(file)
         writer.writerow(init_row)
@@ -298,16 +342,23 @@ def get_input():
 
     ai_directory = input("Enter the directory path for AI text files: ")
     human_directory = input("Enter the directory path for human text files: ")
+    input_csv = input("Enter the input CSV file path: ")
     output_csv = input("Enter the output CSV file name: ")
 
     if output_csv is None:
         print("Invalid output CSV file path")
         exit(1)
     if output_csv.endswith(".csv"):
-        set_headers(output_csv)
+        if input_csv.endswith(".csv"):
+            set_headers(output_csv, "csv")
+        else:
+            set_headers(output_csv, "txt")
     else:
         output_csv += ".csv"
-        set_headers(output_csv)
+        if input_csv.endswith(".csv"):
+            set_headers(output_csv, "csv")
+        else:
+            set_headers(output_csv, "txt")
 
     return [
         api_settings,
@@ -316,6 +367,7 @@ def get_input():
         output_csv,
         writer_organization_id,
         copyleaks_scan_id,
+        input_csv,
     ]
 
 
@@ -339,10 +391,13 @@ def text_analyzer_main():
         output_csv,
         writer_organization_id,
         copyleaks_scan_id,
+        input_csv,
     ) = get_input()
 
     for api_name, api in api_settings.items():
         text_analyzer = TextAnalyzer(output_csv, api, api_name, writer_organization_id, copyleaks_scan_id)
+        if input_csv != "":
+            text_analyzer.process_files(input_csv, "", True)
         if ai_directory != "":
             print(f"🤖 Processing AI files using {api_name}...")
             text_analyzer.process_files(ai_directory, "AI")

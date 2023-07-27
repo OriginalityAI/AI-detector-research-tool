@@ -31,34 +31,18 @@ class AnalyzeOutput:
     None
     """
 
-    # Constants
-    CSV_COLUMNS = [
-        "Text Type",
-        "API Name",
-        "File Name",
-        "ai_score",
-        "human_score",
-        "error_message",
-    ]
     THRESHOLD = 0.5
 
     def __init__(self, output_csv: str):
         self.output_csv = output_csv
 
-    def _read_csv(self, csv_file: str):
-        """
-        Read the csv file
-        """
-        self.df = pd.read_csv(csv_file)
-        return self.df
-
     def _read_and_sanitize(self, csv_file: str):
         """
         Read and sanitize the data
         """
-        df = self._read_csv(csv_file)
-        df.columns = self.CSV_COLUMNS
-        df = df[df["error_message"].isnull()]
+        df = pd.read_csv(csv_file)
+        df = df[pd.isnull(df["Error_message"])]
+        df = df[~(df["ai_score"] == "Error")]
         df = df.reset_index(drop=True)
         return df
 
@@ -158,7 +142,6 @@ class AnalyzeOutput:
                 labels = np.asarray(labels).reshape(1, 2)
                 if y_true[0] == 0:
                     labels = np.flip(labels, axis=1)
-                print(labels)
 
                 df_cm = pd.DataFrame(cm, columns=columns, index=[single_class])
                 df_labels = pd.DataFrame(
