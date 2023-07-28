@@ -8,7 +8,6 @@ import pandas as pd
 import seaborn as sns
 from sklearn.metrics import (
     accuracy_score,
-    classification_report,
     confusion_matrix,
     f1_score,
     precision_score,
@@ -40,11 +39,18 @@ class AnalyzeOutput:
         """
         Read and sanitize the data
         """
-        df = pd.read_csv(csv_file)
-        df = df[pd.isnull(df["Error_message"])]
-        df = df[~(df["ai_score"] == "Error")]
-        df = df.reset_index(drop=True)
-        return df
+        try:
+            df = pd.read_csv(csv_file)
+            df = df[pd.isnull(df["Error_message"])]
+            df = df[~(df["ai_score"] == "Error")]
+            df = df.reset_index(drop=True)
+            return df
+        except KeyError as e:
+            print(f"Key error check your column names match the expected input: {e}")
+            return None
+        except Exception as e:
+            print(f"An error occurred when trying to read data: {e}")
+            return None
 
     def _calculate_labels(self, df: pd.DataFrame):
         """
@@ -59,7 +65,7 @@ class AnalyzeOutput:
         y_true: the true labels
         y_pred: the predicted labels
         """
-        y_true = [1 if tt == "AI" else 0 for tt in df["Text Type"]]
+        y_true = [1 if "ai" in tt.lower() else 0 for tt in df["Text Type"]]
         y_pred = [1 if float(score) > self.THRESHOLD else 0 for score in df["ai_score"]]
 
         return y_true, y_pred
@@ -192,10 +198,12 @@ class AnalyzeOutput:
         try:
             # Visualize the confusion matrix
             plt.figure(figsize=(10, 7))
+            plt.rcParams["font.size"] = 23
             sns.heatmap(
                 df_cm,
                 annot=df_labels,
                 fmt="",
+                annot_kws={"size": 23},
             )
             plt.xlabel("Predicted")
             plt.ylabel("Actual")
@@ -240,18 +248,20 @@ class AnalyzeOutput:
             f1 = f1_score(y_true, y_pred, zero_division=0)
             accuracy = accuracy_score(y_true, y_pred)
 
-            tnr = cm[0][0] / (cm[0][0] + cm[0][1] + 1e-10)
-
+            tnr = cm[1][1] / (cm[1][0] + cm[1][1] + 1e-10)
             fp_rate = cm[1][0] / (cm[1][0] + cm[1][1] + 1e-10)
 
-            with open(f"{API}_true_rates.txt", "a") as f:
-                f.write(f"F1 score: {f1}\n")
-                f.write(f"Precision: {precision}\n")
-                f.write(f"Recall (True Positive Rate): {recall}\n")
+            output_string = (
+                f"F1 score: {f1}\n"
+                f"Precision: {precision}\n"
+                f"Recall (True Positive Rate): {recall}\n"
+                f"Specificity (True Negative Rate): {tnr}\n"
+                f"False Positive Rate: {fp_rate}\n"
+                f"Accuracy: {accuracy}\n"
+            )
 
-                f.write(f"Specificity (True Negative Rate): {tnr}\n")
-                f.write(f"False Positive Rate: {fp_rate}\n")
-                f.write(f"Accuracy: {accuracy}\n")
+            with open(f"{API}_true_rates.txt", "a") as f:
+                f.write(output_string)
         except:
             print("Error calculating true rates")
 
