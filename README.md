@@ -56,6 +56,8 @@ text,dataset,label
 sample text,gpt-3,ai
 ```
 
+The dataset column can simply be 'ai' or 'human' this column is used to name the rows on the output
+
 ## Adding detectors
 
 To add a detector you need to do the following:
