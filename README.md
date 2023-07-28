@@ -102,7 +102,7 @@ To add a detector you need to do the following:
         # e.g if the API returns a JSON object with a key called 'result' and the value of 'result' is a list of objects
         # with a key called 'score' then the mapping would be:
         # "result": {
-        #     "score": "result.score"
+        #     "score": "score"
         # }
         "200": {
             "result": {
