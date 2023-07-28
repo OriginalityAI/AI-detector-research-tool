@@ -119,7 +119,51 @@ To add a detector you need to do the following:
 - Sapling.ai [API](https://sapling.ai/docs/api/detector)
 - GPTZero [API](https://gptzero.stoplight.io/docs/gptzero-api/d2144a785776b-ai-detection-on-single-string)
 - Writer.com [API](https://dev.writer.com/reference/contentdetectorapi)
-- Copyleaks [API](https://api.copyleaks.com/documentation/v3/writer-detector)
+- Copyleaks [API](https://api.copyleaks.com/documentation/v3) - Please follow Copyleaks instructions for setting up the API key as it is a bit more complicated than the other detectors
+
+## Contributing
+
+We welcome contributions to this project! Here are some ways you can help:
+
+### Reporting Bugs
+
+If you find a bug, please report it by opening a GitHub issue. Be sure to include:
+
+- Steps to reproduce the bug
+- Expected behavior
+- Actual behavior
+
+This information will help us diagnose and fix the bug faster.
+
+### Suggesting Enhancements
+
+We're always looking for ways to improve the tool! If you have an idea for an enhancement, open a GitHub issue and describe:
+
+- The current behavior
+- Your proposed change and why it would be useful
+- An example use case
+
+### Pull Requests
+
+If you want to directly contribute code:
+
+1. Fork the repo
+2. Clone your fork
+3. Make changes on a branch
+4. Write clear, concise commit message
+5. Open a pull request against main
+
+Ensure your PR adheres to the following:
+
+- Code is clean and well-formatted
+- Documentation is updated if needed
+- Commit messages are clear and detailed
+
+### Sharing Your Experience
+
+We want to hear about your experience using the tool - good and bad. Let us know what worked and what didn't. Share stories of how this tool has helped your research. The more we hear from you, the better we can make the tool for everyone!
+
+Thanks for contributing!
 
 ## License
 
