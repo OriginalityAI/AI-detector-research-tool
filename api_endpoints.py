@@ -77,19 +77,19 @@ API_ENDPOINTS = {
     #         }
     #     },
     # },
-    # "Copyleaks": {
-    #     "post_parameters": {
-    #         "endpoint": "https://api.copyleaks.com/v2/writer-detector/{copyLeaks_scan_id}/check",
-    #         "headers": {},
-    #         "body": {"text": "Sample"},
-    #         "API_KEY_POINTER": {
-    #             "location": "headers",
-    #             "value": "",
-    #             "key_name": "Authorization",
-    #         },
-    #         "text_key": "text",
-    #     },
-    #     "response": {"200": {"summary": [{"ai": "ai", "human": "human"}]}},
-    # }
+    "Copyleaks": {
+        "post_parameters": {
+            "endpoint": "https://api.copyleaks.com/v2/writer-detector/{copyLeaks_scan_id}/check",
+            "headers": {},
+            "body": {"text": "Sample"},
+            "API_KEY_POINTER": {
+                "location": "headers",
+                "value": "Bearer ",
+                "key_name": "Authorization",
+            },
+            "text_key": "text",
+        },
+        "response": {"200": {"summary": {"ai": "ai"}}},
+    }
     # Add more endpoints as needed
 }
