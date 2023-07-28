@@ -1,4 +1,5 @@
 import csv
+import math
 import os
 import pandas as pd
 from typing import Any, Dict, List
@@ -76,25 +77,29 @@ class TextAnalyzer:
         row: the values extracted from the data
         """
         row = []
-        # if the keys are a list, then loop through the data and extract the values that correspond to the keys
-        if isinstance(keys, list):
-            for item in data:
-                for key, value in item.items():
-                    if key in keys:
-                        row.append(value)
-        else:
-            # if the keys are a dictionary, then loop through the data and extract the values that correspond to the keys
-            for key, value in keys.items():
-                if isinstance(data.get(key), dict):
-                    row.extend(self._handle_data(data[key], value))
-                elif isinstance(data.get(key), list):
-                    for sub_dict in data[key]:
-                        for sub_key, sub_value in sub_dict.items():
-                            if sub_key in value:
-                                row.append(sub_value)
-                else:
-                    row.append(data.get(key))
-        return row
+        try:
+            # if the keys are a list, then loop through the data and extract the values that correspond to the keys
+            if isinstance(keys, list):
+                for item in data:
+                    for key, value in item.items():
+                        if key in keys:
+                            row.append(value)
+            else:
+                # if the keys are a dictionary, then loop through the data and extract the values that correspond to the keys
+                for key, value in keys.items():
+                    if isinstance(data.get(key), dict):
+                        row.extend(self._handle_data(data[key], value))
+                    elif isinstance(data.get(key), list):
+                        for sub_dict in data[key]:
+                            for sub_key, sub_value in sub_dict.items():
+                                if sub_key in value:
+                                    row.append(sub_value)
+                    else:
+                        row.append(data.get(key))
+            return row
+        except Exception as e:
+            print(f"An error occurred: {e} check the API response format in api_endpoints.py")
+            return exit()
 
     def _extract_values(
         self,
@@ -105,6 +110,20 @@ class TextAnalyzer:
         Extract the values from the data that correspond to the keys provided needed to do it this way to avoid type errors
         """
         return self._handle_data(data, keys)
+
+    def _write_error(self, text_type, row, index, response, output_csv, api_name):
+        with open(output_csv, "a", newline="", encoding="UTF-8") as file:
+            writer = csv.writer(file)
+            writer.writerow(
+                [
+                    text_type,
+                    api_name,
+                    f"{row['dataset']}-{index}",
+                    "Error",
+                    "Error",
+                    f"Error: {response.text}",
+                ]
+            )
 
     def process_files(self, input_path, text_type, is_csv=False):
         """
@@ -133,55 +152,13 @@ class TextAnalyzer:
 
         body = api_post["body"]
 
-        if is_csv:
-            df = pd.read_csv(input_path)
+        try:
+            if is_csv:
+                df = pd.read_csv(input_path)
 
-            for index, row in df.iterrows():
-                text_type = "Human" if row["dataset"] == "human" else "AI"
-                text = row["text"]
-                body[text_key] = text
-                parameters = body.copy()
-
-                try:
-                    del parameters["API_KEY_POINTER"]
-                except KeyError:
-                    pass
-
-                response = requests.post(endpoint, headers=headers, json=parameters, timeout=60)
-
-                if response.status_code != 200:
-                    print(f"❌ Error: {response.text}")
-                    with open(output_csv, "a", newline="", encoding="UTF-8") as file:
-                        writer = csv.writer(file)
-                        writer.writerow(
-                            [
-                                text_type,
-                                api_name,
-                                f"{row['dataset']}-{index}",
-                                "Error",
-                                "Error",
-                                f"Error: {response.text}",
-                            ]
-                        )
-                    continue
-
-                data = response.json()
-                row = [text_type, api_name, f"{row['dataset']}-{index}", row["dataset"]] + self._extract_values(
-                    data, api_response
-                )
-
-                with open(output_csv, "a", newline="", encoding="UTF-8") as file:
-                    writer = csv.writer(file)
-                    writer.writerow(row)
-
-                print(f"✅ CSV row {index} processed successfully using {api_name}")
-
-        else:
-            for filename in os.listdir(input_path):
-                if filename.endswith(".txt"):
-                    with open(os.path.join(input_path, filename), "r", encoding="UTF-8") as f:
-                        text = f.read()
-
+                for index, row in df.iterrows():
+                    text_type = "Human" if "human" in row["dataset"].lower() else "AI"
+                    text = row["text"]
                     body[text_key] = text
                     parameters = body.copy()
 
@@ -190,25 +167,74 @@ class TextAnalyzer:
                     except KeyError:
                         pass
 
-                    response = requests.post(endpoint, headers=headers, json=parameters, timeout=60)
+                    for key, value in parameters.items():
+                        if isinstance(value, float):
+                            if math.isinf(value) or math.isnan(value) or value > 1.7e308:
+                                print(
+                                    f"⚠️  Warning: The value for {key} is not JSON compliant. Replacing with a default value."
+                                )
+                                parameters[key] = 0.0
+
+                    try:
+                        response = requests.post(endpoint, headers=headers, json=parameters, timeout=60)
+                    except ValueError as e:
+                        print(f"A ValueError occurred: {e}")
+                        self._write_error(text_type, row, index, e, output_csv, api_name)
+                        continue
 
                     if response.status_code != 200:
                         print(f"❌ Error: {response.text}")
-                        with open(output_csv, "a", newline="", encoding="UTF-8") as file:
-                            writer = csv.writer(file)
-                            writer.writerow(
-                                [text_type, api_name, filename, "Error", "Error", f"Error: {response.text}"]
-                            )
+                        self._write_error(text_type, row, index, response, output_csv, api_name)
                         continue
 
                     data = response.json()
-                    row = [text_type, api_name, filename] + self._extract_values(data, api_response)
+
+                    row = [text_type, api_name, f"{row['dataset']}-{index}", row["dataset"]] + self._extract_values(
+                        data, api_response
+                    )
 
                     with open(output_csv, "a", newline="", encoding="UTF-8") as file:
                         writer = csv.writer(file)
                         writer.writerow(row)
 
-                    print(f"✅ File {filename} processed successfully using {api_name}")
+                    print(f"✅ CSV row {index} processed successfully using {api_name}")
+
+            else:
+                for filename in os.listdir(input_path):
+                    if filename.endswith(".txt"):
+                        with open(os.path.join(input_path, filename), "r", encoding="UTF-8") as f:
+                            text = f.read()
+
+                        body[text_key] = text
+                        parameters = body.copy()
+
+                        try:
+                            del parameters["API_KEY_POINTER"]
+                        except KeyError:
+                            pass
+
+                        response = requests.post(endpoint, headers=headers, json=parameters, timeout=60)
+
+                        if response.status_code != 200:
+                            print(f"❌ Error: {response.text}")
+                            with open(output_csv, "a", newline="", encoding="UTF-8") as file:
+                                writer = csv.writer(file)
+                                writer.writerow(
+                                    [text_type, api_name, filename, "Error", "Error", f"Error: {response.text}"]
+                                )
+                            continue
+
+                        data = response.json()
+                        row = [text_type, api_name, filename] + self._extract_values(data, api_response)
+
+                        with open(output_csv, "a", newline="", encoding="UTF-8") as file:
+                            writer = csv.writer(file)
+                            writer.writerow(row)
+
+                        print(f"✅ File {filename} processed successfully using {api_name}")
+        except KeyError as e:
+            print(f"❌ Error: missing {e} key, check the CSV format in the README.md file")
+            return exit()
 
     def _get_nested_value(self, dictionary, keys):
         """
@@ -293,14 +319,14 @@ def api_constructor(selected_endpoints):
         # Update the API key in the post_parameters dictionary
         key_location = api_info["post_parameters"]["API_KEY_POINTER"]["location"]
         if key_location == "headers":
-            api_info["post_parameters"]["headers"][api_info["post_parameters"]["API_KEY_POINTER"]["key_name"]] = api_key
-            api_info["post_parameters"]["API_KEY_POINTER"]["value"] = api_key
+            api_info["post_parameters"]["headers"][api_info["post_parameters"]["API_KEY_POINTER"]["key_name"]] = (
+                api_info["post_parameters"]["API_KEY_POINTER"]["value"] + api_key
+            )
         elif key_location == "body":
             api_info["post_parameters"]["body"][api_info["post_parameters"]["API_KEY_POINTER"]["key_name"]] = api_key
         del api_info["post_parameters"]["API_KEY_POINTER"]
         # Add the modified API info to the api_settings dictionary
         api_settings[api_name] = api_info
-
     return api_settings
 
 
