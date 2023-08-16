@@ -115,13 +115,13 @@ To add a detector you need to do the following:
 }
 ```
 
-## Links to api docs for some detectors
+## Links to api docs for detectors
 
-- Originality.ai [API](https://docs.originality.ai/)
-- Sapling.ai [API](https://sapling.ai/docs/api/detector)
-- GPTZero [API](https://gptzero.stoplight.io/docs/gptzero-api/d2144a785776b-ai-detection-on-single-string)
-- Writer.com [API](https://dev.writer.com/reference/contentdetectorapi)
-- Copyleaks [API](https://api.copyleaks.com/documentation/v3) - Please follow Copyleaks instructions for setting up the API key as it is a bit more complicated than the other detectors
+- Originality.ai [DOCS](https://docs.originality.ai/) - to specify a particular version please check the docs and add it to the appropriate place in the `api_endpoints.py` file
+- Sapling.ai [DOCS](https://sapling.ai/docs/api/detector)
+- GPTZero [DOCS](https://gptzero.stoplight.io/docs/gptzero-api/d2144a785776b-ai-detection-on-single-string) - to specify a particular version please check the docs and add it to the appropriate place in the `api_endpoints.py` file
+- Writer.com [DOCS](https://dev.writer.com/reference/contentdetectorapi)
+- Copyleaks [DOCS](https://api.copyleaks.com/documentation/v3) - Please follow Copyleaks instructions for setting up the API key as it is a bit more complicated than the other detectors
 
 ## Contributing
 
