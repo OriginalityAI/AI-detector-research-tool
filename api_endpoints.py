@@ -1,3 +1,16 @@
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+# API keys
+ORIGINALITY_API_KEY = os.getenv("ORIGINALITY_API_KEY")
+SAPLING_API_KEY = os.getenv("SAPLING_API_KEY")
+WRITER_API_KEY = os.getenv("WRITER_API_KEY")
+GPTZERO_API_KEY = os.getenv("GPTZERO_API_KEY")
+COPYLEAKS_API_KEY = os.getenv("COPYLEAKS_API_KEY")
+
+
 # Different endpoints and their corresponding API keys, versions and request parameters
 API_ENDPOINTS = {
     "Originality": {
@@ -7,7 +20,7 @@ API_ENDPOINTS = {
             "headers": {"X-OAI-API-KEY": "", "Accept": "application/json"},
             "API_KEY_POINTER": {
                 "location": "headers",
-                "value": "",
+                "value": ORIGINALITY_API_KEY,
                 "key_name": "X-OAI-API-KEY",
             },
             "text_key": "content",
@@ -24,20 +37,20 @@ API_ENDPOINTS = {
     "Sapling": {
         "post_parameters": {
             "endpoint": "https://api.sapling.ai/api/v1/aidetect",
-            "body": {"text": ""},
-            "API_KEY_POINTER": {"location": "body", "value": "", "key_name": "key"},
+            "body": {"text": "", "key": ""},
+            "API_KEY_POINTER": {"location": "body", "value": SAPLING_API_KEY, "key_name": "key"},
             "text_key": "text",
         },
         "response": {"200": {"score": "score"}},
     },
-    "Writer.com": {
+    "Writer": {
         "post_parameters": {
             "endpoint": "https://enterprise-api.writer.com/content/organization/{writer_organization_id}/detect",
             "headers": {"Authorization": "", "Content-Type": "application/json"},
             "body": {"input": "Sample"},
             "API_KEY_POINTER": {
                 "location": "headers",
-                "value": "",
+                "value": WRITER_API_KEY,
                 "key_name": "Authorization",
             },
             "text_key": "input",
@@ -47,11 +60,11 @@ API_ENDPOINTS = {
     "GPTZero": {
         "post_parameters": {
             "endpoint": "https://api.gptzero.me/v2/predict/text",
-            "body": {"document": "Sample", "version": "2023-05-23"},
+            "body": {"document": "Sample"},
             "headers": {"x-api-key": "", "Content-Type": "application/json"},
             "API_KEY_POINTER": {
                 "location": "headers",
-                "value": "",
+                "value": GPTZERO_API_KEY,
                 "key_name": "x-api-key",
             },
             "text_key": "document",
@@ -84,7 +97,7 @@ API_ENDPOINTS = {
             "body": {"text": "Sample"},
             "API_KEY_POINTER": {
                 "location": "headers",
-                "value": "Bearer ",
+                "value": "Bearer " + COPYLEAKS_API_KEY,
                 "key_name": "Authorization",
             },
             "text_key": "text",
